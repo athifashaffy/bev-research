@@ -26,14 +26,16 @@ the energy reserve is reached, and how far does the modelled cell surface rise?
 excursion. The raw simulation may continue past that point; external analysis
 stops there.
 
-**Finds:** mean power 140.9 to 177.4 kW, energy 60.6 to 73.7 kWh per cycle,
+**Finds:** mean power 140.9 to 177.3 kW over each configuration's own reserve
+window, or 133.3 to 170.3 kW over the shared 68.039-minute window; energy 60.6 to 73.7 kWh per cycle,
 reserve windows 68.0 to 108.1 minutes, peak rise 0.043 to 0.093 °C.
 
-**The honest reading:** the margin to the declared 60 °C screen is 34.907 to
+**Interpretation:** the margin to the declared 60 °C screen is 34.907 to
 34.957 °C, a spread of 0.05 °C across all nine configurations. There is no
 margin comparison to be drawn between them. The useful result is the negative
-one: under these parameters normal haulage duty cycle is not a thermal risk
-pathway. Capacity, vehicle mass and available power vary together in the
+one: the assumed equivalent-cell model predicts very little surface heating.
+This does not establish actual pack temperatures or exclude thermal faults.
+Capacity, vehicle mass and available power vary together in the
 archived cases, so these compare whole vehicle configurations and do not
 isolate a pure capacity effect.
 
@@ -58,7 +60,7 @@ At 1 minute it leads on RMSE only; the held-input physics baseline wins on MAE
 (4.317 × 10⁻⁴ against 6.706 × 10⁻⁴ °C). At 10 minutes both the trend and the
 physics baselines become worse than persistence.
 
-**The honest reading, and this matters more than the ranking:** these traces are
+**Interpretation:** these traces are
 the deterministic output of the frozen thermal model driven by an assumed
 equivalent current. A model that does well here has rediscovered that equation.
 Every error in the resulting table is smaller than the measured-cell fit's own
@@ -90,7 +92,7 @@ same rules respond on 26 of 27 Sheffield records, all 7 test records and all
 6 TUM channels. First response is 13 to 45 s on Sheffield and 10 to 1943 s on
 TUM.
 
-**The honest reading:** a rule firing on an abuse record is a *response to
+**Interpretation:** a rule firing on an abuse record is a *response to
 recorded heating*, not a verified thermal-runaway detection, and the time it
 fires is not a lead time. Neither archive contains an independent,
 temperature-free onset reference with bounded sensor-clock uncertainty, so lead
@@ -102,10 +104,12 @@ The quiet result on 729 trajectories is likewise not a field false-alarm rate.
 Its denominator is modelled scenarios, not fleet hours, and the nine nominal
 settings are a subset of the 729 rather than nine additional experiments.
 
-The laboratory records themselves are licence restricted and not committed, so
-this reads the derived response summary. To re-screen from source, fetch the
-datasets per `data/README.md` into `data/raw` and verify them against the
-checksum manifest first.
+This entry point replays the derived response summary; it does not re-screen
+the laboratory measurements. Attributed TUM LFP CSV files are under
+`reproducibility/data/tum/dataset/`, and Sheffield source records are under
+`reproducibility/experiments/B/data/sheffield/`. The archived original B runner
+and its remaining portability gaps are documented in
+`reproducibility/experiments/B/README.md`.
 
 Runtime: under a minute.
 
@@ -115,5 +119,5 @@ Runtime: under a minute.
 
 `python code/verify.py` recomputes the headline numbers from the source CSVs
 rather than reading the reported tables, and exits non-zero on any mismatch.
-`python -m pytest tests/` runs 37 unit tests on the model, the rules, the
+`python -m pytest tests/` runs the unit tests on the model, the rules, the
 baselines, the learned models and the feature construction.

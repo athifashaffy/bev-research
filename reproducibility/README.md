@@ -1,9 +1,9 @@
 # BEV research reproducibility tools
 
-This package checks archived haulage, thermal-model and forecasting results and
-plots saved outputs. It is a new evidence audit of existing research artifacts.
-It does not rerun the original native experiment, retrain the forecasting models,
-or establish field validation.
+The audit CLI checks archived haulage, thermal-model and forecasting results and
+plots saved outputs without rerunning HAULSIM or fitting estimators. The separate
+[Experiment A trainer](experiments/A) implements the full forecasting workflow
+and produces a fresh model refit. Neither workflow establishes field validation.
 
 Use Python 3.12 or later in a virtual environment. From this directory:
 
@@ -87,6 +87,5 @@ three older laboratory-model artifacts. Follow each experiment's own README.
 HAULSIM is not needed to inspect the archives or run these audits and plots.
 Rerunning the native HAULSIM simulations requires the licensed application.
 
-[AI_ASSISTANCE.md](AI_ASSISTANCE.md) records AI assistance in the paper and code
-history. This package makes no new license grant for third-party data, native
-projects or source artifacts; their existing terms remain applicable.
+This package makes no new license grant for third-party data, native projects
+or source artifacts; their existing terms remain applicable.

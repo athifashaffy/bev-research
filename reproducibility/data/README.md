@@ -6,4 +6,4 @@ The A123 source is Aloisio Kawakita de Souza (2021), DOI https://doi.org/10.1763
 
 tum/ is a separate publicly documented LFP abuse-data collection, if present. It is not used to fit or score the current HAULSIM forecasting benchmark. Original clocks are not assumed synchronised and no independently verified onset labels are supplied.
 
-SOURCE_MANIFEST.json lists the size and SHA-256 of every data file, using paths relative to data/. Verification checks identity, not field validity or authorship. No licence passwords, papers, professor correspondence or executable third-party libraries are included in this new folder.
+SOURCE_MANIFEST.json lists the size and SHA-256 of every data file, using paths relative to data/. Verification checks identity, not field validity or authorship. Third-party data retain their original attribution and licence terms.

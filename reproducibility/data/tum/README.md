@@ -2,7 +2,7 @@
 
 This folder prepares and verifies a CSV distribution of the locally available LFP measurement tables from [TUM dataset DOI 10.14459/2023mp1717758](https://doi.org/10.14459/2023mp1717758). This is a historical external experimental dataset, separate from the generated targets used in the conference forecasting benchmark.
 
-Open [`dataset/README.md`](dataset/README.md) for the data guide and [`dataset/csv_manifest.csv`](dataset/csv_manifest.csv) for every part, source path, row range and hash. AI assistance was used for packaging code and audit metadata. Experimental values are the original publisher data.
+Open [`dataset/README.md`](dataset/README.md) for the data guide and [`dataset/csv_manifest.csv`](dataset/csv_manifest.csv) for every part, source path, row range and hash. Experimental values are the original publisher data.
 
 ## Portable preparation
 
@@ -26,7 +26,7 @@ NMC-811 has another 17 TXT and 17 MAT measurement files. Their dimensions, sourc
 
 The data license is **CC BY 4.0**, based on the explicit prior local provenance that records verification on the primary mediaTUM page in a normal browser on 2026-10-20. The local record is `LFP_Data_Feasibility_2026-10-20/00_READ_ME.txt`, lines 65–68, with a second license field in `tum_audit.json`. The complete evidence distinction is recorded in `license_evidence.json`.
 
-On 2026-10-28, the primary DataCite API supplied title/author/publisher metadata, saved as `primary_datacite_metadata.json`. Its `rightsList` is empty, so it is not used to infer a license. Current automated mediaTUM requests returned a challenge or rate limit. The license assessment therefore uses the permitted prior local provenance rather than claiming a new independent primary-page verification. The script refuses export if the supplied license record is unknown. See the dataset attribution notice before reusing the data.
+On 2026-10-28, the primary DataCite API supplied title/author/publisher metadata, saved as `primary_datacite_metadata.json`. Its `rightsList` is empty. A normal browser read of the publisher's [mediaTUM record](https://mediatum.ub.tum.de/1717758) confirmed the explicit CC BY 4.0 rights field; see `current_publisher_license_check.json`. The earlier automated-request challenge is retained in the dated evidence trail. See the dataset attribution notice before reusing the data.
 
 ## Verification evidence
 

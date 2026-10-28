@@ -1,91 +1,48 @@
-Current publisher check, 28 October 2026: mediaTUM record1717758 explicitly declares CC BY4.0. Attributed LFP CSV files and the verification record are now available under reproducibility/data/tum. The earlier empty automated metadata field did not establish absence of a licence.
-
 # Data
 
-Three directories, with different rules attached to each.
+The root analysis reads `derived/`, which contains archived simulation-derived
+tables, generated temperature traces, forecasting scores and laboratory rule
+response summaries. `manifest/` records source checksums and channel metadata.
+New results are written outside these input directories.
 
-```
-data/
-  derived/    committed    outputs computed in this study
-  manifest/   committed    checksums and metadata describing the sources
-  raw/        NOT committed  licence-restricted third-party source data
-```
-
-## `derived/` — computed outputs, safe to redistribute
-
-These are research outputs of this study, not third-party data. Every figure in
-`figures/` is generated from these files alone, so the repository is
-self-contained for reproduction of the figures.
-
-| File | Contents |
+| Input | Meaning |
 |---|---|
-| `table2_nominal_reserve.csv` | Nine configurations, each run to its own reserve endpoint |
-| `table2_common_window.csv` | The same nine on one shared 68.0389726 min window |
-| `table4_pooled_metrics.csv` | Pooled RMSE and MAE, 5 methods x 4 horizons |
-| `table5_rule_response.csv` | Frozen-rule response summary on laboratory records |
-| `frozen_rule_summary.csv` | The same rules applied to modelled normal trajectories |
-| `trace_C100_RR03.csv` | One full case trace, used for the worked example figure |
+| `derived/table2_nominal_reserve.csv` | Nine configurations at their own external reserve cutoffs |
+| `derived/table2_common_window.csv` | The same configurations over the shared 68.039-minute window |
+| `derived/table4_pooled_metrics.csv` | Pooled forecast scores for five methods and four horizons |
+| `derived/table5_rule_response.csv` | Archived laboratory rule-response summary, not independently verified onset times |
+| `derived/frozen_rule_summary.csv` | Rule responses on generated normal-temperature scenarios |
+| `derived/trace_C100_RR03.csv` | Generated reference-cell temperature trace, not measured pack temperature |
 
-Temperatures in these files are **A123-equivalent cell surface** values from a
-fitted lumped model. They are not measured, and they are not validated Sandvik
-Z50 pack, core or hotspot temperatures.
+## Source archives and full measurements
 
-## `manifest/` — how to confirm you have the same inputs
+The separate [`reproducibility/data`](../reproducibility/data) tree retains nine
+HAULSIM result databases, source event/thermal tables, frozen coefficients and
+recorded forecasting inputs. Its `SOURCE_MANIFEST.json` lists file sizes and
+SHA-256 hashes. HAULSIM software and licence credentials are not distributed;
+rerunning the native simulation requires the licensed application.
 
-| File | Contents |
-|---|---|
-| `source_checksums.json` | SHA-256 and byte size for all 43 Sheffield and TUM source files |
-| `tum_channel_index.csv` | Per-channel metadata: source file, SHA-256, sample count, time range, temperature range, sensor location, quality flags |
-| `tum_datacite.json` | The TUM DataCite record as retrieved |
-| `event_register.csv` | Per-record event qualification, and why each onset time is unavailable |
-| `clock_alignment_audit.csv` | Sensor clock alignment checks |
+TUM LFP measurements are available as
+[`reproducibility/data/tum/dataset/`](../reproducibility/data/tum/dataset).
+The publisher's [mediaTUM record](https://mediatum.ub.tum.de/1717758),
+[DOI 10.14459/2023mp1717758](https://doi.org/10.14459/2023mp1717758), explicitly
+declares CC BY 4.0, confirmed on 28 October 2026. The empty DataCite `rightsList`
+does not negate that publisher declaration. CSV values, clocks and channel order
+are preserved; the largest table is split at source-row boundaries. Multiple
+channels from one module are not independent module experiments.
 
-If you obtain the raw datasets yourself, verify them against
-`source_checksums.json` before reproducing anything. Byte-identical inputs are
-the only way to confirm you are reproducing rather than approximating.
+The 27 Sheffield LFP source CSVs and workbook are in
+[`reproducibility/experiments/B/data/sheffield/`](../reproducibility/experiments/B/data/sheffield),
+with attribution and CC BY 4.0 evidence for
+[DOI 10.15131/shef.data.29836850.v1](https://doi.org/10.15131/shef.data.29836850.v1).
+The archive's published checksums identify the source bytes used.
 
-## `raw/` — not in this repository, and why
+## Interpretation
 
-### TUM thermal runaway propagation dataset
+Generated temperatures are A123-equivalent cell-surface model outputs. They are
+not measured or validated Z50 pack, core or hotspot temperatures. The 60 °C
+screen is a declared study threshold, not a Z50 battery-management-system limit;
+the A123 datasheet lists operation up to 55 °C and storage up to 60 °C.
 
-- DOI: [10.14459/2023mp1717758](https://doi.org/10.14459/2023mp1717758)
-- Schöberl, Ank, Schreiber, Wassiliadis, Lienkamp (2023), Technical University of Munich
-- Hosted at <https://mediatum.ub.tum.de/1717758>
-
-**The DataCite record carries an empty `rightsList`, meaning no licence is
-declared.** Without a declared licence there is no permission to redistribute,
-so these files are not included here. Download them from the DOI above and
-place them under `data/raw/tum/`.
-
-Six temperature channels from this dataset are used. They come from **one
-module experiment** and are dependent channels, not six independent
-experiments. `tum_channel_index.csv` records this in its quality flags.
-
-### Sheffield LFP abuse records
-
-- Hosted at the University of Sheffield research data repository (ORDA)
-- 27 records across 8 date groups, split 15 / 5 / 7 by date into train,
-  development and test
-
-All 28 SHA-256 and MD5 values were checked against the publisher's published
-checksums and matched. Confirm the current licence terms at the source before
-redistributing any of it. Download to `data/raw/sheffield/`.
-
-### A123 ANR26650M1-B
-
-Datasheet values only. The operating range is -30 to +55 degrees C and the
-storage range is -40 to +60 degrees C. The 60 degrees C figure used throughout
-this study is a **declared study screen**, not a Z50 pack or BMS limit, and
-55 degrees C margins are reported alongside it.
-
-### HAULSIM
-
-HAULSIM 3.8 build 585, used under licence from RPMGlobal. No licence, software
-or native model file is included in this repository.
-
-## Attribution
-
-Third-party rights remain with their owners. Derived summary tables and
-computed metrics in `derived/` are research outputs of this study. Including
-derived metrics here is not a redistribution of the underlying datasets and
-does not grant any right to redistribute them.
+Third-party sources retain their original attribution and licence terms. Hash
+agreement checks input identity, not physical validity or warning performance.

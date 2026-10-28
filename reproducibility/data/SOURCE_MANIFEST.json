@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 1107,
-      "sha256": "f2c933149bce6d38df432a7ce7ae94ec323c10b82d7f80c50575653da76285c9"
+      "bytes": 1044,
+      "sha256": "604e0078d56461d97961af18ff1362fa152198dc40ed4c0c4941d51c46e69c35"
     },
     {
       "path": "tum/current_publisher_license_check.json",
@@ -234,8 +234,8 @@
     },
     {
       "path": "tum/dataset/README.md",
-      "bytes": 6314,
-      "sha256": "b1a5fd9808eba7ecfed78dbb0a8156afb91d6860dc2cb23a3293a8b9c22120c3"
+      "bytes": 6172,
+      "sha256": "663749b82dae9ef906d067ce7e1d6a46e3fe600925be2f297f171b3808dd15b9"
     },
     {
       "path": "tum/dataset/source_measurement_inventory.json",
@@ -269,8 +269,8 @@
     },
     {
       "path": "tum/README.md",
-      "bytes": 5473,
-      "sha256": "a060444ca41922ef3e459185173de8ffa8b6bb61750b10b1d084b1db24fda39a"
+      "bytes": 5314,
+      "sha256": "13bf0bfb3f07f3c25ddac55c5f34f5e068cc61350b24e9231f89565af44152a8"
     },
     {
       "path": "tum/test_evidence.json",

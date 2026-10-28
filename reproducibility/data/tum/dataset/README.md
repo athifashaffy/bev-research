@@ -2,7 +2,7 @@
 
 Schöberl, Jan; Ank, Manuel; Schreiber, Markus; Wassiliadis, Nikolaos; Lienkamp, Markus (2023). **Thermal runaway propagation data set of lithium-ion batteries with NMC-811 and LFP cathodes.** Technical University of Munich. [Dataset DOI](https://doi.org/10.14459/2023mp1717758), [publisher record](https://mediatum.ub.tum.de/1717758). Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); evidence and its verification limits are in [`license_evidence.json`](license_evidence.json).
 
-Modification notice: the publisher's comma-separated UTF-8 `.txt` exports were given descriptive `.csv` filenames. The large surface table was split at row boundaries with the exact source header repeated. Raw data-row bytes, decimal field strings, clocks, signs, channel ordering, units and source rows were preserved. No values were estimated or replaced. AI assisted the packaging code and metadata; the measured values remain publisher data.
+Modification notice: the publisher's comma-separated UTF-8 `.txt` exports were given descriptive `.csv` filenames. The large surface table was split at row boundaries with the exact source header repeated. Raw data-row bytes, decimal field strings, clocks, signs, channel ordering, units and source rows were preserved. No values were estimated or replaced.
 
 This is historical module thermal-runaway propagation data. It is separate from the conference experiment's self-generated temperature forecasting target. A channel filename identifies a sensor or table, not an independent experiment or a thermal-runaway onset.
 

@@ -1,6 +1,6 @@
 # Experiment A saved-output audit
 
-AI-assisted verification code and audit records. These files are not scientific manuscript text. The original experiment, scientific source files, and drafting materials were not modified. No model fitting was performed. No manuscript or correspondence is included here.
+This saved-output audit checks archived predictions without fitting models or changing its inputs. A separate fresh refit is documented in [Experiment A](../experiments/A).
 
 The independent audit recalculated every saved prediction error using Python's standard library and compensated sums. All 20 pooled rows and 180 case rows agree with both saved CSV tables and the saved summary within **1.3877787807814457e-17 °C**. It used **83,980 prediction rows**, covering **16,796 distinct case/horizon/origin combinations** for five methods.
 

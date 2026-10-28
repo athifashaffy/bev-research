@@ -1,10 +1,8 @@
 # Archived Experiment B: warning rules and event admissibility
 
-This directory contains the actual original analysis implementation, tests,
-protocol, numerical results and figures. It is an archive, not a thin command
-wrapper. Experiment B was removed from the current paper when its scope was
-narrowed to haulage, normal thermal modelling and forecasting. No correspondence
-or private paper content is included.
+This directory archives the original analysis implementation, tests, protocol,
+numerical results and figures. Its laboratory warning-rule scope is separate
+from the haulage thermal-modelling and forecasting benchmark.
 
 The analysis screens 27 Sheffield heating records and 16 TUM measurement files
 (six temperature, five voltage, five vent-temperature channels from one module).
@@ -50,7 +48,7 @@ Full LFP CSV exports are already in `../../data/tum/dataset/`; license evidence 
 attribution are in `../../data/tum/`. The 16 files required by B are byte-identical
 CSV copies of the publisher TXT exports. `REQUIRED_MEASUREMENT_INPUTS.json` maps
 every original measurement path to its public repository path and SHA-256.
-TUM is used by this historical B analysis, but not by the current paper's
+TUM is used by this historical B analysis, but not by the
 Experiment A forecasting benchmark. Edited videos are not redistributed here.
 Video-clock annotations retained as a required input do not establish numerical
 sensor-clock synchronization.
@@ -93,7 +91,5 @@ The isolated standard-library rule tests do not need the measurement inputs:
 `python -B -m unittest discover -s code -p test_rules.py -v` from this directory.
 The test logs included here are archived originals, not new packaging test runs.
 
-AI assistance was used in the research and supporting code history. Packaging
-adds manifests and this technical guide; it does not establish independent
-experimental validation or create new paper text. No new license grant is made
-for first-party code or other artifacts by this archive.
+No new license grant is made for first-party code or other artifacts by this
+archive. Source dataset terms remain applicable.

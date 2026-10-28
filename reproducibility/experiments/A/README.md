@@ -1,8 +1,8 @@
 # Experiment A: complete forecasting implementation
 
-[`train.py`](train.py) contains the actual feature construction, three forecasting baselines, ridge and histogram gradient boosting estimators, nested group validation, hyperparameter selection, model fitting, metric aggregation and figure generation. It is a complete portable adaptation of the archived experiment, not a command-line skeleton.
+[`train.py`](train.py) implements feature construction, three forecasting baselines, ridge and histogram gradient boosting estimators, nested group validation, hyperparameter selection, model fitting, metric aggregation and figure generation.
 
-AI assisted the code adaptation, execution and verification. No scientific manuscript was edited. The target remains a self-generated A123-equivalent laboratory-cell surface-temperature surrogate. It is not measured battery-pack temperature or thermal-runaway ground truth.
+The target is a generated A123-equivalent laboratory-cell surface-temperature surrogate. It is not measured battery-pack temperature or thermal-runaway ground truth.
 
 ## Run the experiment
 
