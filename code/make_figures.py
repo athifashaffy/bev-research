@@ -13,7 +13,6 @@ lumped model. They are not measured or validated Sandvik Z50 pack temperatures.
 """
 import os
 import sys
-import textwrap
 
 # matplotlib may be vendored inside the research workspace rather than installed.
 try:
@@ -32,7 +31,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -145,150 +143,6 @@ def tidy(ax, bottom=True, left=True):
 
 def case_label(row):
     return "%g kWh / %d%%" % (row["capacity_kwh"], int(row["rr_percent"]))
-
-
-# ============================================================ fig 01 study flow
-def fig_study_flow():
-    # Geometry is driven from these so the boxes cannot drift out of alignment
-    # with the arrows when the text changes.
-    W, GAP, H = 19.0, 2.6, 11.0
-    TOP_Y, BOT_Y = 17.0, 2.0
-
-    def col_x(i):
-        return 1.0 + i * (W + GAP)
-
-    fig, ax = plt.subplots(figsize=(12.4, 5.0))
-    ax.set_xlim(0, col_x(4) + W + 1.0)
-    ax.set_ylim(0, 34)
-    ax.axis("off")
-    ax.set_title("Figure 1. Analysis pipeline from archived haulage simulation "
-                 "to warning-rule evaluation.", loc="center", pad=10)
-
-    boxes = [
-        (col_x(0), TOP_Y, "Archived HAULSIM runs",
-         "9 configurations\n3 capacities x 3 rolling resistances", C_BLUE),
-        (col_x(1), TOP_Y, "Event energy and duration",
-         "per-event kWh and seconds\nno temperature exists yet", C_BLUE),
-        (col_x(2), TOP_Y, "Equivalent cell current",
-         "I = 2.5 Ah x P / capacity\nASSUMED, not measured", C_ORANGE),
-        (col_x(3), TOP_Y, "Frozen thermal model",
-         "dT/dt = a I$^2$ - b (T - T$_{air}$)\nA123-equivalent surface", C_ORANGE),
-        (col_x(4), TOP_Y, "Synthetic traces",
-         "45,094 samples\n729 variants", C_ORANGE),
-        (col_x(2), BOT_Y, "Forecasting benchmark",
-         "Tables 3 and 4\n792 model fits", C_MAGENTA),
-        (col_x(3), BOT_Y, "Frozen warning rules",
-         "7 rules fixed in advance\nTable 5", C_AQUA),
-        (col_x(4), BOT_Y, "Laboratory records",
-         "Sheffield 27 records\nTUM 6 channels, 1 module", C_AQUA),
-    ]
-    for x, y, title, sub, col in boxes:
-        ax.add_patch(FancyBboxPatch(
-            (x, y), W, H, boxstyle="round,pad=0.3,rounding_size=0.7",
-            linewidth=1.3, edgecolor=col, facecolor=col + "14"))
-        ax.text(x + W / 2, y + H - 2.6,
-                "\n".join(textwrap.wrap(title, width=20)),
-                ha="center", va="top", fontsize=8.2, fontweight="bold",
-                color=INK, linespacing=1.3)
-        ax.text(x + W / 2, y + 3.0,
-                "\n".join("\n".join(textwrap.wrap(line, width=28))
-                          for line in sub.split("\n")),
-                ha="center", va="center", fontsize=7.0, color=INK2,
-                linespacing=1.5)
-
-    def arrow(x1, y1, x2, y2):
-        ax.add_patch(FancyArrowPatch(
-            (x1, y1), (x2, y2), arrowstyle="-|>", mutation_scale=11,
-            linewidth=1.1, color=INK3, shrinkA=1.5, shrinkB=1.5))
-
-    mid_top, mid_bot = TOP_Y + H / 2, BOT_Y + H / 2
-    for i in range(4):                       # left to right along the top row
-        arrow(col_x(i) + W, mid_top, col_x(i + 1), mid_top)
-    # Synthetic traces feed BOTH evaluations. Laboratory records feed only the
-    # rules: they are never an input to the forecasting benchmark.
-    arrow(col_x(4) + W / 2, TOP_Y, col_x(4) + W / 2, BOT_Y + H)
-    arrow(col_x(4), mid_bot, col_x(3) + W, mid_bot)
-    arrow(col_x(3) + W / 2, TOP_Y, col_x(3) + W / 2, BOT_Y + H)
-    arrow(col_x(2) + W / 2, TOP_Y, col_x(2) + W / 2, BOT_Y + H)
-
-    ax.text(1.0, 0.0,
-            "Blue: simulated haulage.   Orange: synthetic temperature.   "
-            "Green: measured laboratory records.   Pink: model comparison.",
-            fontsize=7.4, color=INK3, va="bottom")
-    save(fig, "fig01_study_flow.png")
-
-
-# ======================================================= fig 02 evidence walls
-def fig_evidence_walls():
-    fig, ax = plt.subplots(figsize=(11.0, 6.9))
-    ax.set_xlim(0, 100)
-    ax.set_ylim(0, 66)
-    ax.axis("off")
-    ax.set_title("Figure 2. Evidence domains used in the study and the "
-                 "inferences each does not support.", loc="center", pad=10)
-    card_y, card_h = 4.0, 56.0
-    top = card_y + card_h
-
-    panels = [
-        ("Wall A  simulated", "Archived HAULSIM runs",
-         "9 configurations", C_BLUE,
-         ["Event durations and energy", "Average power and cycle counts",
-          "Reserve-limited windows"],
-         ["Temperature of any kind.", "HAULSIM has no thermal model."]),
-        ("Wall B  synthetic", "A123-equivalent cell surface",
-         "45,094 samples / 729 variants", C_ORANGE,
-         ["A frozen, reproducible screen", "Duty cycles compared to each other"],
-         ["Pack, core or hotspot temperature.",
-          "Within-event current peaks.", "Local electrical faults."]),
-        ("Wall C  measured", "Sheffield LFP abuse records",
-         "27 records / 8 date groups", C_AQUA,
-         ["Rule response to real heating", "Train/dev/test by date"],
-         ["Verified onset time.", "No independent event log exists."]),
-        ("Wall D  measured", "TUM module experiment",
-         "6 channels / 1 module", C_YELLOW,
-         ["Response at module scale"],
-         ["Replication.", "Six channels on one module is n=1."]),
-    ]
-    w, gap, pad = 23.0, 2.0, 2.2
-    for i, (tag, title, n, col, can, cannot) in enumerate(panels):
-        x = 1.5 + i * (w + gap)
-        ax.add_patch(FancyBboxPatch(
-            (x, card_y), w, card_h, boxstyle="round,pad=0.4,rounding_size=0.8",
-            linewidth=1.3, edgecolor=LINE, facecolor="white"))
-        ax.add_patch(plt.Rectangle((x, card_y), 0.75, card_h, color=col, zorder=3))
-
-        tx = x + pad
-        ax.text(tx, top - 3.2, tag.upper(), fontsize=7.0,
-                fontweight="bold", color=INK3)
-
-        title_lines = textwrap.wrap(title, width=22)
-        ax.text(tx, top - 6.6, "\n".join(title_lines), fontsize=8.8,
-                fontweight="bold", color=INK, va="top", linespacing=1.35)
-        yy = top - 6.6 - 3.4 * len(title_lines) - 1.2
-
-        ax.text(tx, yy, n, fontsize=7.2, color=INK2, family="monospace", va="top")
-        yy -= 4.4
-
-        for heading, items, hcol, bullet in (
-            ("SUPPORTS", can, OK, "+"),
-            ("CANNOT SUPPORT", cannot, CAUTION, "-"),
-        ):
-            ax.text(tx, yy, heading, fontsize=6.9, fontweight="bold",
-                    color=hcol, va="top")
-            yy -= 3.3
-            for item in items:
-                lines = textwrap.wrap(item, width=27,
-                                      subsequent_indent="   ")
-                ax.text(tx, yy, bullet + "  " + "\n".join(lines),
-                        fontsize=7.2, color=INK2, va="top", linespacing=1.4)
-                yy -= 2.9 * len(lines) + 0.9
-            yy -= 1.4
-
-    ax.text(1.5, 0.8,
-            "Almost every way this study can be attacked comes from moving a number "
-            "across one of these walls without saying so.",
-            fontsize=8.0, color=INK3)
-    save(fig, "fig02_evidence_walls.png")
 
 
 # ================================================== fig 03 nine-case demand
@@ -703,8 +557,6 @@ def fig_rules_quiet():
 
 
 if __name__ == "__main__":
-    fig_study_flow()
-    fig_evidence_walls()
     fig_nine_case_demand()
     fig_reserve_windows()
     fig_worked_example()

@@ -12,17 +12,6 @@ pack temperature.
 
 ---
 
-**Figure 1.** Analysis pipeline from archived HAULSIM haulage simulation to
-warning-rule evaluation. Blue stages are simulated haulage, orange stages are
-synthetic temperature derived from an assumed equivalent current, and green
-stages are measured laboratory records. No temperature exists before the
-equivalent-current step.
-
-**Figure 2.** The four evidence domains used in this study and the inferences
-each one does not support. Sample counts are given for each domain. The TUM
-channels are six dependent thermocouples on a single module experiment, not six
-independent experiments.
-
 **Figure 3.** Mean power and energy per recurring cycle for the nine simulated
 configurations, grouped by nominal pack capacity. The dashed line marks the
 480 kW continuous rating of the Sandvik Z50. Capacity, vehicle mass and
