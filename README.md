@@ -7,17 +7,15 @@ thermal model, and published LFP abuse records from Sheffield and TUM.
 
 Bharti School of Engineering and Computation, Laurentian University.
 
-> **Provenance.** The simulation outputs and laboratory records are genuine and
-> reproducible. The analysis code, figures and documentation in this repository
-> were produced with AI assistance, and the supporting conference paper draft
-> was substantially AI-generated. See [`docs/PROVENANCE.md`](docs/PROVENANCE.md)
-> for a component-by-component record and for what has been independently
-> verified.
-
 > **Temperatures here are A123-equivalent cell surface values from a fitted
 > model.** They are not measured, and they are not validated Sandvik Z50 pack,
 > core or hotspot temperatures. No verified thermal-runaway detection, lead time
 > or field false-alarm rate is claimed anywhere in this work.
+
+> **Provenance.** The simulation outputs and laboratory records are genuine and
+> reproducible. The code, figures and documentation here were AI-assisted, as was
+> the supporting manuscript draft. [`docs/PROVENANCE.md`](docs/PROVENANCE.md)
+> records each component and what has been independently verified.
 
 ## What this study can and cannot support
 

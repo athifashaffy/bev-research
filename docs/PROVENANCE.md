@@ -55,10 +55,13 @@ the held-input physics baseline wins at the one-minute horizon
 (4.317e-04 against 6.706e-04). The two-metric result is the correct one, and
 it is what the paper states.
 
-## Known limitations of the AI-generated analysis
+## Known limitations of the analysis
 
-These are properties of the study, not of the tooling, but they are the points
-most likely to be challenged.
+These are properties of the study itself and would apply identically had every
+line been written by hand. They are listed here, in the provenance record,
+only because this is where a reader checking the work will look first. They are
+not consequences of how the analysis was produced, and they are the points most
+likely to be challenged on the science.
 
 1. **Equation (2), the equivalent-current relation, is an assumption.** The pack
    voltage and series/parallel topology of the Sandvik Z50 are not identified,
