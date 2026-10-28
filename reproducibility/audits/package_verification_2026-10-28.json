@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-28",
+  "scope": "Computational reproduction and packaging checks, not independent physical validation",
+  "root_pytest": {"passed": true, "tests": 46},
+  "root_headline_verification": {"passed": true},
+  "event_ledger_reconstruction": {
+    "passed": true,
+    "cases": 9,
+    "ledger_event_endpoints": 265,
+    "matched_saved_endpoints": 180,
+    "maximum_absolute_difference_c": 7.105427357601002e-15,
+    "scope": "Matched event endpoints only; saved traces stop at the reserve cutoff"
+  },
+  "source_manifest": {"passed": true, "files": 103},
+  "native_to_thermal_audit": {
+    "passed": true, "native_cases": 9, "temperature_samples": 45094,
+    "sensitivity_assignments": 729,
+    "maximum_absolute_difference_c": 7.105427357601002e-15,
+    "all_read_inputs_unchanged": true
+  },
+  "stored_forecast_audit": {
+    "passed": true, "predictions": 83980,
+    "pooled_rows": 20, "case_metric_rows": 180,
+    "maximum_metric_difference_c": 1.3877787807814457e-17
+  },
+  "fresh_experiment_a": {
+    "fits": 792, "new_fitted_models": 72,
+    "archived_metric_files_byte_identical": true,
+    "learned_predictions_checked_after_model_reload": 33592,
+    "record": "../experiments/A/reproduction_run_2026-10-28/summary.json"
+  },
+  "plots": {"passed": true, "figures": ["operations", "thermal", "forecast"]},
+  "limitations": [
+    "No native HAULSIM scenario was rerun in this packaging check",
+    "The equivalent-cell current mapping remains an assumption",
+    "These checks establish no measured Z50 temperature or thermal-runaway warning accuracy"
+  ]
+}
