@@ -39,6 +39,20 @@ ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data", "derived")
 MANIFEST = os.path.join(ROOT, "data", "manifest")
 FIGS = os.path.join(ROOT, "figures")
+
+# Derived tables are grouped by experiment. Resolve a bare filename against
+# those subdirectories so the figures do not hard-code the layout.
+_SEARCH = ("", "thermal", "experiment_a", "experiment_b")
+
+
+def data_path(name):
+    for sub in _SEARCH:
+        candidate = os.path.join(DATA, sub, name)
+        if os.path.exists(candidate):
+            return candidate
+    raise FileNotFoundError(
+        "%s not found under %s. Run from the repository root; see data/README.md"
+        % (name, DATA))
 os.makedirs(FIGS, exist_ok=True)
 
 # ---------------------------------------------------------------- frozen model
@@ -135,57 +149,72 @@ def case_label(row):
 
 # ============================================================ fig 01 study flow
 def fig_study_flow():
-    fig, ax = plt.subplots(figsize=(11.0, 4.3))
-    ax.set_xlim(0, 100)
+    # Geometry is driven from these so the boxes cannot drift out of alignment
+    # with the arrows when the text changes.
+    W, GAP, H = 19.0, 2.6, 11.0
+    TOP_Y, BOT_Y = 17.0, 2.0
+
+    def col_x(i):
+        return 1.0 + i * (W + GAP)
+
+    fig, ax = plt.subplots(figsize=(12.4, 5.0))
+    ax.set_xlim(0, col_x(4) + W + 1.0)
     ax.set_ylim(0, 34)
     ax.axis("off")
     ax.set_title("Figure 1. Analysis pipeline from archived haulage simulation "
                  "to warning-rule evaluation.", loc="center", pad=10)
 
     boxes = [
-        (2.0, 20.0, 17.5, 9.0, "Archived HAULSIM runs",
-         "9 configurations\n3 capacities x 3 rolling\nresistances", C_BLUE),
-        (23.0, 20.0, 17.5, 9.0, "Event energy and duration",
-         "per-event kWh and seconds\nno temperature exists here", C_BLUE),
-        (44.0, 20.0, 17.5, 9.0, "Equivalent cell current",
+        (col_x(0), TOP_Y, "Archived HAULSIM runs",
+         "9 configurations\n3 capacities x 3 rolling resistances", C_BLUE),
+        (col_x(1), TOP_Y, "Event energy and duration",
+         "per-event kWh and seconds\nno temperature exists yet", C_BLUE),
+        (col_x(2), TOP_Y, "Equivalent cell current",
          "I = 2.5 Ah x P / capacity\nASSUMED, not measured", C_ORANGE),
-        (65.0, 20.0, 17.5, 9.0, "Frozen thermal model",
-         "dT/dt = a I^2 - b (T - T_air)\nA123-equivalent surface", C_ORANGE),
-        (86.0, 20.0, 12.0, 9.0, "Synthetic traces",
+        (col_x(3), TOP_Y, "Frozen thermal model",
+         "dT/dt = a I$^2$ - b (T - T$_{air}$)\nA123-equivalent surface", C_ORANGE),
+        (col_x(4), TOP_Y, "Synthetic traces",
          "45,094 samples\n729 variants", C_ORANGE),
-        (44.0, 4.0, 17.5, 9.0, "Forecasting benchmark",
+        (col_x(2), BOT_Y, "Forecasting benchmark",
          "Tables 3 and 4\n792 model fits", C_MAGENTA),
-        (65.0, 4.0, 17.5, 9.0, "Frozen warning rules",
+        (col_x(3), BOT_Y, "Frozen warning rules",
          "7 rules fixed in advance\nTable 5", C_AQUA),
-        (86.0, 4.0, 12.0, 9.0, "Laboratory records",
-         "Sheffield 27\nTUM 6 channels", C_AQUA),
+        (col_x(4), BOT_Y, "Laboratory records",
+         "Sheffield 27 records\nTUM 6 channels, 1 module", C_AQUA),
     ]
-    for x, y, w, h, title, sub, col in boxes:
+    for x, y, title, sub, col in boxes:
         ax.add_patch(FancyBboxPatch(
-            (x, y), w, h, boxstyle="round,pad=0.35,rounding_size=0.8",
-            linewidth=1.4, edgecolor=col, facecolor=col + "14"))
-        ax.text(x + w / 2, y + h - 2.5, title, ha="center", va="center",
-                fontsize=9.2, fontweight="bold", color=INK)
-        ax.text(x + w / 2, y + 2.9, sub, ha="center", va="center",
-                fontsize=7.6, color=INK2, linespacing=1.45)
+            (x, y), W, H, boxstyle="round,pad=0.3,rounding_size=0.7",
+            linewidth=1.3, edgecolor=col, facecolor=col + "14"))
+        ax.text(x + W / 2, y + H - 2.6,
+                "\n".join(textwrap.wrap(title, width=20)),
+                ha="center", va="top", fontsize=8.2, fontweight="bold",
+                color=INK, linespacing=1.3)
+        ax.text(x + W / 2, y + 3.0,
+                "\n".join("\n".join(textwrap.wrap(line, width=28))
+                          for line in sub.split("\n")),
+                ha="center", va="center", fontsize=7.0, color=INK2,
+                linespacing=1.5)
 
-    def arrow(x1, y1, x2, y2, col=INK3):
+    def arrow(x1, y1, x2, y2):
         ax.add_patch(FancyArrowPatch(
-            (x1, y1), (x2, y2), arrowstyle="-|>", mutation_scale=12,
-            linewidth=1.2, color=col, shrinkA=0, shrinkB=0))
+            (x1, y1), (x2, y2), arrowstyle="-|>", mutation_scale=11,
+            linewidth=1.1, color=INK3, shrinkA=1.5, shrinkB=1.5))
 
-    for x in (19.8, 40.8, 61.8, 82.8):
-        arrow(x, 24.5, x + 2.9, 24.5)
-    arrow(94.0, 19.7, 94.0, 13.3)          # traces down to records row
-    arrow(85.7, 8.5, 82.8, 8.5)            # records into rules
-    arrow(64.7, 8.5, 61.8, 8.5)            # rules into forecasting
-    arrow(74.0, 19.7, 74.0, 13.3)          # traces into rules
-    arrow(52.5, 19.7, 52.5, 13.3)          # traces into forecasting
+    mid_top, mid_bot = TOP_Y + H / 2, BOT_Y + H / 2
+    for i in range(4):                       # left to right along the top row
+        arrow(col_x(i) + W, mid_top, col_x(i + 1), mid_top)
+    # Synthetic traces feed BOTH evaluations. Laboratory records feed only the
+    # rules: they are never an input to the forecasting benchmark.
+    arrow(col_x(4) + W / 2, TOP_Y, col_x(4) + W / 2, BOT_Y + H)
+    arrow(col_x(4), mid_bot, col_x(3) + W, mid_bot)
+    arrow(col_x(3) + W / 2, TOP_Y, col_x(3) + W / 2, BOT_Y + H)
+    arrow(col_x(2) + W / 2, TOP_Y, col_x(2) + W / 2, BOT_Y + H)
 
-    ax.text(2.0, 0.6,
-            "Blue = simulated haulage.  Orange = synthetic temperature.  "
-            "Green = measured laboratory records.  Pink = model comparison.",
-            fontsize=7.8, color=INK3)
+    ax.text(1.0, 0.0,
+            "Blue: simulated haulage.   Orange: synthetic temperature.   "
+            "Green: measured laboratory records.   Pink: model comparison.",
+            fontsize=7.4, color=INK3, va="bottom")
     save(fig, "fig01_study_flow.png")
 
 
@@ -264,7 +293,7 @@ def fig_evidence_walls():
 
 # ================================================== fig 03 nine-case demand
 def fig_nine_case_demand():
-    df = pd.read_csv(os.path.join(DATA, "table2_nominal_reserve.csv"))
+    df = pd.read_csv(data_path("table2_nominal_reserve.csv"))
     df = df.sort_values(["capacity_kwh", "rr_percent"]).reset_index(drop=True)
     labels = [case_label(r) for _, r in df.iterrows()]
     x = np.arange(len(df))
@@ -316,7 +345,7 @@ def fig_nine_case_demand():
 
 # ================================================= fig 04 reserve windows
 def fig_reserve_windows():
-    df = pd.read_csv(os.path.join(DATA, "table2_nominal_reserve.csv"))
+    df = pd.read_csv(data_path("table2_nominal_reserve.csv"))
     df = df.sort_values("window_end_min").reset_index(drop=True)
     labels = [case_label(r) for _, r in df.iterrows()]
     y = np.arange(len(df))
@@ -350,7 +379,7 @@ def fig_reserve_windows():
 
 # ================================================== fig 05 worked example
 def fig_worked_example():
-    tr = pd.read_csv(os.path.join(DATA, "trace_C100_RR03.csv"))
+    tr = pd.read_csv(data_path("trace_C100_RR03.csv"))
     dur = EV["end_s"] - EV["start_s"]
     p_kw = EV["energy_kwh"] / (dur / 3600.0)
     i_eq = 2.5 * p_kw / EV["capacity_kwh"]
@@ -421,7 +450,7 @@ def fig_worked_example():
 
 # ================================================ fig 06 nine-case rise/margin
 def fig_nine_case_rise():
-    df = pd.read_csv(os.path.join(DATA, "table2_nominal_reserve.csv"))
+    df = pd.read_csv(data_path("table2_nominal_reserve.csv"))
     df = df.sort_values("peak_rise_c").reset_index(drop=True)
     colors = {283.2: C_YELLOW, 354.0: C_BLUE, 424.8: C_AQUA}
     cols = [colors[round(c, 1)] for c in df["capacity_kwh"]]
@@ -487,7 +516,7 @@ def fig_nine_case_rise():
 
 # ==================================================== fig 07 the noise floor
 def fig_noise_floor():
-    df = pd.read_csv(os.path.join(DATA, "table4_pooled_metrics.csv"))
+    df = pd.read_csv(data_path("table4_pooled_metrics.csv"))
     horizons = [60, 120, 300, 600]
 
     fig, ax = plt.subplots(figsize=(10.6, 4.6))
@@ -535,7 +564,7 @@ def fig_noise_floor():
 
 # ============================================ fig 08 both metrics vs horizon
 def fig_metrics_by_horizon():
-    df = pd.read_csv(os.path.join(DATA, "table4_pooled_metrics.csv"))
+    df = pd.read_csv(data_path("table4_pooled_metrics.csv"))
     horizons = [60, 120, 300, 600]
     xs = np.arange(len(horizons))
 
@@ -581,7 +610,7 @@ def fig_metrics_by_horizon():
 
 # ================================================== fig 09 rule response times
 def fig_rule_response():
-    df = pd.read_csv(os.path.join(DATA, "table5_rule_response.csv"),
+    df = pd.read_csv(data_path("table5_rule_response.csv"),
                      encoding="utf-8-sig")
     sets = [("Sheffield_all", "Sheffield cells\n27 records", C_AQUA),
             ("TUM_channels", "TUM module\n6 channels", C_YELLOW)]
@@ -637,7 +666,7 @@ def fig_rule_response():
 
 # =============================================== fig 10 rules quiet on normal
 def fig_rules_quiet():
-    df = pd.read_csv(os.path.join(DATA, "frozen_rule_summary.csv"))
+    df = pd.read_csv(data_path("frozen_rule_summary.csv"))
     nom = df[df["set"] == "nominal"]
     sen = df[df["set"] == "sensitivity"]
 

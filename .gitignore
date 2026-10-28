@@ -10,3 +10,7 @@ venv/
 .ipynb_checkpoints/
 .DS_Store
 Thumbs.db
+
+# Experiment runs write here; archived references live in data/derived
+results/
+.pytest_cache/
