@@ -1,0 +1,9 @@
+{
+  "verified_date": "2026-10-28",
+  "publisher_url": "https://mediatum.ub.tum.de/1717758",
+  "method": "Normal signed-out Chrome page read via supported browser UI",
+  "visible_rights_field": "by, http://creativecommons.org/licenses/by/4.0",
+  "license": "CC BY 4.0",
+  "dataset_doi": "10.14459/2023mp1717758",
+  "limitations": "Does not supply independently labelled onset times or synchronized sensor clocks."
+}

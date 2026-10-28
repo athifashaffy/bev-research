@@ -1,0 +1,185 @@
+{
+  "completed_utc": "2026-10-28T01:21:20.368696+00:00",
+  "independent_readback_passed": true,
+  "counts_recomputed": {
+    "Sheffield_records": 27,
+    "Sheffield_split_records": {
+      "train": 15,
+      "development": 5,
+      "test": 7
+    },
+    "Sheffield_date_groups": 8,
+    "Sheffield_test_dates": [
+      "250211",
+      "250212"
+    ],
+    "TUM_temperature_channels": 6,
+    "TUM_module_experiments": 1,
+    "TUM_voltage_channels": 5,
+    "TUM_vent_temperature_channels": 5,
+    "measurement_files": 43,
+    "seven_rule_response_rows": 231,
+    "Table5_rows": 35
+  },
+  "check_count": 439,
+  "failures": [],
+  "maximum_independent_rate_difference_C_min": 1.1368683772161603e-13,
+  "conclusion": "No material count, Table5, protocol, causal-timing or unsupported physical-onset claim discrepancy found.",
+  "seven_rule_counts": [
+    {
+      "record_set": "Sheffield_all",
+      "rule": "fixed_45C",
+      "records_or_channels": 27,
+      "responses": 26,
+      "first_alarm_median_s": 18.5
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "fixed_50C",
+      "records_or_channels": 27,
+      "responses": 26,
+      "first_alarm_median_s": 19.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "fixed_55C",
+      "records_or_channels": 27,
+      "responses": 26,
+      "first_alarm_median_s": 20.5
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "fixed_60C",
+      "records_or_channels": 27,
+      "responses": 26,
+      "first_alarm_median_s": 22.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "rate_1C_min",
+      "records_or_channels": 27,
+      "responses": 26,
+      "first_alarm_median_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "rate_2C_min",
+      "records_or_channels": 27,
+      "responses": 26,
+      "first_alarm_median_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "rate_5C_min",
+      "records_or_channels": 27,
+      "responses": 26,
+      "first_alarm_median_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "fixed_45C",
+      "records_or_channels": 7,
+      "responses": 7,
+      "first_alarm_median_s": 23.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "fixed_50C",
+      "records_or_channels": 7,
+      "responses": 7,
+      "first_alarm_median_s": 24.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "fixed_55C",
+      "records_or_channels": 7,
+      "responses": 7,
+      "first_alarm_median_s": 25.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "fixed_60C",
+      "records_or_channels": 7,
+      "responses": 7,
+      "first_alarm_median_s": 27.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "rate_1C_min",
+      "records_or_channels": 7,
+      "responses": 7,
+      "first_alarm_median_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "rate_2C_min",
+      "records_or_channels": 7,
+      "responses": 7,
+      "first_alarm_median_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "rate_5C_min",
+      "records_or_channels": 7,
+      "responses": 7,
+      "first_alarm_median_s": 65.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "fixed_45C",
+      "records_or_channels": 6,
+      "responses": 6,
+      "first_alarm_median_s": 753.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "fixed_50C",
+      "records_or_channels": 6,
+      "responses": 6,
+      "first_alarm_median_s": 793.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "fixed_55C",
+      "records_or_channels": 6,
+      "responses": 6,
+      "first_alarm_median_s": 835.5
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "fixed_60C",
+      "records_or_channels": 6,
+      "responses": 6,
+      "first_alarm_median_s": 881.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "rate_1C_min",
+      "records_or_channels": 6,
+      "responses": 6,
+      "first_alarm_median_s": 460.5
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "rate_2C_min",
+      "records_or_channels": 6,
+      "responses": 6,
+      "first_alarm_median_s": 538.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "rate_5C_min",
+      "records_or_channels": 6,
+      "responses": 6,
+      "first_alarm_median_s": 745.0
+    }
+  ],
+  "timing_review": {
+    "causal": "Latest native sample never exceeds evaluation time; full 61-point trailing OLS; independent recomputation reproduces all 231 first crossings/alarms and sample counts.",
+    "debounce": "Five elapsed seconds; false/missing predicate, clock gaps and segment changes reset persistence; alarm uses first confirmation sample.",
+    "rate_availability": "Sheffield rates first eligible at 60 s and alarms at 65 s. TUM pretrigger samples permit an earlier first full window and 55 s earliest rate alarm; no future samples are used.",
+    "event_gate": "No independently verified physical onset enters Table5. Voltage-condition start is retrospectively confirmed for5s and separately bracketed; only conditional electrical timing is reported, with unknown offset/fault origin explicitly retained.",
+    "forecast_screen": "Saved forecasts reused without fitting; actual available-origin counts match. Forecast-origin persistence is not presented as verified future physical-temperature persistence or TR lead time."
+  },
+  "full_audit": "independent_output_audit.json"
+}

@@ -1,0 +1,29 @@
+{
+  "sheffield": {
+    "doi": "10.15131/shef.data.29836850.v1",
+    "title": "Experimental Temperature and Heat Flux Data for Constant Power Over Heating Tests of 18650 and 26650 LFP Cells.",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "authors": [
+      "Peter Bugryniec",
+      "Francesca Lugaresi",
+      "Hosein Sadeghi",
+      "Daniel Williams",
+      "Mark Wootton",
+      "Solomon Brown",
+      "Francesco Restuccia"
+    ],
+    "publisher_api": "https://api.figshare.com/v2/articles/29836850"
+  },
+  "tum": {
+    "doi": "10.14459/2023mp1717758",
+    "public_package": "../../data/tum",
+    "license_evidence": "../../data/tum/license_evidence.json",
+    "measurement_mapping": "REQUIRED_MEASUREMENT_INPUTS.json",
+    "interpretation": "Six cell-temperature, five voltage and five vent-temperature channels from one dependent five-cell module experiment; not 16 independent experiments."
+  },
+  "analysis_status": "Archived original warning analysis. Not rerun during packaging. No independently verified physical TR onset, confirmed misses, field false-alarm rate or validated warning lead time."
+}

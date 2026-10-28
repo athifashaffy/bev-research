@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "fresh_estimators_reloaded": 72,
+  "learned_prediction_rows_checked": 33592,
+  "maximum_prediction_absolute_difference_c": 0.0,
+  "fits_executed_by_verification": 0,
+  "scope": "NEW_REFIT artifacts from the portable reproduction run; not recovered archived estimators",
+  "checked_utc": "2026-10-28T15:00:56.219791+00:00"
+}

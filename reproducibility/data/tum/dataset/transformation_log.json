@@ -1,0 +1,189 @@
+[
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T1_LFP.txt",
+    "source_reconstructed_sha256": "3be62e47305699b5c339931895b77e9f70689ff284e9877ba8627993dfc7afec",
+    "data_rows_sha256": "9e3364f0fec5f2603c4c8c6ff4f07c49c8b15e3c86b36417c78302cbe8d833fc",
+    "data_rows": 1970,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T2_LFP.txt",
+    "source_reconstructed_sha256": "2eb7a6af89cdb16bd14790a61aa8cb5784755185cf4439a4bdbbd90a980ec230",
+    "data_rows_sha256": "fa4d9c55034a274e3823b4ce05d2971d69f55bc99d020f0274ca73d2da6b04c4",
+    "data_rows": 41405,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T3_LFP.txt",
+    "source_reconstructed_sha256": "30aa11f49b3191f042625415cca3c41ebe91eeea086f8451ba13b7181bb35519",
+    "data_rows_sha256": "3eb5d701da69a1911926ac2bb0fa30469d8c0008b8c35daf026e5dbb3dd048e7",
+    "data_rows": 41405,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T4_LFP.txt",
+    "source_reconstructed_sha256": "aca2616588fa0cb0e7eca0254457bbe132de891611410261294710fc7c4ba288",
+    "data_rows_sha256": "c47ad0004bdfdd03fd428d8994e8228494c00af2435adbeebd13bcc241ab49e0",
+    "data_rows": 41405,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T5_LFP.txt",
+    "source_reconstructed_sha256": "6018a106451b5bd26c607f7a468fcc010f959082e77e59237020399bf2216ba4",
+    "data_rows_sha256": "41e9a7591e831ee404c3bc7976ae387618b204e5e792ac4267231253c0104a5c",
+    "data_rows": 41405,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T6_LFP.txt",
+    "source_reconstructed_sha256": "36cafc33e6dba62e850ebfc562735732add122e7572531e38b73a90107c2c4a7",
+    "data_rows_sha256": "1ff351a76e4c64add5696917019969e7d8146d544f52e9b6a020737c68807f1f",
+    "data_rows": 41405,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U1_LFP.txt",
+    "source_reconstructed_sha256": "c9212f82fcb9435e6e757dd8aa6341113ba2e7d8d27488a8430974f379480957",
+    "data_rows_sha256": "5ce7cccbe7bbcefa16fd319c437766203564b2dbdbcb795e487bd99e1f04e724",
+    "data_rows": 41404,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U2_LFP.txt",
+    "source_reconstructed_sha256": "9bceeec47cfd4f6a2df4609b2d1d9f401d5c2ece36c5cf451b43044562f91f5b",
+    "data_rows_sha256": "096855a5ff545463f61707aff118d0b6eff40aa05956f8cfc52e62a26fb12ba6",
+    "data_rows": 41404,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U3_LFP.txt",
+    "source_reconstructed_sha256": "5bdb5244a40677aa6aa9590fe9ce05228ed5c23407873939a30c4d66f601e39c",
+    "data_rows_sha256": "6be2f031d7bd1b66962060c31741d88e49cd44aad20b3946bed83f211bd15b36",
+    "data_rows": 41404,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U4_LFP.txt",
+    "source_reconstructed_sha256": "4ecdc7cb0422bc185e05414f79b55a8cdaff2012e6d9b99a7cf1c51ce447aa99",
+    "data_rows_sha256": "36c8d5f0675f22eb70d171bb1334fc4ea57e20b29ad502543f0ec694dc643281",
+    "data_rows": 41404,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U5_LFP.txt",
+    "source_reconstructed_sha256": "b353f3f3b33d3ce199672fc28399d74ef0b7cbdf35e15244f28dfc7bc7dbf483",
+    "data_rows_sha256": "544e36e256074b1800feb123f0a96701d015860f5e3344bf54bff4cb846912ca",
+    "data_rows": 41404,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T1vent_LFP.txt",
+    "source_reconstructed_sha256": "f66a1c50e115652e2bceb4562079cf8e7e0e0ef4fcf821f9033ddc74cd2f9e83",
+    "data_rows_sha256": "cf1c0b79d388bb9f484e30152a6a310b3caa5d5bdadac47bc0bfcc696b4ef6a2",
+    "data_rows": 41405,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T2vent_LFP.txt",
+    "source_reconstructed_sha256": "f5c342841a5ace86d3ff19c0616ea40fd27dc11b4891ca0996de3cf7f6813a4c",
+    "data_rows_sha256": "31de55bd15fa0307da313c17444e49dba9a9ecd2ccb15c8593ef821d9aa48bc4",
+    "data_rows": 41405,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T3vent_LFP.txt",
+    "source_reconstructed_sha256": "260c5f01f1531dcfca02bbd9d3c3adbc1868c6d13cb896506380541b6c1da093",
+    "data_rows_sha256": "7b5cbafdbe6c272539e21b8c55f4909eacfbbff6663c1da9d68618f0986e2d0a",
+    "data_rows": 41404,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T4vent_LFP.txt",
+    "source_reconstructed_sha256": "2ae4ff8632489e3bff8d4df26757881ca2f163292fd811a1aa10610dd4051518",
+    "data_rows_sha256": "86148e59c77aedf6b9e7ecc2de7adaec3f002fe08f90be8fc70b3d6f4dee6d51",
+    "data_rows": 41404,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T5vent_LFP.txt",
+    "source_reconstructed_sha256": "329bc5a38ed7fb401113e17df814341196c7584d9b347a28500c730644288a09",
+    "data_rows_sha256": "6efd4b3a46b437b1e5eb78a9512f07f2bb7272d5522ff3147b4700faae7a169e",
+    "data_rows": 41404,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 1,
+    "source_sha256_unchanged": true
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt",
+    "source_reconstructed_sha256": "fc8fffff8523726d39a2004e2b3ac8394b10f88efd66f1c6d5bdcf998f3d1585",
+    "data_rows_sha256": "2e641a42d10bdea9c9c4e67bcf2fe43469e77349115a1ab614f7ca40e7acf3b6",
+    "data_rows": 124487,
+    "preview_data_rows": 200,
+    "headers_and_field_strings_unchanged": true,
+    "all_source_rows_once_in_order": true,
+    "parts": 5,
+    "source_sha256_unchanged": true
+  }
+]

@@ -1,0 +1,502 @@
+APCOM UNDERGROUND BEV RESEARCH — FULL HANDOFF FOR CLAUDE
+Snapshot: 16 October 2026 | Researcher: Athif Shaffy
+Workspace: C:/Users/athif/Documents/ChatGPT/BEV
+
+READ THIS FIRST
+This is a factual handoff of work already present in the workspace, including
+the latest 228 Ah temperature experiment. It is not a request to invent new
+results. The accompanying dashboard, evidence map and selected source files
+make the claims traceable. Local absolute paths will not be accessible to a
+cloud Claude session unless the corresponding files are uploaded.
+
+The project contains several DIFFERENT models. Their parameters and results
+must remain separate. Native HAULSIM execution, external calculations,
+laboratory measurements, illustrative renders and proposed experiments are
+different evidence categories. A computational verification pass is not proof
+that a model describes a real mine or battery.
+
+CURRENT POSITION IN ONE PARAGRAPH
+A preliminary generic underground BEV charging/traffic demo evolved
+into a New Afton-informed historical Z50 case, then a controlled native road-
+resistance experiment, external thermal calculations, a laboratory-fitted
+A123-cell coupling demonstration, and a new 228 Ah mining-oriented laboratory
+comparison. Native road-resistance runs are completed. Real laboratory thermal
+predictions have been tested. Z50 pack telemetry and mining-duty thermal
+validation remain missing. No AI detector, early-warning lead time, fire
+probability or validated thermal-runaway prediction has been demonstrated.
+The latest 228 Ah comparison gives mixed results, not a blanket success.
+
+1. PURPOSE, CONFERENCE AND SUPERVISOR DIRECTION
+
+Accepted abstract 44: "Early Detection of Thermal Runaway in Underground Mining
+BEVs Using an AI-Based Sensor Fusion Framework." Per the acceptance email
+provided by the user, APCOM 2027 is in Montréal, 2–5 May 2027; the review paper
+must be 8–10 pages and is due 30 October 2026. Final paper, copyright form and
+presenter registration are due 1 March 2027. These are requirements reported
+in that email, not newly verified conference instructions.
+
+The reviewer requested actual numerical results and detailed methodological
+steps. Professor Ezzeddin Bakhtavar advised reserving the thesis's main novelty,
+methodology and key findings for a journal paper. APCOM should emphasize
+practical motivation, concept and implementation. Later professor feedback
+asked for a literature review of main factors, underground ruggedness and
+temperature, and relevant MacLean/Sandvik work.
+
+The user explicitly wants an UNDERGROUND case. "Surface" was clarified to mean
+underground road condition, not a surface mine. "Apton/Alban" in the conversation
+refers to New Afton, British Columbia. The user also wants professional videos,
+recognizable trucks and separate deliverables for HAULSIM, vehicle graphics,
+videos, presentations and research documents.
+
+There is no recorded final supervisor approval or conference submission in the
+materials reviewed. New temperature experiments are separate packages; they
+have not been merged into the earlier QA-reviewed nine-page manuscript.
+
+2. MODEL A — ORIGINAL GENERIC UNDERGROUND BEV DEMO (OCTOBER 9)
+
+Native HAULSIM 3.8 model with traffic, loading, unloading and battery charging.
+Generic 42 t payload, assumed 400 kWh battery, four-truck baseline, two 300 kW
+charging points, 300 m lift (loading at -600 m, crusher at -300 m). These are
+research inputs, not a surveyed New Afton model or OEM-calibrated truck.
+
+Four archived native scenarios run for 120 hours; two-hour warm-up excluded:
+S1: 4 trucks, 300 m lift, 2 x 300 kW chargers -> 19,236 t / 163.017 t/h.
+S2: 4 trucks, 450 m lift and changed charge trigger -> 13,860 t / 117.458 t/h.
+S3: 4 trucks, 300 m lift, 2 x 600 kW chargers -> 23,730 t / 201.102 t/h.
+S4: 6 trucks, 300 m lift, 2 x 300 kW chargers -> 24,864 t / 210.712 t/h.
+S2 changes two inputs, so it does not isolate depth. These are single
+deterministic configurations, not replicated field observations.
+
+Operational reconciliation checks passed, but native energy/SOC accounting is
+flagged ENERGY_SOC_UNRECONCILED. Stationary/blocked-state energy and regeneration
+near full SOC need reconciliation. Do not treat native SOC values as proof of
+physical reserve, charger adequacy or validated net pack consumption.
+
+A separate October 16 walkthrough copy was run for two hours: 336 t, eight
+42 t deliveries, four trucks, eight total truck-hours, 1.480 recharging truck-
+hours and maximum two simultaneous charging trucks. The energy limitation
+remains. A 50% recharge trigger is not a guaranteed minimum SOC while traveling
+to a charger. The walk-through includes native screenshots and run instructions.
+
+Evidence: results/haulsim/scenario_summary.csv;
+BEV_HAULSIM_Walkthrough_2026-10-16/Walkthrough.txt and results/summary.json.
+
+3. MODEL B — HISTORICAL NEW AFTON-INFORMED Z50 CASE
+
+Historical operator/OEM public information supports the choice of mine and
+vehicle. It does not supply a surveyed alignment, road roughness measurement,
+modern fleet configuration or raw pack-current/temperature telemetry.
+
+Route A: 1,500 m one way and 135 m rise.
+Route B: 1,700 m one way and 178 m rise.
+Alignment is schematic; native station manoeuvres add travel outside the road
+network. A 16% grade is a LOCAL ramp-segment design grade, not a route average.
+For 135 m rise at 16%, horizontal run is 843.75 m and inclined ramp length is
+about 854.48 m. Do not call 844 m the inclined road length.
+
+Historical Z50 inputs include 48,148 kg empty mass, 354 kWh nominal battery and
+576 Ah nominal capacity. A 45 t operating payload is inferred/assumed. Nominal
+capacity is not usable energy; chemistry/capacity alone do not identify cooling
+or thermal parameters. TH550B, MacLean and MT42 specifications are separate.
+
+Native Route A was corrected after an initial 42 t payload diagnostic exposed a
+loading-policy issue. The verified 45 t run delivered 225 t (five loads) in
+two hours; energy was disabled. The fix involved the user-defined-capacity flag
+and full-truck loading policy. Route B's native run remains pending in the
+reviewed case package. The earlier brief's "Route A pending" text is superseded
+by its START_HERE and verified native audit.
+
+Separate Python duty-cycle calculations exist: an eight-hour scenario gave
+945 t on A and 855 t on B, with assumed 20% reserve, seven-minute swaps and
+unlimited charged spare batteries. These are independent calculations, not
+native HAULSIM outputs and not measured production.
+
+The 225 t native Route A result is an earlier configuration. It is NOT directly
+comparable with the later 180 t road-resistance experiments using a common
+391 kW traction ceiling. Do not silently merge these baselines.
+
+Evidence: New_Afton_Professor_Case/START_HERE.txt, 07_Verified_Native_Audit,
+02_Native_HAULSIM and 03_Independent_Simulation.
+
+4. CONTROLLED NATIVE HAULSIM ROAD-RESISTANCE EXPERIMENT (OCTOBER 15)
+
+Research question: with one truck, payload and route held fixed, how does
+assumed underground road rolling resistance change travel and cycle time?
+
+Three native HAULSIM 3.8 build 585 experiments were executed and reconciled:
+RR02 = 2%, RR03 = 3%, RR04 = 4% rolling resistance. One 120-minute replication
+per level. Route A, one truck, 45 t payload, 391 kW assumed wheel-traction
+ceiling, 300 kN force cap, 440 kW assumed retarder; loaded/empty caps 10/14 km/h.
+Loading service 4 min including loader spotting; unloading 1 min plus separate
+dump spotting. Traction coefficient 0.6 and ground-structure class 0 stay fixed.
+Battery energy, charging and regeneration are disabled in these cases.
+
+Resistance | Complete cycle, min | Loaded travel, min | Completed delivery
+2%         | 23.967447           | 10.975413          | 180 t / 4 loads
+3%         | 24.308265           | 11.316231          | 180 t / 4 loads
+4%         | 24.630881           | 11.638847          | 180 t / 4 loads
+
+From 2% to 4%, cycle time increases by 0.663434 min (2.77%); loaded travel
+increases by 6.04%. All cases load 225 t, with 45 t undelivered at the cutoff.
+Equal short-run delivery does not imply equal cycle performance. The final
+RR02 unload is truncated and must not be counted as a fifth delivery.
+
+Cycle time uses successive COMPLETE unload events, excluding startup. Use
+HS_EquipmentState for timing; material-movement time/distance fields are zero
+and are useful only for quantity reconciliation. Each timeline covers 120 min;
+completed unloads, material movement and experiment totals agree.
+
+These 2/3/4% values are ASSUMED sensitivity levels, not measured road classes.
+Rolling resistance is not vibration, impact, dust, humidity, water ingress or
+shock. No vibration-to-failure or road-condition-to-fire law has been fitted.
+No uncertainty interval or annual-production extrapolation is justified by
+one deterministic two-hour run per case.
+
+Evidence: HAULSIM_Road_Surface_2026-10-15/study_manifest.json,
+01_Experiment_Results.txt and results/scenario_comparison.csv.
+
+5. FORMULAS AND ANALYTICAL WORK
+
+Standard traction balance:
+F = m g [sin(theta) + Cr cos(theta)], theta = atan(local grade).
+P_wheel = F v; estimated P_battery = P_wheel / eta_drive + P_aux.
+Cr is a fraction, not a percentage number. A common wheel ceiling of 391 kW
+comes from (480 - 20) x 0.85 under assumed 20 kW auxiliaries and 85% efficiency.
+These equations are established mechanics, not a new scientific contribution.
+
+The October 15 paper calculations use loaded mass 93,148 kg and a local 16%
+ramp. At 10 km/h, estimated terminal demand for 2/3/4% resistance is about
+550.8/580.3/609.7 kW, above the cited 480 kW continuous battery limit. Under the
+assumed conversion, power-limited speeds are 8.67/8.21/7.80 km/h. These are
+analytical segment calculations, not full-cycle native speed predictions.
+Loaded gravitational energy over 135 m is 34.2668205 kWh.
+
+Standard lumped thermal balance:
+C_th dTb/dt = Q_battery(t) - UA(Tb - T_air).
+For constant Q and air: Tb(t) = T_air + Q/UA +
+[Tb(0) - T_air - Q/UA] exp[-UA t/C_th].
+The illustrative bulk model excludes active refrigeration, local hotspots and
+runaway reaction heat. Motor/drivetrain losses are not automatically battery heat.
+
+October 15 manuscript illustration: C=4 MJ/K, Q=5 kW, UA=400 or 200 W/K;
+starting at ambient 25 or 35°C. Four-hour outputs remain transient: tau values
+10,000/20,000 s reach only 76.3%/51.3% of asymptotic temperature rise.
+
+October 16 one-feature illustration: all cases start at the SAME 25°C, with
+C=4 MJ/K, Q=5 kW and UA=400 W/K fixed. Changing ONLY assumed air temperature
+25/35/40°C gives 120-minute bulk temperatures 31.416/36.548/39.114°C.
+The duration matches RR03 but the constant heat is not taken from HAULSIM.
+This is a checked equation demonstration, not calibrated battery prediction.
+For fixed coefficients, dTb/dT_air = 1-exp(-UA t/C), so that trend is built in.
+
+Evidence: APCOM_Research_2026-10-15/calculations/calculation_audit.json and
+BEV_Temperature_Feature_2026-10-16/00_READ_FIRST.txt, temperature_cases.csv.
+
+6. A123 LABORATORY THERMAL MODEL AND EXTERNAL HAULSIM COUPLING
+
+Downloaded real A123 26650 m1b 2.5 Ah LFP cell data, DOI 10.17632/p8kf893yv3.1,
+CC BY 4.0; author Aloisio Kawakita de Souza. Pinned GitHub source commit and
+hashes are recorded. Current, surface temperature and surrounding-air
+temperature are measured. These cells are not identified as Z50 cells.
+
+Reduced formula: dTs/dt = a I_cell^2 - b(Ts - T_air).
+Fitted only on A002_PeriodicPulseData.mat, then frozen:
+a = 4.344635339312832e-5 K/(A² s), b = 0.002655462788692412 s^-1;
+tau = 376.582 s. Only a=R_eff/C_eff and b=UA_eff/C_eff are identified.
+
+Held-out same-cell records:
+A002_UDDS_P25: RMSE 0.109021°C, versus air-following baseline 0.604398°C.
+A002_UDDS_P35: RMSE 0.117148°C, versus air-following baseline 0.804507°C.
+The baseline tracks measured air plus the initial sensor/air offset; this is
+NOT the constant-temperature comparator in the later 228 Ah experiment.
+Measured mean air is 26.12/36.72°C, not exactly the nominal filename setpoints.
+
+The native RR03 schedule supplies 29 event states covering exactly 7,200 s.
+External event-average load estimate:
+P_batt,k = E_positive_wheel,k / (event_hours x 0.85) + 20 kW.
+I_equivalent_cell,k = Q_cell_Ah x P_batt,k_kW / E_nominal_pack_kWh.
+The latter is an equivalent-C-rate surrogate, not a measured cell/pack current
+or a reconstruction of the actual series/parallel pack topology.
+
+The wheel-energy numeric scale is interpreted as kWh. Four loaded-leg checks
+against gravitational plus rolling work agree within 0.274%, but independent
+export-unit metadata confirmation remains outstanding. Native battery/SOC is
+disabled. The external estimate totals 331.86 kWh over two hours under assumed
+85% efficiency, 20 kW auxiliaries and zero regeneration credit; it is not a
+validated endurance forecast. Event averaging loses peaks, and square of the
+average current generally understates mean squared current.
+
+Using A123 laboratory cooling with initial temperature fixed at 25°C and air
+25/35/40°C gives representative-cell endpoints 25.070/35.070/40.070°C. The roughly
+0.070°C rise above air is smaller than held-out model error. It is not a resolved
+real-truck heating effect. The 40°C case is extrapolation. No pack bulk/core
+temperature, thermal feedback, derating, charging, swapping or detection is
+validated by this coupling.
+
+Evidence: APCOM_Coupled_Thermal_2026-10-16, especially results/frozen_cell_model.json,
+record_metrics.json, coupling_audit.json and 01_HAULSIM_Thermal_Methods_Brief.pdf.
+
+7. DATA SEARCH, ADMISSION AND REJECTION
+
+CanmetMINING MacLean cassette-truck paper (Le et al., 2024): useful field energy,
+grade and regeneration context. Battery temperature was explicitly NOT measured
+in the reported study. Its 92.5 kWh vehicle is not the historical 354 kWh Z50.
+The supplied Downloads/Dataset folder contains an Open Cut HAULSIM teaching
+model, terrain/geometry and location CSVs, not battery-current/temperature logs.
+
+Earlier Shen abuse-test candidate, DOI 10.17632/8zjttd77my.1: audit found repeated
+minute-resolution timestamps in 24A, 447 missing temperature rows in 40A, and
+unresolved sensor definitions/event-onset labels/record independence. It has
+not supported validated normal-duty thermal fitting or a detector claim.
+
+No openly downloadable synchronized Z50 or other underground operating pack
+current/temperature dataset was VERIFIED in the search. This does not prove
+such data do not exist. Spec sheets and aggregate mine energy reports are not
+dynamic thermal calibration data.
+
+Wang et al. (2024), Energies 17:5920, DOI 10.3390/en17235920: mining-vehicle
+current, voltage and temperature were recorded in Excel on a closed circular
+road, not established underground operation. No raw download was found;
+author inquiry is a lead, not obtained data.
+
+Sandvik's Z50 battery publications, MacLean Borden telemetry descriptions,
+Garpenberg and Kittila field sources were screened; no qualifying raw operating
+current-temperature log was verified. A downloaded TUM passenger-EV sample
+(CUP3.parquet; 986,864 channel observations) had battery temperature but no
+identified chronological traction-battery current channel. PTC-heater current
+is not pack current. This is a sample-limited finding, not an audit of all files.
+
+Data-request drafts exist for the relevant authors/OEM; they were NOT sent.
+No Laurentian email search/access is established by the current local evidence.
+Do not claim that emails were read merely because the user requested it.
+
+Evidence: APCOM_Battery_Data_Search_2026-10-16 and the corresponding research folder.
+
+8. NEW 228 Ah DATASET — DOWNLOAD AND AUDIT COMPLETED
+
+Mendeley Data V2, DOI 10.17632/dhr726bk6z.2, CC BY 4.0.
+Title: Dataset of multi-dimensional electrical performance for large-capacity
+mining power lithium-ion batteries at early calendar aging under coupled
+temperature and soc conditions. Contributor displayed: 居强 封. (2026).
+The bundled README still cites V1; the archive used here is V2.
+
+Archive downloaded: 1,271,202,207 bytes; SHA-256:
+9d90179fc6d95eef843ba3443ce427bad801fc19a05ec99921413b57173b1f1d
+The hash matches the repository. Archive has 869 regular files; 209 MAT files
+parsed. Fifty-five HPPC records contain Fact_I plus Temperature1/2/3, totaling
+4,504,433 rows. README and variable dictionary retained. Referenced
+metadata_time.xlsx was not found in the archive.
+
+These are SIX 228 Ah LFP laboratory cells, one per storage treatment, not six
+mine trucks. 25/45/60°C labels are aging STORAGE temperatures; all periodic
+electrochemical characterization is nominally at 25°C. Checkpoint "7D" is a
+nominal aging label, not necessarily seven calendar days after 0D.
+
+Thermocouples are described on terminals/surface, but the T1/T2/T3 location
+mapping is unresolved. No independent ambient/cooling time series identified.
+Temperature steps are about 0.1°C and most traces vary little: 140 of 165 HPPC
+channel-record ranges are <=1°C, with median range 0.5°C. Current includes
+substantial positive/negative pulses. B4 later calendar-aging failure is not
+a recorded thermal-runaway label.
+
+Processed elapsed time contains duplicates. The seven selected experiment
+records were matched exactly to original current, voltage and three temperature
+columns; original absolute timestamps are strictly increasing. Actual intervals
+were used. Original data were not silently repaired or resampled for fitting.
+
+The earlier battery-search paragraphs saying the archive/channels were
+unverified are SUPERSEDED by this download/audit and the following experiment.
+
+9. LATEST EXPERIMENT — 228 Ah FORMULA VERSUS CONSTANT TEMPERATURE
+
+Protocol fixed before fitting (after earlier descriptive data inspection).
+Selected seven of 55 HPPC records: all six cells at 0D plus B1 at 7D.
+573,292 observations, 159.073 total record-hours. These are six physical cells;
+time samples and three temperature channels are not independent replicates.
+
+Model: dT/dt = a I² - b(T - 25), a>=0, b>=0; coefficients refitted to these
+228 Ah records, NOT copied from A123 or assumed Z50 values.
+Primary baseline: T(t)=measured T(0). Additional comparator: cooling-only,
+a=0 with b fitted on training records. Nominal 25°C ambient is assumed.
+
+Primary evaluation: six-fold leave-one-cell-out; fit five whole initial cell
+records, test the sixth. Fit each channel label separately; report all three.
+Secondary chronological evaluation: calibrate B1 0D, test B1 7D separately.
+No random row split, test-mean correction, retuning on held-out measurements
+or post-initialization temperature feedback. Cross-cell label equivalence is
+unconfirmed because probe positions are not mapped.
+
+Exact integration with left-held current and true sample intervals. Profile b
+over zero and 1e-7..1 s^-1, solve nonnegative a analytically, refine local minima.
+Loss weights each training record equally; within-record errors are time-
+weighted. Coefficients frozen before test summaries. Aggregate RMSE is square
+root of equal-weight mean channel-record MSE, not average RMSE.
+
+Evaluation                          Constant   Formula   Cooling-only RMSE °C
+Six-cell, whole record               0.274112   0.186964  0.227159
+Six-cell, active |I|>1 A              0.275484   0.192144  0.233595
+Six-cell, active plus 300 s           0.254726   0.186604  0.223345
+B1 later record, whole               0.223717   0.292331  0.147960
+B1 later record, active              0.207759   0.294553  0.137189
+B1 later record, active plus 300 s    0.190593   0.308560  0.121441
+
+INTERPRETATION: aggregate whole-record RMSE decreases 31.8% in cross-cell testing,
+but only 5/18 channel comparisons improve, 4 tie and 9 worsen. Large gains
+concentrate in T2 for B3 and B5. The later B1 experiment becomes 30.7% worse;
+0/3 channels improve, one ties, two worsen. Do not advertise "31.8% more accurate"
+without this qualification. The two designs use different training coverage;
+the later result cannot be attributed causally to aging.
+
+Nine of 21 formula fits select a=0; six select b=0; some cooling times exceed
+record duration. Effective parameter identification is weak. The model is not
+reliably transferable across these cells/occasions under the stated assumptions.
+Measured ambient, probe mapping and cooling information are priority gaps.
+
+Computational verification: all seven alignment/hash checks; disjoint train/test
+checks; analytical constant-current, zero-cooling and cooling-only limits;
+all 189 metric rows recomputed; fitted training losses reproduced. Maximum
+recurrence discrepancy 7.11e-15°C. This verifies the calculations, not mine-
+specific physical validity. Full predictions and code are retained.
+
+Deliverables: APCOM_228Ah_Thermal_Test_2026-10-16/
+01_Thermal_Formula_Results.pdf (four pages), proposed APCOM text, three PNG/SVG
+figures, metrics CSV/JSON, frozen parameters, aligned arrays, predictions and
+reproducible scripts. The latest experiment did not rerun HAULSIM or edit the
+template-conforming manuscript. "QA-reviewed" does not mean supervisor-approved.
+
+10. LITERATURE REVIEW, INCIDENT EVIDENCE AND NOVELTY BOUNDARY
+
+October 15 evidence matrix: 25 references. Plan: 25 bibliography entries.
+Working paper: 18 references, all represented in the matrix. Important sources:
+- Bernardi et al. (1985): general battery energy balance; standard foundation.
+- GMG (2022): practical underground BEV ventilation, environment and charging.
+- Le et al. (2024): Canmet/MacLean energy tests, not battery-temperature data.
+- LaMarsh/New Afton (2022): historical route/BEV operating summaries.
+- Sandvik/Artisan Z50 historical sheet: nominal inputs, unresolved thermal data.
+- Yantek & Brown (2024): environmental susceptibility, shock/vibration/moisture.
+- Torres-Castro et al. (2024, 2026): diagnostic sensing and warning mechanisms.
+- Klink et al. (2022): model-/sensor-based warning comparison already exists.
+- Hooli et al. (2024): battery swapping discrete-event simulation already exists.
+- Elcin Eroglu, Kahraman & Sebnem Duzgun (2026), "Integrated simulation and
+  network analysis of battery fire risk in underground mining systems",
+  Reliability Engineering & System Safety 272:112668,
+  DOI 10.1016/j.ress.2026.112668: direct prior art involving HAULSIM, VentSim and
+  system dynamics. Publisher preview/metadata were checked; full methods were
+  not obtained. Do not claim this project is first to combine those systems.
+
+Six incident rows are curated: Onaping/Craig 2020; Macassa underground 2022;
+Macassa surface events 2023 (an aggregated row); Ontario southern-district
+charging case 2019; Red Lake-district small-battery workshop case 2018; and
+Turquoise Ridge October 2021. Six rows do not mean six distinct battery fires.
+Macassa's underground event explicitly did NOT involve thermal runaway.
+Onaping concerns protection/inverter faults. Do not turn these reports into
+evidence that road grade or mine air temperature caused a fire.
+
+A reported mine fire alone does not provide thermal calibration data. Keep
+New Afton for operational context unless another site can provide better data.
+No VentSim model or integrated fire-risk network has been executed in this
+workspace's documented study.
+
+11. PAPER, PLAN AND QA STATUS
+
+APCOM_Research_2026-10-15 contains a 15-page modelling plan and nine-page draft
+using the conference template. It also contains 25-row literature, 12-row
+parameter and six-row incident registers, analytical checks and 36 PROPOSED
+operating scenarios. Those 36 cases were not executed. Later road runs (three)
+and thermal experiments must not be counted as execution of that whole matrix.
+
+The existing independent QA report records template/font/margin/section checks,
+reference verification and analytical reproduction. Issues corrected include:
+duplicate conclusion heading; explanation of local 16% ramp grade; removal of
+a stale generated manuscript from deliverables; corporate Onaping attribution;
+expansion of Global Mining Guidelines Group; and explicit transient thermal
+endpoints. A supposed missing plan bibliography was a withdrawn tool error.
+
+A native database timestamp/hash changed during the research pass. Read-only
+comparison found identical schema/table contents against two October 9 archives
+and a page of free space. The cause of the rewrite was not independently
+observed; do not assert that opening HAULSIM caused it as a proven fact.
+
+The QA pass verifies document consistency, sources and arithmetic. It does not
+validate mine assumptions, thermal physics, battery performance or detection.
+No conference upload or co-author distribution was made in the documented work.
+
+12. VISUALS, VIDEOS AND PRESENTATIONS
+
+Native HAULSIM clips exist for the original demonstration and the New Afton
+case; the latter includes raw-interface and edited presentation versions. These
+are software recordings, not filmed mine footage. Native trucks use generic
+articulated graphics. A verified custom Z50 animation is NOT installed.
+
+A separate detailed truck was built as an approximate Epiroc MT42-family
+reference-based illustration, with Blender/GLB/FBX assets and an underground
+truck/charging demo. It is not OEM CAD, not Z50, and not running inside HAULSIM.
+Do not relabel that rendered video as native simulation or mine footage.
+
+Separate presentation files exist: an eight-slide professor discussion pack
+and a 15-slide APCOM approval deck with speaker notes; separate PDF/Word briefs
+and videos are retained. These were created earlier and do not automatically
+contain the new 228 Ah result. Check their dates before using them.
+
+13. WHAT CAN GO INTO APCOM NOW
+
+Supported: practical underground BEV monitoring motivation; sourced operational
+case assumptions; controlled native rolling-resistance cycle results; standard
+force/heat equations; transparent external coupling methodology; laboratory
+thermal comparisons; and explicit validation requirements.
+
+The 228 Ah study can be an exploratory laboratory feasibility / limitations
+subsection, reporting both aggregate gains and temporal/channel failures.
+The A123 result has a stronger measured-ambient input but concerns a tiny
+different laboratory cell and same-cell holdouts. Neither validates Z50.
+
+Unsupported: a mine-calibrated battery temperature forecast, core/hotspot
+temperature, measured ruggedness-to-failure relation, fire probability,
+thermal-runaway prediction, warning lead time, sensor-fusion accuracy or
+industry-first novelty. The normal-temperature tests do not by themselves
+satisfy the accepted AI early-detection abstract.
+
+Possible practical contribution for supervisor discussion: an auditable
+workflow linking underground operational exposure to a separately evaluated
+thermal baseline, with explicit evidence boundaries and required measurements.
+This is a proposed framing, not a proven novel scientific contribution.
+Reserve thesis innovations and principal findings for the journal as advised.
+
+14. NEXT DECISIONS AND WORK — PRIORITIZED, NOT YET DONE
+
+1. Supervisor scope decision: retain the accepted early-warning focus with
+   adequate fault/sensor evidence, or approve a narrower feasibility emphasis.
+   Approve the mine/vehicle generation, route assumptions and one-factor question.
+2. Obtain synchronized vehicle current, voltage, SOC, identified temperature
+   probes, ambient/coolant measurements, cooling state and route/event timing.
+   Pack generation, chemistry, capacity, topology and age/SOH are needed.
+3. For 228 Ah data, clarify probe locations and ambient history with the author.
+   Extend validation beyond seven selected HPPC records only with a fixed
+   protocol; do not select channels/records after seeing favorable errors.
+4. Validate the thermal submodel on measured current first. Validate HAULSIM
+   power/current reconstruction separately. Never substitute A123 or 228 Ah
+   coefficients as measured Z50 constants. Add cooling/SOC dependence only when
+   data can identify it; do not add complexity merely to improve training fit.
+5. Close native energy/SOC and wheel-export unit questions before using those
+   fields for physical energy conclusions. Longer operational runs and real
+   calibration are required for production/endurance forecasts.
+6. Obtain properly labeled independent fault data before training a detector.
+   Specify normal/fault splits, onset definition, sensor placement, false-alarm
+   rate and warning lead time. No such completed detector result exists here.
+7. Merge only supervisor-approved results into the nine-page paper, refresh
+   citations/evidence registers, rerender and re-QA. Update slides/video captions
+   to reflect exact model and evidence status. Submission remains a separate action.
+
+15. HOW TO USE THIS PACKAGE WITH CLAUDE
+
+Upload this text and 04_EVIDENCE_MAP.json. Optionally upload the selected
+evidence PDFs/CSVs and the HTML overview. The ZIP is for transferring the folder;
+if a chat will not accept ZIP, extract it and upload individual files.
+
+Ask Claude to visualize the project as separate evidence layers, show the
+latest mixed 228 Ah result, and help select a defensible APCOM scope. Claude
+should distinguish data provided in this handoff from fresh verification. It
+must not assume access to local paths, email, live HAULSIM or the Google Doc.
+
+The accompanying 03_CLAUDE_START_PROMPT.txt is a ready-to-paste request. Nothing
+has been transmitted to Claude by this handoff preparation.

@@ -1,0 +1,105 @@
+[
+  {
+    "horizon_s": 60,
+    "method": "ridge",
+    "beats_all_three_baselines_on_both_pooled_metrics": false,
+    "case_count_beating_all_on_both_metrics": 0,
+    "cases_beating_all": []
+  },
+  {
+    "horizon_s": 60,
+    "method": "hist_gradient_boosting",
+    "beats_all_three_baselines_on_both_pooled_metrics": false,
+    "case_count_beating_all_on_both_metrics": 0,
+    "cases_beating_all": []
+  },
+  {
+    "horizon_s": 120,
+    "method": "ridge",
+    "beats_all_three_baselines_on_both_pooled_metrics": false,
+    "case_count_beating_all_on_both_metrics": 0,
+    "cases_beating_all": []
+  },
+  {
+    "horizon_s": 120,
+    "method": "hist_gradient_boosting",
+    "beats_all_three_baselines_on_both_pooled_metrics": true,
+    "case_count_beating_all_on_both_metrics": 7,
+    "cases_beating_all": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR03"
+    ]
+  },
+  {
+    "horizon_s": 300,
+    "method": "ridge",
+    "beats_all_three_baselines_on_both_pooled_metrics": true,
+    "case_count_beating_all_on_both_metrics": 8,
+    "cases_beating_all": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR03",
+      "C120_RR04"
+    ]
+  },
+  {
+    "horizon_s": 300,
+    "method": "hist_gradient_boosting",
+    "beats_all_three_baselines_on_both_pooled_metrics": true,
+    "case_count_beating_all_on_both_metrics": 9,
+    "cases_beating_all": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ]
+  },
+  {
+    "horizon_s": 600,
+    "method": "ridge",
+    "beats_all_three_baselines_on_both_pooled_metrics": true,
+    "case_count_beating_all_on_both_metrics": 9,
+    "cases_beating_all": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ]
+  },
+  {
+    "horizon_s": 600,
+    "method": "hist_gradient_boosting",
+    "beats_all_three_baselines_on_both_pooled_metrics": true,
+    "case_count_beating_all_on_both_metrics": 9,
+    "cases_beating_all": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ]
+  }
+]

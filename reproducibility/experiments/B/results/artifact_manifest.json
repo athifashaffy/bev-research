@@ -1,0 +1,189 @@
+{
+  "files": [
+    {
+      "path": "01_experiment_b_protocol.json",
+      "bytes": 4335,
+      "sha256": "949d1a0921373402220cd15107307eb671d8bc4a36576d89052d7ca06e41c96c"
+    },
+    {
+      "path": "02_Results_and_Limitations.txt",
+      "bytes": 4003,
+      "sha256": "d582cf65c3d52b458b80a1f7a1c52ea22c53cbf3d635da7d8eed3beef7d6227a"
+    },
+    {
+      "path": "code\\rules.py",
+      "bytes": 4521,
+      "sha256": "873c98679e47cfc95acab4eddc9558dba8e044947f0b868f3de05c87e71f6073"
+    },
+    {
+      "path": "code\\run_experiment_b.py",
+      "bytes": 29742,
+      "sha256": "0f6db50046535cb2b1a54ead057840b7c7a2d026352f8790165c1514a1fdf9b5"
+    },
+    {
+      "path": "code\\test_rules.py",
+      "bytes": 4075,
+      "sha256": "4304569b7dc41dbddbe354514578a0c9d9174597e4eb5aaab6ae078746a8c686"
+    },
+    {
+      "path": "figures\\electrical_and_vent_audit.pdf",
+      "bytes": 155546,
+      "sha256": "693f090f9456c1cc05423a7dbb6487c216bad5efee28d23f963c565b77107163"
+    },
+    {
+      "path": "figures\\electrical_and_vent_audit.png",
+      "bytes": 238738,
+      "sha256": "68072df6f443ff0c61c713953f18fdedea4e7aef0f18311101526bf8eab93599"
+    },
+    {
+      "path": "figures\\electrical_and_vent_audit.svg",
+      "bytes": 417363,
+      "sha256": "63133c0319bbeb02d57d8c2f5b8c7b50a8ae6fe03ffaff0d592154080c4ea91d"
+    },
+    {
+      "path": "figures\\warning_grid_responses.pdf",
+      "bytes": 38856,
+      "sha256": "0b6eb6ecbd7f4d18fcfbc655d249bb6d08d059ffee8cda489a87a77a8db19fcf"
+    },
+    {
+      "path": "figures\\warning_grid_responses.png",
+      "bytes": 417193,
+      "sha256": "f146dd3091c412798a0bdb6ee3096fc6d619bbee4a6d9c5735443004c7341189"
+    },
+    {
+      "path": "figures\\warning_grid_responses.svg",
+      "bytes": 99635,
+      "sha256": "971ad6054a0660dc14f57451802a874c2b0af3a6358aaeb843e5513ac3104451"
+    },
+    {
+      "path": "qa\\final_verification.json",
+      "bytes": 334,
+      "sha256": "4f9be553e13197b9be72033a3b0c53e03ebb39f175465e74c1d4781e6aac8129"
+    },
+    {
+      "path": "qa\\run_log.txt",
+      "bytes": 4003,
+      "sha256": "d582cf65c3d52b458b80a1f7a1c52ea22c53cbf3d635da7d8eed3beef7d6227a"
+    },
+    {
+      "path": "qa\\tests_final.txt",
+      "bytes": 1729,
+      "sha256": "685c352b1250f2952635006e6fc4f6fdba9621d1eda00ef0e543f05036bee2c1"
+    },
+    {
+      "path": "qa\\tests_green.txt",
+      "bytes": 1703,
+      "sha256": "cb3d3447f818b9f156f8b9336b6a54e40b78d4b8dfcb4e0effd5973a62f78dff"
+    },
+    {
+      "path": "qa\\tests_red.txt",
+      "bytes": 2801,
+      "sha256": "df76e83ee670d138a2c4b0d78b4441deb093635faa937ee4323e4de40cd2bc1d"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 4079,
+      "sha256": "7a16054dfa196e3b7256a6d3ff346e0855e73c688bb0047247e28f84b0df407c"
+    },
+    {
+      "path": "results\\causal_features.csv.gz",
+      "bytes": 1070848,
+      "sha256": "c641e3db7a1479910a06fa752603497520e978584c22313bb4e11b58876cc3a6"
+    },
+    {
+      "path": "results\\clock_alignment_audit.csv",
+      "bytes": 5891,
+      "sha256": "187008074a18fe93845575db0b128b9e2c3d57155a630ce3ed1e547f3c794f35"
+    },
+    {
+      "path": "results\\coverage.csv",
+      "bytes": 5395,
+      "sha256": "0cf12a11347b542e17eabb215c52388c3036158c6b6b67e78df08b645b4899c5"
+    },
+    {
+      "path": "results\\event_admissibility.json",
+      "bytes": 1538,
+      "sha256": "91af6c558244129a34f83a828afdeb146d8c62fc31aa07fb6bb7b8a82a0dc910"
+    },
+    {
+      "path": "results\\event_register.csv",
+      "bytes": 10670,
+      "sha256": "9d3163e866a6bcf3e2721a1724b58f466c90001dafeb68b2a35229de06fcf187"
+    },
+    {
+      "path": "results\\event_register.json",
+      "bytes": 23955,
+      "sha256": "8d88ead74f18298f7b34d600f5cf2193256295c7d96cd202e6b3f3de3365c595"
+    },
+    {
+      "path": "results\\forecast_reuse_integrity.json",
+      "bytes": 1550,
+      "sha256": "7dccc04606ca3ff0b70142e8d3b316820ba18c89dd64d101b1bbf5da12499022"
+    },
+    {
+      "path": "results\\forecast_threshold_responses.csv",
+      "bytes": 41863,
+      "sha256": "00c2ebd5af8fef750b0071be3952b64ee1f4b6dfebcd55e34ff6630a75a26f7e"
+    },
+    {
+      "path": "results\\forecast_threshold_summary.csv",
+      "bytes": 1559,
+      "sha256": "a19fd55c0259e176b109ff4f2fe927241c2d257bd3d2e161bce5c19090d229c2"
+    },
+    {
+      "path": "results\\module_alarm_to_voltage_condition.csv",
+      "bytes": 2239,
+      "sha256": "e01da9f535d9b6de7c13dbe366a4347ba08e0703bd79fe5418f0e26074f43219"
+    },
+    {
+      "path": "results\\native_channel_audit.csv",
+      "bytes": 12360,
+      "sha256": "893256574b760781f608fce536df6256ec885e8c18422c445a2f9c167e551cc5"
+    },
+    {
+      "path": "results\\protocol_hash.json",
+      "bytes": 283,
+      "sha256": "2e1dc9b1a0e0eb73a3c6037607abd4115ad5eb8396fea80677ed14c01f840c7d"
+    },
+    {
+      "path": "results\\rule_responses.csv",
+      "bytes": 53784,
+      "sha256": "350fe8f9f28982c8c1e2563a1b0c1f37f99f71c899b1b2745f0d557a82cf1501"
+    },
+    {
+      "path": "results\\source_hashes.json",
+      "bytes": 13147,
+      "sha256": "0b228bfe837de4691bb18214cdfb95f0e90c517cfd632a77b0764f928b251443"
+    },
+    {
+      "path": "results\\summary.json",
+      "bytes": 44570,
+      "sha256": "cc825c69a9c9345d7efb8399f6466859fee0fd1391905a532a1e8548833caab0"
+    },
+    {
+      "path": "results\\table5.csv",
+      "bytes": 7895,
+      "sha256": "d3381609908e933510ad36b8de9349923e59a5c57ce4757de53ce9e15ad66b3d"
+    },
+    {
+      "path": "results\\table5.json",
+      "bytes": 23567,
+      "sha256": "c556c6885da637672a53b52c19643df0560ab099589659ded26b6fc3b5006eb5"
+    },
+    {
+      "path": "results\\table5_compact.csv",
+      "bytes": 787,
+      "sha256": "8a34f0b7e9d735c0b242609e10442f3d5f9b4587806159815c92844f28aca9f9"
+    },
+    {
+      "path": "results\\voltage_condition_audit.csv",
+      "bytes": 3888,
+      "sha256": "cc2e9626b65ffb27ef85d3f54e3bf7b66eb4d95228a0aa1e5340d0613d67ba06"
+    },
+    {
+      "path": "results\\voltage_condition_audit.json",
+      "bytes": 6986,
+      "sha256": "1e7163249f986374c33f5f6d5f5b36d91a459f319f5268478192e1854d4ba0b0"
+    }
+  ]
+}

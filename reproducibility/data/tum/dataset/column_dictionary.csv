@@ -1,0 +1,123 @@
+source_path,column_index_1_based,original_header,unit,role,clock_offset_applied_s,resampling_applied
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T1_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T1_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T2_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T2_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T3_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T3_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T4_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T4_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T5_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T5_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T6_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T6_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U1_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U1_LFP.txt,2,Voltage [V],V,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U2_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U2_LFP.txt,2,Voltage [V],V,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U3_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U3_LFP.txt,2,Voltage [V],V,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U4_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U4_LFP.txt,2,Voltage [V],V,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U5_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U5_LFP.txt,2,Voltage [V],V,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T1vent_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T1vent_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T2vent_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T2vent_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T3vent_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T3vent_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T4vent_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T4vent_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T5vent_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T5vent_LFP.txt,2,Temperature [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,1,Time [s],s,original publisher sensor clock; no inferred event reference,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,2,Temperature 1 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,3,Temperature 2 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,4,Temperature 3 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,5,Temperature 4 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,6,Temperature 5 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,7,Temperature 6 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,8,Temperature 7 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,9,Temperature 8 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,10,Temperature 9 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,11,Temperature 10 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,12,Temperature 11 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,13,Temperature 12 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,14,Temperature 13 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,15,Temperature 14 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,16,Temperature 15 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,17,Temperature 16 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,18,Temperature 17 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,19,Temperature 18 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,20,Temperature 19 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,21,Temperature 20 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,22,Temperature 21 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,23,Temperature 22 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,24,Temperature 23 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,25,Temperature 24 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,26,Temperature 25 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,27,Temperature 26 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,28,Temperature 27 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,29,Temperature 28 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,30,Temperature 29 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,31,Temperature 30 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,32,Temperature 31 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,33,Temperature 32 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,34,Temperature 33 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,35,Temperature 34 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,36,Temperature 35 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,37,Temperature 36 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,38,Temperature 37 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,39,Temperature 38 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,40,Temperature 39 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,41,Temperature 40 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,42,Temperature 41 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,43,Temperature 42 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,44,Temperature 43 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,45,Temperature 44 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,46,Temperature 45 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,47,Temperature 46 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,48,Temperature 47 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,49,Temperature 48 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,50,Temperature 49 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,51,Temperature 50 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,52,Temperature 51 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,53,Temperature 52 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,54,Temperature 53 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,55,Temperature 54 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,56,Temperature 55 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,57,Temperature 56 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,58,Temperature 57 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,59,Temperature 58 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,60,Temperature 59 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,61,Temperature 60 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,62,Temperature 61 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,63,Temperature 62 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,64,Temperature 63 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,65,Temperature 64 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,66,Temperature 65 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,67,Temperature 66 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,68,Temperature 67 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,69,Temperature 68 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,70,Temperature 69 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,71,Temperature 70 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,72,Temperature 71 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,73,Temperature 72 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,74,Temperature 73 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,75,Temperature 74 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,76,Temperature 75 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,77,Temperature 76 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,78,Temperature 77 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,79,Temperature 78 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,80,Temperature 79 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,81,Temperature 80 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,82,Temperature 81 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,83,Temperature 82 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,84,Temperature 83 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,85,Temperature 84 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,86,Temperature 85 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,87,Temperature 86 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,88,Temperature 87 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,89,Temperature 88 [°C],degree_Celsius,publisher measurement channel,0,False
+thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt,90,Temperature 89 [°C],degree_Celsius,publisher measurement channel,0,False

@@ -1,0 +1,15 @@
+{
+  "analysis_rerun": false,
+  "original_sources_edited": false,
+  "all_43_measurement_inputs_available": true,
+  "blocked_private_input": {
+    "original_workspace_path": "APCOM_Draft_Experiments_2026-10-27/source_draft.txt",
+    "status": "Intentionally excluded; private paper text; unconditionally hashed at runner line353"
+  },
+  "other_runtime_requirements": [
+    "Original workspace-relative layout or reviewed explicit-root adapter",
+    "Installed numpy and matplotlib rather than the old local tools directory",
+    "Fresh scratch output directories; original runner writes results/figures in its own tree"
+  ],
+  "portable_execution_claim": false
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "P1",
+    "severity": "fundamental physical evidence gap",
+    "item": "Cell-to-pack transfer",
+    "proof": "Equations 2 and 3 generate a reference-cell scenario and are fully reproducible.",
+    "missing": "Synchronized truck power, current, voltage, cell arrangement/current distribution, thermal mass, heat paths, cooling control and pack temperature observations.",
+    "consequence": "Cannot claim validated Z50 pack temperature, pack-capacity thermal ranking, cooling specification or operating limit."
+  },
+  {
+    "id": "P2",
+    "severity": "fundamental physical evidence gap",
+    "item": "Thermal parameter identification",
+    "proof": "Frozen a and b derive from one A123 cell pulse fit; residuals reproduce on other records from that same cell.",
+    "missing": "Independent R, C, UA and pack scaling; parameter confidence estimates; independent cell and truck validation.",
+    "consequence": "Ratio model has structural nonuniqueness; laboratory residuals are not pack error bounds."
+  },
+  {
+    "id": "P3",
+    "severity": "important interpretation limit",
+    "item": "Event averaging and sensitivity",
+    "proof": "Average power is converted to average equivalent current then squared; 729 assignments reduce to 405 effective inputs.",
+    "missing": "Within-event I(t), RMS current or heat-timing measurements; empirical basis for g = 1, 2, 4 and ratio factors.",
+    "consequence": "The g grid cannot be claimed as physical bounds or confidence intervals; peaks depend on unresolved heat timing."
+  },
+  {
+    "id": "P4",
+    "severity": "important validation gap",
+    "item": "Operator consumption comparison",
+    "proof": "Central cycle 66.7945 kWh = 18.8685% of 354 kWh; operator p16 reports 19% net.",
+    "missing": "Percentage energy denominator; matching payload/cycle/charger location; matching regeneration policy; time-matched field logs.",
+    "consequence": "Conditional numerical consistency does not validate RR3 or haulage energy. Operator nominal 350 kWh versus manufacturer 354 kWh is an additional provenance nuance."
+  },
+  {
+    "id": "P5",
+    "severity": "important causality limit",
+    "item": "Capacity experiment confounding",
+    "proof": "Energy, skid mass, tare and native available power co-vary; 1.2 manifest rating is 576 kW while native electrical curve is 480 kW.",
+    "missing": "Cases holding mass and power constant while varying energy.",
+    "consequence": "Cannot isolate capacity-only effects; fixed-power current reduction is partly imposed by the mapping."
+  },
+  {
+    "id": "P6",
+    "severity": "important accounting limit",
+    "item": "Native energy state and reserve",
+    "proof": "Native EnergyLevel debit omits stationary energy; all-state event record includes it; raw 120 min runs all produce 180 t and may have negative EnergyLevel.",
+    "missing": "Native enforced 80% to 20% reserve or swap/charge controller; actual usable-energy/SOC behavior.",
+    "consequence": "Reported reserve production is a postprocessed policy result, not native enforced shutdown or measured operation."
+  },
+  {
+    "id": "P7",
+    "severity": "important precision limit",
+    "item": "Small temperature and forecast differences",
+    "proof": "Nominal maximum rise .0932 C is below same-cell other-record RMSE .109/.117 C.",
+    "missing": "Sensor uncertainty; parameter uncertainty; truck transfer uncertainty and independent physical targets.",
+    "consequence": "RMSE comparison is a limiting scale, not a statistical confidence bound. Millidegree forecast scores only evaluate agreement with the deterministic generator."
+  },
+  {
+    "id": "P8",
+    "severity": "limited replication",
+    "item": "Operational replicates",
+    "proof": "One native run per configuration; one complete common-window recurring cycle.",
+    "missing": "Independent replications, stochastic workload variability, surveyed road and field repeatability.",
+    "consequence": "No empirical confidence intervals or field repeatability follow from nine configuration crossings."
+  },
+  {
+    "id": "P9",
+    "severity": "provenance gap",
+    "item": "Native energy unit definition",
+    "proof": "The kWh interpretation is consistent with the native power curve and work/energy reconstruction; formula residual .1598-.3436%.",
+    "missing": "An independent authoritative vendor export-unit definition was not located in this sub-audit.",
+    "consequence": "Distinguish archive-consistency proof from independent unit documentation; the small remaining curve/ledger residual requires qualification."
+  },
+  {
+    "id": "P10",
+    "severity": "important boundary limit",
+    "item": "Ambient and ventilation",
+    "proof": "Initial temperature equals ambient; coefficients are constant; ambient change only translates absolute temperature.",
+    "missing": "Ventilation velocity/humidity/cooling-system coupling and a preheated initial state.",
+    "consequence": "Ambient scenarios do not demonstrate ventilation effects on heat transfer or truck thermal history."
+  }
+]

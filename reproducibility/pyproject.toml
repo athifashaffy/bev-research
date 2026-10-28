@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bev-research-reproducibility"
+version = "0.1.0"
+description = "Read-only reconstruction audits of archived BEV simulation and forecast results"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==2.3.5",
+  "scipy==1.16.3",
+  "matplotlib==3.10.7",
+]
+
+[project.optional-dependencies]
+legacy-training = [
+  "scikit-learn==1.7.2",
+  "threadpoolctl==3.6.0",
+  "joblib==1.5.2",
+]
+
+[project.scripts]
+bev-reproduce = "bev_research.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

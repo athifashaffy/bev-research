@@ -1,0 +1,9 @@
+{
+  "record_rule_rows": 231,
+  "all_alarm_debounce_checks": true,
+  "all_reference_lead_times_unavailable": true,
+  "causal_grid_measurement_time_rows_checked": 45169,
+  "future_measurement_use_count": 0,
+  "synthetic_tests_passed": 13,
+  "protocol_sha256": "949d1a0921373402220cd15107307eb671d8bc4a36576d89052d7ca06e41c96c"
+}

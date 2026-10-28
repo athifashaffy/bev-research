@@ -1,0 +1,442 @@
+[
+  {
+    "path": "checksums.sha512",
+    "size": 16569,
+    "downloaded": "sources\\tum\\checksums.sha512",
+    "sha256": "b5bdc48a89a46c8cada2a9707e25807a29776ba4322b1f8cfb12c86d58302fda"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T1_LFP.mat",
+    "size": 29506,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T1_LFP.mat",
+    "sha256": "b2b68e192c84a45b8ce6dd60070429dc262ce668d7bfa1a75f695f896bf5a184"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T1_LFP.txt",
+    "size": 50969,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T1_LFP.txt",
+    "sha256": "3be62e47305699b5c339931895b77e9f70689ff284e9877ba8627993dfc7afec"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T2_LFP.mat",
+    "size": 369534,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T2_LFP.mat",
+    "sha256": "dbc30c85f7513be382a105913df48399f5f3d88a594420dbab46d04e1e185aaf"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T2_LFP.txt",
+    "size": 1127046,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T2_LFP.txt",
+    "sha256": "2eb7a6af89cdb16bd14790a61aa8cb5784755185cf4439a4bdbbd90a980ec230"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T3_LFP.mat",
+    "size": 366329,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T3_LFP.mat",
+    "sha256": "6cdf3a5b07d1dad1d15320dcd0978c57f4f3a9ecbc5b84f8f846fc3138f3fff4"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T3_LFP.txt",
+    "size": 1122743,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T3_LFP.txt",
+    "sha256": "30aa11f49b3191f042625415cca3c41ebe91eeea086f8451ba13b7181bb35519"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T4_LFP.mat",
+    "size": 357664,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T4_LFP.mat",
+    "sha256": "0cb9b85316b49c889735274297569296482bcc3c59f20c04d26363a1c7303c21"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T4_LFP.txt",
+    "size": 1118069,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T4_LFP.txt",
+    "sha256": "aca2616588fa0cb0e7eca0254457bbe132de891611410261294710fc7c4ba288"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T5_LFP.mat",
+    "size": 359639,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T5_LFP.mat",
+    "sha256": "721afe15965911645f0f3fb534f35e147c167d9f3a7ed5b79c9da05842ffae1f"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T5_LFP.txt",
+    "size": 1112896,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T5_LFP.txt",
+    "sha256": "6018a106451b5bd26c607f7a468fcc010f959082e77e59237020399bf2216ba4"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T6_LFP.mat",
+    "size": 353476,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T6_LFP.mat",
+    "sha256": "42078585307fc678bf4fa433442186e915395d8b2e77378447c1dce5d6cf5dbc"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T6_LFP.txt",
+    "size": 1109603,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T6_LFP.txt",
+    "sha256": "36cafc33e6dba62e850ebfc562735732add122e7572531e38b73a90107c2c4a7"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T1_NMC811.mat",
+    "size": 296534,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T1_NMC811.mat",
+    "sha256": "02e540f259d4c5e6af8021c19e4457168dc080c4e76a7110a5750bfa0222c523"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T1_NMC811.txt",
+    "size": 767471,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T1_NMC811.txt",
+    "sha256": "25065ad0975dc34e37782423cc4a39ff0c4c784ca00df2c03b690887b328de08"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T2_NMC811.mat",
+    "size": 299483,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T2_NMC811.mat",
+    "sha256": "b79214111148b512f3ad8601325b311810664eb1b1276ec33dfd04c11186c214"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T2_NMC811.txt",
+    "size": 766082,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T2_NMC811.txt",
+    "sha256": "86a771eb9449e01247730976d64f5d039040dbfcb5ac47c023491e33fbed9319"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T3_NMC811.mat",
+    "size": 296114,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T3_NMC811.mat",
+    "sha256": "d92baf85aaa2c46f2cfb6fa1433df054420d5d64dac53cfe7c7d1c48bca0015a"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T3_NMC811.txt",
+    "size": 765549,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T3_NMC811.txt",
+    "sha256": "b3555468216ca058ae5160c2b4601a0132e827f3c2ed3f2a00768a7ea7b01c1c"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T4_NMC811.mat",
+    "size": 293170,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T4_NMC811.mat",
+    "sha256": "2d0eef22304363395721dff9762f9812b67e22a5325e2f7d172b997ab765e57f"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T4_NMC811.txt",
+    "size": 765005,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T4_NMC811.txt",
+    "sha256": "fb8682e25d0e09e88c19424aa479f319f69c5dc3a9f411ea26152486d9f03680"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T5_NMC811.mat",
+    "size": 298436,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T5_NMC811.mat",
+    "sha256": "7934933b7609878526b3a3166e580b9a3219a27b071a5b36e7a49cf4d60ba703"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T5_NMC811.txt",
+    "size": 765149,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T5_NMC811.txt",
+    "sha256": "ef59e08166cc1629f6eae20229c9d0b6cf233851171e2b30dc0c84068346445a"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T6_NMC811.mat",
+    "size": 281591,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T6_NMC811.mat",
+    "sha256": "2fd2fd78ac06fac4d0dbcace58ea50e7b797e4ac4e6779c438d35d314c24ca6e"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteNMC-811/T6_NMC811.txt",
+    "size": 762732,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteNMC-811\\T6_NMC811.txt",
+    "sha256": "47dfaf3b24cf943b52dfec07e80903dd5343e491e5eabf5dfb7344892f03bf16"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U1_LFP.mat",
+    "size": 268663,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U1_LFP.mat",
+    "sha256": "f224b2251956f80928f9858fcfc4285781e34e5552d414a41bdc401ceb942648"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U1_LFP.txt",
+    "size": 1076286,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U1_LFP.txt",
+    "sha256": "c9212f82fcb9435e6e757dd8aa6341113ba2e7d8d27488a8430974f379480957"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U2_LFP.mat",
+    "size": 267636,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U2_LFP.mat",
+    "sha256": "902e030204af6197922a9fe2ebd92d1106b34f7e141588b1852e5cfd07f7320c"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U2_LFP.txt",
+    "size": 878780,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U2_LFP.txt",
+    "sha256": "9bceeec47cfd4f6a2df4609b2d1d9f401d5c2ece36c5cf451b43044562f91f5b"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U3_LFP.mat",
+    "size": 267651,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U3_LFP.mat",
+    "sha256": "d1d04726106c7b808e8ca5e32fd73836b92e1dc04ce4de6dde04ec5731d8eefc"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U3_LFP.txt",
+    "size": 1098574,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U3_LFP.txt",
+    "sha256": "5bdb5244a40677aa6aa9590fe9ce05228ed5c23407873939a30c4d66f601e39c"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U4_LFP.mat",
+    "size": 267931,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U4_LFP.mat",
+    "sha256": "d43829ea002366fee018030a102741925a2d3ae3a77f2ac5159e416a428fca19"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U4_LFP.txt",
+    "size": 1106027,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U4_LFP.txt",
+    "sha256": "4ecdc7cb0422bc185e05414f79b55a8cdaff2012e6d9b99a7cf1c51ce447aa99"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U5_LFP.mat",
+    "size": 268025,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U5_LFP.mat",
+    "sha256": "591d215ef3197cae7a41a716a4980f7691c7aea4e5659365f242e12fb6b5ca02"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U5_LFP.txt",
+    "size": 1004941,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U5_LFP.txt",
+    "sha256": "b353f3f3b33d3ce199672fc28399d74ef0b7cbdf35e15244f28dfc7bc7dbf483"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U1_NMC811.mat",
+    "size": 185486,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U1_NMC811.mat",
+    "sha256": "0bbb2e464654a1a9776fe410c757773cca2559c2fdc66ef4ed30010b3687e688"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U1_NMC811.txt",
+    "size": 509938,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U1_NMC811.txt",
+    "sha256": "1a135098c8af8d45ccbb8c43910782b2e5c825378c5ef1f84c9cb2bca9f5e2e0"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U2_NMC811.mat",
+    "size": 186157,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U2_NMC811.mat",
+    "sha256": "fe588eee802c93481dc1a0c196c1b34b0d217160ee34268afa4a3f1db680c8e1"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U2_NMC811.txt",
+    "size": 517849,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U2_NMC811.txt",
+    "sha256": "da1672ca380b34267157348dc895d648810a542593c298b6bdb4e46e71dfbbc2"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U3_NMC811.mat",
+    "size": 185759,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U3_NMC811.mat",
+    "sha256": "b1af9596b0e14d2a48db91b2e8fd6100603dab39df494a4d49e723ea6eb2ae3b"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U3_NMC811.txt",
+    "size": 516735,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U3_NMC811.txt",
+    "sha256": "6875ac34ca32b74d6fddcf091e4a2d865fe1f0a5168769573ce24441c3b66a63"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U4_NMC811.mat",
+    "size": 185933,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U4_NMC811.mat",
+    "sha256": "cd3f93569c21d86b4c08838092e1f2a90fcd56bf3fafc6b75929ad4b6da48320"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U4_NMC811.txt",
+    "size": 523768,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U4_NMC811.txt",
+    "sha256": "892b14af789a0ebcb6f6469641b4c18139e4ead85b8fe04f12a2815bd50aaa57"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U5_NMC811.mat",
+    "size": 186535,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U5_NMC811.mat",
+    "sha256": "a566639c1f46f0bdabd869bea5d07daed1c96a366b28d829392dd74d1e0a70fc"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteNMC-811/U5_NMC811.txt",
+    "size": 591965,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteNMC-811\\U5_NMC811.txt",
+    "sha256": "fa6d31be0e8d05aefd99fa38eef6ee87fbb1879c6a39fbab8733c75a1b3002ae"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/README_LFP.txt",
+    "size": 326,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\surface temperatures\\GraphiteLFP\\README_LFP.txt",
+    "sha256": "052887cabf2a1c889ed6b5dbb9e9b7442b7377c28edbc8ca0e3c8b44a99a35a2"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.mat",
+    "size": 20708771,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\surface temperatures\\GraphiteLFP\\T_surf_LFP.mat",
+    "sha256": "286de233b45d2cdba2f1492a55c99c74aae4887fc59a119db9c0133c0d0de7e8"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt",
+    "size": 99489781,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\surface temperatures\\GraphiteLFP\\T_surf_LFP.txt",
+    "sha256": "fc8fffff8523726d39a2004e2b3ac8394b10f88efd66f1c6d5bdcf998f3d1585"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/surface temperatures/GraphiteNMC-811/README_NMC811.txt",
+    "size": 326,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\surface temperatures\\GraphiteNMC-811\\README_NMC811.txt",
+    "sha256": "03aedf6797ea3337458b60c084522fb5202b4831fa4920828a7322b0635c3559"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/surface temperatures/GraphiteNMC-811/T_surf_NMC811.mat",
+    "size": 18122760,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\surface temperatures\\GraphiteNMC-811\\T_surf_NMC811.mat",
+    "sha256": "ff121ffc6a324733cee7e3d8d1b541b8b6d49caed4e893c808626f63a01b0e35"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/surface temperatures/GraphiteNMC-811/T_surf_NMC811.txt",
+    "size": 63307504,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\surface temperatures\\GraphiteNMC-811\\T_surf_NMC811.txt",
+    "sha256": "acd1f42241f220a1074cc777a4d64f0c0e681da0b997d3beb7c43898e9669861"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T1vent_LFP.mat",
+    "size": 426334,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T1vent_LFP.mat",
+    "sha256": "b03f41a7a21e1d77b72c0c840400d5a8b7b79420f3aeca34320ed8a14b6f99f6"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T1vent_LFP.txt",
+    "size": 1127594,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T1vent_LFP.txt",
+    "sha256": "f66a1c50e115652e2bceb4562079cf8e7e0e0ef4fcf821f9033ddc74cd2f9e83"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T2vent_LFP.mat",
+    "size": 452479,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T2vent_LFP.mat",
+    "sha256": "046d8622868031c583a4e8ad373b1a876f4f7df26080153f2db00f3afa340793"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T2vent_LFP.txt",
+    "size": 1091075,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T2vent_LFP.txt",
+    "sha256": "f5c342841a5ace86d3ff19c0616ea40fd27dc11b4891ca0996de3cf7f6813a4c"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T3vent_LFP.mat",
+    "size": 451627,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T3vent_LFP.mat",
+    "sha256": "08ce27193f7141875bfc817100b49be15c0e2fc792e22f6542f3f2b415590faf"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T3vent_LFP.txt",
+    "size": 1116755,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T3vent_LFP.txt",
+    "sha256": "260c5f01f1531dcfca02bbd9d3c3adbc1868c6d13cb896506380541b6c1da093"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T4vent_LFP.mat",
+    "size": 370957,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T4vent_LFP.mat",
+    "sha256": "7c61c6c47ec691cb9f92d684e9c5fe5fc609305574f0b9a4506816954e8ac214"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T4vent_LFP.txt",
+    "size": 1114103,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T4vent_LFP.txt",
+    "sha256": "2ae4ff8632489e3bff8d4df26757881ca2f163292fd811a1aa10610dd4051518"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T5vent_LFP.mat",
+    "size": 400297,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T5vent_LFP.mat",
+    "sha256": "92f67d616625debdc983361ac752eb0f324f78603be9d5b17a07db50b30f9c09"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T5vent_LFP.txt",
+    "size": 1102425,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T5vent_LFP.txt",
+    "sha256": "329bc5a38ed7fb401113e17df814341196c7584d9b347a28500c730644288a09"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T1vent_NMC811.mat",
+    "size": 343579,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T1vent_NMC811.mat",
+    "sha256": "dd1eab7080c69272b067c1a4d124d8daceb474a1c4e560b8c26ad35a6c1ce6bd"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T1vent_NMC811.txt",
+    "size": 749761,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T1vent_NMC811.txt",
+    "sha256": "92957acc00a5f286fc061865d1b6e9ae0e35574d71d6ba5085ced34e54fd863f"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T2vent_NMC811.mat",
+    "size": 333931,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T2vent_NMC811.mat",
+    "sha256": "c31a577a12016e630a75cd7324de424224dad02513c1de0412c18da696d3f83d"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T2vent_NMC811.txt",
+    "size": 765986,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T2vent_NMC811.txt",
+    "sha256": "aa20fc404ffef52a317d0ad1e270bafd7e004963e5f3aaa195e8717cd5e8565e"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T3vent_NMC811.mat",
+    "size": 274459,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T3vent_NMC811.mat",
+    "sha256": "3633745be598ee771dfaf1a8fc731824011181a02abaaac874db136ebb32ea92"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T3vent_NMC811.txt",
+    "size": 743570,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T3vent_NMC811.txt",
+    "sha256": "cfad6dbc2e81a4313b0780b9bfda93a4b31001230f9ac23e5ef4ce6eb2816c3d"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T4vent_NMC811.mat",
+    "size": 343852,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T4vent_NMC811.mat",
+    "sha256": "b8b745531171d38510576358c982d1fcfafad6d3c691fe7c73932405b22227f5"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T4vent_NMC811.txt",
+    "size": 744511,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T4vent_NMC811.txt",
+    "sha256": "7d4493d2e2920b5d1f2540ad8690481fdd8fe4296bc5a66b6a8317d604de6180"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T5vent_NMC811.mat",
+    "size": 355898,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T5vent_NMC811.mat",
+    "sha256": "6d4efd6f3536b8e1c23c64fb8b35b3ad8bcf386491e7a06b9520827d94acff0a"
+  },
+  {
+    "path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteNMC-811/T5vent_NMC811.txt",
+    "size": 764031,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteNMC-811\\T5vent_NMC811.txt",
+    "sha256": "524caa79519e38f58a8c47f9a431829317b050595791d11b291d84459f29b58d"
+  },
+  {
+    "path": "thermal runaway propagation data set/video/Comparison_Thermal_Runaway_Propagation_LFP_and_NMC811_2x.mp4",
+    "size": 462088263,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\video\\Comparison_Thermal_Runaway_Propagation_LFP_and_NMC811_2x.mp4",
+    "sha256": "352a104b2cc35ff129bb85812eaa5a4969b4bf243ce3d446f1f2c493323bd33d",
+    "publisher_sha512_match": true
+  },
+  {
+    "path": "thermal runaway propagation data set/video/Comparison_Thermal_Runaway_Propagation_LFP_and_NMC811_IR_10x.mp4",
+    "size": 140600448,
+    "downloaded": "sources\\tum\\thermal runaway propagation data set\\video\\Comparison_Thermal_Runaway_Propagation_LFP_and_NMC811_IR_10x.mp4",
+    "sha256": "1df6b7525c1855d6a850df2ad3c06c6ff5b465867295de0b37d89582c885a153",
+    "publisher_sha512_match": true
+  }
+]

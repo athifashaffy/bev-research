@@ -1,0 +1,41 @@
+{
+  "scope": "Column-name screen only, not a guarantee of absence of all personal metadata. No credentials intentionally selected.",
+  "files": [
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C080_RR02/native_run.hsmdb",
+      "credential_named_columns": []
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C080_RR03/native_run.hsmdb",
+      "credential_named_columns": []
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C080_RR04/native_run.hsmdb",
+      "credential_named_columns": []
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C100_RR02/native_run.hsmdb",
+      "credential_named_columns": []
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+      "credential_named_columns": []
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C100_RR04/native_run.hsmdb",
+      "credential_named_columns": []
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C120_RR02/native_run.hsmdb",
+      "credential_named_columns": []
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C120_RR03/native_run.hsmdb",
+      "credential_named_columns": []
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C120_RR04/native_run.hsmdb",
+      "credential_named_columns": []
+    }
+  ]
+}

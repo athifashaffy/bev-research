@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "source_measurement_tables": 17,
+  "csv_parts": 21,
+  "data_rows_preserved": 747524,
+  "max_individual_csv_bytes": 19999793,
+  "all_logical_source_sha256_match": true,
+  "all_preview_first_200_rows_match": true,
+  "verified_utc": "2026-10-28T14:46:02.420477+00:00",
+  "verification_code_sha256": "1bfdbade832c69aeca7cb38f5964e3b96f55e2ebba6d99583a22a728d41e768f"
+}

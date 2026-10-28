@@ -1,0 +1,35 @@
+EXPERIMENT B: DESCRIPTIVE WARNING GRID
+
+All 43 archived measurement files passed SHA256 checks; the 16 TUM text files also passed publisher SHA512 checks.
+Four strict fixed thresholds: 45, 50, 55 and 60 C; three strict past-60-second OLS thresholds: 1, 2 and 5 C/min. Each uses 5 elapsed seconds of debounce.
+Grid: latest available native value on integer seconds, no future interpolation, no repeated stale sample, no missing/gap bridging. A rate needs 61 valid points spanning 60 seconds.
+Sheffield: 27 screening records; 15 train / 5 development / 7 test records, with 2 held-out test dates. TUM: 6 thermocouples in one five-cell module.
+MAIN TABLE 5 PHYSICAL-REFERENCE LEAD TIME: UNAVAILABLE. No independently verified physical event with bounded clock alignment uncertainty.
+The supplementary <=0.1 V / 5 s condition was frozen before scoring. It is an electrical observable, not TR onset. Temperature alarms preceding it may be heater driven.
+Sampling brackets and arithmetic module-alarm-to-voltage-condition intervals are conditional on the shared numeric clock; unknown clock offset and sense-wire fault are not included.
+
+Sheffield_all, fixed_45C: 26/27 responses; median first alarm 18.5s; physical lead time UNAVAILABLE.
+Sheffield_all, fixed_50C: 26/27 responses; median first alarm 19.0s; physical lead time UNAVAILABLE.
+Sheffield_all, fixed_55C: 26/27 responses; median first alarm 20.5s; physical lead time UNAVAILABLE.
+Sheffield_all, fixed_60C: 26/27 responses; median first alarm 22.0s; physical lead time UNAVAILABLE.
+Sheffield_all, rate_1C_min: 26/27 responses; median first alarm 65.0s; physical lead time UNAVAILABLE.
+Sheffield_all, rate_2C_min: 26/27 responses; median first alarm 65.0s; physical lead time UNAVAILABLE.
+Sheffield_all, rate_5C_min: 26/27 responses; median first alarm 65.0s; physical lead time UNAVAILABLE.
+Sheffield_test, fixed_45C: 7/7 responses; median first alarm 23.0s; physical lead time UNAVAILABLE.
+Sheffield_test, fixed_50C: 7/7 responses; median first alarm 24.0s; physical lead time UNAVAILABLE.
+Sheffield_test, fixed_55C: 7/7 responses; median first alarm 25.0s; physical lead time UNAVAILABLE.
+Sheffield_test, fixed_60C: 7/7 responses; median first alarm 27.0s; physical lead time UNAVAILABLE.
+Sheffield_test, rate_1C_min: 7/7 responses; median first alarm 65.0s; physical lead time UNAVAILABLE.
+Sheffield_test, rate_2C_min: 7/7 responses; median first alarm 65.0s; physical lead time UNAVAILABLE.
+Sheffield_test, rate_5C_min: 7/7 responses; median first alarm 65.0s; physical lead time UNAVAILABLE.
+TUM_channels, fixed_45C: 6/6 responses; median first alarm 753.0s; physical lead time UNAVAILABLE.
+TUM_channels, fixed_50C: 6/6 responses; median first alarm 793.0s; physical lead time UNAVAILABLE.
+TUM_channels, fixed_55C: 6/6 responses; median first alarm 835.5s; physical lead time UNAVAILABLE.
+TUM_channels, fixed_60C: 6/6 responses; median first alarm 881.0s; physical lead time UNAVAILABLE.
+TUM_channels, rate_1C_min: 6/6 responses; median first alarm 460.5s; physical lead time UNAVAILABLE.
+TUM_channels, rate_2C_min: 6/6 responses; median first alarm 538.0s; physical lead time UNAVAILABLE.
+TUM_channels, rate_5C_min: 6/6 responses; median first alarm 745.0s; physical lead time UNAVAILABLE.
+
+The Sheffield rate responses all occur at 65 s because the first complete history becomes available at 60 s and already exceeds all three candidate rates; another 5 s satisfies debounce. This is a data-availability constraint, not verified physical event timing.
+Compatible forecast screen: saved Oct25 boosting forecasts only; 30 s history warm-up; strict fixed thresholds rescreened at identical available current/forecast origins; no fitting or tuning.
+For all four thresholds and all three horizons, the seven Sheffield test records have matched-current and forecast responses tied at 35 s. This does not establish TR warning ability. TUM response differences are reported descriptively for one dependent module.

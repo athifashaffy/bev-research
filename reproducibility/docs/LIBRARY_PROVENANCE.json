@@ -1,0 +1,13 @@
+{
+  "haulage_source": "APCOM_Study_2026-10-22/code/operations.py",
+  "source_sha256": "5c9692ba0aeee4bc28c55d4b4ae040c4b360cdfa94f1f49bd8410599452679c0",
+  "functions_copied_unchanged": [
+    "validate_events",
+    "integrate_energy",
+    "completed_deliveries",
+    "reserve_score",
+    "complete_cycles",
+    "energy_ledger"
+  ],
+  "thermal_module": "New reusable implementation of the frozen published calculation, tested against analytic identities; physical domain remains reference-cell only."
+}

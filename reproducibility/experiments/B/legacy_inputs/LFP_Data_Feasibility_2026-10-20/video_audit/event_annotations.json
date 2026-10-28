@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-20",
+  "dataset_doi": "10.14459/2023mp1717758",
+  "paper_doi": "10.1016/j.etran.2023.100305",
+  "videos_verified_against_publisher_sha512": 2,
+  "video_metadata": [
+    {
+      "file": "thermal runaway propagation data set/video/Comparison_Thermal_Runaway_Propagation_LFP_and_NMC811_2x.mp4",
+      "duration_s": 240.4,
+      "fps": 25,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "displayed_speed": "2x"
+    },
+    {
+      "file": "thermal runaway propagation data set/video/Comparison_Thermal_Runaway_Propagation_LFP_and_NMC811_IR_10x.mp4",
+      "duration_s": 84.92,
+      "fps": 25,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "displayed_speed": "10x"
+    }
+  ],
+  "review_method": "Overview samples plus finer samples around the first visible plume. Not an exhaustive annotation of every frame or every cell event.",
+  "events": [
+    {
+      "video": "Comparison_Thermal_Runaway_Propagation_LFP_and_NMC811_2x.mp4",
+      "panel": "lower panel labelled Graphite / LFP",
+      "observation": "No obvious plume in sampled 16.00 s frame; clear pale plume in sampled 16.25 s frame.",
+      "sample_playback_times_s": [
+        16.0,
+        16.25
+      ],
+      "frame_period_s": 0.04,
+      "timing_precision_note": "Requested seek positions; decoded frames may differ by up to one frame. These are observation samples, not exact physical vent-onset times.",
+      "frames": [
+        "frames/visible_0016.000.png",
+        "frames/visible_0016.250.png"
+      ],
+      "sensor_clock_time_s": null,
+      "thermal_runaway_onset_s": null,
+      "label_status": "VIDEO_RELATIVE_VISIBLE_PLUME_ONLY"
+    },
+    {
+      "video": "Comparison_Thermal_Runaway_Propagation_LFP_and_NMC811_IR_10x.mp4",
+      "panel": "upper-left visible LFP panel, with corresponding IR panel below",
+      "observation": "No obvious plume in sampled 15.00 s frame; clear pale plume in sampled 15.25 s frame.",
+      "sample_playback_times_s": [
+        15.0,
+        15.25
+      ],
+      "frame_period_s": 0.04,
+      "timing_precision_note": "Requested seek positions; decoded frames may differ by up to one frame. These are observation samples, not exact physical vent-onset times.",
+      "frames": [
+        "frames/ir_0015.000.png",
+        "frames/ir_0015.250.png"
+      ],
+      "sensor_clock_time_s": null,
+      "thermal_runaway_onset_s": null,
+      "label_status": "VIDEO_RELATIVE_VISIBLE_PLUME_ONLY"
+    }
+  ],
+  "synchronization": {
+    "status": "UNVERIFIED",
+    "experiment_clock_visible_in_reviewed_frames": false,
+    "independent_synchronization_anchors_verified": 0,
+    "reason": "Title sequences and comparison-panel editing are visible. No source-to-sensor start offset or documented panel time transformation was found in the downloaded documentation.",
+    "speed_label_alone_is_a_valid_time_mapping": false
+  },
+  "paper_operational_criterion": {
+    "section": "3.1.2, equations 2 and 3",
+    "criterion": "Falling voltage dU/dt < 0 together with cell-surface temperature rate dT/dt > 10 K/s.",
+    "implemented_or_reproduced_here": false,
+    "qualification": "This is a temperature-and-voltage-derived endpoint, not an independently timed video label. Sensor mapping and derivative processing must be specified before scoring."
+  },
+  "diagnostic_not_an_onset_label": {
+    "operation": "First interpolated T1 crossing of the 436.6 C value reported in paper Section 3.1.1",
+    "sensor_time_s": 166.7368568058487,
+    "T2_at_same_time_C": 39.1133804,
+    "interpretation": "A first absolute-temperature crossing does not reproduce the paper's change-of-trajectory or combined derivative criterion. Do not use this number as a verified runaway onset or video synchronization anchor."
+  },
+  "independent_lfp_module_tests": 1,
+  "cells_in_that_test": 5,
+  "independently_verified_sensor_clock_runaway_onsets": 0,
+  "warning_training_or_scoring_performed": false,
+  "haulsim_modified_or_run": false
+}

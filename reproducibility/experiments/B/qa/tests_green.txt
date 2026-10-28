@@ -1,0 +1,18 @@
+test_requested_rule_interface_exists (__main__.InterfaceTest.test_requested_rule_interface_exists) ... ok
+test_false_predicate_resets_debounce (__main__.RuleTests.test_false_predicate_resets_debounce) ... ok
+test_fixed_strict_threshold_and_elapsed_debounce (__main__.RuleTests.test_fixed_strict_threshold_and_elapsed_debounce) ... ok
+test_future_append_cannot_change_past_grid (__main__.RuleTests.test_future_append_cannot_change_past_grid) ... ok
+test_gap_has_no_held_value_and_restarts_segment (__main__.RuleTests.test_gap_has_no_held_value_and_restarts_segment) ... ok
+test_no_future_interpolation_on_irregular_clock (__main__.RuleTests.test_no_future_interpolation_on_irregular_clock) ... ok
+test_nonfinite_and_nonincreasing_clocks_rejected (__main__.RuleTests.test_nonfinite_and_nonincreasing_clocks_rejected) ... ok
+test_rate_does_not_bridge_one_missing_grid_sample (__main__.RuleTests.test_rate_does_not_bridge_one_missing_grid_sample) ... ok
+test_rate_requires_full_past_sixty_seconds (__main__.RuleTests.test_rate_requires_full_past_sixty_seconds) ... ok
+test_rate_units_and_strict_threshold_roundoff (__main__.RuleTests.test_rate_units_and_strict_threshold_roundoff) ... ok
+test_subsecond_missing_sample_prevents_history_bridging (__main__.RuleTests.test_subsecond_missing_sample_prevents_history_bridging) ... ok
+test_voltage_condition_bracket_and_confirmation (__main__.RuleTests.test_voltage_condition_bracket_and_confirmation) ... ok
+test_voltage_condition_needs_normal_context_and_no_gap (__main__.RuleTests.test_voltage_condition_needs_normal_context_and_no_gap) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

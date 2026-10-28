@@ -1,0 +1,639 @@
+{
+  "status": "Archived byte-identical copies; not an analysis rerun",
+  "copied_files": 79,
+  "copied_bytes": 12463159,
+  "files": [
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/01_experiment_b_protocol.json",
+      "packaged_path": "01_experiment_b_protocol.json",
+      "bytes": 4335,
+      "sha256": "949d1a0921373402220cd15107307eb671d8bc4a36576d89052d7ca06e41c96c",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/02_Results_and_Limitations.txt",
+      "packaged_path": "02_Results_and_Limitations.txt",
+      "bytes": 4003,
+      "sha256": "d582cf65c3d52b458b80a1f7a1c52ea22c53cbf3d635da7d8eed3beef7d6227a",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/code/rules.py",
+      "packaged_path": "code/rules.py",
+      "bytes": 4521,
+      "sha256": "873c98679e47cfc95acab4eddc9558dba8e044947f0b868f3de05c87e71f6073",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/code/run_experiment_b.py",
+      "packaged_path": "code/run_experiment_b.py",
+      "bytes": 29742,
+      "sha256": "0f6db50046535cb2b1a54ead057840b7c7a2d026352f8790165c1514a1fdf9b5",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/code/test_rules.py",
+      "packaged_path": "code/test_rules.py",
+      "bytes": 4075,
+      "sha256": "4304569b7dc41dbddbe354514578a0c9d9174597e4eb5aaab6ae078746a8c686",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/figures/electrical_and_vent_audit.pdf",
+      "packaged_path": "figures/electrical_and_vent_audit.pdf",
+      "bytes": 155546,
+      "sha256": "693f090f9456c1cc05423a7dbb6487c216bad5efee28d23f963c565b77107163",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/figures/electrical_and_vent_audit.png",
+      "packaged_path": "figures/electrical_and_vent_audit.png",
+      "bytes": 238738,
+      "sha256": "68072df6f443ff0c61c713953f18fdedea4e7aef0f18311101526bf8eab93599",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/figures/electrical_and_vent_audit.svg",
+      "packaged_path": "figures/electrical_and_vent_audit.svg",
+      "bytes": 417363,
+      "sha256": "63133c0319bbeb02d57d8c2f5b8c7b50a8ae6fe03ffaff0d592154080c4ea91d",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/figures/warning_grid_responses.pdf",
+      "packaged_path": "figures/warning_grid_responses.pdf",
+      "bytes": 38856,
+      "sha256": "0b6eb6ecbd7f4d18fcfbc655d249bb6d08d059ffee8cda489a87a77a8db19fcf",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/figures/warning_grid_responses.png",
+      "packaged_path": "figures/warning_grid_responses.png",
+      "bytes": 417193,
+      "sha256": "f146dd3091c412798a0bdb6ee3096fc6d619bbee4a6d9c5735443004c7341189",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/figures/warning_grid_responses.svg",
+      "packaged_path": "figures/warning_grid_responses.svg",
+      "bytes": 99635,
+      "sha256": "971ad6054a0660dc14f57451802a874c2b0af3a6358aaeb843e5513ac3104451",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/qa/final_verification.json",
+      "packaged_path": "qa/final_verification.json",
+      "bytes": 334,
+      "sha256": "4f9be553e13197b9be72033a3b0c53e03ebb39f175465e74c1d4781e6aac8129",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/qa/independent_output_audit.json",
+      "packaged_path": "qa/independent_output_audit.json",
+      "bytes": 70900,
+      "sha256": "c23c90628e8d73ad5fbd6aa4c4ef2377ac192594ee59fb487d9c8019a9616911",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/qa/independent_output_audit.py",
+      "packaged_path": "qa/independent_output_audit.py",
+      "bytes": 16457,
+      "sha256": "4901e75cb84e0361b8d4d873c228bbb6965cc50f50950f11eb811b8eb63669f4",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/qa/independent_output_audit_summary.json",
+      "packaged_path": "qa/independent_output_audit_summary.json",
+      "bytes": 5653,
+      "sha256": "a7e4b07709fb536a5da05ff5b0cd9f6e15eec69d484f47dce094887ca762c8b6",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/qa/run_log.txt",
+      "packaged_path": "qa/run_log.txt",
+      "bytes": 4003,
+      "sha256": "d582cf65c3d52b458b80a1f7a1c52ea22c53cbf3d635da7d8eed3beef7d6227a",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/qa/tests_final.txt",
+      "packaged_path": "qa/tests_final.txt",
+      "bytes": 1729,
+      "sha256": "685c352b1250f2952635006e6fc4f6fdba9621d1eda00ef0e543f05036bee2c1",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/qa/tests_green.txt",
+      "packaged_path": "qa/tests_green.txt",
+      "bytes": 1703,
+      "sha256": "cb3d3447f818b9f156f8b9336b6a54e40b78d4b8dfcb4e0effd5973a62f78dff",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/qa/tests_red.txt",
+      "packaged_path": "qa/tests_red.txt",
+      "bytes": 2801,
+      "sha256": "df76e83ee670d138a2c4b0d78b4441deb093635faa937ee4323e4de40cd2bc1d",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/README.txt",
+      "packaged_path": "README.txt",
+      "bytes": 4079,
+      "sha256": "7a16054dfa196e3b7256a6d3ff346e0855e73c688bb0047247e28f84b0df407c",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/artifact_manifest.json",
+      "packaged_path": "results/artifact_manifest.json",
+      "bytes": 6276,
+      "sha256": "71a49a530070009bfdd64c09a498d7a1a8fe2edad97aee39a02b4acc67569412",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/causal_features.csv.gz",
+      "packaged_path": "results/causal_features.csv.gz",
+      "bytes": 1070848,
+      "sha256": "c641e3db7a1479910a06fa752603497520e978584c22313bb4e11b58876cc3a6",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/clock_alignment_audit.csv",
+      "packaged_path": "results/clock_alignment_audit.csv",
+      "bytes": 5891,
+      "sha256": "187008074a18fe93845575db0b128b9e2c3d57155a630ce3ed1e547f3c794f35",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/coverage.csv",
+      "packaged_path": "results/coverage.csv",
+      "bytes": 5395,
+      "sha256": "0cf12a11347b542e17eabb215c52388c3036158c6b6b67e78df08b645b4899c5",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/event_admissibility.json",
+      "packaged_path": "results/event_admissibility.json",
+      "bytes": 1538,
+      "sha256": "91af6c558244129a34f83a828afdeb146d8c62fc31aa07fb6bb7b8a82a0dc910",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/event_register.csv",
+      "packaged_path": "results/event_register.csv",
+      "bytes": 10670,
+      "sha256": "9d3163e866a6bcf3e2721a1724b58f466c90001dafeb68b2a35229de06fcf187",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/event_register.json",
+      "packaged_path": "results/event_register.json",
+      "bytes": 23955,
+      "sha256": "8d88ead74f18298f7b34d600f5cf2193256295c7d96cd202e6b3f3de3365c595",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/forecast_reuse_integrity.json",
+      "packaged_path": "results/forecast_reuse_integrity.json",
+      "bytes": 1550,
+      "sha256": "7dccc04606ca3ff0b70142e8d3b316820ba18c89dd64d101b1bbf5da12499022",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/forecast_threshold_responses.csv",
+      "packaged_path": "results/forecast_threshold_responses.csv",
+      "bytes": 41863,
+      "sha256": "00c2ebd5af8fef750b0071be3952b64ee1f4b6dfebcd55e34ff6630a75a26f7e",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/forecast_threshold_summary.csv",
+      "packaged_path": "results/forecast_threshold_summary.csv",
+      "bytes": 1559,
+      "sha256": "a19fd55c0259e176b109ff4f2fe927241c2d257bd3d2e161bce5c19090d229c2",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/module_alarm_to_voltage_condition.csv",
+      "packaged_path": "results/module_alarm_to_voltage_condition.csv",
+      "bytes": 2239,
+      "sha256": "e01da9f535d9b6de7c13dbe366a4347ba08e0703bd79fe5418f0e26074f43219",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/native_channel_audit.csv",
+      "packaged_path": "results/native_channel_audit.csv",
+      "bytes": 12360,
+      "sha256": "893256574b760781f608fce536df6256ec885e8c18422c445a2f9c167e551cc5",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/protocol_hash.json",
+      "packaged_path": "results/protocol_hash.json",
+      "bytes": 283,
+      "sha256": "2e1dc9b1a0e0eb73a3c6037607abd4115ad5eb8396fea80677ed14c01f840c7d",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/rule_responses.csv",
+      "packaged_path": "results/rule_responses.csv",
+      "bytes": 53784,
+      "sha256": "350fe8f9f28982c8c1e2563a1b0c1f37f99f71c899b1b2745f0d557a82cf1501",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/source_hashes.json",
+      "packaged_path": "results/source_hashes.json",
+      "bytes": 13147,
+      "sha256": "0b228bfe837de4691bb18214cdfb95f0e90c517cfd632a77b0764f928b251443",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/summary.json",
+      "packaged_path": "results/summary.json",
+      "bytes": 44570,
+      "sha256": "cc825c69a9c9345d7efb8399f6466859fee0fd1391905a532a1e8548833caab0",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/table5.csv",
+      "packaged_path": "results/table5.csv",
+      "bytes": 7895,
+      "sha256": "d3381609908e933510ad36b8de9349923e59a5c57ce4757de53ce9e15ad66b3d",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/table5.json",
+      "packaged_path": "results/table5.json",
+      "bytes": 23567,
+      "sha256": "c556c6885da637672a53b52c19643df0560ab099589659ded26b6fc3b5006eb5",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/table5_compact.csv",
+      "packaged_path": "results/table5_compact.csv",
+      "bytes": 787,
+      "sha256": "8a34f0b7e9d735c0b242609e10442f3d5f9b4587806159815c92844f28aca9f9",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/voltage_condition_audit.csv",
+      "packaged_path": "results/voltage_condition_audit.csv",
+      "bytes": 3888,
+      "sha256": "cc2e9626b65ffb27ef85d3f54e3bf7b66eb4d95228a0aa1e5340d0613d67ba06",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Draft_Experiments_2026-10-27/experiment_b/results/voltage_condition_audit.json",
+      "packaged_path": "results/voltage_condition_audit.json",
+      "bytes": 6986,
+      "sha256": "1e7163249f986374c33f5f6d5f5b36d91a459f319f5268478192e1854d4ba0b0",
+      "role": "Original Experiment B archived artifact; not rerun",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241029-001.csv",
+      "packaged_path": "data/sheffield/241029-001.csv",
+      "bytes": 223263,
+      "sha256": "da7280148dafd65500a3a688e91c81d5fc2f1f3be50740ec948de3a38c5f2e7d",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241030-001.csv",
+      "packaged_path": "data/sheffield/241030-001.csv",
+      "bytes": 240653,
+      "sha256": "88351f1a69832e794d31b07f4b95a0ee97fc65cebd3451a69b43085432ec8310",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241030-002.csv",
+      "packaged_path": "data/sheffield/241030-002.csv",
+      "bytes": 113011,
+      "sha256": "ee54362a2aca835d096cd4b1e42811600e2a42c2c4f1fbc7f058cd76d693f1f3",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241030-003.csv",
+      "packaged_path": "data/sheffield/241030-003.csv",
+      "bytes": 165727,
+      "sha256": "9ab944f3df3f7f0a68cf0bfa6c9c6f176f6ba101c42410893cc74a82d413c0b7",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241030-004.csv",
+      "packaged_path": "data/sheffield/241030-004.csv",
+      "bytes": 213598,
+      "sha256": "2f271faf70de2c8721364e3ff30b38129928e4d8c43ae4b6afb83f6b976c7c91",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241030-005.csv",
+      "packaged_path": "data/sheffield/241030-005.csv",
+      "bytes": 205296,
+      "sha256": "fb36a659a912626d0f13c1ea9e31497b58bb671e58cc6329eb661ea06f1d66b1",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241126-001.csv",
+      "packaged_path": "data/sheffield/241126-001.csv",
+      "bytes": 176085,
+      "sha256": "e4d103e0b9d2bb7fa2ff593a8832a3f664d4de1dc9e857c22535b8c95f004ccc",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241126-002.csv",
+      "packaged_path": "data/sheffield/241126-002.csv",
+      "bytes": 150707,
+      "sha256": "ecb81009c719476fabfcfbd77cd1f80fd849f6b56a249944ceb1d164f4823755",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241127-001.csv",
+      "packaged_path": "data/sheffield/241127-001.csv",
+      "bytes": 187363,
+      "sha256": "33596c6829f2d12efb59ed10eed2d163d3937ed7d6f902d9234d323a15eedce0",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/241127-002.csv",
+      "packaged_path": "data/sheffield/241127-002.csv",
+      "bytes": 169320,
+      "sha256": "4214126b555d942e93e83577606110fe584ed439bb9fcd63136e8bdbdf4bbfdb",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250129-001.csv",
+      "packaged_path": "data/sheffield/250129-001.csv",
+      "bytes": 194385,
+      "sha256": "ee243ffbd6059d07d2886b3e7c92fa251b96c436aeb93e5c2e0423d14078f6e9",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250129-002.csv",
+      "packaged_path": "data/sheffield/250129-002.csv",
+      "bytes": 192485,
+      "sha256": "ebda54291df2b8a43f9f953e39167664d5e5271fa6465c7995539424bc79e452",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250129-003.csv",
+      "packaged_path": "data/sheffield/250129-003.csv",
+      "bytes": 252599,
+      "sha256": "50f78358fc7b5a4c150d437c4b61b5a7b6480e597ddfa2522ed36c496f28a48c",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250129-004.csv",
+      "packaged_path": "data/sheffield/250129-004.csv",
+      "bytes": 213492,
+      "sha256": "73a004425b30f5fc2c6043cab1d69cab30c33cf33cc2bb5a57b9778c7afd8017",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250129-005.csv",
+      "packaged_path": "data/sheffield/250129-005.csv",
+      "bytes": 229007,
+      "sha256": "98864de14bf298d6086ff846aeb0f8a142b46fadf9ae633598a56d9ec717cf01",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250130-001.csv",
+      "packaged_path": "data/sheffield/250130-001.csv",
+      "bytes": 238234,
+      "sha256": "317fc034043ec9f907aee271b6f2557d012dd5ad23919070c431c906c2b605a3",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250130-002.csv",
+      "packaged_path": "data/sheffield/250130-002.csv",
+      "bytes": 165000,
+      "sha256": "f6333aa2640b2ca70afcc0470673c6e71d82f83b68f602b55fdbe1ecee1ef621",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250130-003.csv",
+      "packaged_path": "data/sheffield/250130-003.csv",
+      "bytes": 185397,
+      "sha256": "8e69383f034e00c2c2e99a5d10e7b29bfc6dd3a6c3cbb84fa0f2676e47ff235d",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250130-004.csv",
+      "packaged_path": "data/sheffield/250130-004.csv",
+      "bytes": 227374,
+      "sha256": "5656570f09d5749c697e9ac94dd05124377d980a5a2d64f6f67e5dc17e0ebdf7",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250130-005.csv",
+      "packaged_path": "data/sheffield/250130-005.csv",
+      "bytes": 251121,
+      "sha256": "595d2fccbde19ec8e18c8f81612c84e862faa053453186655331337a3d565355",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250211-002.csv",
+      "packaged_path": "data/sheffield/250211-002.csv",
+      "bytes": 247669,
+      "sha256": "507918a3c5b28444efb9121c69ed7ba7faee3d1ef6bc517586c80cfd504c6375",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250211-003.csv",
+      "packaged_path": "data/sheffield/250211-003.csv",
+      "bytes": 253014,
+      "sha256": "75ea0eb47499a3ea713587b07bcc38fe094c79eea9429117371530af58777b88",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250211-004.csv",
+      "packaged_path": "data/sheffield/250211-004.csv",
+      "bytes": 262084,
+      "sha256": "f1421c14febed4d34309da20f46ce41b72b3c7eca5c159d21956ad095e9e4241",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250212-001.csv",
+      "packaged_path": "data/sheffield/250212-001.csv",
+      "bytes": 126819,
+      "sha256": "2b9a6c992832a96305bf8aad20dbc17ab88e3f57e3766c555554cfeca827d894",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250212-002.csv",
+      "packaged_path": "data/sheffield/250212-002.csv",
+      "bytes": 216130,
+      "sha256": "010c13a3eb1dce1b2b79155b9bde92a01c8de5e27e4e7e4f149e91f50d64bf9c",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250212-003.csv",
+      "packaged_path": "data/sheffield/250212-003.csv",
+      "bytes": 231457,
+      "sha256": "12d0c5567fb358af306ce43b82dc27aae7e6a92d000993e5e4c0bd11058e8f8f",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/250212-004.csv",
+      "packaged_path": "data/sheffield/250212-004.csv",
+      "bytes": 266118,
+      "sha256": "9a5e7a78065b458f8ea9c8ce1b0f1f901fffe11293b52034a796b87bca3504fb",
+      "role": "Original publisher measurement CSV; CC BY 4.0",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield/LFP_ConstPower_Record.xlsx",
+      "packaged_path": "data/sheffield/LFP_ConstPower_Record.xlsx",
+      "bytes": 30483,
+      "sha256": "66ab8bb7fcf15de124e41fe30bd43914dc0b7dc32ee15000a1fe48ece5e11ff6",
+      "role": "Original publisher dataset workbook; CC BY 4.0; contextual metadata",
+      "byte_identical": true
+    },
+    {
+      "original_path": "APCOM_Study_2026-10-22/results/lfp_sheffield_records.json",
+      "packaged_path": "legacy_inputs/APCOM_Study_2026-10-22/results/lfp_sheffield_records.json",
+      "bytes": 40953,
+      "sha256": "d03c3ac629d7ac3cd7ac403b9569dfe827d7d0ea07df1da54ee4ffabcacfeb8b",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/video_audit/event_annotations.json",
+      "packaged_path": "legacy_inputs/LFP_Data_Feasibility_2026-10-20/video_audit/event_annotations.json",
+      "bytes": 4051,
+      "sha256": "9a83f4ece21f82716da39fb760130f0ee162c8629872afcc838b18d234be6f01",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/tum/inventory.json",
+      "packaged_path": "legacy_inputs/LFP_Data_Feasibility_2026-10-20/sources/tum/inventory.json",
+      "bytes": 26950,
+      "sha256": "6d4e9a88ca069839882bf83567571f09a63f2785268b97fed5ca38794c7b5c08",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "LFP_Data_Feasibility_2026-10-20/sources/tum/checksums.sha512",
+      "packaged_path": "legacy_inputs/LFP_Data_Feasibility_2026-10-20/sources/tum/checksums.sha512",
+      "bytes": 16569,
+      "sha256": "b5bdc48a89a46c8cada2a9707e25807a29776ba4322b1f8cfb12c86d58302fda",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "ML_Forecasting_2026-10-25/lfp/results/final_artifact_manifest.json",
+      "packaged_path": "legacy_inputs/ML_Forecasting_2026-10-25/lfp/results/final_artifact_manifest.json",
+      "bytes": 10064,
+      "sha256": "3caa4fcc3003b87705b521c4c4cd32c120a15b72d64038395f6f1c98248319a1",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "ML_Forecasting_2026-10-25/lfp/results/downstream_origin_predictions.csv.gz",
+      "packaged_path": "legacy_inputs/ML_Forecasting_2026-10-25/lfp/results/downstream_origin_predictions.csv.gz",
+      "bytes": 3644170,
+      "sha256": "1043166641120c448c3ec5e0bd1c8d8f0278e969f69648c693a5025153fa193d",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "ML_Forecasting_2026-10-25/lfp/results/selected_family_by_horizon.csv",
+      "packaged_path": "legacy_inputs/ML_Forecasting_2026-10-25/lfp/results/selected_family_by_horizon.csv",
+      "bytes": 330,
+      "sha256": "80122a0cde6a2cb85a8a65fa29c5ddfc97f911542cf30b8bbb3c0c4d8fb8df09",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "ML_Forecasting_2026-10-25/lfp/models/boosting_10s.joblib",
+      "packaged_path": "legacy_inputs/ML_Forecasting_2026-10-25/lfp/models/boosting_10s.joblib",
+      "bytes": 74123,
+      "sha256": "b10f30edbaa8f66b59d16c64592f174b7dafcc43fa7f0c47a03161a732332e8b",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "ML_Forecasting_2026-10-25/lfp/models/boosting_30s.joblib",
+      "packaged_path": "legacy_inputs/ML_Forecasting_2026-10-25/lfp/models/boosting_30s.joblib",
+      "bytes": 77341,
+      "sha256": "635baccd1f0a07b0265f7574c265db8ebee634128e7406cd12f29f8946618322",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    },
+    {
+      "original_path": "ML_Forecasting_2026-10-25/lfp/models/boosting_60s.joblib",
+      "packaged_path": "legacy_inputs/ML_Forecasting_2026-10-25/lfp/models/boosting_60s.joblib",
+      "bytes": 80000,
+      "sha256": "65cf803a1491bb4dd43db99d5f88b1af73af578f11a2053551b8ba4fc5c5484f",
+      "role": "Original required legacy input; models retained as opaque hash-checked artifacts, not loaded",
+      "byte_identical": true
+    }
+  ]
+}

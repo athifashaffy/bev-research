@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "label": "AI-assisted public plotting code and saved-result provenance audit",
+  "disclosure": "AI adapted the plotting and input-validation code. The wrapper reads saved results; it performs no native simulation, model fitting, manuscript writing or equation-graphic generation.",
+  "attribution": {
+    "adapted_plotting_source_relative_path": "APCOM_Ezz_Revision_2026-10-28/build_revision.py",
+    "adapted_plotting_source_sha256": "623efaba78df1b8e6d8415d626396de61c04650c499b02529e20ff8295e3632f",
+    "adaptation_scope": "Only the operations, thermal and forecast plotting routines and their plot styles; document-authoring and equation-image routines are excluded.",
+    "source_result_attribution": "The archived simulation and forecast outputs identified below supply all plotted values; this code does not independently measure or validate them."
+  },
+  "wrapper_relative_to_manifest": "plot_saved_results.py",
+  "wrapper_sha256": "a4e68e1cf0ed27f81afe49326739019944c4abc1a9ce398f71ad22a69e5e277b",
+  "portable_usage": "python plot_saved_results.py --root PATH_TO_DATA_ROOT --output PATH_TO_SEPARATE_FIGURES_FOLDER",
+  "dependencies": {
+    "required": [
+      "numpy",
+      "matplotlib"
+    ],
+    "reference_versions": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.7"
+    },
+    "local_environment_note": "Additional dependency directories may be supplied through PYTHONPATH; no local runtime/dependency path is embedded in the wrapper."
+  },
+  "input_path_base": "--root; relative layout must be retained",
+  "inputs": [
+    {
+      "key": "operations",
+      "relative_path": "APCOM_Study_2026-10-22/results/operations_comparison.csv",
+      "sha256": "f77b03789173b9b1d2905c4b336d81908e75b712d86b647537f28e0efc512598"
+    },
+    {
+      "key": "thermal_summary",
+      "relative_path": "APCOM_Draft_Experiments_2026-10-27/thermal/table2_common_window.csv",
+      "sha256": "0996efe01c2134dcb11c67a735df3dd0a26ffec2136fcb0291fd7cf07edb83b4"
+    },
+    {
+      "key": "thermal_traces",
+      "relative_path": "APCOM_Draft_Experiments_2026-10-27/thermal/nominal_traces.csv",
+      "sha256": "21df8dea3669ef7f672db23a71ed2726acb67fcbc1bab43baf232c41a45524fc"
+    },
+    {
+      "key": "predictions",
+      "relative_path": "APCOM_Draft_Experiments_2026-10-27/experiment_a/predictions.csv.gz",
+      "sha256": "bf1882e2672306e126cf4d2d68b8365f06090f9c3ec0e9b55df40a7b8e5218c8"
+    }
+  ],
+  "filters_and_transformations": {
+    "operations": "Nine capacity/resistance cases; 3x3 heatmaps of archived cycle energy, reserve time and completed payload.",
+    "thermal": "Only within_common_window == True; all nine cases; time_s/60 on x and temperature_c-25 on y; no interpolation.",
+    "thermal_summary": "Read and validated for nine cases, 25 degree air/initial conditions, and common-window cutoff consistency.",
+    "forecast": "Only C100_RR03 at horizons 300 and 600 seconds; all five expected methods; x=target_s/60; y=saved true or predicted temperature minus 25; generated target uses persistence rows once per origin.",
+    "methods": [
+      "persistence",
+      "linear_trend",
+      "physics_hold",
+      "ridge",
+      "hist_gradient_boosting"
+    ],
+    "line_values": "Saved CSV values only; no scientific inputs or model scores recomputed."
+  },
+  "validation": {
+    "operations_cases": 9,
+    "thermal_summary_cases": 9,
+    "nominal_trace_rows": 45094,
+    "common_window_rows_by_case": {
+      "C080_RR02": 4099,
+      "C080_RR03": 4099,
+      "C080_RR04": 4099,
+      "C100_RR02": 4099,
+      "C100_RR03": 4099,
+      "C100_RR04": 4099,
+      "C120_RR02": 4099,
+      "C120_RR03": 4099,
+      "C120_RR04": 4099
+    },
+    "prediction_rows": 83980,
+    "selected_prediction_rows": 4630,
+    "selected_series_rows": {
+      "300:hist_gradient_boosting": 478,
+      "300:linear_trend": 478,
+      "300:persistence": 478,
+      "300:physics_hold": 478,
+      "300:ridge": 478,
+      "600:hist_gradient_boosting": 448,
+      "600:linear_trend": 448,
+      "600:persistence": 448,
+      "600:physics_hold": 448,
+      "600:ridge": 448
+    },
+    "finite_numeric_values": true,
+    "unique_sorted_times": true,
+    "all_expected_methods_per_origin": true,
+    "inputs_unchanged": true
+  },
+  "reference_png_comparison": [
+    {
+      "figure": "operations",
+      "reference_relative_path": "APCOM_Ezz_Revision_2026-10-28/figures/operations.png",
+      "reference_sha256": "bf3d5aa4153c01297a8809f4963710dfa1d885acb7893bbbf688451c1a65fb6a",
+      "reproduced_sha256": "bf3d5aa4153c01297a8809f4963710dfa1d885acb7893bbbf688451c1a65fb6a",
+      "png_bytes_identical": true,
+      "rgba_pixels_identical": true,
+      "pixel_dimensions": [
+        2117,
+        799
+      ],
+      "reference_software_metadata": "Matplotlib version3.10.7, https://matplotlib.org/",
+      "matplotlib_version_difference": false
+    },
+    {
+      "figure": "thermal",
+      "reference_relative_path": "APCOM_Ezz_Revision_2026-10-28/figures/thermal.png",
+      "reference_sha256": "8c0f763a4d8e67c164dbf06a6a8ffc169d35fd476491d1cad40f5d3f67a8387b",
+      "reproduced_sha256": "8c0f763a4d8e67c164dbf06a6a8ffc169d35fd476491d1cad40f5d3f67a8387b",
+      "png_bytes_identical": true,
+      "rgba_pixels_identical": true,
+      "pixel_dimensions": [
+        2117,
+        875
+      ],
+      "reference_software_metadata": "Matplotlib version3.10.7, https://matplotlib.org/",
+      "matplotlib_version_difference": false
+    },
+    {
+      "figure": "forecast",
+      "reference_relative_path": "APCOM_Ezz_Revision_2026-10-28/figures/forecast.png",
+      "reference_sha256": "ba2057ba1545b6f6910a028059d1530262fe4667890ee2ccfe767014651337f1",
+      "reproduced_sha256": "ba2057ba1545b6f6910a028059d1530262fe4667890ee2ccfe767014651337f1",
+      "png_bytes_identical": true,
+      "rgba_pixels_identical": true,
+      "pixel_dimensions": [
+        2117,
+        1254
+      ],
+      "reference_software_metadata": "Matplotlib version3.10.7, https://matplotlib.org/",
+      "matplotlib_version_difference": false
+    }
+  ],
+  "outputs": [
+    {
+      "relative_to_manifest": "reproduced_figures/operations.png",
+      "sha256": "bf3d5aa4153c01297a8809f4963710dfa1d885acb7893bbbf688451c1a65fb6a"
+    },
+    {
+      "relative_to_manifest": "reproduced_figures/operations.svg",
+      "sha256": "d8cfef5f9e987abdd9e13b321dc7abff0eaef745dc54260046034d872455b16b"
+    },
+    {
+      "relative_to_manifest": "reproduced_figures/operations.pdf",
+      "sha256": "60cf492b8e4240b70e083aa1eb9ab703566d1deadb06935102def3f8f6d61f8d"
+    },
+    {
+      "relative_to_manifest": "reproduced_figures/thermal.png",
+      "sha256": "8c0f763a4d8e67c164dbf06a6a8ffc169d35fd476491d1cad40f5d3f67a8387b"
+    },
+    {
+      "relative_to_manifest": "reproduced_figures/thermal.svg",
+      "sha256": "959faa8ef8ca0043fce951571458378d4e3031b7b58ae570a3d748a65b099dbf"
+    },
+    {
+      "relative_to_manifest": "reproduced_figures/thermal.pdf",
+      "sha256": "335474e95d879f90ba57c336e220154b06fd95b9daa9ae118f258d8185530857"
+    },
+    {
+      "relative_to_manifest": "reproduced_figures/forecast.png",
+      "sha256": "ba2057ba1545b6f6910a028059d1530262fe4667890ee2ccfe767014651337f1"
+    },
+    {
+      "relative_to_manifest": "reproduced_figures/forecast.svg",
+      "sha256": "7fb70aadc67b0c0abcafea5ada308ef2b87097a61c835088db7797ccd0e10389"
+    },
+    {
+      "relative_to_manifest": "reproduced_figures/forecast.pdf",
+      "sha256": "7e4b50e0800ced63a1eb7301c69161ffb6f78107de82fe944fccbe4d73ddd988"
+    }
+  ],
+  "vector_file_note": "PDF creation dates and SVG-generated element identifiers can change file bytes between runs. This run reproduced all three PNGs byte-for-byte and pixel-for-pixel.",
+  "scope_limits": "PNG identity verifies plotting reproduction, not the physical validity of the saved scientific results. No manuscript text or supervisor feedback is included."
+}

@@ -1,0 +1,1060 @@
+{
+  "analysis_date": "2026-10-22",
+  "analysis_kind": "fresh read-only nine-case operational scoring",
+  "protocol": "APCOM_Study_2026-10-22/01_Analysis_Protocol.txt",
+  "source_manifest": "New_Afton_Experiments_2026-10-20\\run_manifest.json",
+  "source_manifest_sha256": "794eda2f19ea7c60ebf8a1dee277c14c63af08b28d3af150108870d4631da4c2",
+  "source_model_sha256_expected": "5d2350cd33ac9df3abfa35e95b27305461d2447e15339d817a0732d7ca5f2b1d",
+  "source_model_sha256_observed": "5d2350cd33ac9df3abfa35e95b27305461d2447e15339d817a0732d7ca5f2b1d",
+  "source_manifest_unchanged_after_read": true,
+  "core_archives_verified": 9,
+  "native_runs_executed_by_this_analysis": 0,
+  "baseline_354_rr2_to_rr4_effects": {
+    "common_window_energy_kwh_change_pct": 12.954802771194696,
+    "reserve_time_min_change_pct": -18.63029281504399,
+    "recurring_cycle_energy_kwh_change_pct": 18.65242959586455,
+    "recurring_cycle_time_min_change_pct": 2.768061512917863,
+    "configuration": "354 kWh / 8,255 kg pack / 391 kW wheel cap",
+    "rolling_resistance_from_pct": 2,
+    "rolling_resistance_to_pct": 4,
+    "reserve_completed_tonnes_from": 135.0,
+    "reserve_completed_tonnes_to": 90.0
+  },
+  "central_repeat_status": "PREPARED_NOT_RUN",
+  "central_repeat_result_available": false,
+  "central_repeat_interpretation": "No executed central repeat is available; repeatability was not tested.",
+  "common_feasible_time_min": 68.03897261395167,
+  "reserve_definition": "All-state native battery consumption integrated until 0.60*nominal capacity is spent; 80% initial to 20% external reserve.",
+  "within_event_assumption": "Constant recorded mean battery power within each native event; cutoff is interpolated analytically.",
+  "delivery_definition": "Unloading service of at least the configured 1 minute completes at or before the cutoff; native movement count and tonnes cross-checked.",
+  "energy_ledger": "Native ElectricityFromBatteryConsumed includes all states. Native EnergyLevel omits stationary consumption in these files. Corrected state = 80 - 100*cumulative_kWh/capacity_kWh.",
+  "ledger_reconstruction_note": "Wheel energy/0.85 + 20 kW auxiliaries is a cross-check, not a replacement for native event energy; small numerical/curve residuals are retained.",
+  "cycle_definition": "Recurring unload-to-unload intervals ending before reserve; initialization-to-first delivery and incomplete tail are excluded.",
+  "configuration_confound": "Nominal capacity, pack mass, vehicle tare and nominal battery rating change together. Wheel power is 309.4 kW at scale 0.8 and 391 kW at scales 1.0/1.2. Native full-wheel-load battery curve endpoints are 384, 480 and 480 kW, despite nominal battery ratings of 384, 480 and 576 kW. Effects are battery-configuration comparisons, not isolated capacity effects.",
+  "raw_window_caveat": "All nine raw 120-minute files show 4 completed loads / 180 t; all extend past the external reserve. Negative native final SOC is retained as a diagnostic and is not feasible operation.",
+  "no_charging_or_regeneration": true,
+  "reproduction_command": "& 'C:/Users/athif/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' 'C:/Users/athif/Documents/ChatGPT/BEV/APCOM_Study_2026-10-22/code/operations.py'",
+  "test_command": "& 'C:/Users/athif/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -m unittest discover -s APCOM_Study_2026-10-22/code -p test_operations.py -v",
+  "test_first_evidence": "Eight hand-calculated tests were written first and executed with 8 expected failures because operations.py was absent, before implementation. A ninth regression test for the native electrical curve endpoint then failed before the ambiguous power labeling was corrected.",
+  "cases": [
+    {
+      "case": "C080_RR02",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C080_RR02\\native_run.hsmdb",
+      "sha256_expected": "cd9fdf3cdc5df6e9ba63bb7c29fb1fd56fda5335f82e503a2af0b3acedf87739",
+      "sha256_observed": "cd9fdf3cdc5df6e9ba63bb7c29fb1fd56fda5335f82e503a2af0b3acedf87739",
+      "hash_match": true,
+      "truck_event_count": 29,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 283.2,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 46497.0,
+        "wheel_cap_kw": 309.4,
+        "electrical_curve_at_full_wheel_power_kw": 384.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 384.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 286.82959755371644,
+        "wheel_energy_kwh": 209.37183525841297,
+        "stationary_energy_kwh": 7.253032519208023,
+        "native_final_soc_pct": -18.720538500885855,
+        "native_soc_debit_kwh": 279.5765650345087,
+        "native_soc_missing_kwh": 7.25303251920775,
+        "missing_minus_stationary_kwh": -2.7355895326763857e-13,
+        "corrected_final_soc_pct": -21.281637554278404,
+        "ledger_expected_kwh": 286.31980618636817,
+        "ledger_residual_kwh": 0.5097913673482708,
+        "ledger_residual_pct": 0.17804963412710714,
+        "max_event_ledger_residual_kwh": 0.03912858388464513
+      },
+      "reserve": {
+        "cutoff_min": 72.36691651810074,
+        "energy_kwh": 169.92,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 2,
+        "completed_tonnes": 90.0
+      },
+      "delivery_completion_min": [
+        25.56634242580229,
+        50.95495126112682,
+        76.3435600964514,
+        101.73216893177563
+      ],
+      "first_delivery_energy_kwh": 60.49326049461837,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 25.56634242580229,
+          "end_min": 50.95495126112682,
+          "duration_min": 25.388608835324533,
+          "energy_kwh": 60.5650769992521
+        },
+        {
+          "start_min": 50.95495126112682,
+          "end_min": 76.3435600964514,
+          "duration_min": 25.388608835324575,
+          "energy_kwh": 60.565076999252774
+        },
+        {
+          "start_min": 76.3435600964514,
+          "end_min": 101.73216893177563,
+          "duration_min": 25.388608835324234,
+          "energy_kwh": 60.56507699925302
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 25.56634242580229,
+          "end_min": 50.95495126112682,
+          "duration_min": 25.388608835324533,
+          "energy_kwh": 60.5650769992521
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 44.64110606134017,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 71.70739938842911,
+      "peak_event_mean_battery_kw": 344.6361394601286
+    },
+    {
+      "case": "C080_RR03",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C080_RR03\\native_run.hsmdb",
+      "sha256_expected": "031d917c1c48762a9892419379c9fa2c6e128cb320808d0846c1b03f81e67849",
+      "sha256_observed": "031d917c1c48762a9892419379c9fa2c6e128cb320808d0846c1b03f81e67849",
+      "hash_match": true,
+      "truck_event_count": 29,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 283.2,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 46497.0,
+        "wheel_cap_kw": 309.4,
+        "electrical_curve_at_full_wheel_power_kw": 384.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 384.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 299.6705261060835,
+        "wheel_energy_kwh": 220.30173229548467,
+        "stationary_energy_kwh": 7.253032519207995,
+        "native_final_soc_pct": -23.25476468463164,
+        "native_soc_debit_kwh": 292.4174935868768,
+        "native_soc_missing_kwh": 7.253032519206727,
+        "missing_minus_stationary_kwh": -1.2683187833317788e-12,
+        "corrected_final_soc_pct": -25.81586373802385,
+        "ledger_expected_kwh": 299.17850858292314,
+        "ledger_residual_kwh": 0.49201752316037073,
+        "ledger_residual_pct": 0.16445617216652395,
+        "max_event_ledger_residual_kwh": 0.03912858388464513
+      },
+      "reserve": {
+        "cutoff_min": 70.05596363778325,
+        "energy_kwh": 169.92,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 2,
+        "completed_tonnes": 90.0
+      },
+      "delivery_completion_min": [
+        25.967244296724157,
+        51.756755002970436,
+        77.54626570921658,
+        103.33577641546238
+      ],
+      "first_delivery_energy_kwh": 66.0186692701496,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 25.967244296724157,
+          "end_min": 51.756755002970436,
+          "duration_min": 25.78951070624628,
+          "energy_kwh": 66.09083206050589
+        },
+        {
+          "start_min": 51.756755002970436,
+          "end_min": 77.54626570921658,
+          "duration_min": 25.789510706246148,
+          "energy_kwh": 66.09083206050525
+        },
+        {
+          "start_min": 77.54626570921658,
+          "end_min": 103.33577641546238,
+          "duration_min": 25.789510706245792,
+          "energy_kwh": 66.09083206050477
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 25.967244296724157,
+          "end_min": 51.756755002970436,
+          "duration_min": 25.78951070624628,
+          "energy_kwh": 66.09083206050589
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 35.37936065441801,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 74.91763152652088,
+      "peak_event_mean_battery_kw": 332.41066110014725
+    },
+    {
+      "case": "C080_RR04",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C080_RR04\\native_run.hsmdb",
+      "sha256_expected": "df727eddc1dc1838eb93b6e5e73a150342db261f5f731598fd20fa0359df32bd",
+      "sha256_observed": "df727eddc1dc1838eb93b6e5e73a150342db261f5f731598fd20fa0359df32bd",
+      "hash_match": true,
+      "truck_event_count": 29,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 283.2,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 46497.0,
+        "wheel_cap_kw": 309.4,
+        "electrical_curve_at_full_wheel_power_kw": 384.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 384.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 312.5085305901964,
+        "wheel_energy_kwh": 231.2084158080934,
+        "stationary_energy_kwh": 7.253032519207996,
+        "native_final_soc_pct": -27.78795835840045,
+        "native_soc_debit_kwh": 305.25549807099003,
+        "native_soc_missing_kwh": 7.253032519206386,
+        "missing_minus_stationary_kwh": -1.610267474916327e-12,
+        "corrected_final_soc_pct": -30.34905741179253,
+        "ledger_expected_kwh": 312.0099009506981,
+        "ledger_residual_kwh": 0.4986296394982901,
+        "ledger_residual_pct": 0.15981212069840067,
+        "max_event_ledger_residual_kwh": 0.03912858388464513
+      },
+      "reserve": {
+        "cutoff_min": 68.03897261395167,
+        "energy_kwh": 169.92,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 2,
+        "completed_tonnes": 90.0
+      },
+      "delivery_completion_min": [
+        26.369236808781316,
+        52.56074002708492,
+        78.75224324538817,
+        104.94374646369104
+      ],
+      "first_delivery_energy_kwh": 71.55041048613987,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 26.369236808781316,
+          "end_min": 52.56074002708492,
+          "duration_min": 26.191503218303602,
+          "energy_kwh": 71.62291956222012
+        },
+        {
+          "start_min": 52.56074002708492,
+          "end_min": 78.75224324538817,
+          "duration_min": 26.191503218303254,
+          "energy_kwh": 71.62291956221907
+        },
+        {
+          "start_min": 78.75224324538817,
+          "end_min": 104.94374646369104,
+          "duration_min": 26.19150321830287,
+          "energy_kwh": 71.62291956221773
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 26.369236808781316,
+          "end_min": 52.56074002708492,
+          "duration_min": 26.191503218303602,
+          "energy_kwh": 71.62291956222012
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 26.08936141739963,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 78.1271326475491,
+      "peak_event_mean_battery_kw": 309.01346741599946
+    },
+    {
+      "case": "C100_RR02",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C100_RR02\\native_run.hsmdb",
+      "sha256_expected": "18c2f18dd1ac8fea9a75d9e1f1c87f1b3bf94b91070e533b6c800d80ba1d21f7",
+      "sha256_observed": "18c2f18dd1ac8fea9a75d9e1f1c87f1b3bf94b91070e533b6c800d80ba1d21f7",
+      "hash_match": true,
+      "truck_event_count": 31,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 354.0,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 48148.0,
+        "wheel_cap_kw": 391.0,
+        "electrical_curve_at_full_wheel_power_kw": 480.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 480.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 305.0573385517947,
+        "wheel_energy_kwh": 224.4107530137559,
+        "stationary_energy_kwh": 7.581376052246743,
+        "native_final_soc_pct": -4.03275776823393,
+        "native_soc_debit_kwh": 297.47596249954813,
+        "native_soc_missing_kwh": 7.581376052246583,
+        "missing_minus_stationary_kwh": -1.5987211554602254e-13,
+        "corrected_final_soc_pct": -6.174389421410936,
+        "ledger_expected_kwh": 304.0126506044187,
+        "ledger_residual_kwh": 1.044687947376019,
+        "ledger_residual_pct": 0.34363305122304505,
+        "max_event_ledger_residual_kwh": 0.08475970119837228
+      },
+      "reserve": {
+        "cutoff_min": 88.34161317289522,
+        "energy_kwh": 212.4,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 3,
+        "completed_tonnes": 135.0
+      },
+      "delivery_completion_min": [
+        24.145180752559135,
+        48.11262791464048,
+        72.08007507672181,
+        96.04752223880278
+      ],
+      "first_delivery_energy_kwh": 60.94615574210732,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 24.145180752559135,
+          "end_min": 48.11262791464048,
+          "duration_min": 23.967447162081342,
+          "energy_kwh": 61.029043152496236
+        },
+        {
+          "start_min": 48.11262791464048,
+          "end_min": 72.08007507672181,
+          "duration_min": 23.967447162081335,
+          "energy_kwh": 61.029043152495504
+        },
+        {
+          "start_min": 72.08007507672181,
+          "end_min": 96.04752223880278,
+          "duration_min": 23.967447162080973,
+          "energy_kwh": 61.02904315249529
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 24.145180752559135,
+          "end_min": 48.11262791464048,
+          "duration_min": 23.967447162081342,
+          "energy_kwh": 61.029043152496236
+        },
+        {
+          "start_min": 48.11262791464048,
+          "end_min": 72.08007507672181,
+          "duration_min": 23.967447162081335,
+          "energy_kwh": 61.029043152495504
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 61.02405335220035,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 76.26433463794868,
+      "peak_event_mean_battery_kw": 296.2761729314577
+    },
+    {
+      "case": "C100_RR03",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C100_RR03\\native_run.hsmdb",
+      "sha256_expected": "e7f6734c0b8a742b1ee41e33b619d0c155965b98c90b2d4b1f9e10ed2f0d50d9",
+      "sha256_observed": "e7f6734c0b8a742b1ee41e33b619d0c155965b98c90b2d4b1f9e10ed2f0d50d9",
+      "hash_match": true,
+      "truck_event_count": 29,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 354.0,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 48148.0,
+        "wheel_cap_kw": 391.0,
+        "electrical_curve_at_full_wheel_power_kw": 480.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 480.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 332.8034616660392,
+        "wheel_energy_kwh": 248.08154193203808,
+        "stationary_energy_kwh": 7.253032519207996,
+        "native_final_soc_pct": -11.9633980640765,
+        "native_soc_debit_kwh": 325.55042914683077,
+        "native_soc_missing_kwh": 7.253032519208432,
+        "missing_minus_stationary_kwh": 4.360956040727615e-13,
+        "corrected_final_soc_pct": -14.012277306790736,
+        "ledger_expected_kwh": 331.86063756710365,
+        "ledger_residual_kwh": 0.9428240989355459,
+        "ledger_residual_pct": 0.2841024189694395,
+        "max_event_ledger_residual_kwh": 0.07683427823089772
+      },
+      "reserve": {
+        "cutoff_min": 85.5989351257934,
+        "energy_kwh": 212.4,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 3,
+        "completed_tonnes": 135.0
+      },
+      "delivery_completion_min": [
+        24.485998378897317,
+        48.79426316731675,
+        73.10252795573629,
+        97.41079274415561
+      ],
+      "first_delivery_energy_kwh": 66.71065602975553,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 24.485998378897317,
+          "end_min": 48.79426316731675,
+          "duration_min": 24.308264788419432,
+          "energy_kwh": 66.79447534987197
+        },
+        {
+          "start_min": 48.79426316731675,
+          "end_min": 73.10252795573629,
+          "duration_min": 24.308264788419542,
+          "energy_kwh": 66.7944753498729
+        },
+        {
+          "start_min": 73.10252795573629,
+          "end_min": 97.41079274415561,
+          "duration_min": 24.308264788419322,
+          "energy_kwh": 66.79447534987338
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 24.485998378897317,
+          "end_min": 48.79426316731675,
+          "duration_min": 24.308264788419432,
+          "energy_kwh": 66.79447534987197
+        },
+        {
+          "start_min": 48.79426316731675,
+          "end_min": 73.10252795573629,
+          "duration_min": 24.308264788419542,
+          "energy_kwh": 66.7944753498729
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 65.70937958666542,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 83.2008654165098,
+      "peak_event_mean_battery_kw": 318.14465440920605
+    },
+    {
+      "case": "C100_RR04",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C100_RR04\\native_run.hsmdb",
+      "sha256_expected": "4422014cf9ca139dd1941913c6f9f7e984a34d928ba97fbd51b072ba97c797cf",
+      "sha256_observed": "4422014cf9ca139dd1941913c6f9f7e984a34d928ba97fbd51b072ba97c797cf",
+      "hash_match": true,
+      "truck_event_count": 29,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 354.0,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 48148.0,
+        "wheel_cap_kw": 391.0,
+        "electrical_curve_at_full_wheel_power_kw": 480.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 480.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 356.8152755319044,
+        "wheel_energy_kwh": 268.49839492932136,
+        "stationary_energy_kwh": 7.253032519207996,
+        "native_final_soc_pct": -18.7463963312702,
+        "native_soc_debit_kwh": 349.5622430126965,
+        "native_soc_missing_kwh": 7.2530325192078635,
+        "missing_minus_stationary_kwh": -1.3233858453531866e-13,
+        "corrected_final_soc_pct": -20.7952755739843,
+        "ledger_expected_kwh": 355.88046462273104,
+        "ledger_residual_kwh": 0.9348109091733363,
+        "ledger_residual_pct": 0.2626755335290263,
+        "max_event_ledger_residual_kwh": 0.07650573125143723
+      },
+      "reserve": {
+        "cutoff_min": 71.88331196125137,
+        "energy_kwh": 212.4,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 2,
+        "completed_tonnes": 90.0
+      },
+      "delivery_completion_min": [
+        24.80861443308165,
+        49.43949527568549,
+        74.07037611828943,
+        98.70125696089306
+      ],
+      "first_delivery_energy_kwh": 72.32769122969894,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 24.80861443308165,
+          "end_min": 49.43949527568549,
+          "duration_min": 24.630880842603837,
+          "energy_kwh": 72.41244245954496
+        },
+        {
+          "start_min": 49.43949527568549,
+          "end_min": 74.07037611828943,
+          "duration_min": 24.630880842603943,
+          "energy_kwh": 72.41244245954502
+        },
+        {
+          "start_min": 74.07037611828943,
+          "end_min": 98.70125696089306,
+          "duration_min": 24.63088084260363,
+          "energy_kwh": 72.41244245954553
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 24.80861443308165,
+          "end_min": 49.43949527568549,
+          "duration_min": 24.630880842603837,
+          "energy_kwh": 72.41244245954496
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 67.2502569235699,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 89.2038188829761,
+      "peak_event_mean_battery_kw": 363.2414096361699
+    },
+    {
+      "case": "C120_RR02",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C120_RR02\\native_run.hsmdb",
+      "sha256_expected": "4dfaf06e532729192541d14619b6aee21672d1ce655603fd3f5a602a936fc67a",
+      "sha256_observed": "4dfaf06e532729192541d14619b6aee21672d1ce655603fd3f5a602a936fc67a",
+      "hash_match": true,
+      "truck_event_count": 31,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 424.8,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 49799.0,
+        "wheel_cap_kw": 391.0,
+        "electrical_curve_at_full_wheel_power_kw": 480.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 480.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 310.6324035268154,
+        "wheel_energy_kwh": 229.16567167959826,
+        "stationary_energy_kwh": 7.379647869300118,
+        "native_final_soc_pct": 8.612816464803572,
+        "native_soc_debit_kwh": 303.2527556575144,
+        "native_soc_missing_kwh": 7.379647869300982,
+        "missing_minus_stationary_kwh": 8.633094239485217e-13,
+        "corrected_final_soc_pct": 6.875611222501092,
+        "ledger_expected_kwh": 309.60667256423324,
+        "ledger_residual_kwh": 1.025730962582145,
+        "ledger_residual_pct": 0.33130131017100073,
+        "max_event_ledger_residual_kwh": 0.0777659075254249
+      },
+      "reserve": {
+        "cutoff_min": 108.08589338172511,
+        "energy_kwh": 254.88,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 4,
+        "completed_tonnes": 180.0
+      },
+      "delivery_completion_min": [
+        24.266217662327154,
+        48.35470173417649,
+        72.44318580602578,
+        96.5316698778747
+      ],
+      "first_delivery_energy_kwh": 62.097615398311085,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 24.266217662327154,
+          "end_min": 48.35470173417649,
+          "duration_min": 24.088484071849333,
+          "energy_kwh": 62.18537652793697
+        },
+        {
+          "start_min": 48.35470173417649,
+          "end_min": 72.44318580602578,
+          "duration_min": 24.088484071849294,
+          "energy_kwh": 62.185376527936555
+        },
+        {
+          "start_min": 72.44318580602578,
+          "end_min": 96.5316698778747,
+          "duration_min": 24.088484071848924,
+          "energy_kwh": 62.18537652793564
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 24.266217662327154,
+          "end_min": 48.35470173417649,
+          "duration_min": 24.088484071849333,
+          "energy_kwh": 62.18537652793697
+        },
+        {
+          "start_min": 48.35470173417649,
+          "end_min": 72.44318580602578,
+          "duration_min": 24.088484071849294,
+          "energy_kwh": 62.185376527936555
+        },
+        {
+          "start_min": 72.44318580602578,
+          "end_min": 96.5316698778747,
+          "duration_min": 24.088484071848924,
+          "energy_kwh": 62.18537652793564
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 61.97865854469516,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 77.65810088170385,
+      "peak_event_mean_battery_kw": 298.86527641176247
+    },
+    {
+      "case": "C120_RR03",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C120_RR03\\native_run.hsmdb",
+      "sha256_expected": "e4671dc668f7a9de3863f7af8a5b72943c00b5cb60d9b573dbe4bbdb4a92e70f",
+      "sha256_observed": "e4671dc668f7a9de3863f7af8a5b72943c00b5cb60d9b573dbe4bbdb4a92e70f",
+      "hash_match": true,
+      "truck_event_count": 29,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 424.8,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 49799.0,
+        "wheel_cap_kw": 391.0,
+        "electrical_curve_at_full_wheel_power_kw": 480.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 480.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 337.3537938565338,
+        "wheel_energy_kwh": 251.9500707796388,
+        "stationary_energy_kwh": 7.253032519207995,
+        "native_final_soc_pct": 2.292664468613766,
+        "native_soc_debit_kwh": 330.1007613373287,
+        "native_soc_missing_kwh": 7.253032519205078,
+        "missing_minus_stationary_kwh": -2.9167779302952113e-12,
+        "corrected_final_soc_pct": 0.585265099686012,
+        "ledger_expected_kwh": 336.41184797604564,
+        "ledger_residual_kwh": 0.9419458804881629,
+        "ledger_residual_pct": 0.27999783187042643,
+        "max_event_ledger_residual_kwh": 0.07614725493392172
+      },
+      "reserve": {
+        "cutoff_min": 93.35031312083146,
+        "energy_kwh": 254.88,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 3,
+        "completed_tonnes": 135.0
+      },
+      "delivery_completion_min": [
+        24.59446767241713,
+        49.01120175435644,
+        73.42793583629563,
+        97.84466991823447
+      ],
+      "first_delivery_energy_kwh": 67.83182882614376,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 24.59446767241713,
+          "end_min": 49.01120175435644,
+          "duration_min": 24.41673408193931,
+          "energy_kwh": 67.92055382078134
+        },
+        {
+          "start_min": 49.01120175435644,
+          "end_min": 73.42793583629563,
+          "duration_min": 24.41673408193919,
+          "energy_kwh": 67.92055382077905
+        },
+        {
+          "start_min": 73.42793583629563,
+          "end_min": 97.84466991823447,
+          "duration_min": 24.41673408193884,
+          "energy_kwh": 67.92055382078073
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 24.59446767241713,
+          "end_min": 49.01120175435644,
+          "duration_min": 24.41673408193931,
+          "energy_kwh": 67.92055382078134
+        },
+        {
+          "start_min": 49.01120175435644,
+          "end_min": 73.42793583629563,
+          "duration_min": 24.41673408193919,
+          "energy_kwh": 67.92055382077905
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 65.76030356804893,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 84.33844846413345,
+      "peak_event_mean_battery_kw": 330.7965021126923
+    },
+    {
+      "case": "C120_RR04",
+      "archive": "New_Afton_Experiments_2026-10-20\\results\\C120_RR04\\native_run.hsmdb",
+      "sha256_expected": "08c680bccabc28ca985531e1c893c380285715289f6c8391df53d94e3c7016f9",
+      "sha256_observed": "08c680bccabc28ca985531e1c893c380285715289f6c8391df53d94e3c7016f9",
+      "hash_match": true,
+      "truck_event_count": 29,
+      "end_min": 120.0,
+      "native_material_movements": 4,
+      "native_completed_tonnes": 180.0,
+      "config": {
+        "capacity_kwh": 424.8,
+        "initial_soc_min_pct": 80.0,
+        "initial_soc_max_pct": 80.0,
+        "tare_kg": 49799.0,
+        "wheel_cap_kw": 391.0,
+        "electrical_curve_at_full_wheel_power_kw": 480.0,
+        "native_regeneration_enabled": "false",
+        "native_recharging_enabled": "false",
+        "native_energy_enabled": "true",
+        "configured_dump_time_min": 1.0,
+        "native_energy_graph": "-100 0 20,0 0 20,100 0 480.000000000000"
+      },
+      "ledger": {
+        "all_state_energy_kwh": 361.42831978875364,
+        "wheel_energy_kwh": 272.40911623395294,
+        "stationary_energy_kwh": 7.253032519207995,
+        "native_final_soc_pct": -3.3745968148651855,
+        "native_soc_debit_kwh": 354.1752872695473,
+        "native_soc_missing_kwh": 7.253032519206329,
+        "missing_minus_stationary_kwh": -1.666222715357435e-12,
+        "corrected_final_soc_pct": -5.081996183793237,
+        "ledger_expected_kwh": 360.48131321641523,
+        "ledger_residual_kwh": 0.9470065723384096,
+        "ledger_residual_pct": 0.2627061480354388,
+        "max_event_ledger_residual_kwh": 0.075679492866783
+      },
+      "reserve": {
+        "cutoff_min": 90.62932934508058,
+        "energy_kwh": 254.88,
+        "reserve_attained": true,
+        "end_soc_pct": 20.0,
+        "completed_loads": 3,
+        "completed_tonnes": 135.0
+      },
+      "delivery_completion_min": [
+        24.92248492862079,
+        49.667236266763766,
+        74.41198760490674,
+        99.15673894304929
+      ],
+      "first_delivery_energy_kwh": 73.56233586690571,
+      "complete_recurring_cycles_raw": [
+        {
+          "start_min": 24.92248492862079,
+          "end_min": 49.667236266763766,
+          "duration_min": 24.744751338142976,
+          "energy_kwh": 73.6520247265553
+        },
+        {
+          "start_min": 49.667236266763766,
+          "end_min": 74.41198760490674,
+          "duration_min": 24.744751338142976,
+          "energy_kwh": 73.65202472655474
+        },
+        {
+          "start_min": 74.41198760490674,
+          "end_min": 99.15673894304929,
+          "duration_min": 24.74475133814255,
+          "energy_kwh": 73.65202472655284
+        }
+      ],
+      "complete_recurring_cycles_before_reserve": [
+        {
+          "start_min": 24.92248492862079,
+          "end_min": 49.667236266763766,
+          "duration_min": 24.744751338142976,
+          "energy_kwh": 73.6520247265553
+        },
+        {
+          "start_min": 49.667236266763766,
+          "end_min": 74.41198760490674,
+          "duration_min": 24.744751338142976,
+          "energy_kwh": 73.65202472655474
+        }
+      ],
+      "incomplete_tail_after_last_delivery_energy_kwh": 66.90990974218505,
+      "raw_window_energy_divided_by_four_kwh_NOT_recurring_cycle": 90.35707994718841,
+      "peak_event_mean_battery_kw": 377.8680361666449
+    }
+  ],
+  "comparison": [
+    {
+      "case": "C080_RR02",
+      "configuration_scale": 0.8,
+      "capacity_kwh": 283.2,
+      "rolling_resistance_pct": 2,
+      "pack_mass_kg": 6604.0,
+      "vehicle_tare_kg": 46497.0,
+      "battery_nominal_rating_kw": 384.0,
+      "wheel_cap_kw": 309.4,
+      "native_electrical_curve_full_load_kw": 384.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 151.11537230376513,
+      "reserve_time_min": 72.36691651810074,
+      "reserve_energy_kwh": 169.92,
+      "reserve_completed_loads": 2,
+      "reserve_completed_tonnes": 90.0,
+      "complete_recurring_cycles_before_reserve": 1,
+      "recurring_cycle_energy_kwh": 60.5650769992521,
+      "recurring_cycle_time_min": 25.388608835324533,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 286.82959755371644,
+      "native_120min_final_soc_pct": -18.720538500885855,
+      "corrected_120min_final_soc_pct": -21.281637554278404,
+      "native_soc_omitted_stationary_kwh": 7.253032519208023
+    },
+    {
+      "case": "C080_RR03",
+      "configuration_scale": 0.8,
+      "capacity_kwh": 283.2,
+      "rolling_resistance_pct": 3,
+      "pack_mass_kg": 6604.0,
+      "vehicle_tare_kg": 46497.0,
+      "battery_nominal_rating_kw": 384.0,
+      "wheel_cap_kw": 309.4,
+      "native_electrical_curve_full_load_kw": 384.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 160.7171521026977,
+      "reserve_time_min": 70.05596363778325,
+      "reserve_energy_kwh": 169.92,
+      "reserve_completed_loads": 2,
+      "reserve_completed_tonnes": 90.0,
+      "complete_recurring_cycles_before_reserve": 1,
+      "recurring_cycle_energy_kwh": 66.09083206050589,
+      "recurring_cycle_time_min": 25.78951070624628,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 299.6705261060835,
+      "native_120min_final_soc_pct": -23.25476468463164,
+      "corrected_120min_final_soc_pct": -25.81586373802385,
+      "native_soc_omitted_stationary_kwh": 7.253032519207995
+    },
+    {
+      "case": "C080_RR04",
+      "configuration_scale": 0.8,
+      "capacity_kwh": 283.2,
+      "rolling_resistance_pct": 4,
+      "pack_mass_kg": 6604.0,
+      "vehicle_tare_kg": 46497.0,
+      "battery_nominal_rating_kw": 384.0,
+      "wheel_cap_kw": 309.4,
+      "native_electrical_curve_full_load_kw": 384.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 169.92000000000002,
+      "reserve_time_min": 68.03897261395167,
+      "reserve_energy_kwh": 169.92,
+      "reserve_completed_loads": 2,
+      "reserve_completed_tonnes": 90.0,
+      "complete_recurring_cycles_before_reserve": 1,
+      "recurring_cycle_energy_kwh": 71.62291956222012,
+      "recurring_cycle_time_min": 26.191503218303602,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 312.5085305901964,
+      "native_120min_final_soc_pct": -27.78795835840045,
+      "corrected_120min_final_soc_pct": -30.34905741179253,
+      "native_soc_omitted_stationary_kwh": 7.253032519207996
+    },
+    {
+      "case": "C100_RR02",
+      "configuration_scale": 1.0,
+      "capacity_kwh": 354.0,
+      "rolling_resistance_pct": 2,
+      "pack_mass_kg": 8255.0,
+      "vehicle_tare_kg": 48148.0,
+      "battery_nominal_rating_kw": 480.0,
+      "wheel_cap_kw": 391,
+      "native_electrical_curve_full_load_kw": 480.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 169.4675380960294,
+      "reserve_time_min": 88.34161317289522,
+      "reserve_energy_kwh": 212.4,
+      "reserve_completed_loads": 3,
+      "reserve_completed_tonnes": 135.0,
+      "complete_recurring_cycles_before_reserve": 2,
+      "recurring_cycle_energy_kwh": 61.02904315249587,
+      "recurring_cycle_time_min": 23.96744716208134,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 305.0573385517947,
+      "native_120min_final_soc_pct": -4.03275776823393,
+      "corrected_120min_final_soc_pct": -6.174389421410936,
+      "native_soc_omitted_stationary_kwh": 7.581376052246743
+    },
+    {
+      "case": "C100_RR03",
+      "configuration_scale": 1.0,
+      "capacity_kwh": 354.0,
+      "rolling_resistance_pct": 3,
+      "pack_mass_kg": 8255.0,
+      "vehicle_tare_kg": 48148.0,
+      "battery_nominal_rating_kw": 480.0,
+      "wheel_cap_kw": 391,
+      "native_electrical_curve_full_load_kw": 480.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 180.74645637152236,
+      "reserve_time_min": 85.5989351257934,
+      "reserve_energy_kwh": 212.4,
+      "reserve_completed_loads": 3,
+      "reserve_completed_tonnes": 135.0,
+      "complete_recurring_cycles_before_reserve": 2,
+      "recurring_cycle_energy_kwh": 66.79447534987244,
+      "recurring_cycle_time_min": 24.308264788419486,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 332.8034616660392,
+      "native_120min_final_soc_pct": -11.9633980640765,
+      "corrected_120min_final_soc_pct": -14.012277306790736,
+      "native_soc_omitted_stationary_kwh": 7.253032519207996
+    },
+    {
+      "case": "C100_RR04",
+      "configuration_scale": 1.0,
+      "capacity_kwh": 354.0,
+      "rolling_resistance_pct": 4,
+      "pack_mass_kg": 8255.0,
+      "vehicle_tare_kg": 48148.0,
+      "battery_nominal_rating_kw": 480.0,
+      "wheel_cap_kw": 391,
+      "native_electrical_curve_full_load_kw": 480.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 191.42172341756924,
+      "reserve_time_min": 71.88331196125137,
+      "reserve_energy_kwh": 212.4,
+      "reserve_completed_loads": 2,
+      "reserve_completed_tonnes": 90.0,
+      "complete_recurring_cycles_before_reserve": 1,
+      "recurring_cycle_energy_kwh": 72.41244245954496,
+      "recurring_cycle_time_min": 24.630880842603837,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 356.8152755319044,
+      "native_120min_final_soc_pct": -18.7463963312702,
+      "corrected_120min_final_soc_pct": -20.7952755739843,
+      "native_soc_omitted_stationary_kwh": 7.253032519207996
+    },
+    {
+      "case": "C120_RR02",
+      "configuration_scale": 1.2,
+      "capacity_kwh": 424.8,
+      "rolling_resistance_pct": 2,
+      "pack_mass_kg": 9906.0,
+      "vehicle_tare_kg": 49799.0,
+      "battery_nominal_rating_kw": 576.0,
+      "wheel_cap_kw": 391,
+      "native_electrical_curve_full_load_kw": 480.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 171.00572788156762,
+      "reserve_time_min": 108.08589338172511,
+      "reserve_energy_kwh": 254.88,
+      "reserve_completed_loads": 4,
+      "reserve_completed_tonnes": 180.0,
+      "complete_recurring_cycles_before_reserve": 3,
+      "recurring_cycle_energy_kwh": 62.185376527936384,
+      "recurring_cycle_time_min": 24.088484071849184,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 310.6324035268154,
+      "native_120min_final_soc_pct": 8.612816464803572,
+      "corrected_120min_final_soc_pct": 6.875611222501092,
+      "native_soc_omitted_stationary_kwh": 7.379647869300118
+    },
+    {
+      "case": "C120_RR03",
+      "configuration_scale": 1.2,
+      "capacity_kwh": 424.8,
+      "rolling_resistance_pct": 3,
+      "pack_mass_kg": 9906.0,
+      "vehicle_tare_kg": 49799.0,
+      "battery_nominal_rating_kw": 576.0,
+      "wheel_cap_kw": 391,
+      "native_electrical_curve_full_load_kw": 480.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 182.26597469830457,
+      "reserve_time_min": 93.35031312083146,
+      "reserve_energy_kwh": 254.88,
+      "reserve_completed_loads": 3,
+      "reserve_completed_tonnes": 135.0,
+      "complete_recurring_cycles_before_reserve": 2,
+      "recurring_cycle_energy_kwh": 67.92055382078019,
+      "recurring_cycle_time_min": 24.41673408193925,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 337.3537938565338,
+      "native_120min_final_soc_pct": 2.292664468613766,
+      "corrected_120min_final_soc_pct": 0.585265099686012,
+      "native_soc_omitted_stationary_kwh": 7.253032519207995
+    },
+    {
+      "case": "C120_RR04",
+      "configuration_scale": 1.2,
+      "capacity_kwh": 424.8,
+      "rolling_resistance_pct": 4,
+      "pack_mass_kg": 9906.0,
+      "vehicle_tare_kg": 49799.0,
+      "battery_nominal_rating_kw": 576.0,
+      "wheel_cap_kw": 391,
+      "native_electrical_curve_full_load_kw": 480.0,
+      "common_window_min": 68.03897261395167,
+      "common_window_energy_kwh": 193.0700442574764,
+      "reserve_time_min": 90.62932934508058,
+      "reserve_energy_kwh": 254.88,
+      "reserve_completed_loads": 3,
+      "reserve_completed_tonnes": 135.0,
+      "complete_recurring_cycles_before_reserve": 2,
+      "recurring_cycle_energy_kwh": 73.65202472655503,
+      "recurring_cycle_time_min": 24.744751338142976,
+      "raw_120min_tonnes": 180.0,
+      "raw_120min_energy_kwh": 361.42831978875364,
+      "native_120min_final_soc_pct": -3.3745968148651855,
+      "corrected_120min_final_soc_pct": -5.081996183793237,
+      "native_soc_omitted_stationary_kwh": 7.253032519207995
+    }
+  ]
+}

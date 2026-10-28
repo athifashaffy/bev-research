@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-27",
+  "generator": "Unchanged archived thermal_analysis.py exact exponential with Ieq=2.5*P_kW/capacity_kWh",
+  "a_K_per_A2_s": 4.344635339312832e-05,
+  "b_per_s": 0.002655462788692412,
+  "nominal_air_c": 25.0,
+  "nominal_initial_temperature_c": 25.0,
+  "reserve": "External all-state 0.60*nominal kWh window (80% to 20%); includes stationary energy",
+  "table2": "Primary common feasible time, start 0; all-state energy/time mean power; complete recurring unload-end to unload-end cycles only; cycle count reported",
+  "output_grid": "1 s plus exact event/reserve/common endpoints, identical to archived baseline",
+  "sensitivity": {
+    "a_multipliers": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "b_multipliers": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "g_mean_square_heat": [
+      1.0,
+      2.0,
+      4.0
+    ],
+    "air_initial_c": [
+      25.0,
+      35.0,
+      40.0
+    ]
+  },
+  "interpretation": "A123-equivalent cell surface scenario; not a validated Z50 pack temperature. Multipliers are assumed stress scenarios, not statistical or measured RMS bounds.",
+  "pulse_anchor": "Conditional sampled electrical deltaV/deltaI only; never substitutes a new generator or uniquely identifies R,C,K.",
+  "screens": "60 \u00b0C retained as declared study screen; 55 \u00b0C supplemental historical matching-capacity M1-B operating screen; neither is a Z50 limit."
+}

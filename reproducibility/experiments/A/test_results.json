@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-10-28T15:00:04.291175+00:00",
+  "command": "python -m unittest discover -s experiments/A/tests -p test_models.py -v",
+  "exit_code": 0,
+  "test_count": 9,
+  "stdout": "",
+  "stderr": "test_direct_target_uses_horizon_seconds_not_minutes (test_models.ForecastingTests.test_direct_target_uses_horizon_seconds_not_minutes) ... ok\ntest_future_values_cannot_change_origin_features (test_models.ForecastingTests.test_future_values_cannot_change_origin_features) ... ok\ntest_history_gap_or_forecast_gap_excludes_origin_for_all_methods (test_models.ForecastingTests.test_history_gap_or_forecast_gap_excludes_origin_for_all_methods) ... ok\ntest_metrics_keep_small_celsius_errors_and_use_sample_weights (test_models.ForecastingTests.test_metrics_keep_small_celsius_errors_and_use_sample_weights) ... ok\ntest_nonincreasing_source_clock_is_rejected (test_models.ForecastingTests.test_nonincreasing_source_clock_is_rejected) ... ok\ntest_ode_forecast_has_ampere_squared_and_second_units (test_models.ForecastingTests.test_ode_forecast_has_ampere_squared_and_second_units) ... ok\ntest_outer_and_inner_whole_configuration_groups_are_disjoint (test_models.ForecastingTests.test_outer_and_inner_whole_configuration_groups_are_disjoint) ... ok\ntest_outer_case_extremes_cannot_affect_scaler_selection_or_fit (test_models.ForecastingTests.test_outer_case_extremes_cannot_affect_scaler_selection_or_fit) ... ok\ntest_resampling_uses_only_past_values_and_does_not_bridge_gap (test_models.ForecastingTests.test_resampling_uses_only_past_values_and_does_not_bridge_gap) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.051s\n\nOK\n",
+  "python_version": "3.12.14"
+}

@@ -1,0 +1,51 @@
+{
+  "evidence_scope": "Original archived operator presentation and manufacturer specification. Text-extraction review; exact figures/maps not visually remeasured.",
+  "operator": {
+    "path": "New_Afton_Professor_Case\\04_Public_Evidence\\new_afton_2022_bev_presentation.pdf",
+    "pages": [
+      12,
+      16
+    ],
+    "reported_nominal_energy_kwh": 350,
+    "reported_usable_display_soc_energy_kwh": 300,
+    "route_a_length_m": 1500,
+    "route_a_rise_m": 135,
+    "route_a_steep_length_approx_m": 830,
+    "route_a_steep_grade_pct": 16,
+    "route_a_net_consumption_pct": 19,
+    "route_a_percentage_denominator_on_slide16": "not stated",
+    "trips_per_swap": [
+      4,
+      5
+    ],
+    "tonnes_per_swap": [
+      180,
+      225
+    ]
+  },
+  "specification": {
+    "path": "New_Afton_Professor_Case\\04_Public_Evidence\\artisan_z50_official_specification.pdf",
+    "page": 5,
+    "nominal_energy_kwh": 354,
+    "nominal_capacity_ah": 576,
+    "continuous_battery_power_kw": 480,
+    "skid_mass_kg": 8255,
+    "total_unloaded_operating_mass_kg": 48148,
+    "rated_payload_kg": 50000,
+    "max_speed_kmh": 14,
+    "battery_regeneration_supported": true,
+    "nominal_voltage_inferred_from_energy_charge_v": 614.5833333333334
+  },
+  "denominator_check": {
+    "nominal_350_kwh_19pct_kwh": 66.5,
+    "nominal_354_kwh_19pct_kwh": 67.26,
+    "usable_300_kwh_19pct_kwh": 57.0,
+    "conclusion": "Current manuscript uses the 354 kWh manufacturer specification; operator deck p12 instead labels nominal energy 350 kWh. Both nominal interpretations remain conditional. The net-consumption wording and the real vehicle regeneration capability, which this study disables, further limit direct comparison."
+  },
+  "geometric_convention": {
+    "lengths_interpreted_as": "slopedistance",
+    "rise_of_830m_at_grade16pct_m": 131.1321159185385,
+    "residual_670m_grade_fraction": 0.00577305751599735,
+    "conclusion": "Exact match to aggregates is constructed; alignment, residual grade and length interpretation are not independent survey measurements."
+  }
+}

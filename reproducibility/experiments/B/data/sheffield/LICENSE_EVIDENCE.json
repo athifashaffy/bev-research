@@ -1,0 +1,23 @@
+{
+  "dataset_title": "Experimental Temperature and Heat Flux Data for Constant Power Over Heating Tests of 18650 and 26650 LFP Cells.",
+  "doi": "10.15131/shef.data.29836850.v1",
+  "url": "https://api.figshare.com/v2/articles/29836850",
+  "authors": [
+    "Peter Bugryniec",
+    "Francesca Lugaresi",
+    "Hosein Sadeghi",
+    "Daniel Williams",
+    "Mark Wootton",
+    "Solomon Brown",
+    "Francesco Restuccia"
+  ],
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "local_evidence_path": "LFP_Data_Feasibility_2026-10-20/sources/sheffield_metadata.json",
+  "local_evidence_sha256": "d57cb78281ec6b4df8b10cdb132ae917bf597bf378cc0fbbad60e64182cf1e80",
+  "verification": "Explicit license field in archived publisher Figshare API metadata; all 27 CSV publisher MD5 values checked during packaging.",
+  "changes": "CSV and workbook bytes unchanged. Portable provenance sidecars and this notice are newly generated. No third-party paper copied."
+}

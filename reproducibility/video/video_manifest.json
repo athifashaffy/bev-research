@@ -1,0 +1,58 @@
+{
+  "source": "HAULSIM 3.8 build 585 native gdigrab window capture",
+  "raw": "New_Afton_HAULSIM_45t_Raw.mp4",
+  "raw_sha256": "e0e51ca84c505771a11db9ead8a15fdf2c5577aa413dc8bd38ad1eadc768b95e",
+  "native_project": "models/haulsim/new_afton/native_recording/New_Afton_Native_45t.hsm",
+  "verified_experiment": "models/haulsim/new_afton/audit/verified_A_45t/audit_summary.json",
+  "presentation_edit": {
+    "source_seconds": [
+      14,
+      110
+    ],
+    "title_seconds": 4,
+    "closing_seconds": 6,
+    "crop": [
+      1280,
+      576,
+      510,
+      359
+    ],
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 20
+  },
+  "native_ui_edit": {
+    "source_seconds": [
+      14,
+      159
+    ],
+    "removed": "Personal file path in top window title bar",
+    "resolution": [
+      1920,
+      1080
+    ]
+  },
+  "playback": "Native Run Speed 0.30 simulated min per real second; approximately 18x",
+  "limits": [
+    "Generic native truck graphic, not OEM Z50 mesh",
+    "Assumed mine alignment and schematic cutaway CAD",
+    "Battery, thermal and detector validation not included",
+    "No fabricated motion or simulated sensor readings added"
+  ],
+  "outputs": [
+    {
+      "file": "New_Afton_HAULSIM_Demo.mp4",
+      "bytes": 7552001,
+      "sha256": "196563795bbe345bce43a93ec76d34c2355eb92931d19eebc29a8e2727cde55d",
+      "full_decode": "passed"
+    },
+    {
+      "file": "New_Afton_HAULSIM_Native_UI.mp4",
+      "bytes": 10149566,
+      "sha256": "1645eee78cf5aca142b35c9f126c0f0b1f04abdf5e51fe9fb78859e4cbb52d65",
+      "full_decode": "passed"
+    }
+  ]
+}

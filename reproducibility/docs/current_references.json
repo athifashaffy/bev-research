@@ -1,0 +1,80 @@
+[
+  {
+    "key": "fleet",
+    "number": 1,
+    "text": "Sandvik Mining and Rock Solutions (2023) New Gold’s New Afton mine grows Sandvik BEV fleet",
+    "url": "https://www.mining.sandvik/en/news-and-media/news-archive/2023/01/new-golds-new-afton-mine-grows-sandvik-bev-fleet/"
+  },
+  {
+    "key": "operator",
+    "number": 2,
+    "text": "LaMarsh J, New Gold New Afton (2022) New Afton’s learnings during the implementation of Sandvik’s battery-electric mobile fleet. Operator presentation, slide 16",
+    "url": "https://www.rocktechnology.sandvik/globalassets/campaigns/innovation-in-mining/pdf/wednesday-3-jeff-lamarsh-new-afton-bev.pdf"
+  },
+  {
+    "key": "haulsim",
+    "number": 3,
+    "text": "RPMGlobal (n.d.) HAULSIM discrete-event haulage simulation software. Installed study version 3.8",
+    "url": "https://rpmglobal.com/product/haulsim/"
+  },
+  {
+    "key": "mineprior",
+    "number": 4,
+    "text": "Elcin Eroglu S, Kahraman M, Sebnem Duzgun H (2026) Integrated simulation and network analysis of battery fire risk in underground mining systems. Reliability Engineering & System Safety 272:112668",
+    "url": "https://doi.org/10.1016/j.ress.2026.112668"
+  },
+  {
+    "key": "bernardi",
+    "number": 5,
+    "text": "Bernardi D, Pawlikowski E, Newman J (1985) A general energy balance for battery systems. Journal of The Electrochemical Society 132(1):5–12",
+    "url": "https://doi.org/10.1149/1.2113792"
+  },
+  {
+    "key": "forgez",
+    "number": 6,
+    "text": "Forgez C, Vinh Do D, Friedrich G, Morcrette M, Delacourt C (2010) Thermal modeling of a cylindrical LiFePO4/graphite lithium-ion battery. Journal of Power Sources 195(9):2961–2968",
+    "url": "https://doi.org/10.1016/j.jpowsour.2009.10.105"
+  },
+  {
+    "key": "a123",
+    "number": 7,
+    "text": "de Souza AK (2021) Lithium-ion battery OCV and dynamic test data of a LiFePO4 cylindrical cell. Mendeley Data, version 1",
+    "url": "https://doi.org/10.17632/p8kf893yv3.1"
+  },
+  {
+    "key": "forecast",
+    "number": 8,
+    "text": "Hyndman RJ, Athanasopoulos G (2021) Forecasting: Principles and Practice, 3rd edn. OTexts",
+    "url": "https://otexts.com/fpp3/"
+  },
+  {
+    "key": "ridge",
+    "number": 9,
+    "text": "Hoerl AE, Kennard RW (1970) Ridge regression: biased estimation for nonorthogonal problems. Technometrics 12(1):55–67",
+    "url": "https://doi.org/10.1080/00401706.1970.10488634"
+  },
+  {
+    "key": "sklearn",
+    "number": 10,
+    "text": "Pedregosa F et al. (2011) Scikit-learn: machine learning in Python. Journal of Machine Learning Research 12:2825–2830",
+    "url": "https://jmlr.org/papers/v12/pedregosa11a.html"
+  },
+  {
+    "key": "hgb",
+    "number": 11,
+    "text": "scikit-learn developers (2025) HistGradientBoostingRegressor. Scikit-learn 1.7.2 documentation",
+    "url": "https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html"
+  },
+  {
+    "key": "cv",
+    "number": 12,
+    "text": "Bergmeir C, Benítez JM (2012) On the use of cross-validation for time series predictor evaluation. Information Sciences 191:192–213",
+    "url": "https://doi.org/10.1016/j.ins.2011.12.028"
+  },
+  {
+    "key": "z50",
+    "number": 13,
+    "text": "Artisan Vehicle Systems (n.d.) Z50 battery electric 50 tonne haul truck specifications. Historical specification hosted by Sandvik",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf"
+  }
+]

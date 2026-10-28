@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "case_horizon_method_groups": 180,
+  "per_case_metric_rows": 180,
+  "pooled_metric_cells": 20,
+  "nested_model_fits": 792,
+  "same_origin_sets_for_every_method": true,
+  "no_outer_case_in_inner_or_final_training": true,
+  "all_source_and_code_hashes_match": true,
+  "independent_math_fsum_max_metric_difference_c": 1.3877787807814457e-17,
+  "final_repeated_fit_metric_files_byte_identical": {
+    "pooled_table": true,
+    "per_case_metrics": true
+  },
+  "all_inputs_causal_and_all_targets_within_reserve": true,
+  "threadpools_all_one_thread": true,
+  "reproduction": "python experiment_a/verify_outputs.py"
+}

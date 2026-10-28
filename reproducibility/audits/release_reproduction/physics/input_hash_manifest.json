@@ -1,0 +1,126 @@
+{
+  "all_read_inputs_unchanged": true,
+  "required_input_count": 24,
+  "inputs": [
+    {
+      "path": "New_Afton_Experiments_2026-10-20/run_manifest.json",
+      "size_bytes": 12305,
+      "sha256": "794eda2f19ea7c60ebf8a1dee277c14c63af08b28d3af150108870d4631da4c2"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json",
+      "size_bytes": 893,
+      "sha256": "4ec7aa3625acce064de862b28d61c0eff5b74ae79e6a66f7b94932b10daa4e39"
+    },
+    {
+      "path": "APCOM_Study_2026-10-22/results/operations_comparison.csv",
+      "size_bytes": 2699,
+      "sha256": "f77b03789173b9b1d2905c4b336d81908e75b712d86b647537f28e0efc512598"
+    },
+    {
+      "path": "APCOM_Draft_Experiments_2026-10-27/thermal/table2_common_window.csv",
+      "size_bytes": 3562,
+      "sha256": "0996efe01c2134dcb11c67a735df3dd0a26ffec2136fcb0291fd7cf07edb83b4"
+    },
+    {
+      "path": "APCOM_Draft_Experiments_2026-10-27/thermal/nominal_traces.csv",
+      "size_bytes": 7172339,
+      "sha256": "21df8dea3669ef7f672db23a71ed2726acb67fcbc1bab43baf232c41a45524fc"
+    },
+    {
+      "path": "APCOM_Draft_Experiments_2026-10-27/thermal/sensitivity_summary.csv",
+      "size_bytes": 193489,
+      "sha256": "3a9936c489f3255febdbf400fe94a95c9f102dce17cc15b167c777ee708672ab"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C080_RR02/native_run.hsmdb",
+      "size_bytes": 798720,
+      "sha256": "cd9fdf3cdc5df6e9ba63bb7c29fb1fd56fda5335f82e503a2af0b3acedf87739"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C080_RR03/native_run.hsmdb",
+      "size_bytes": 798720,
+      "sha256": "031d917c1c48762a9892419379c9fa2c6e128cb320808d0846c1b03f81e67849"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C080_RR04/native_run.hsmdb",
+      "size_bytes": 798720,
+      "sha256": "df727eddc1dc1838eb93b6e5e73a150342db261f5f731598fd20fa0359df32bd"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C100_RR02/native_run.hsmdb",
+      "size_bytes": 798720,
+      "sha256": "18c2f18dd1ac8fea9a75d9e1f1c87f1b3bf94b91070e533b6c800d80ba1d21f7"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+      "size_bytes": 794624,
+      "sha256": "e7f6734c0b8a742b1ee41e33b619d0c155965b98c90b2d4b1f9e10ed2f0d50d9"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C100_RR04/native_run.hsmdb",
+      "size_bytes": 798720,
+      "sha256": "4422014cf9ca139dd1941913c6f9f7e984a34d928ba97fbd51b072ba97c797cf"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C120_RR02/native_run.hsmdb",
+      "size_bytes": 798720,
+      "sha256": "4dfaf06e532729192541d14619b6aee21672d1ce655603fd3f5a602a936fc67a"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C120_RR03/native_run.hsmdb",
+      "size_bytes": 798720,
+      "sha256": "e4671dc668f7a9de3863f7af8a5b72943c00b5cb60d9b573dbe4bbdb4a92e70f"
+    },
+    {
+      "path": "New_Afton_Experiments_2026-10-20/results/C120_RR04/native_run.hsmdb",
+      "size_bytes": 798720,
+      "sha256": "08c680bccabc28ca985531e1c893c380285715289f6c8391df53d94e3c7016f9"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/sources/download_manifest.json",
+      "size_bytes": 1411,
+      "sha256": "768f634afa2e47789c5e64cf5b84f0cb601d7ee8704d9dad85eec20dcc0a9547"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/sources/A002_PeriodicPulseData.mat",
+      "size_bytes": 254384,
+      "sha256": "866adba8064543812dc0a29ddcc2b83d034efb2cd593bc9f5af82ae8bbd88ccc"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/sources/A002_UDDS_P25.mat",
+      "size_bytes": 137961,
+      "sha256": "0fb3ed500687a43d01d2d133d5c9b2e2742e8f15876766daed3bcf97716e8bbe"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/sources/A002_UDDS_P35.mat",
+      "size_bytes": 138187,
+      "sha256": "cbad03523cae4d3839ca4d9a0da9e61036b59e996ef313d5afac4159ead00d61"
+    },
+    {
+      "path": "APCOM_Study_2026-10-22/code/thermal_analysis.py",
+      "size_bytes": 22540,
+      "sha256": "e7aedc92eda053590a5cc36792c44064da89726e50906339567c918afd3cc1dd"
+    },
+    {
+      "path": "APCOM_Study_2026-10-22/code/operations.py",
+      "size_bytes": 26374,
+      "sha256": "5c9692ba0aeee4bc28c55d4b4ae040c4b360cdfa94f1f49bd8410599452679c0"
+    },
+    {
+      "path": "APCOM_Draft_Experiments_2026-10-27/thermal/run_thermal.py",
+      "size_bytes": 28606,
+      "sha256": "4823b5fe5f827359f785c8c0d072eaa5981d7d4fd7d57b6569553f17517ce618"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/code/fit_model.py",
+      "size_bytes": 4891,
+      "sha256": "583b587e1f9dc56e231186f652e8d20a5702508771b195ece95f29526b375840"
+    },
+    {
+      "path": "APCOM_Draft_Experiments_2026-10-27/thermal/protocol.json",
+      "size_bytes": 1432,
+      "sha256": "730306f4173ae7dde3ea88312c2efcc15606294660b0f27aa4bfbad7d0c3aac4"
+    }
+  ]
+}

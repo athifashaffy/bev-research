@@ -1,0 +1,78 @@
+{
+  "generated_utc": "2026-10-28T14:53:22.054544+00:00",
+  "disclosure": "AI-generated supporting code for a new evidence audit. No original source edited, original experiment re-executed, new native simulation run, parameter fit or field validation.",
+  "verification_scope": "Source-level reproduction and internal arithmetic only; this does not validate truck physics.",
+  "nominal_trace_rows_checked": 45094,
+  "maximum_nominal_temperature_difference_c": 7.105427357601002e-15,
+  "maximum_equivalent_current_difference_a": 0.0,
+  "maximum_sensitivity_summary_difference_c": 7.105427357601002e-15,
+  "maximum_duplicate_heating_product_summary_difference_c": 0.0,
+  "derived": {
+    "a_over_b_K_per_A2": 0.01636112303216342,
+    "time_constant_s": 376.5821928509924,
+    "time_constant_min": 6.276369880849873,
+    "event_equivalent_current_range_a": [
+      0.11770244821091609,
+      2.5250259986899413
+    ],
+    "maximum_constant_current_equilibrium_rise_c": 0.10431453315020817,
+    "common_window_mean_power_range_kw": [
+      133.26071793692395,
+      170.2583418061959
+    ],
+    "nominal_common_peak_rise_range_c": [
+      0.042957806947763494,
+      0.09318688535306564
+    ],
+    "central_rr2_to4_cycle_energy_change_pct": 18.65242959586455,
+    "central_rr2_to4_cycle_time_change_pct": 2.768061512917863,
+    "central_rr2_to4_reserve_time_change_pct": -18.63029281504399,
+    "central_cycle_pct_of_354_nominal": 18.868495861545888,
+    "central_whole_run_energy_divided_by_deliveries_kwh": 83.2008654165098,
+    "operator_19pct_of_354_nominal_kwh": 67.26,
+    "operator_19pct_of_300_usable_kwh": 57.0,
+    "central_above_57kwh_pct": 17.183290087495507,
+    "sensitivity_assignments": 729,
+    "effective_input_combinations": 405,
+    "maximum_sensitivity_surface_c": 41.229038842296575,
+    "maximum_sensitivity_rise_c": 1.2290388422965748
+  },
+  "laboratory_residuals": [
+    {
+      "file": "A002_PeriodicPulseData.mat",
+      "role": "FIT",
+      "samples": 21595,
+      "duration_s": 25175.471616365972,
+      "time_weighted_rmse_c": 0.07739021145752578,
+      "time_weighted_mae_c": 0.04542861619216858,
+      "max_absolute_error_c": 0.3590812269861132,
+      "timestamp_dt_min_s": 0.001522827908047475,
+      "timestamp_dt_max_s": 60.00995376661899,
+      "source_sha256": "866adba8064543812dc0a29ddcc2b83d034efb2cd593bc9f5af82ae8bbd88ccc"
+    },
+    {
+      "file": "A002_UDDS_P25.mat",
+      "role": "SAME_CELL_OTHER_RECORD",
+      "samples": 8326,
+      "duration_s": 8439.117640912213,
+      "time_weighted_rmse_c": 0.10902085611793279,
+      "time_weighted_mae_c": 0.07890722691356392,
+      "max_absolute_error_c": 0.32543705344060214,
+      "timestamp_dt_min_s": 0.031223103667116447,
+      "timestamp_dt_max_s": 1.0377249382802347,
+      "source_sha256": "0fb3ed500687a43d01d2d133d5c9b2e2742e8f15876766daed3bcf97716e8bbe"
+    },
+    {
+      "file": "A002_UDDS_P35.mat",
+      "role": "SAME_CELL_OTHER_RECORD",
+      "samples": 8342,
+      "duration_s": 8439.136649859656,
+      "time_weighted_rmse_c": 0.11714816495692623,
+      "time_weighted_mae_c": 0.08182969322175809,
+      "max_absolute_error_c": 0.530848766750907,
+      "timestamp_dt_min_s": 0.015680208261983353,
+      "timestamp_dt_max_s": 1.0450074743494042,
+      "source_sha256": "cbad03523cae4d3839ca4d9a0da9e61036b59e996ef313d5afac4159ead00d61"
+    }
+  ]
+}

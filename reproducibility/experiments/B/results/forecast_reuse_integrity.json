@@ -1,0 +1,40 @@
+{
+  "fitting_performed": false,
+  "model_selection_changed": false,
+  "thresholds_optimized": false,
+  "matched_origin_comparison": true,
+  "original_history_s": 30,
+  "original_horizons_s": [
+    10,
+    30,
+    60
+  ],
+  "verified_files": [
+    {
+      "path": "ML_Forecasting_2026-10-25\\lfp\\results\\downstream_origin_predictions.csv.gz",
+      "sha256": "1043166641120c448c3ec5e0bd1c8d8f0278e969f69648c693a5025153fa193d",
+      "archived_manifest_matches": true
+    },
+    {
+      "path": "ML_Forecasting_2026-10-25\\lfp\\results\\selected_family_by_horizon.csv",
+      "sha256": "80122a0cde6a2cb85a8a65fa29c5ddfc97f911542cf30b8bbb3c0c4d8fb8df09",
+      "archived_manifest_matches": true
+    },
+    {
+      "path": "ML_Forecasting_2026-10-25\\lfp\\models\\boosting_10s.joblib",
+      "sha256": "b10f30edbaa8f66b59d16c64592f174b7dafcc43fa7f0c47a03161a732332e8b",
+      "archived_manifest_matches": true
+    },
+    {
+      "path": "ML_Forecasting_2026-10-25\\lfp\\models\\boosting_30s.joblib",
+      "sha256": "635baccd1f0a07b0265f7574c265db8ebee634128e7406cd12f29f8946618322",
+      "archived_manifest_matches": true
+    },
+    {
+      "path": "ML_Forecasting_2026-10-25\\lfp\\models\\boosting_60s.joblib",
+      "sha256": "65cf803a1491bb4dd43db99d5f88b1af73af578f11a2053551b8ba4fc5c5484f",
+      "archived_manifest_matches": true
+    }
+  ],
+  "caveat": "Seven held-out Sheffield records share two test dates; TUM is one dependent module. No simulated ExperimentA model is applied to laboratory signals."
+}

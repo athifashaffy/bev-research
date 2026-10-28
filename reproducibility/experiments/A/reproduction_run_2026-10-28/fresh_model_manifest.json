@@ -1,0 +1,578 @@
+[
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C080_RR02.joblib",
+    "sha256": "dbfbd94c3ff4b2f0f5891a95f762eec9d9c15e0e867c2443977519b55af6815e",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C080_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C080_RR02.joblib",
+    "sha256": "349d4dd4e9d4d7ecb3d3d272c5b4c341644192ea61367041a530ac5739b9e8d9",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C080_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C080_RR03.joblib",
+    "sha256": "617cf1e92f538d26c85ab47f52e3d3bf1561f60b1e01489047a31cc956998e6c",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C080_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C080_RR03.joblib",
+    "sha256": "e6a930b153488bb8134000fa5867a5d5848905b2f08ff38e6c75548efcbde9b9",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C080_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C080_RR04.joblib",
+    "sha256": "1f7d66fba4f352bf45a3ffce3da5c6e129c0cc4513ed67c7250ed89919736a11",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C080_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C080_RR04.joblib",
+    "sha256": "f17f60c21970c21f8f6c20bf7f3342bad41e6967d4366f9c25eced599561fe7b",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C080_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C100_RR02.joblib",
+    "sha256": "98563fa270a924fb708bfe1ca05934c254e47bd4cfc7d1adbffc14b17862764a",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C100_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C100_RR02.joblib",
+    "sha256": "80e7f34632b20598c64f31d32711f2f278fa4e535358811048bf925d2949676b",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C100_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C100_RR03.joblib",
+    "sha256": "a64195af45f9b023401afe9a7be0e6100276162051a59847e69ddb603fa3bf61",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C100_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C100_RR03.joblib",
+    "sha256": "e9a7070404a6f864b6731fb2c7ddcdc53abad0d550abf5950bdb7cf5c0847d31",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C100_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C100_RR04.joblib",
+    "sha256": "d3f6504e8b9991a95f9f0bb68245b03d16c185df1f7f54d7cff37c19f90fcccb",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C100_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C100_RR04.joblib",
+    "sha256": "bf0bc9eeb89412a31ea7ef44e67586b9575d99e85771661c77c114eda6654264",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C100_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C120_RR02.joblib",
+    "sha256": "5b090f072fad75bdc50e614ee1bf0159ba8565deb6552b6444a618a23f2eac68",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C120_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C120_RR02.joblib",
+    "sha256": "93644bd9f077d55e2307e6b438ff909b333816dc64be278de219d335307af7f2",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C120_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C120_RR03.joblib",
+    "sha256": "ea22bf75bdb4ba0436b40f26782b01140c6bb7f297bbb11280f265df625d6480",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C120_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C120_RR03.joblib",
+    "sha256": "6b0422e9845412c2658f502ddb0c3494eeebf8b35beb64d33ebf75ed81f68013",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C120_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h060_held_C120_RR04.joblib",
+    "sha256": "afb5fe6a162baf88202552132cd6b493f7b7dc0701f462a10929dab6e5aa5d2e",
+    "method": "ridge",
+    "horizon_s": 60,
+    "outer_test": "C120_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h060_held_C120_RR04.joblib",
+    "sha256": "10c6ee3440b84b4ae2005065023c83603e97ad2166e62fef90efe5c7112aac8c",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 60,
+    "outer_test": "C120_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C080_RR02.joblib",
+    "sha256": "76ce2a2468a3fe331a94211ea3020f19cba09bd92813f88b748943621e406490",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C080_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C080_RR02.joblib",
+    "sha256": "2fcb032379ddb51dffb76945c25cc25a59966fdd4812ddbefee741a8e9ee5343",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C080_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C080_RR03.joblib",
+    "sha256": "40ea985c97fca1075c83f8fb94bdc1c8c0e8df19dc92d4203158febbacd0343b",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C080_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C080_RR03.joblib",
+    "sha256": "a0cff81594c08594936e32c6af8ca2cb8c81ec81192546e70e2842849c1e8082",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C080_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C080_RR04.joblib",
+    "sha256": "a56c3cce164620335190e08af0a894b04303069a2de51fbe52b18ef7e23446cf",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C080_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C080_RR04.joblib",
+    "sha256": "a5ab32a32b0b993dbdb0c963f8beb1293a3a61d0434ab2328784d9a234a5c0a3",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C080_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C100_RR02.joblib",
+    "sha256": "d0a67ff4787e073b8058fc983c15c03c778f51fbb2949e1e5fe264211d14eac0",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C100_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C100_RR02.joblib",
+    "sha256": "ac5de9b28596bf0dbd455048b81c24ee1288b2ee0e1c27fd0531dc50db31d42f",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C100_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C100_RR03.joblib",
+    "sha256": "15f632ee4ab60ac805bec9e2202cbe36c3cf648b9ba39918a858305b1d7bc635",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C100_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C100_RR03.joblib",
+    "sha256": "5b8de7d38d2e62f20af4e27dc01586711efd98705953b38ff9e155bba4eee4cc",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C100_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C100_RR04.joblib",
+    "sha256": "bbe4bd6b9d53916abc0306f5a6e7aa2e57c690958aa69e5c7ef6cdaaeadc6b24",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C100_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C100_RR04.joblib",
+    "sha256": "8e5f924b26cf859faf6e4ed5844103621a29cbc038597a91dd8e59686c63e4d3",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C100_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C120_RR02.joblib",
+    "sha256": "b3021f43e02325f93bc7659e624014f1a8d6ac40d0cd3db21838fba0404b739e",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C120_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C120_RR02.joblib",
+    "sha256": "332e2c7c9bce7fe6e069d72735f76d2b04c560ddbef591698c9a875dab997c3a",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C120_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C120_RR03.joblib",
+    "sha256": "ebb66971a3d06bb4d80dba15c45064a63944348779dc17a01af7eacf0c07c773",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C120_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C120_RR03.joblib",
+    "sha256": "ec3a5c0945665e72c0d5a24f977e0d7ecf803972dec97fb942f990c9dfbe7986",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C120_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h120_held_C120_RR04.joblib",
+    "sha256": "34097f95e28e646b91b70c3dec00de6fbabe68f4d995bb4858f616ec1862f8c1",
+    "method": "ridge",
+    "horizon_s": 120,
+    "outer_test": "C120_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h120_held_C120_RR04.joblib",
+    "sha256": "1a050ba68c0cd907e1dc7ff821855c543ccebbef6c07e65611289921f895e4bb",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 120,
+    "outer_test": "C120_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C080_RR02.joblib",
+    "sha256": "abd2f0317e65a4c9f702b38dc6cc6a0c8efbdc6ddbeef0c7c120d271399348cf",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C080_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C080_RR02.joblib",
+    "sha256": "e70950d09ac804f0b4004a1097211375eaa911421ea6edb6208811a193aa4dff",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C080_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C080_RR03.joblib",
+    "sha256": "3bdb7cf46caa07a3999bd900edd921c5935612a163045487d7749380529df8b7",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C080_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C080_RR03.joblib",
+    "sha256": "ac004ee5e21a9aa9d9203eaa143d7ecf6d21686aaf56f8b42a0b76b2b3750b35",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C080_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C080_RR04.joblib",
+    "sha256": "d57075dbe2971c484a34526d4b2c32e920eac9078f63bbee7e7f64f7858ac63e",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C080_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C080_RR04.joblib",
+    "sha256": "42e133a7d7be34660716f0926e6aae2d413f49a04b3562b128f2c60c567284ba",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C080_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C100_RR02.joblib",
+    "sha256": "cbf977c48a469d1a0fc33f9892fcca7d03a6abf50a0699479e3bd88c6c7f587a",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C100_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C100_RR02.joblib",
+    "sha256": "3bc0e4659a519dc81266f032876d937369545680e1aa576bdc2d4d8bb5ac529c",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C100_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C100_RR03.joblib",
+    "sha256": "726da94c817ff771825932e36fbd22936bffca9282e7d909d455227d3656af82",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C100_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C100_RR03.joblib",
+    "sha256": "4f4aac8fec0ac90ece48294d7c6a05cbedba88e2e0aa85a8db77affdcb432aa7",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C100_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C100_RR04.joblib",
+    "sha256": "a79a52d18173f4440f39c59623e21cfbdc783550f88e1c4e9bd6a6b1270a75f7",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C100_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C100_RR04.joblib",
+    "sha256": "998db95131ce8e2bcb306fc5eca82a89e14aae0475bad0bd8debaa084ee3f1da",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C100_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C120_RR02.joblib",
+    "sha256": "0a64338a71a875bed0c020a575de21f3cbb37337fdff65754d04aac2acfe5825",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C120_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C120_RR02.joblib",
+    "sha256": "2c6238fa2ef46a035ea72f02810e5cf9a19b756e6f10dc5b59f431b327096808",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C120_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C120_RR03.joblib",
+    "sha256": "1eb7aacf24da6d397d4c31bd0f46873f20b4b8239108b04d2acac3aef1818536",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C120_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C120_RR03.joblib",
+    "sha256": "bdd130307e5730a5d3fb71878de1a72ee7c3453be5b8e6e65bfacfdf70cf451d",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C120_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h300_held_C120_RR04.joblib",
+    "sha256": "bd71a47d8ee4ae4fec76adb749f809d7981ae55a31f2e901c7a4ebc729065d51",
+    "method": "ridge",
+    "horizon_s": 300,
+    "outer_test": "C120_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h300_held_C120_RR04.joblib",
+    "sha256": "9c59e380033059ca5e02491c799855633339020318e7788f169275e61d8c05f0",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 300,
+    "outer_test": "C120_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C080_RR02.joblib",
+    "sha256": "4920f5eb5dbea2b268e5a341206ca6f2fd8818c887ca6855ae288a5f48717e8f",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C080_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C080_RR02.joblib",
+    "sha256": "6c19eb22a47b9dffc91444cdf90236da5b0729b505fb9b0f87a9c2ba125d7d6d",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C080_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C080_RR03.joblib",
+    "sha256": "59bb6bbab98db2a1e889455a9ebc41f5e1c6df371d5dc69e45d8f43f08eb4e07",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C080_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C080_RR03.joblib",
+    "sha256": "7a8bde0dfbbd2f95290f68c9a35bf6cfb992df8f0aec8db8757341914e3ee967",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C080_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C080_RR04.joblib",
+    "sha256": "cd4402e59c6735ac14ab26f05bdcb00a46c830c825c67bd3fd4d2160bc9e6553",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C080_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C080_RR04.joblib",
+    "sha256": "d16a7f856a0c18db48bebf0c1936f91909c75fe0ecd37989481555bc7e7c6c9a",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C080_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C100_RR02.joblib",
+    "sha256": "2301e60ecc61e82a284245bf32aa6123d7daccdf48b4edb66f44a6d4b1287c08",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C100_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C100_RR02.joblib",
+    "sha256": "8de188eb382cbb6d09d08f6fb939f19adde2593454d68f834f9ea85bacdad3c2",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C100_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C100_RR03.joblib",
+    "sha256": "9f03c36e276e40c480e1d48b3e4e8f78e194bde5ba33ac3e3c23d6d945dd8404",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C100_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C100_RR03.joblib",
+    "sha256": "247b8a58c9ad3bbd54bae9155f00b1259419a03375242d1a96b236528ffe7820",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C100_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C100_RR04.joblib",
+    "sha256": "e29ba29968fbbd0417f629da82ba68c1ef582538abeea462b9abdca0ed9f0af6",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C100_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C100_RR04.joblib",
+    "sha256": "13bef37e68bda88b524dd83b0293ad1d54f72646fe95cdcd84d53090d608a2fc",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C100_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C120_RR02.joblib",
+    "sha256": "33fcc0dfc021b3967d5108c1f0919b9d17fdde8f32cc3b775a0ab3470b5d5be6",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C120_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C120_RR02.joblib",
+    "sha256": "5f1dad4afc87591e40f81ab71eaf7e3ab4729150426a56ff4860759754edc063",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C120_RR02",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C120_RR03.joblib",
+    "sha256": "e9ec24226afd85fc768e75e5f717634acc2044575833021780bbf5320358f128",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C120_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C120_RR03.joblib",
+    "sha256": "700dc0b5a1f17df36bbf9e7d44347c9007c49b79b51e35b520f384dd6a255969",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C120_RR03",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_ridge_h600_held_C120_RR04.joblib",
+    "sha256": "65f16dfe4ea9e0b62dca4791f192acd3f7e8e826a1adf53b419e5a274fc3f7a9",
+    "method": "ridge",
+    "horizon_s": 600,
+    "outer_test": "C120_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  },
+  {
+    "path": "models/NEW_REFIT_hist_gradient_boosting_h600_held_C120_RR04.joblib",
+    "sha256": "7c073594ee81eccdcad429aabfe21f5201ae0c2c1ac4e06e157e76524e8da92d",
+    "method": "hist_gradient_boosting",
+    "horizon_s": 600,
+    "outer_test": "C120_RR04",
+    "status": "NEW_REFIT_NOT_ARCHIVED_MODEL"
+  }
+]

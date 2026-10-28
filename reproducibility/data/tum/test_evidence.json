@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-10-28T14:46:01.423864+00:00",
+  "command": "python -B -m unittest discover -s . -p test_prepare_tum_csv.py -v",
+  "exit_code": 0,
+  "test_count": 6,
+  "stdout": "",
+  "stderr": "test_nmc_surface_has_83_measurement_channels (test_prepare_tum_csv.LosslessCsvTests.test_nmc_surface_has_83_measurement_channels) ... ok\ntest_overlarge_single_row_rejected (test_prepare_tum_csv.LosslessCsvTests.test_overlarge_single_row_rejected) ... ok\ntest_parts_reconstruct_every_byte_and_preview_is_separate (test_prepare_tum_csv.LosslessCsvTests.test_parts_reconstruct_every_byte_and_preview_is_separate) ... ok\ntest_single_part_is_byte_identical (test_prepare_tum_csv.LosslessCsvTests.test_single_part_is_byte_identical) ... ok\ntest_unknown_license_blocks_data_preparation (test_prepare_tum_csv.LosslessCsvTests.test_unknown_license_blocks_data_preparation) ... ok\ntest_unknown_schema_rejected (test_prepare_tum_csv.LosslessCsvTests.test_unknown_schema_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.056s\n\nOK\n",
+  "python_version": "3.12.14",
+  "test_code_sha256": "f854210fd3ce99c419dfde664b54d87f8e73abda97f9117613230668792759d8"
+}

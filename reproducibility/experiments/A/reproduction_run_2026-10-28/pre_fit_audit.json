@@ -1,0 +1,128 @@
+{
+  "utc": "2026-10-28T14:58:45.224371+00:00",
+  "protocol_sha256": "bddb638fcd52c2ccf1d2e99edfb39a672fd74c637bb5496b44774f9312397f6e",
+  "input_hashes": {
+    "APCOM_Study_2026-10-22/results/thermal_nominal_traces.csv": "6563f869f495a6733a05a2460d0132bf82f2e510673cc8d4a625523d8dfa7265",
+    "APCOM_Study_2026-10-22/results/thermal_audit.json": "88ba3cc0d376adfc438eeda2793d332620d87356c2960f5064a9fe6d0fe2badc",
+    "APCOM_Study_2026-10-22/results/operations_audit.json": "d62bc218806246607caafb03e7289458cb03039f5cc82739775cb225d0ab3792",
+    "APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json": "4ec7aa3625acce064de862b28d61c0eff5b74ae79e6a66f7b94932b10daa4e39",
+    "protocol.json": "bddb638fcd52c2ccf1d2e99edfb39a672fd74c637bb5496b44774f9312397f6e"
+  },
+  "feature_names": [
+    "temperature_c_last",
+    "temperature_c_mean",
+    "temperature_c_minimum",
+    "temperature_c_maximum",
+    "temperature_c_slope_per_s",
+    "temperature_c_last_difference",
+    "equivalent_current_a_last",
+    "equivalent_current_a_mean",
+    "equivalent_current_a_minimum",
+    "equivalent_current_a_maximum",
+    "equivalent_current_a_slope_per_s",
+    "equivalent_current_a_last_difference",
+    "air_c_last",
+    "air_c_mean",
+    "air_c_minimum",
+    "air_c_maximum",
+    "air_c_slope_per_s",
+    "air_c_last_difference",
+    "capacity_kwh",
+    "rolling_resistance_pct"
+  ],
+  "planned_fit_count": 792,
+  "origin_count_by_horizon_case": {
+    "60": {
+      "C080_RR02": 423,
+      "C080_RR03": 409,
+      "C080_RR04": 397,
+      "C100_RR02": 519,
+      "C100_RR03": 502,
+      "C100_RR04": 420,
+      "C120_RR02": 637,
+      "C120_RR03": 549,
+      "C120_RR04": 532
+    },
+    "120": {
+      "C080_RR02": 417,
+      "C080_RR03": 403,
+      "C080_RR04": 391,
+      "C100_RR02": 513,
+      "C100_RR03": 496,
+      "C100_RR04": 414,
+      "C120_RR02": 631,
+      "C120_RR03": 543,
+      "C120_RR04": 526
+    },
+    "300": {
+      "C080_RR02": 399,
+      "C080_RR03": 385,
+      "C080_RR04": 373,
+      "C100_RR02": 495,
+      "C100_RR03": 478,
+      "C100_RR04": 396,
+      "C120_RR02": 613,
+      "C120_RR03": 525,
+      "C120_RR04": 508
+    },
+    "600": {
+      "C080_RR02": 369,
+      "C080_RR03": 355,
+      "C080_RR04": 343,
+      "C100_RR02": 465,
+      "C100_RR03": 448,
+      "C100_RR04": 366,
+      "C120_RR02": 583,
+      "C120_RR03": 495,
+      "C120_RR04": 478
+    }
+  },
+  "maximum_latest_input_minus_origin_s": 0.0,
+  "air_feature_variances": {
+    "60": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "120": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "300": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "600": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "raw_source_gap_count": {
+    "C080_RR02": 0,
+    "C080_RR03": 0,
+    "C080_RR04": 0,
+    "C100_RR02": 0,
+    "C100_RR03": 0,
+    "C100_RR04": 0,
+    "C120_RR02": 0,
+    "C120_RR03": 0,
+    "C120_RR04": 0
+  },
+  "reserve_endpoints_verified": true,
+  "resampling_future_interpolation": false
+}

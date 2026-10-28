@@ -1,0 +1,8 @@
+{
+  "checked_utc": "2026-10-28T15:01:35.645992+00:00",
+  "existing_output_cli_exit_code": 1,
+  "existing_output_refused": true,
+  "existing_run_file_hashes_unchanged": true,
+  "executed_train_hash_matches_summary": true,
+  "machine_specific_user_paths_in_new_text_outputs": false
+}

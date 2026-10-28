@@ -1,0 +1,4 @@
+﻿record_set,independent_physical_reference,fixed_45C_responses,fixed_50C_responses,fixed_55C_responses,fixed_60C_responses,rate_1C_min_responses,rate_2C_min_responses,rate_5C_min_responses,lead_time,misses_or_false_alarm_rate,interpretation
+Sheffield: all 27 source records,UNAVAILABLE,26/27,26/27,26/27,26/27,26/27,26/27,26/27,UNAVAILABLE,UNAVAILABLE,Descriptive source-record responses; outcomes not independently adjudicated
+"Sheffield: seven test records, two dates",UNAVAILABLE,7/7,7/7,7/7,7/7,7/7,7/7,7/7,UNAVAILABLE,UNAVAILABLE,Descriptive source-record responses; outcomes not independently adjudicated
+"TUM: one five-cell module, six temperature channels",UNAVAILABLE,6/6,6/6,6/6,6/6,6/6,6/6,6/6,UNAVAILABLE,UNAVAILABLE,Descriptive channel responses within one experiment

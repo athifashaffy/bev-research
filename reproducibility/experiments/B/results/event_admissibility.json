@@ -1,0 +1,18 @@
+{
+  "verified_independent_physical_reference_events": 0,
+  "main_table5_lead_time": "UNAVAILABLE",
+  "main_table5_misses": "UNAVAILABLE",
+  "main_table5_field_false_alarms": "UNAVAILABLE",
+  "temperature_derived_onset_used": false,
+  "heater_start_is_reference_event": false,
+  "voltage_definition": "Prespecified <=0.1 V sustained5elapsedseconds with normal preheater baseline; electrical observable only",
+  "voltage_clock": "Same CAN logger reported; source sensor timestamps retained; no independently audited absolute clock-offset uncertainty bound",
+  "voltage_fault_exclusion": "Sense-wire/contact loss cannot be excluded independently; physical voltage-collapse interpretation unverified",
+  "vent_channel": "Thermocouple temperature at a vent is not independent vent-opening evidence",
+  "videos": "Edited playback, no verified sensor-clock synchronization; prior visible-plume observations retained only on video clock",
+  "prior_video_audit_path": "LFP_Data_Feasibility_2026-10-20\\video_audit\\event_annotations.json",
+  "prior_video_audit_sha256": "9a83f4ece21f82716da39fb760130f0ee162c8629872afcc838b18d234be6f01",
+  "paper_doi": "10.1016/j.etran.2023.100305",
+  "paper_section": "2.3 common CAN logging; 3.1.2 temperature-and-voltage propagation criterion not reproduced here",
+  "paper_author_fulltext": "https://www.researchgate.net/publication/376591319_Thermal_runaway_propagation_in_automotive_lithium-ion_batteries_with_NMC-811_and_LFP_cathodes_Safety_requirements_and_impact_on_system_integration"
+}

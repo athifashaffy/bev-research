@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-10-28T15:00:01.105331+00:00",
+  "original_forecasting_sha256": "ba9d9f5f2f9ef569d823a3008fff8ba1115916dcb507aa3ebf08ad4b6bf02533",
+  "portable_train_sha256": "7d999c64631f52ab6bb834597e098c0d4b6495d736b123d12f8056c181ab0371",
+  "all_core_function_asts_identical": true,
+  "core_function_checks": {
+    "nested_group_plan": true,
+    "resample_past_held": true,
+    "features_at": true,
+    "build_examples": true,
+    "physics_forecast": true,
+    "error_metrics": true,
+    "estimator": true,
+    "fit_selected": true,
+    "load_cases": true
+  },
+  "adaptations": [
+    "normal pip imports",
+    "explicit read-only source/input paths and required new output",
+    "scientific source hash and pinned library checks",
+    "private drafting provenance removed",
+    "optional saved NEW_REFIT outer estimators",
+    "archived metric comparison",
+    "portable matplotlib output paths",
+    "machine-specific threadpool paths omitted from new summary"
+  ]
+}

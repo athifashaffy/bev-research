@@ -1,0 +1,32 @@
+{
+  "dataset_doi": "10.14459/2023mp1717758",
+  "dataset_title": "Thermal runaway propagation data set of lithium-ion batteries with NMC-811 and LFP cathodes",
+  "authors": [
+    "Jan Schöberl",
+    "Manuel Ank",
+    "Markus Schreiber",
+    "Nikolaos Wassiliadis",
+    "Markus Lienkamp"
+  ],
+  "year": 2023,
+  "publisher": "Technical University of Munich",
+  "license_spdx": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "primary_record": "https://mediatum.ub.tum.de/1717758",
+  "evidence_basis": "Prior local provenance explicitly records browser verification of CC BY 4.0 on the primary mediaTUM record, 2026-10-20. Accepted as local provenance; current independent browser verification was not obtained.",
+  "local_provenance_path": "LFP_Data_Feasibility_2026-10-20/00_READ_ME.txt",
+  "local_provenance_lines": [
+    65,
+    68
+  ],
+  "additional_local_record": "LFP_Data_Feasibility_2026-10-20/tum_audit.json:license",
+  "current_checks_2026_10_28": {
+    "datacite_primary_metadata_url": "https://api.datacite.org/dois/10.14459/2023mp1717758",
+    "datacite_result": "Retrieved publisher-submitted title, author and description metadata. rightsList is empty and supplies no additional license evidence.",
+    "mediatum_result": "Automated requests returned rate limiting or a browser challenge. The challenge page is not treated as dataset license evidence."
+  },
+  "redistribution_basis": "CC BY 4.0 as explicitly verified in the prior local provenance, with original author/title/DOI attribution and a modification notice. This is not a new license grant by the repository maintainer.",
+  "local_provenance_sha256": "eaaf29f4dc2b2eca69a15134d39b1ae838d865924b868521503a5399c14037af",
+  "additional_local_record_sha256": "5eb09e8710aa4fc50b57c5df6135412bd8a287eba54aff2a6946b6c1478c8a65",
+  "primary_datacite_metadata_sha256": "ee9b57d290404ed2591aa29950cb6680805f285c7e98a6c47047673ed5913c2d"
+}

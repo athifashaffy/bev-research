@@ -1,0 +1,2690 @@
+{
+  "completed_utc": "2026-10-28T01:21:20.368696+00:00",
+  "independent_readback_passed": true,
+  "auditor": "Independent operations agent; no shared rule-code imports and no analysis/Google Doc edits",
+  "counts_recomputed": {
+    "Sheffield_records": 27,
+    "Sheffield_split_records": {
+      "train": 15,
+      "development": 5,
+      "test": 7
+    },
+    "Sheffield_date_groups": 8,
+    "Sheffield_test_dates": [
+      "250211",
+      "250212"
+    ],
+    "TUM_temperature_channels": 6,
+    "TUM_module_experiments": 1,
+    "TUM_voltage_channels": 5,
+    "TUM_vent_temperature_channels": 5,
+    "measurement_files": 43,
+    "seven_rule_response_rows": 231,
+    "Table5_rows": 35
+  },
+  "maximum_independent_rate_difference_C_min": 1.1368683772161603e-13,
+  "recomputed_Table5": [
+    {
+      "record_set": "Sheffield_all",
+      "rule": "fixed_45C",
+      "records_or_channels": 27,
+      "responses": 26,
+      "date_groups": 8,
+      "independent_module_experiments": null,
+      "first_crossing_records": 26,
+      "total_eligible_samples": 24111,
+      "first_alarm_min_s": 13.0,
+      "first_alarm_median_s": 18.5,
+      "first_alarm_max_s": 29.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "fixed_50C",
+      "records_or_channels": 27,
+      "responses": 26,
+      "date_groups": 8,
+      "independent_module_experiments": null,
+      "first_crossing_records": 26,
+      "total_eligible_samples": 24111,
+      "first_alarm_min_s": 13.0,
+      "first_alarm_median_s": 19.0,
+      "first_alarm_max_s": 34.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "fixed_55C",
+      "records_or_channels": 27,
+      "responses": 26,
+      "date_groups": 8,
+      "independent_module_experiments": null,
+      "first_crossing_records": 26,
+      "total_eligible_samples": 24111,
+      "first_alarm_min_s": 13.0,
+      "first_alarm_median_s": 20.5,
+      "first_alarm_max_s": 39.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "fixed_60C",
+      "records_or_channels": 27,
+      "responses": 26,
+      "date_groups": 8,
+      "independent_module_experiments": null,
+      "first_crossing_records": 26,
+      "total_eligible_samples": 24111,
+      "first_alarm_min_s": 13.0,
+      "first_alarm_median_s": 22.0,
+      "first_alarm_max_s": 45.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "rate_1C_min",
+      "records_or_channels": 27,
+      "responses": 26,
+      "date_groups": 8,
+      "independent_module_experiments": null,
+      "first_crossing_records": 26,
+      "total_eligible_samples": 22491,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "rate_2C_min",
+      "records_or_channels": 27,
+      "responses": 26,
+      "date_groups": 8,
+      "independent_module_experiments": null,
+      "first_crossing_records": 26,
+      "total_eligible_samples": 22491,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_all",
+      "rule": "rate_5C_min",
+      "records_or_channels": 27,
+      "responses": 26,
+      "date_groups": 8,
+      "independent_module_experiments": null,
+      "first_crossing_records": 26,
+      "total_eligible_samples": 22491,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_train",
+      "rule": "fixed_45C",
+      "records_or_channels": 15,
+      "responses": 14,
+      "date_groups": 5,
+      "independent_module_experiments": null,
+      "first_crossing_records": 14,
+      "total_eligible_samples": 12508,
+      "first_alarm_min_s": 13.0,
+      "first_alarm_median_s": 17.5,
+      "first_alarm_max_s": 29.0
+    },
+    {
+      "record_set": "Sheffield_train",
+      "rule": "fixed_50C",
+      "records_or_channels": 15,
+      "responses": 14,
+      "date_groups": 5,
+      "independent_module_experiments": null,
+      "first_crossing_records": 14,
+      "total_eligible_samples": 12508,
+      "first_alarm_min_s": 13.0,
+      "first_alarm_median_s": 18.5,
+      "first_alarm_max_s": 33.0
+    },
+    {
+      "record_set": "Sheffield_train",
+      "rule": "fixed_55C",
+      "records_or_channels": 15,
+      "responses": 14,
+      "date_groups": 5,
+      "independent_module_experiments": null,
+      "first_crossing_records": 14,
+      "total_eligible_samples": 12508,
+      "first_alarm_min_s": 13.0,
+      "first_alarm_median_s": 20.0,
+      "first_alarm_max_s": 37.0
+    },
+    {
+      "record_set": "Sheffield_train",
+      "rule": "fixed_60C",
+      "records_or_channels": 15,
+      "responses": 14,
+      "date_groups": 5,
+      "independent_module_experiments": null,
+      "first_crossing_records": 14,
+      "total_eligible_samples": 12508,
+      "first_alarm_min_s": 13.0,
+      "first_alarm_median_s": 21.5,
+      "first_alarm_max_s": 41.0
+    },
+    {
+      "record_set": "Sheffield_train",
+      "rule": "rate_1C_min",
+      "records_or_channels": 15,
+      "responses": 14,
+      "date_groups": 5,
+      "independent_module_experiments": null,
+      "first_crossing_records": 14,
+      "total_eligible_samples": 11608,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_train",
+      "rule": "rate_2C_min",
+      "records_or_channels": 15,
+      "responses": 14,
+      "date_groups": 5,
+      "independent_module_experiments": null,
+      "first_crossing_records": 14,
+      "total_eligible_samples": 11608,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_train",
+      "rule": "rate_5C_min",
+      "records_or_channels": 15,
+      "responses": 14,
+      "date_groups": 5,
+      "independent_module_experiments": null,
+      "first_crossing_records": 14,
+      "total_eligible_samples": 11608,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_development",
+      "rule": "fixed_45C",
+      "records_or_channels": 5,
+      "responses": 5,
+      "date_groups": 1,
+      "independent_module_experiments": null,
+      "first_crossing_records": 5,
+      "total_eligible_samples": 4698,
+      "first_alarm_min_s": 14.0,
+      "first_alarm_median_s": 18.0,
+      "first_alarm_max_s": 29.0
+    },
+    {
+      "record_set": "Sheffield_development",
+      "rule": "fixed_50C",
+      "records_or_channels": 5,
+      "responses": 5,
+      "date_groups": 1,
+      "independent_module_experiments": null,
+      "first_crossing_records": 5,
+      "total_eligible_samples": 4698,
+      "first_alarm_min_s": 15.0,
+      "first_alarm_median_s": 18.0,
+      "first_alarm_max_s": 34.0
+    },
+    {
+      "record_set": "Sheffield_development",
+      "rule": "fixed_55C",
+      "records_or_channels": 5,
+      "responses": 5,
+      "date_groups": 1,
+      "independent_module_experiments": null,
+      "first_crossing_records": 5,
+      "total_eligible_samples": 4698,
+      "first_alarm_min_s": 15.0,
+      "first_alarm_median_s": 19.0,
+      "first_alarm_max_s": 39.0
+    },
+    {
+      "record_set": "Sheffield_development",
+      "rule": "fixed_60C",
+      "records_or_channels": 5,
+      "responses": 5,
+      "date_groups": 1,
+      "independent_module_experiments": null,
+      "first_crossing_records": 5,
+      "total_eligible_samples": 4698,
+      "first_alarm_min_s": 15.0,
+      "first_alarm_median_s": 20.0,
+      "first_alarm_max_s": 45.0
+    },
+    {
+      "record_set": "Sheffield_development",
+      "rule": "rate_1C_min",
+      "records_or_channels": 5,
+      "responses": 5,
+      "date_groups": 1,
+      "independent_module_experiments": null,
+      "first_crossing_records": 5,
+      "total_eligible_samples": 4398,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_development",
+      "rule": "rate_2C_min",
+      "records_or_channels": 5,
+      "responses": 5,
+      "date_groups": 1,
+      "independent_module_experiments": null,
+      "first_crossing_records": 5,
+      "total_eligible_samples": 4398,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_development",
+      "rule": "rate_5C_min",
+      "records_or_channels": 5,
+      "responses": 5,
+      "date_groups": 1,
+      "independent_module_experiments": null,
+      "first_crossing_records": 5,
+      "total_eligible_samples": 4398,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "fixed_45C",
+      "records_or_channels": 7,
+      "responses": 7,
+      "date_groups": 2,
+      "independent_module_experiments": null,
+      "first_crossing_records": 7,
+      "total_eligible_samples": 6905,
+      "first_alarm_min_s": 14.0,
+      "first_alarm_median_s": 23.0,
+      "first_alarm_max_s": 27.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "fixed_50C",
+      "records_or_channels": 7,
+      "responses": 7,
+      "date_groups": 2,
+      "independent_module_experiments": null,
+      "first_crossing_records": 7,
+      "total_eligible_samples": 6905,
+      "first_alarm_min_s": 15.0,
+      "first_alarm_median_s": 24.0,
+      "first_alarm_max_s": 29.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "fixed_55C",
+      "records_or_channels": 7,
+      "responses": 7,
+      "date_groups": 2,
+      "independent_module_experiments": null,
+      "first_crossing_records": 7,
+      "total_eligible_samples": 6905,
+      "first_alarm_min_s": 15.0,
+      "first_alarm_median_s": 25.0,
+      "first_alarm_max_s": 31.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "fixed_60C",
+      "records_or_channels": 7,
+      "responses": 7,
+      "date_groups": 2,
+      "independent_module_experiments": null,
+      "first_crossing_records": 7,
+      "total_eligible_samples": 6905,
+      "first_alarm_min_s": 15.0,
+      "first_alarm_median_s": 27.0,
+      "first_alarm_max_s": 34.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "rate_1C_min",
+      "records_or_channels": 7,
+      "responses": 7,
+      "date_groups": 2,
+      "independent_module_experiments": null,
+      "first_crossing_records": 7,
+      "total_eligible_samples": 6485,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "rate_2C_min",
+      "records_or_channels": 7,
+      "responses": 7,
+      "date_groups": 2,
+      "independent_module_experiments": null,
+      "first_crossing_records": 7,
+      "total_eligible_samples": 6485,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "Sheffield_test",
+      "rule": "rate_5C_min",
+      "records_or_channels": 7,
+      "responses": 7,
+      "date_groups": 2,
+      "independent_module_experiments": null,
+      "first_crossing_records": 7,
+      "total_eligible_samples": 6485,
+      "first_alarm_min_s": 65.0,
+      "first_alarm_median_s": 65.0,
+      "first_alarm_max_s": 65.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "fixed_45C",
+      "records_or_channels": 6,
+      "responses": 6,
+      "date_groups": null,
+      "independent_module_experiments": 1,
+      "first_crossing_records": 6,
+      "total_eligible_samples": 20896,
+      "first_alarm_min_s": 10.0,
+      "first_alarm_median_s": 753.0,
+      "first_alarm_max_s": 1825.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "fixed_50C",
+      "records_or_channels": 6,
+      "responses": 6,
+      "date_groups": null,
+      "independent_module_experiments": 1,
+      "first_crossing_records": 6,
+      "total_eligible_samples": 20896,
+      "first_alarm_min_s": 11.0,
+      "first_alarm_median_s": 793.0,
+      "first_alarm_max_s": 1889.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "fixed_55C",
+      "records_or_channels": 6,
+      "responses": 6,
+      "date_groups": null,
+      "independent_module_experiments": 1,
+      "first_crossing_records": 6,
+      "total_eligible_samples": 20896,
+      "first_alarm_min_s": 11.0,
+      "first_alarm_median_s": 835.5,
+      "first_alarm_max_s": 1922.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "fixed_60C",
+      "records_or_channels": 6,
+      "responses": 6,
+      "date_groups": null,
+      "independent_module_experiments": 1,
+      "first_crossing_records": 6,
+      "total_eligible_samples": 20896,
+      "first_alarm_min_s": 12.0,
+      "first_alarm_median_s": 881.0,
+      "first_alarm_max_s": 1943.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "rate_1C_min",
+      "records_or_channels": 6,
+      "responses": 6,
+      "date_groups": null,
+      "independent_module_experiments": 1,
+      "first_crossing_records": 6,
+      "total_eligible_samples": 20536,
+      "first_alarm_min_s": 55.0,
+      "first_alarm_median_s": 460.5,
+      "first_alarm_max_s": 1515.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "rate_2C_min",
+      "records_or_channels": 6,
+      "responses": 6,
+      "date_groups": null,
+      "independent_module_experiments": 1,
+      "first_crossing_records": 6,
+      "total_eligible_samples": 20536,
+      "first_alarm_min_s": 55.0,
+      "first_alarm_median_s": 538.0,
+      "first_alarm_max_s": 1713.0
+    },
+    {
+      "record_set": "TUM_channels",
+      "rule": "rate_5C_min",
+      "records_or_channels": 6,
+      "responses": 6,
+      "date_groups": null,
+      "independent_module_experiments": 1,
+      "first_crossing_records": 6,
+      "total_eligible_samples": 20536,
+      "first_alarm_min_s": 55.0,
+      "first_alarm_median_s": 745.0,
+      "first_alarm_max_s": 1897.0
+    }
+  ],
+  "check_count": 439,
+  "failures": [],
+  "checks": [
+    {
+      "name": "protocol_hash_matches_summary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rule_code_hash_matches_summary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seven_rules_match_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "protocol_uses_60s_past_rate_5s_debounce",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "33_unique_temperature_trajectories",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exactly_seven_unique_responses_per_trajectory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "date_grouped_split_counts_match_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "train_date_assignments_match_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "development_date_assignments_match_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "test_date_assignments_match_protocol",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one_dependent_TUM_module",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "43_measurement_channel_inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241029-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241029-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241029-001_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241029-001_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241029-001_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241029-001_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241029-001_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241029-001_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241029-001_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241030-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241030-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-001_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-001_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-001_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-001_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-001_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-001_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-001_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241030-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241030-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-002_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-002_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-002_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-002_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-002_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-002_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-002_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241030-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241030-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-003_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-003_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-003_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-003_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-003_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-003_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-003_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241030-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241030-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-004_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-004_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-004_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-004_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-004_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-004_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-004_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241030-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241030-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-005_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-005_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-005_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-005_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-005_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-005_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241030-005_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241126-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241126-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-001_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-001_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-001_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-001_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-001_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-001_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-001_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241126-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241126-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-002_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-002_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-002_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-002_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-002_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-002_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241126-002_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241127-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241127-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-001_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-001_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-001_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-001_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-001_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-001_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-001_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_241127-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_241127-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-002_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-002_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-002_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-002_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-002_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-002_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_241127-002_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250129-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250129-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-001_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-001_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-001_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-001_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-001_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-001_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-001_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250129-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250129-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-002_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-002_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-002_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-002_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-002_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-002_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-002_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250129-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250129-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-003_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-003_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-003_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-003_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-003_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-003_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-003_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250129-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250129-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-004_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-004_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-004_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-004_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-004_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-004_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-004_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250129-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250129-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-005_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-005_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-005_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-005_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-005_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-005_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250129-005_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250130-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250130-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-001_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-001_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-001_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-001_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-001_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-001_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-001_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250130-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250130-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-002_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-002_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-002_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-002_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-002_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-002_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-002_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250130-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250130-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-003_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-003_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-003_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-003_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-003_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-003_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-003_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250130-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250130-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-004_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-004_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-004_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-004_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-004_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-004_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-004_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250130-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250130-005",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-005_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-005_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-005_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-005_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-005_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-005_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250130-005_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250211-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250211-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-002_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-002_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-002_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-002_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-002_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-002_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-002_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250211-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250211-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-003_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-003_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-003_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-003_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-003_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-003_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-003_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250211-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250211-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-004_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-004_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-004_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-004_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-004_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-004_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250211-004_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250212-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250212-001",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-001_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-001_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-001_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-001_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-001_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-001_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-001_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250212-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250212-002",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-002_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-002_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-002_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-002_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-002_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-002_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-002_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250212-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250212-003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-003_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-003_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-003_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-003_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-003_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-003_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-003_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_Sheffield_250212-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_Sheffield_250212-004",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-004_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-004_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-004_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-004_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-004_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-004_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_Sheffield_250212-004_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_TUM_T1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_TUM_T1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T1_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T1_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T1_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T1_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T1_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T1_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T1_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_TUM_T2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_TUM_T2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T2_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T2_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T2_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T2_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T2_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T2_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T2_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_TUM_T3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_TUM_T3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T3_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T3_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T3_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T3_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T3_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T3_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T3_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_TUM_T4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_TUM_T4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T4_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T4_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T4_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T4_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T4_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T4_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T4_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_TUM_T5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_TUM_T5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T5_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T5_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T5_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T5_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T5_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T5_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T5_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "causal_source_times_TUM_T6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_past_held_values_reconstructed_TUM_T6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T6_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T6_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T6_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T6_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T6_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T6_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_response_TUM_T6_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_centered_OLS_matches_saved_rates",
+      "passed": true,
+      "detail": 1.1368683772161603e-13
+    },
+    {
+      "name": "Table5_Sheffield_all_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_all_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_all_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_all_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_all_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_all_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_all_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_all_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_all_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_all_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_all_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_all_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_all_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_all_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_train_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_train_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_train_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_train_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_train_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_train_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_train_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_train_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_train_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_train_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_train_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_train_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_train_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_train_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_development_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_development_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_development_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_development_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_development_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_development_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_development_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_development_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_development_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_development_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_development_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_development_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_development_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_development_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_test_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_test_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_test_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_test_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_test_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_test_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_test_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_test_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_test_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_test_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_test_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_test_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_Sheffield_test_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_Sheffield_test_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_TUM_channels_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_TUM_channels_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_TUM_channels_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_TUM_channels_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_TUM_channels_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_TUM_channels_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_TUM_channels_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_TUM_channels_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_TUM_channels_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_TUM_channels_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_TUM_channels_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_TUM_channels_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_TUM_channels_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Table5_withholds_unsupported_endpoints_TUM_channels_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "35_Table5_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_all_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_all_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_all_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_all_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_all_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_all_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_all_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_test_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_test_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_test_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_test_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_test_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_test_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_Sheffield_test_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_TUM_channels_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_TUM_channels_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_TUM_channels_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_TUM_channels_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_TUM_channels_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_TUM_channels_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_TUM_channels_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero_admitted_independent_physical_events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rule_rows_do_not_claim_event_lead_time",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "five_descriptive_voltage_conditions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conditional_voltage_interval_fixed_45C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conditional_voltage_interval_fixed_50C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conditional_voltage_interval_fixed_55C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conditional_voltage_interval_fixed_60C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conditional_voltage_interval_rate_1C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conditional_voltage_interval_rate_2C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "conditional_voltage_interval_rate_5C_min",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_43_source_hashes_recomputed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_origin_counts_have_no_missing_forecast_values",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_screen_156_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_10_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_10_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_10_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_10_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_30_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_30_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_30_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_30_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_60_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_60_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_60_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_Sheffield_test_60_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_10_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_10_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_10_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_10_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_30_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_30_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_30_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_30_60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_60_45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_60_50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_60_55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "forecast_summary_TUM_transfer_60_60",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "timing_review": {
+    "causal": "Latest native sample never exceeds evaluation time; full 61-point trailing OLS; independent recomputation reproduces all 231 first crossings/alarms and sample counts.",
+    "debounce": "Five elapsed seconds; false/missing predicate, clock gaps and segment changes reset persistence; alarm uses first confirmation sample.",
+    "rate_availability": "Sheffield rates first eligible at 60 s and alarms at 65 s. TUM pretrigger samples permit an earlier first full window and 55 s earliest rate alarm; no future samples are used.",
+    "event_gate": "No independently verified physical onset enters Table5. Voltage-condition start is retrospectively confirmed for5s and separately bracketed; only conditional electrical timing is reported, with unknown offset/fault origin explicitly retained.",
+    "forecast_screen": "Saved forecasts reused without fitting; actual available-origin counts match. Forecast-origin persistence is not presented as verified future physical-temperature persistence or TR lead time."
+  },
+  "conclusion": "No material count, Table5, protocol, causal-timing or unsupported physical-onset claim discrepancy found."
+}

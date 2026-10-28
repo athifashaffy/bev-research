@@ -1,0 +1,26 @@
+test_requested_rule_interface_exists (__main__.InterfaceTest.test_requested_rule_interface_exists) ... FAIL
+test_false_predicate_resets_debounce (__main__.RuleTests.test_false_predicate_resets_debounce) ... skipped 'Implementation not written yet'
+test_fixed_strict_threshold_and_elapsed_debounce (__main__.RuleTests.test_fixed_strict_threshold_and_elapsed_debounce) ... skipped 'Implementation not written yet'
+test_future_append_cannot_change_past_grid (__main__.RuleTests.test_future_append_cannot_change_past_grid) ... skipped 'Implementation not written yet'
+test_gap_has_no_held_value_and_restarts_segment (__main__.RuleTests.test_gap_has_no_held_value_and_restarts_segment) ... skipped 'Implementation not written yet'
+test_no_future_interpolation_on_irregular_clock (__main__.RuleTests.test_no_future_interpolation_on_irregular_clock) ... skipped 'Implementation not written yet'
+test_nonfinite_and_nonincreasing_clocks_rejected (__main__.RuleTests.test_nonfinite_and_nonincreasing_clocks_rejected) ... skipped 'Implementation not written yet'
+test_rate_does_not_bridge_one_missing_grid_sample (__main__.RuleTests.test_rate_does_not_bridge_one_missing_grid_sample) ... skipped 'Implementation not written yet'
+test_rate_requires_full_past_sixty_seconds (__main__.RuleTests.test_rate_requires_full_past_sixty_seconds) ... skipped 'Implementation not written yet'
+test_rate_units_and_strict_threshold_roundoff (__main__.RuleTests.test_rate_units_and_strict_threshold_roundoff) ... skipped 'Implementation not written yet'
+test_subsecond_missing_sample_prevents_history_bridging (__main__.RuleTests.test_subsecond_missing_sample_prevents_history_bridging) ... skipped 'Implementation not written yet'
+test_voltage_condition_bracket_and_confirmation (__main__.RuleTests.test_voltage_condition_bracket_and_confirmation) ... skipped 'Implementation not written yet'
+test_voltage_condition_needs_normal_context_and_no_gap (__main__.RuleTests.test_voltage_condition_needs_normal_context_and_no_gap) ... skipped 'Implementation not written yet'
+
+======================================================================
+FAIL: test_requested_rule_interface_exists (__main__.InterfaceTest.test_requested_rule_interface_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\athif\Documents\ChatGPT\BEV\APCOM_Draft_Experiments_2026-10-27\experiment_b\code\test_rules.py", line 12, in test_requested_rule_interface_exists
+    self.assertTrue(callable(causal_grid),'Causal rule implementation is missing')
+AssertionError: False is not true : Causal rule implementation is missing
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+FAILED (failures=1, skipped=12)

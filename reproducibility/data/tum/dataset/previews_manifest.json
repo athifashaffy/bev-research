@@ -1,0 +1,104 @@
+[
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T1_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t1_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T2_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t2_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T3_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t3_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T4_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t4_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T5_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t5_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell temperatures/GraphiteLFP/T6_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t6_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U1_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u1_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U2_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u2_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U3_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u3_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U4_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u4_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/cell voltages/GraphiteLFP/U5_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u5_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T1vent_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t1_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T2vent_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t2_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T3vent_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t3_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T4vent_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t4_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/venting temperatures/GraphiteLFP/T5vent_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t5_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  },
+  {
+    "source_path": "thermal runaway propagation data set/measurement data/surface temperatures/GraphiteLFP/T_surf_LFP.txt",
+    "preview_path": "previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_module_surface_temperatures_89_channels_first_200_rows.csv",
+    "data_rows": 200,
+    "purpose": "VIEWING PREVIEW ONLY; NOT AN ANALYSIS INPUT"
+  }
+]

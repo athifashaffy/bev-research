@@ -1,0 +1,31 @@
+{
+  "commit": "4fc9320c85f91317ace5d1bc9c40f53aaa2b1140",
+  "doi": "10.17632/p8kf893yv3.1",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/aloisiohks/A123_26650_m1b_LAB_Dataset/4fc9320c85f91317ace5d1bc9c40f53aaa2b1140/README.md",
+      "sha256": "a3635faeef5d058068ba9509d9957237a795b7c0ee7b4bd2c45178d82e551070",
+      "bytes": 3059
+    },
+    {
+      "file": "A002_PeriodicPulseData.mat",
+      "url": "https://raw.githubusercontent.com/aloisiohks/A123_26650_m1b_LAB_Dataset/4fc9320c85f91317ace5d1bc9c40f53aaa2b1140/Miscellaneous/A002_PeriodicPulseData.mat",
+      "sha256": "866adba8064543812dc0a29ddcc2b83d034efb2cd593bc9f5af82ae8bbd88ccc",
+      "bytes": 254384
+    },
+    {
+      "file": "A002_UDDS_P25.mat",
+      "url": "https://raw.githubusercontent.com/aloisiohks/A123_26650_m1b_LAB_Dataset/4fc9320c85f91317ace5d1bc9c40f53aaa2b1140/Miscellaneous/A002_UDDS_P25.mat",
+      "sha256": "0fb3ed500687a43d01d2d133d5c9b2e2742e8f15876766daed3bcf97716e8bbe",
+      "bytes": 137961
+    },
+    {
+      "file": "A002_UDDS_P35.mat",
+      "url": "https://raw.githubusercontent.com/aloisiohks/A123_26650_m1b_LAB_Dataset/4fc9320c85f91317ace5d1bc9c40f53aaa2b1140/Miscellaneous/A002_UDDS_P35.mat",
+      "sha256": "cbad03523cae4d3839ca4d9a0da9e61036b59e996ef313d5afac4159ead00d61",
+      "bytes": 138187
+    }
+  ]
+}

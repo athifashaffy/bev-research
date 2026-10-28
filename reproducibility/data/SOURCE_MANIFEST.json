@@ -1,0 +1,521 @@
+{
+  "schema_version": 1,
+  "path_base": "data/",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1107,
+      "sha256": "f2c933149bce6d38df432a7ce7ae94ec323c10b82d7f80c50575653da76285c9"
+    },
+    {
+      "path": "tum/current_publisher_license_check.json",
+      "bytes": 422,
+      "sha256": "bae8399d22c173d617ca290efe94d7a528deb9eafa4c661872fb7e3d1ddc82d4"
+    },
+    {
+      "path": "tum/dataset/column_dictionary.csv",
+      "bytes": 21777,
+      "sha256": "5e797174d00d7e4f751b966ee24b05c564660fd6e4683104e7a25f13aaa5b108"
+    },
+    {
+      "path": "tum/dataset/csv_manifest.csv",
+      "bytes": 11825,
+      "sha256": "198244543bafe177e04d67a19606ac8765f102c8bf0ee1c84d04d9b38bb95bb3"
+    },
+    {
+      "path": "tum/dataset/integrity.json",
+      "bytes": 1394,
+      "sha256": "a099c22fbe6af8fbd848a68e01ec45173c8a4ccce2fd4b0b364ba5528eb62ee1"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_temperatures/lfp_cell_temperature_t1.csv",
+      "bytes": 50969,
+      "sha256": "3be62e47305699b5c339931895b77e9f70689ff284e9877ba8627993dfc7afec"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_temperatures/lfp_cell_temperature_t2.csv",
+      "bytes": 1127046,
+      "sha256": "2eb7a6af89cdb16bd14790a61aa8cb5784755185cf4439a4bdbbd90a980ec230"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_temperatures/lfp_cell_temperature_t3.csv",
+      "bytes": 1122743,
+      "sha256": "30aa11f49b3191f042625415cca3c41ebe91eeea086f8451ba13b7181bb35519"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_temperatures/lfp_cell_temperature_t4.csv",
+      "bytes": 1118069,
+      "sha256": "aca2616588fa0cb0e7eca0254457bbe132de891611410261294710fc7c4ba288"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_temperatures/lfp_cell_temperature_t5.csv",
+      "bytes": 1112896,
+      "sha256": "6018a106451b5bd26c607f7a468fcc010f959082e77e59237020399bf2216ba4"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_temperatures/lfp_cell_temperature_t6.csv",
+      "bytes": 1109603,
+      "sha256": "36cafc33e6dba62e850ebfc562735732add122e7572531e38b73a90107c2c4a7"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_voltages/lfp_cell_voltage_u1.csv",
+      "bytes": 1076286,
+      "sha256": "c9212f82fcb9435e6e757dd8aa6341113ba2e7d8d27488a8430974f379480957"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_voltages/lfp_cell_voltage_u2.csv",
+      "bytes": 878780,
+      "sha256": "9bceeec47cfd4f6a2df4609b2d1d9f401d5c2ece36c5cf451b43044562f91f5b"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_voltages/lfp_cell_voltage_u3.csv",
+      "bytes": 1098574,
+      "sha256": "5bdb5244a40677aa6aa9590fe9ce05228ed5c23407873939a30c4d66f601e39c"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_voltages/lfp_cell_voltage_u4.csv",
+      "bytes": 1106027,
+      "sha256": "4ecdc7cb0422bc185e05414f79b55a8cdaff2012e6d9b99a7cf1c51ce447aa99"
+    },
+    {
+      "path": "tum/dataset/lfp/cell_voltages/lfp_cell_voltage_u5.csv",
+      "bytes": 1004941,
+      "sha256": "b353f3f3b33d3ce199672fc28399d74ef0b7cbdf35e15244f28dfc7bc7dbf483"
+    },
+    {
+      "path": "tum/dataset/lfp/surface_temperatures/lfp_module_surface_temperatures_89_channels_part_001.csv",
+      "bytes": 19999214,
+      "sha256": "72dd6afc95aaac5cbf776d86e0a4957b80e8e2b0c22aa047ed22bf4aa657e9dc"
+    },
+    {
+      "path": "tum/dataset/lfp/surface_temperatures/lfp_module_surface_temperatures_89_channels_part_002.csv",
+      "bytes": 19999664,
+      "sha256": "171052e6086a98c05c25130e0e531a42d075834dc4db6ae5564d60cd64c501c7"
+    },
+    {
+      "path": "tum/dataset/lfp/surface_temperatures/lfp_module_surface_temperatures_89_channels_part_003.csv",
+      "bytes": 19999793,
+      "sha256": "7b7a08967bf269cd88d3e6b01f06e5e302ccea6d20407a00b43829df2b3dac76"
+    },
+    {
+      "path": "tum/dataset/lfp/surface_temperatures/lfp_module_surface_temperatures_89_channels_part_004.csv",
+      "bytes": 19999437,
+      "sha256": "d257414ff0ab5be8b3ce9e562cd9e897881a20ef52289c53e2ac40faa0d879db"
+    },
+    {
+      "path": "tum/dataset/lfp/surface_temperatures/lfp_module_surface_temperatures_89_channels_part_005.csv",
+      "bytes": 19499153,
+      "sha256": "2190cbb6ccd5b38ed19a460a411f766ef734e4f1e2526b70bdc9c1b051a407fd"
+    },
+    {
+      "path": "tum/dataset/lfp/venting_temperatures/lfp_vent_temperature_t1.csv",
+      "bytes": 1127594,
+      "sha256": "f66a1c50e115652e2bceb4562079cf8e7e0e0ef4fcf821f9033ddc74cd2f9e83"
+    },
+    {
+      "path": "tum/dataset/lfp/venting_temperatures/lfp_vent_temperature_t2.csv",
+      "bytes": 1091075,
+      "sha256": "f5c342841a5ace86d3ff19c0616ea40fd27dc11b4891ca0996de3cf7f6813a4c"
+    },
+    {
+      "path": "tum/dataset/lfp/venting_temperatures/lfp_vent_temperature_t3.csv",
+      "bytes": 1116755,
+      "sha256": "260c5f01f1531dcfca02bbd9d3c3adbc1868c6d13cb896506380541b6c1da093"
+    },
+    {
+      "path": "tum/dataset/lfp/venting_temperatures/lfp_vent_temperature_t4.csv",
+      "bytes": 1114103,
+      "sha256": "2ae4ff8632489e3bff8d4df26757881ca2f163292fd811a1aa10610dd4051518"
+    },
+    {
+      "path": "tum/dataset/lfp/venting_temperatures/lfp_vent_temperature_t5.csv",
+      "bytes": 1102425,
+      "sha256": "329bc5a38ed7fb401113e17df814341196c7584d9b347a28500c730644288a09"
+    },
+    {
+      "path": "tum/dataset/license_evidence.json",
+      "bytes": 1968,
+      "sha256": "793f5fd19d13eb4ae80156b84aa84ee4e4c8341ef5dd8a84d735b610db43f2af"
+    },
+    {
+      "path": "tum/dataset/nmc_inventory_ONLY.json",
+      "bytes": 26918,
+      "sha256": "e1898c1bd30ab44dbc568ff2e1464c1146aa0f5ee7099bf347f875088f8f9d31"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t1_first_200_rows.csv",
+      "bytes": 4866,
+      "sha256": "6e80b1108e2d4df3451f2378880cad318eb7ac9816a747097e1dc13ebe6324d6"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t2_first_200_rows.csv",
+      "bytes": 4892,
+      "sha256": "d27a1532f0840f57df2d7762d25dfa2dd6b5ecb50af9ae1273504e72284a9459"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t3_first_200_rows.csv",
+      "bytes": 4908,
+      "sha256": "1a4dbb72bfda7e49bb81bf9d5eb0c55ff72aa01622f50111cd0e35ff3b609d97"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t4_first_200_rows.csv",
+      "bytes": 4980,
+      "sha256": "f94f2d337ae852bc0db08a01bc9471a508e2ecf3924386c2c24938b097314c33"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t5_first_200_rows.csv",
+      "bytes": 4984,
+      "sha256": "364c50cabbde1565a334f385ad5c9e127f2078110fc8e40b16e3fc9af938450e"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_temperature_t6_first_200_rows.csv",
+      "bytes": 4961,
+      "sha256": "6c3814e51d4b77cc359ef4a5530eb2fefc16cb0f8ecf8ee300f999aa59f8261a"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u1_first_200_rows.csv",
+      "bytes": 4767,
+      "sha256": "11dbeabbcd7dc7c5ad0508f1aa52c4de77389ec67d3094e981ba75edd8c6862a"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u2_first_200_rows.csv",
+      "bytes": 3967,
+      "sha256": "a568c758d3ca8570e1e35e8bbedd1f9d05174c9f4877d2edee4416ae29972f96"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u3_first_200_rows.csv",
+      "bytes": 4970,
+      "sha256": "84abd06f41a58dcbbe722781937424d46e906f5a6d8f820dcb27f275537d73cd"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u4_first_200_rows.csv",
+      "bytes": 4970,
+      "sha256": "94b9551495a4c7996705b2a64ad59c24eaef0ab42b5361950986e0d0e927f7e7"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_cell_voltage_u5_first_200_rows.csv",
+      "bytes": 4770,
+      "sha256": "2da69887f6d2b5a25c25049ae90db1086524f2d20a773efaef5625e89fc6bd89"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_module_surface_temperatures_89_channels_first_200_rows.csv",
+      "bytes": 160190,
+      "sha256": "02ca7726cca8621b2d48e1ec890c88937cc42ac53e2154c272e888bb94775a43"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t1_first_200_rows.csv",
+      "bytes": 4944,
+      "sha256": "7037a5b6a957b129f6d9cac1846a14e1075dd675d7bee1ccd2886d04f3f041a6"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t2_first_200_rows.csv",
+      "bytes": 4978,
+      "sha256": "dd343420da749c7f00a00d1a18babb07ad74ee4659d9576fa7e15597a2e6e37a"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t3_first_200_rows.csv",
+      "bytes": 4948,
+      "sha256": "b20e6cba60a7d3d952fa174e3f2903febfed90037de6378720ac6d3710a07b7b"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t4_first_200_rows.csv",
+      "bytes": 4902,
+      "sha256": "df9c33ffd48aed672a78b353961f77e27771ec630609d1989ec7e6de9c0dc8d1"
+    },
+    {
+      "path": "tum/dataset/previews_first_200_rows_NOT_ANALYSIS_INPUT/lfp_vent_temperature_t5_first_200_rows.csv",
+      "bytes": 4955,
+      "sha256": "efbe5a5206ba73807d21e866cbd20b286c2d0bcb95bb73aac7dcad6b667615fd"
+    },
+    {
+      "path": "tum/dataset/previews_manifest.json",
+      "bytes": 5535,
+      "sha256": "10bdae5d830c4e0bd05d7c2499d588418aee5958427963522999b3144992e2e6"
+    },
+    {
+      "path": "tum/dataset/README.md",
+      "bytes": 6314,
+      "sha256": "b1a5fd9808eba7ecfed78dbb0a8156afb91d6860dc2cb23a3293a8b9c22120c3"
+    },
+    {
+      "path": "tum/dataset/source_measurement_inventory.json",
+      "bytes": 53498,
+      "sha256": "daa0c924554a70e009fb6555a592e3f0c8edd08e9240411bbec5cb6526310c72"
+    },
+    {
+      "path": "tum/dataset/transformation_log.json",
+      "bytes": 9037,
+      "sha256": "1ef80fd35bffcfed9f8ea7b44fc5f07edbeb2b871fa901933c62e453759ed240"
+    },
+    {
+      "path": "tum/dataset/verification_readback.json",
+      "bytes": 398,
+      "sha256": "d84622cad2f064ea568c5403a2c150745f6952eb2aa1de863710f35c21fd28a9"
+    },
+    {
+      "path": "tum/license_evidence.json",
+      "bytes": 1968,
+      "sha256": "793f5fd19d13eb4ae80156b84aa84ee4e4c8341ef5dd8a84d735b610db43f2af"
+    },
+    {
+      "path": "tum/prepare_tum_csv.py",
+      "bytes": 16090,
+      "sha256": "3e09afa29632467b2927a5635a1702e2fbad7978d2ad5451464e1c8bcdfd8857"
+    },
+    {
+      "path": "tum/primary_datacite_metadata.json",
+      "bytes": 5378,
+      "sha256": "ee9b57d290404ed2591aa29950cb6680805f285c7e98a6c47047673ed5913c2d"
+    },
+    {
+      "path": "tum/README.md",
+      "bytes": 5473,
+      "sha256": "a060444ca41922ef3e459185173de8ffa8b6bb61750b10b1d084b1db24fda39a"
+    },
+    {
+      "path": "tum/test_evidence.json",
+      "bytes": 1225,
+      "sha256": "abe5871e5ab55d52b5e909b5ab6a8a94cfc47c85bc38ef72f93596599aed2f19"
+    },
+    {
+      "path": "tum/test_prepare_tum_csv.py",
+      "bytes": 3788,
+      "sha256": "f854210fd3ce99c419dfde664b54d87f8e73abda97f9117613230668792759d8"
+    },
+    {
+      "path": "tum/verify_tum_csv.py",
+      "bytes": 4203,
+      "sha256": "1bfdbade832c69aeca7cb38f5964e3b96f55e2ebba6d99583a22a728d41e768f"
+    },
+    {
+      "path": "workspace/APCOM_Coupled_Thermal_2026-10-16/code/fit_model.py",
+      "bytes": 4891,
+      "sha256": "583b587e1f9dc56e231186f652e8d20a5702508771b195ece95f29526b375840"
+    },
+    {
+      "path": "workspace/APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json",
+      "bytes": 893,
+      "sha256": "4ec7aa3625acce064de862b28d61c0eff5b74ae79e6a66f7b94932b10daa4e39"
+    },
+    {
+      "path": "workspace/APCOM_Coupled_Thermal_2026-10-16/sources/A002_PeriodicPulseData.mat",
+      "bytes": 254384,
+      "sha256": "866adba8064543812dc0a29ddcc2b83d034efb2cd593bc9f5af82ae8bbd88ccc"
+    },
+    {
+      "path": "workspace/APCOM_Coupled_Thermal_2026-10-16/sources/A002_UDDS_P25.mat",
+      "bytes": 137961,
+      "sha256": "0fb3ed500687a43d01d2d133d5c9b2e2742e8f15876766daed3bcf97716e8bbe"
+    },
+    {
+      "path": "workspace/APCOM_Coupled_Thermal_2026-10-16/sources/A002_UDDS_P35.mat",
+      "bytes": 138187,
+      "sha256": "cbad03523cae4d3839ca4d9a0da9e61036b59e996ef313d5afac4159ead00d61"
+    },
+    {
+      "path": "workspace/APCOM_Coupled_Thermal_2026-10-16/sources/download_manifest.json",
+      "bytes": 1411,
+      "sha256": "768f634afa2e47789c5e64cf5b84f0cb601d7ee8704d9dad85eec20dcc0a9547"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/causal_features.csv.gz",
+      "bytes": 996015,
+      "sha256": "77b737714c284d4ddea6961aa61786df1a72a656aa669a9945545aacb7a98649"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/eligible_origins.csv",
+      "bytes": 904935,
+      "sha256": "29674d44fa346d32db8112e699c123e30325bc984ce52d5250dd5e38e29032d4"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/first_run_metric_sha256.json",
+      "bytes": 182,
+      "sha256": "26553f61980342cb8105ebe77e4c9cb48c38e613a5c43d628920d733ae787633"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/fold_assignments.json",
+      "bytes": 13701,
+      "sha256": "dccee6c1de1eaaa6be3c523a15b608dcdcf8b67d152e7e87abbcb3ffd95de349"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/forecasting.py",
+      "bytes": 24923,
+      "sha256": "ba9d9f5f2f9ef569d823a3008fff8ba1115916dcb507aa3ebf08ad4b6bf02533"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/per_case_metrics.csv",
+      "bytes": 17151,
+      "sha256": "8aabe4949ce62bbe8a93098b32cf9e2e8c28b90200d494f24440a83c25767c5c"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/per_fold_model_selection.json",
+      "bytes": 671256,
+      "sha256": "a885a8967c21162072e0be6b392616b1d25a0789f383905d314a5f4f6ae5de62"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/predictions.csv.gz",
+      "bytes": 2106801,
+      "sha256": "bf1882e2672306e126cf4d2d68b8365f06090f9c3ec0e9b55df40a7b8e5218c8"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/protocol.json",
+      "bytes": 3858,
+      "sha256": "bddb638fcd52c2ccf1d2e99edfb39a672fd74c637bb5496b44774f9312397f6e"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/requirements.txt",
+      "bytes": 73,
+      "sha256": "031d2377927477cb96ad6e6a791612c78efefb1f2b943dfcd394995b923a5062"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/RESULTS_README.txt",
+      "bytes": 5747,
+      "sha256": "a90a3cf5c76fc8b30969791bc3e64691afd389f89257f513186abf1f1d3f0510"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/summary.json",
+      "bytes": 61863,
+      "sha256": "ed36f8cde64a97341447820c357e08a7541b12eabe14b2092309cbf2161e866d"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/table_4_pooled_metrics.csv",
+      "bytes": 3529,
+      "sha256": "422ed82fd9c9443d2456f6352a2bf70f3233354c1d6d5f148d18591f809d3204"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/test_forecasting.py",
+      "bytes": 4702,
+      "sha256": "55808bfa2512a1da7053fef78c6d400af201de477c709f4fcd0a6aa08c7c925a"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/verification.json",
+      "bytes": 649,
+      "sha256": "ce72b033d01e5187b1aac109cc0c333a42e3abe19de2d47a46585b841d61d54b"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/verify_outputs.py",
+      "bytes": 5242,
+      "sha256": "b8dab43a4652cd7bdb2dd7b8e3d01aa247184a64757db41842b98116bee6b13a"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/thermal/nominal_traces.csv",
+      "bytes": 7172339,
+      "sha256": "21df8dea3669ef7f672db23a71ed2726acb67fcbc1bab43baf232c41a45524fc"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/thermal/protocol.json",
+      "bytes": 1432,
+      "sha256": "730306f4173ae7dde3ea88312c2efcc15606294660b0f27aa4bfbad7d0c3aac4"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/thermal/run_thermal.py",
+      "bytes": 28606,
+      "sha256": "4823b5fe5f827359f785c8c0d072eaa5981d7d4fd7d57b6569553f17517ce618"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/thermal/sensitivity_summary.csv",
+      "bytes": 193489,
+      "sha256": "3a9936c489f3255febdbf400fe94a95c9f102dce17cc15b167c777ee708672ab"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/thermal/table2_common_window.csv",
+      "bytes": 3562,
+      "sha256": "0996efe01c2134dcb11c67a735df3dd0a26ffec2136fcb0291fd7cf07edb83b4"
+    },
+    {
+      "path": "workspace/APCOM_Draft_Experiments_2026-10-27/thermal/test_thermal.py",
+      "bytes": 3200,
+      "sha256": "8417c3b6d67a4fa7e54fe7300d0d06e9da8c3255eba049e84f4bee704ebd408e"
+    },
+    {
+      "path": "workspace/APCOM_Study_2026-10-22/code/operations.py",
+      "bytes": 26374,
+      "sha256": "5c9692ba0aeee4bc28c55d4b4ae040c4b360cdfa94f1f49bd8410599452679c0"
+    },
+    {
+      "path": "workspace/APCOM_Study_2026-10-22/code/thermal_analysis.py",
+      "bytes": 22540,
+      "sha256": "e7aedc92eda053590a5cc36792c44064da89726e50906339567c918afd3cc1dd"
+    },
+    {
+      "path": "workspace/APCOM_Study_2026-10-22/results/operations_audit.json",
+      "bytes": 43483,
+      "sha256": "d62bc218806246607caafb03e7289458cb03039f5cc82739775cb225d0ab3792"
+    },
+    {
+      "path": "workspace/APCOM_Study_2026-10-22/results/operations_comparison.csv",
+      "bytes": 2699,
+      "sha256": "f77b03789173b9b1d2905c4b336d81908e75b712d86b647537f28e0efc512598"
+    },
+    {
+      "path": "workspace/APCOM_Study_2026-10-22/results/thermal_audit.json",
+      "bytes": 25503,
+      "sha256": "88ba3cc0d376adfc438eeda2793d332620d87356c2960f5064a9fe6d0fe2badc"
+    },
+    {
+      "path": "workspace/APCOM_Study_2026-10-22/results/thermal_nominal_traces.csv",
+      "bytes": 6180422,
+      "sha256": "6563f869f495a6733a05a2460d0132bf82f2e510673cc8d4a625523d8dfa7265"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/code/audit_run.py",
+      "bytes": 4018,
+      "sha256": "87d4fe1b3c625fcb5dad9a4b193671519dbc59d19477f61cebb0bdaad1e0284a"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/code/study.py",
+      "bytes": 8159,
+      "sha256": "6a63807cc6a4a9ff2f0bda550a22686e40b6b1c49141c929aab324e062582e69"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C080_RR02/native_run.hsmdb",
+      "bytes": 798720,
+      "sha256": "cd9fdf3cdc5df6e9ba63bb7c29fb1fd56fda5335f82e503a2af0b3acedf87739"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C080_RR03/native_run.hsmdb",
+      "bytes": 798720,
+      "sha256": "031d917c1c48762a9892419379c9fa2c6e128cb320808d0846c1b03f81e67849"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C080_RR04/native_run.hsmdb",
+      "bytes": 798720,
+      "sha256": "df727eddc1dc1838eb93b6e5e73a150342db261f5f731598fd20fa0359df32bd"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C100_RR02/native_run.hsmdb",
+      "bytes": 798720,
+      "sha256": "18c2f18dd1ac8fea9a75d9e1f1c87f1b3bf94b91070e533b6c800d80ba1d21f7"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+      "bytes": 794624,
+      "sha256": "e7f6734c0b8a742b1ee41e33b619d0c155965b98c90b2d4b1f9e10ed2f0d50d9"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C100_RR04/native_run.hsmdb",
+      "bytes": 798720,
+      "sha256": "4422014cf9ca139dd1941913c6f9f7e984a34d928ba97fbd51b072ba97c797cf"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C120_RR02/native_run.hsmdb",
+      "bytes": 798720,
+      "sha256": "4dfaf06e532729192541d14619b6aee21672d1ce655603fd3f5a602a936fc67a"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C120_RR03/native_run.hsmdb",
+      "bytes": 798720,
+      "sha256": "e4671dc668f7a9de3863f7af8a5b72943c00b5cb60d9b573dbe4bbdb4a92e70f"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/results/C120_RR04/native_run.hsmdb",
+      "bytes": 798720,
+      "sha256": "08c680bccabc28ca985531e1c893c380285715289f6c8391df53d94e3c7016f9"
+    },
+    {
+      "path": "workspace/New_Afton_Experiments_2026-10-20/run_manifest.json",
+      "bytes": 12305,
+      "sha256": "794eda2f19ea7c60ebf8a1dee277c14c63af08b28d3af150108870d4631da4c2"
+    }
+  ]
+}

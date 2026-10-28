@@ -1,0 +1,58 @@
+{
+  "frozen_utc": "2026-10-28T00:57:06.521920+00:00",
+  "purpose": "Execute draft Section4.5 ExperimentB and Table5; descriptive laboratory warning sensitivity grid, historically inspected records, not blinded validation",
+  "draft_sha256": "0ac045820033de90975a263a0ee02d21052e3c49414c41231283f6f7acc844bd",
+  "fixed_thresholds_c": [
+    45,
+    50,
+    55,
+    60
+  ],
+  "rate_thresholds_c_min": [
+    1,
+    2,
+    5
+  ],
+  "comparison": "strictly exceeds; equality is not an exceedance",
+  "debounce_s": 5,
+  "rate_window_s": 60,
+  "rate_coverage": "Complete 61 one-second grid temperatures spanning 60 elapsed seconds within one valid segment. Only past native samples are available.",
+  "grid": "Integer seconds from ceil(raw start) to floor(raw end); use the most recent raw sample at or before each grid time, never future interpolation. Finite raw temperature, measurement age <=1.01 s, and a newly observed raw sample since the previous grid point are required. A raw gap >2 s or any nonfinite raw temperature starts a new segment; a gap >1.01 s also starts a new segment in Sheffield 1 Hz acquisition.",
+  "rate_units": "OLS C/s times60 => C/min; no future samples or centered smoothing",
+  "debounce": "Predicate remains true for 5 elapsed seconds on the sampled clock. False/nonfinite predicates or a segment change reset persistence. Use the first sample satisfying persistence; never backdate the alarm.",
+  "splits": {
+    "train_dates": [
+      "241029",
+      "241030",
+      "241126",
+      "241127",
+      "250129"
+    ],
+    "development_dates": [
+      "250130"
+    ],
+    "test_dates": [
+      "250211",
+      "250212"
+    ],
+    "expected_sheffield_records": [
+      15,
+      5,
+      7
+    ]
+  },
+  "threshold_selection": "User/draft sensitivity choices frozen before this scoring pass; never selected or optimized using missing event labels. Sheffield has 27 records, not 35 ARC/oven tests; its seven test records share two held-out dates.",
+  "tum_units": "Six temperature channels, five voltage channels and five vent-temperature channels belong to one five-cell LFP module experiment; channels are dependent.",
+  "events": "Audit source, physical definition, channel mapping, reference clock and uncertainty before any endpoint is eligible. Temperature-derived onset, heater startup and vent-temperature threshold crossing are not independent venting or TR labels. Edited video is not synchronized.",
+  "optional_voltage_condition": {
+    "threshold_v": 0.1,
+    "persistence_s": 5,
+    "definition": "First native voltage sample U<=0.1 V beginning a run confirmed for at least 5 elapsed seconds; reset for nonfinite samples or gaps >2 s. Require preheater baseline median 2.5–3.8 V from at least 10 finite samples and a preceding native sample >0.1 V. Save the bracket [previous above-threshold time, first at/below-threshold time]. This is a study-defined electrical condition, not TR onset or an independently observed vent event.",
+    "normal_context": "Preheater (t<0) native median 2.5–3.8 V from >=10 finite samples; previous valid sample above 0.1 V. No parameter is adjusted after inspection.",
+    "clock": "Paper describes voltage/thermocouples on a common CAN logger; source timestamps are retained. Observed channel phase offsets are not proof of absolute synchronization uncertainty. Without an independently auditable offset bound, arithmetic alarm-to-condition intervals are conditional and the physical reference remains unverified."
+  },
+  "timing_policy": "No TR lead time, miss rate, sensitivity or field false-alarm rate. Main Table 5 lead time remains UNAVAILABLE without an independently verified event clock, definition and uncertainty. Supplementary voltage-condition timing names its electrical endpoint and remains one experiment; external-heater alarms preceding it do not establish predictive warning.",
+  "forecast_screen": "Optionally rescreen the Oct25 saved development-selected temperature-only forecasts with the same four fixed thresholds and 5 s debounce. Do not fit/refit or tune. Forecasts need 30 s past history; compare with current-temperature alarms on identical available origins. Report relative response timing, not TR lead time.",
+  "revision_before_scoring_utc": "2026-10-28T00:58:07.483480+00:00",
+  "rate_comparison_roundoff_tolerance_c_min": 1e-10
+}

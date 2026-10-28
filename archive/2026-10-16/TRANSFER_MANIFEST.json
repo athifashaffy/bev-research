@@ -1,0 +1,1497 @@
+{
+  "snapshot_date": "2026-10-16",
+  "files": [
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/00_ANALYSIS_PROTOCOL.txt",
+      "bytes": 4223,
+      "sha256": "ef552396f5f82b6df869a3bdb301f9e3408f3622efe29fcad7d71b5ca65513b3",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/00_START_HERE.txt",
+      "bytes": 2075,
+      "sha256": "5c50344574c92b85fb66526ac2a12db93316569f59fb87c8dd3339ea42123a01",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/01_Thermal_Formula_Results.pdf",
+      "bytes": 395711,
+      "sha256": "3eba30c6a506aa631dc3f860322e234fbc4813f1fbc8a4c259f01396cf49f228",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/02_APCOM_Text_for_Supervisor_Review.txt",
+      "bytes": 4996,
+      "sha256": "f8d384b32227dbff1b8ca4d07b2444fac909c6cf92357b8b7d8bca70912baaf2",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B1_0D.json",
+      "bytes": 1502,
+      "sha256": "d3d1dd2ee9171783a625375777d22b63fb3bd99b595df652847494bd5e6e729e",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B1_0D.npz",
+      "bytes": 264530,
+      "sha256": "1528a21af9a97fde2fac1f7cffc2ddb818d7c303d408ce0c407ae80948fe7f28",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B1_7D.json",
+      "bytes": 1506,
+      "sha256": "8276c99f5d1b55e113da9b0ec0bfc6bb81669aee913391b0823cda19c9f1b536",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B1_7D.npz",
+      "bytes": 266113,
+      "sha256": "132569ee96b8c948333051c42dc9ed36b0738e193119e4eab589f9514c243a4b",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B2_0D.json",
+      "bytes": 1504,
+      "sha256": "d3986b6eac7b875a27714650cd672fde721eb89bdfd7fa3f4b83ed1472d5da0c",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B2_0D.npz",
+      "bytes": 266991,
+      "sha256": "e54d47da0967004662b884739ecd01e4f483f450c73bf12446134c261b534218",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B3_0D.json",
+      "bytes": 1504,
+      "sha256": "16b4615e6bb4f3f94ebc523e87119833de01a01ebee2bf277405294b85941049",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B3_0D.npz",
+      "bytes": 264949,
+      "sha256": "56ad97b739d247f852d6456d6638fd86d59715bb60d1f93587b59250fe6a05a2",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B4_0D.json",
+      "bytes": 1519,
+      "sha256": "d2ba64d895eccd4d879eb9e7b11c6b2720ae8492a823ec8604a24e30d4653f56",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B4_0D.npz",
+      "bytes": 270291,
+      "sha256": "b8aa9cd37c86fbc3984c6bb500708cb31d03110f2ffbd9cc72d79ffe50e80e91",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B5_0D.json",
+      "bytes": 1504,
+      "sha256": "d7fdcac4123f7892fc464d8f1aa50716990421f24d71d5aa9e60cf9f124f9919",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B5_0D.npz",
+      "bytes": 267215,
+      "sha256": "ca8c1d27c92e1e1c9cdfc466c026953c02eb7915c80fb496a7e83cad7ccaef41",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B6_0D.json",
+      "bytes": 1544,
+      "sha256": "a4a092992a5434faaf13d3418ec1a446f1c7a78070c4dd43f72a75b59d5cc4a7",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/aligned/B6_0D.npz",
+      "bytes": 272213,
+      "sha256": "8a9c70fbdd2d1717e5f97a0460138cef94cb2d253c0d7a1854de1bd924bcb589",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/code/inspect_headers.py",
+      "bytes": 1699,
+      "sha256": "6d695a6be80e7f5cfa716d3383227749d3cfada23c86ad67511d474dba8ace4b",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/code/make_figures.py",
+      "bytes": 6166,
+      "sha256": "f5873542eacafce99ededdab96354d258bab76dd69a4a142b0b35e2c166c620b",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/code/make_report.py",
+      "bytes": 19649,
+      "sha256": "4b483622e7e58116b2d291d17f9c9da4ea209f330278d9cc5f4fea08ddbd05ec",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/code/prepare_records.py",
+      "bytes": 6544,
+      "sha256": "4b3ad375d83c69997bf3477e1b7eb167b4edba83880464b917216dcfad30bcdb",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/code/run_comparison.py",
+      "bytes": 10222,
+      "sha256": "914ddd5c79d299c2b854b7df72226d980582b67f7c77590b4b76518fc1b5a317",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/code/verify_results.py",
+      "bytes": 4953,
+      "sha256": "db2f3015170de4c8bf577546f38f8cc21ce802160cce9545051c49fcedcff6c2",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/figures/01_Held_Out_Comparison.png",
+      "bytes": 127154,
+      "sha256": "07a672c0258374f6ee13698a32230844e735fd956cb1585c7c47171044a64524",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/figures/01_Held_Out_Comparison.svg",
+      "bytes": 25287,
+      "sha256": "ff52c60410daa73bc7949a8e1b85e8dae325b098f65107c324efe66305e1de4d",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/figures/02_Chronological_Holdout.png",
+      "bytes": 201860,
+      "sha256": "3cc50c828db860a5d9d86d09ecc96ac4be1a9db1c53b72bf7474cbe7da2cfa2d",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/figures/02_Chronological_Holdout.svg",
+      "bytes": 765031,
+      "sha256": "86dca5d639f99718db89fe15bcbf892ae3ee1aeb1d92496f7ee5d2beb98168f1",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/figures/03_All_Channel_Differences.png",
+      "bytes": 93638,
+      "sha256": "4e6a87e1cbe728af0a85e45c05826e136d38b745b99c2017697a82bb524504a1",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/figures/03_All_Channel_Differences.svg",
+      "bytes": 22545,
+      "sha256": "e1f18f6a7c900b51fb3eab11a26b26bb97205c1197ad907d50abb6e55ec49b15",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/predictions/B1_0D.npz",
+      "bytes": 1506511,
+      "sha256": "f98e4526c73a5dead875e0cadab2d0833702f44b396024325fc1cfa9a23d1dec",
+      "archive": "predictions"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/predictions/B1_7D.npz",
+      "bytes": 1552248,
+      "sha256": "c0117e4d5ce73a919525ad4adef4883914c8def820e90401e95cdfadadb5fe05",
+      "archive": "predictions"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/predictions/B2_0D.npz",
+      "bytes": 1155274,
+      "sha256": "aefb5a31dacf20264e41765a67e2d3fabf266f4c202ec4b038dbb20595d8517c",
+      "archive": "predictions"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/predictions/B3_0D.npz",
+      "bytes": 2699609,
+      "sha256": "6d38005f63fb1e825f2ee511ff012412daf103b7bbd6a758dd9e970dce035116",
+      "archive": "predictions"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/predictions/B4_0D.npz",
+      "bytes": 1925157,
+      "sha256": "5f71b3ebb822926cc4accac43a1fd0f12f87d0a88ca64d791c372ffec3685a44",
+      "archive": "predictions"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/predictions/B5_0D.npz",
+      "bytes": 2683351,
+      "sha256": "58ed3b9cca41e992ac70d427c20baad737eb81fbd463fd6718565bd4d018a314",
+      "archive": "predictions"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/predictions/B6_0D.npz",
+      "bytes": 1917895,
+      "sha256": "b8f2a133a8cea2d9801a6d4448ca6b6f4138a2ddf292aa7b2dda9c204282ca64",
+      "archive": "predictions"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/results/analytic_checks.json",
+      "bytes": 161,
+      "sha256": "3657b68fc35fee874c4d613e72c26d9e490759a7cfac489182bea16c52d830de",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/results/frozen_parameters.json",
+      "bytes": 22874,
+      "sha256": "7114b563df7b742c3051f2ea2ede05026b70d24e558a559ffc6f0965c14f8452",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/results/metrics.csv",
+      "bytes": 31892,
+      "sha256": "ca09c113c97cefe24d813177f4e7d97d0c35a504013556fdecb6f9befb5b480e",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/results/metrics.json",
+      "bytes": 85420,
+      "sha256": "258b085a19e480233b5ece29def6bd66555542a18cd8d89a5656f8f4ff1482f1",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/results/summary.json",
+      "bytes": 5600,
+      "sha256": "3fc597b4a3bbd6dbc7fd5a05c22358a3bab06232f941754e795fc3ae68559557",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/results/training_profiles.json",
+      "bytes": 155852,
+      "sha256": "12cbb9f5432d3ef9639fe341c5a5ae2cadba3bf67ddcf7238875871512a3fc68",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/results/verification.json",
+      "bytes": 693,
+      "sha256": "527eb40ed5cd744273cb4773b68758734fd6c99f87529cc16a7ec1433d2e1bfc",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_228Ah_Thermal_Test_2026-10-16/source_audit.json",
+      "bytes": 11377,
+      "sha256": "57e355fd494afb33f56aaaa8eec201441e79a2da313c9aad32cf54234ab1ef1c",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Battery_Data_Search_2026-10-16/00_FINDINGS_AND_RECOMMENDATION.txt",
+      "bytes": 10215,
+      "sha256": "a066290807919e264cc4ee68e6e05fa51b9c1a6c76188095898e7260a4acd635",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Battery_Data_Search_2026-10-16/01_DATA_REQUEST_DRAFTS_NOT_SENT.txt",
+      "bytes": 3910,
+      "sha256": "101b87dd04a427d66c1f6a56b1f0177028e4fd328fcf0e0cc4cfc2f6a86dffff",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Battery_Data_Search_2026-10-16/02_EVIDENCE_REGISTER.json",
+      "bytes": 7698,
+      "sha256": "28dda1dc185979a8877dd52063f9d339611c5468d7c10799ccb39dd752d4c411",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Battery_Data_Search_2026-10-16/03_228Ah_Download_and_Validation_Assessment.txt",
+      "bytes": 8265,
+      "sha256": "2b324f6ba7fc0226e5b6f0fc47a4d7d4c5d5706df13714345cf81d3e229754e0",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Battery_Data_Search_2026-10-16/04_228Ah_Measured_Current_and_Temperature.png",
+      "bytes": 133024,
+      "sha256": "cd0247912c838e360874a2ac621488db2b79cdcd5d107faf2b25d14078e9f44a",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Battery_Data_Search_2026-10-16/04_228Ah_Measured_Current_and_Temperature.svg",
+      "bytes": 781168,
+      "sha256": "9dbb90b9d2fe4cde7c1d1d5e4d9ba61389c2d52200e98496ad30954eca7ddcad",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/00_START_HERE.txt",
+      "bytes": 5280,
+      "sha256": "a2e591b5be2858a5bf19b8ff45d3c156992582776fe76babd0e592136e16fe36",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/01_HAULSIM_Thermal_Methods_Brief.pdf",
+      "bytes": 701163,
+      "sha256": "39dee04ced1c000a62c3a62934353bc5e6fcbd45ca796af87ceacc97dd4e36af",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/02_APCOM_Methods_and_Results.txt",
+      "bytes": 4108,
+      "sha256": "6293f4def422b6a77f88399d02d54b46d8f20275d47bc2728b13295067c69916",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/03_Data_Availability_Check.txt",
+      "bytes": 2459,
+      "sha256": "935218cfa800eb66751f8226f832ca8fcf4f2e6e76817ef488cc753d59f8f567",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/code/build_brief.py",
+      "bytes": 22025,
+      "sha256": "cdb95ea0c8d4d4d59eb32cc523364ac519c2318f34f7552be43045e9fa76e29c",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/code/couple_cycle.py",
+      "bytes": 8727,
+      "sha256": "b9a5b68a6ebb3e4edbd7c7c4ff2b41223d72f493b6e70e4d84ced51815c9cfa8",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/code/fit_model.py",
+      "bytes": 4891,
+      "sha256": "583b587e1f9dc56e231186f652e8d20a5702508771b195ece95f29526b375840",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/code/requirements.txt",
+      "bytes": 82,
+      "sha256": "e10682e7f4f13c0c9897b7cfc32431d813ac4e2ccc27b056dd042d90ce0da475",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/code/verify_package.py",
+      "bytes": 2506,
+      "sha256": "dcaf058eb97976531d13cd358e6b5eb6ddfd81730cb37b5da56d02ee6a71d0e3",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/figures/01_laboratory_validation.png",
+      "bytes": 354755,
+      "sha256": "044b4844318bc62ced51a0cd7512466f702bdc5de18fa10f5ce9bff3b9ddf3c5",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/figures/01_laboratory_validation.svg",
+      "bytes": 774373,
+      "sha256": "45fc2effa117ce4f684f5429709f2eeaee01b67be4fa20c167a1b7e92d4c1292",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/figures/02_native_cycle_and_temperature.png",
+      "bytes": 225593,
+      "sha256": "333bd9bdc5a4dbb335f63e178752e3382bfa18474ba79ea4372d84ab66aecff6",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/figures/02_native_cycle_and_temperature.svg",
+      "bytes": 111614,
+      "sha256": "40cad3d00202a17f47de5b1bfae6891849edd9aaac8704fd18b182dc4ef7f51c",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/figures/03_equations.png",
+      "bytes": 51707,
+      "sha256": "7e9434760e4a06c0b83c7120726830b478e237d10484c40e057f4e5578e64155",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/A002_PeriodicPulseData_prediction.csv",
+      "bytes": 2212470,
+      "sha256": "355751fd4ee0b4770227eb21ddb0cf1d453830acfe27ec6824b418b65da4c1f3",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/A002_UDDS_P25_prediction.csv",
+      "bytes": 899026,
+      "sha256": "21ded4c4191f4fceb1e72f5b6c156bd6fecc863eff20aa93ac3e6e7c9d6931a0",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/A002_UDDS_P35_prediction.csv",
+      "bytes": 885592,
+      "sha256": "8c8069654ddf4865cbda3ab40bc2743f699aacffbe0fa1f8d1ab53348bf51477",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/coupled_temperature_cases.csv",
+      "bytes": 596,
+      "sha256": "a7c3b81c1ea52d5f68a575f4e4e5dafa7f7e8b3820d442b317a9aec1ba45e57b",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/coupled_temperature_traces.csv",
+      "bytes": 1932386,
+      "sha256": "1d316c051308dfeab6d7fb03626cbaec668bce1ff398d71111d065df81f80372",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/coupling_audit.json",
+      "bytes": 5135,
+      "sha256": "1f7626740187adc722110ee70c70fa66381ad65a40a3fa56cc48083c79db6791",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/dataset_audit.json",
+      "bytes": 1900,
+      "sha256": "beeb2ea380fecc6907926849cf6c0813100707c5421570631e514940d78ccb0b",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json",
+      "bytes": 893,
+      "sha256": "4ec7aa3625acce064de862b28d61c0eff5b74ae79e6a66f7b94932b10daa4e39",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/haulsim_event_load.csv",
+      "bytes": 3952,
+      "sha256": "ab94b9887d942ef0b184906939662fa94d464a626400f0a8087f1cb1c1245b99",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/package_source_hashes.json",
+      "bytes": 1484,
+      "sha256": "c15941e7cba4a218930d2915755ed1e1a575a8dd5eae49a457445185b83b42b0",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/record_metrics.json",
+      "bytes": 1347,
+      "sha256": "53da2cea0b3acfea2e5892c2063c75558450e68194990facc497353b92a3df04",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Coupled_Thermal_2026-10-16/results/verification_summary.json",
+      "bytes": 1667,
+      "sha256": "305dcd88f774ca8bd0f056bba581dffca33dfcc8211c256627d7414f975a5dc6",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/00_START_HERE.txt",
+      "bytes": 1700,
+      "sha256": "685c4f58ea5982b79d0d08b876f6f169731fb0ab8ba87c0a39d04851f6124ba9",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/01_New_Afton_Research_and_Modelling_Plan.docx",
+      "bytes": 222061,
+      "sha256": "846c62efc068c1cd2c680debf378b7a586ccec661e89841853f0b462cb85ba28",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/01_New_Afton_Research_and_Modelling_Plan.pdf",
+      "bytes": 636300,
+      "sha256": "b1eae913ce2ddaefb06c273519376ce084354e4ecb09b637ff39c3207871e2f4",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/02_APCOM_Methods_and_Preliminary_Calculations_Draft.docx",
+      "bytes": 203408,
+      "sha256": "ecd0542bb9924b51b5f60e38d8a9ad149af7d188bf27d59e78ace97bc006cae3",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/02_APCOM_Methods_and_Preliminary_Calculations_Draft.pdf",
+      "bytes": 583898,
+      "sha256": "d5c13515e5886d9bb7dc07ed4b55eb362713ce946bba6021e3c1433d91d68008",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/03_Literature_Evidence_Matrix.csv",
+      "bytes": 10728,
+      "sha256": "1ec2f3d639864357e8182b3ea86e52724f1fa27a14585aef76aa2d439fe3246e",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/04_Parameter_and_Assumption_Register.csv",
+      "bytes": 1104,
+      "sha256": "98f078230133022e23a9d356cc72f9e810df661a8d146629ca0aec73dbb4be68",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/05_Reported_Battery_Fire_Cases.csv",
+      "bytes": 1534,
+      "sha256": "fb974c22b53ca83b9d9b1d8ec432d3d9163db37d4045fa183dedad4d55718693",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/06_Proposed_Operating_Scenarios.csv",
+      "bytes": 1606,
+      "sha256": "77d4154084050f1ee5322c520705d42d5889f81be01abebc1443fef7508e108a",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/07_Verification_and_Status.json",
+      "bytes": 2105,
+      "sha256": "c28fe569241958bbba1b7208e042c111b52ba54945786254dc3643ed3f253caf",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/08_HAULSIM_File_State_Check.json",
+      "bytes": 70806,
+      "sha256": "cb41cb4ebe5543239e5587d3bcc623da2ab8a67348af88dd9123d57b4145550b",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/calculations/calculation_audit.json",
+      "bytes": 2855,
+      "sha256": "32f10d87f063c59813651984cf13b856c54e3507e66f739a56f6c8202e9d54f2",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/calculations/illustrative_thermal_response.csv",
+      "bytes": 34242,
+      "sha256": "dcf3e0facc5fdb539328467f7e946318dabea15319fb403823641dfb600fb95e",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/calculations/traction_check.csv",
+      "bytes": 296,
+      "sha256": "258f5cad828dd95a8bdaf763b7369b23ae36d2fca418d10137806b6cb3b41dbb",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/figures/thermal_illustration.pdf",
+      "bytes": 10570,
+      "sha256": "2813746c733195cfacbe999d97a4289c97a673df01b0846c0f6706b2b97d7764",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/figures/thermal_illustration.png",
+      "bytes": 92702,
+      "sha256": "f060b7435479e54045132dc9315b99b8dfca592f965be03e2be7db1afa7b4436",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/figures/traction_check.pdf",
+      "bytes": 2569,
+      "sha256": "3f332da77896de82f7b890c53bd5810776b9b650229023dad6350125132ed3f9",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/figures/traction_check.png",
+      "bytes": 89349,
+      "sha256": "19d186d0071e7c9c487740184e5890951319d77b24212f3e790ced0b3d86df04",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/reproduce/README.txt",
+      "bytes": 405,
+      "sha256": "c03dd56690c58ac02e295cf4231b5c4b58199a422da50aa217796864ffd23599",
+      "archive": "core"
+    },
+    {
+      "path": "APCOM_Research_2026-10-15/reproduce/analysis_examples.py",
+      "bytes": 5646,
+      "sha256": "012ff0431191aef5dfbf7b9caa8ad72aeef33c7050add8356d8eec6293b14d88",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/BEV_Walkthrough.hsm",
+      "bytes": 1617,
+      "sha256": "aa12a18b7d3f8472e7b82e8e238843b1c1fb5f9294a3c0a2ff607b2c0709f301",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/BEV_Walkthrough.hsmdb",
+      "bytes": 921600,
+      "sha256": "2888445f7cb7e70fe6f9c5ea9bc28319b98539d24ddd672764770c8d9b6e06bb",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/Battery_Settings.png",
+      "bytes": 64903,
+      "sha256": "c775f7435d3d562199098dd89f850fd60d394cd613a17165d48b84b4e78a49e1",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/Charging_Time_Result.png",
+      "bytes": 95714,
+      "sha256": "d2c3c25462e22aa669479b1b35c1d0a8d175cec4726f1dd8aecf62d968b04dd5",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/Fleet_Settings.png",
+      "bytes": 59269,
+      "sha256": "00ad00ccdf12a342419954e715665615108954902f97c4d9243d6e45a3b2da7e",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/Material_Movement_Result.png",
+      "bytes": 89156,
+      "sha256": "b53bd618a8609e08da34e18e7b8828c6405b040523896c51043c184767b7ef56",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/Run_Setup.png",
+      "bytes": 88080,
+      "sha256": "b7f61a2a9a609b5d05dae28ffb03e132c141ccd5e43854502ecb82155f756e7a",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/Task_Assignments.png",
+      "bytes": 46217,
+      "sha256": "380709c6b27d7c933b1e01031e861f74cbf961639514b89f5389721561d44dac",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/Walkthrough.txt",
+      "bytes": 6932,
+      "sha256": "c83bc570fae8e6b3445363ae971f3ddacde6bc86d7ea965a1d9de65b01ef2a5b",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/results/HS_EquipmentState.csv",
+      "bytes": 36399,
+      "sha256": "7182ddfeb32567c5d2f4133f799967c35a19f37c5fe8306d888806486e37b374",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/results/HS_LocationEvent.csv",
+      "bytes": 126,
+      "sha256": "bc3c7b710fc20a59e734c3551483036c1eafa065df696fb76142fa8175b2fd05",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/results/HS_MaterialMovement.csv",
+      "bytes": 4068,
+      "sha256": "347f35c9108968c4e4f1d1f01ad5b4c654ac2abb30168c80509f24dbb1703ea7",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/results/native_run.hsmdb",
+      "bytes": 921600,
+      "sha256": "abb0d6e2378939d89b866bc272ff65de631a2bf5f9a47e99cefcd51f3c380c33",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_HAULSIM_Walkthrough_2026-10-16/results/summary.json",
+      "bytes": 2800,
+      "sha256": "267de20f588a2ca5b7f93fcf7b51e47bbf6a632e3fea11ebcff21453926491a9",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Step_by_Step_Guide_2026-10-16/Underground_BEV_Research_and_HAULSIM_Step_by_Step_Guide.docx",
+      "bytes": 400631,
+      "sha256": "43b1f23b2943a2acbca346b1ced9a999baf48f70cd8f7e2c875e823d33a4278e",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Step_by_Step_Guide_2026-10-16/build_guide.py",
+      "bytes": 36493,
+      "sha256": "e7b02d94108c935e7734e830b938a0883e9f31accced89275f76a90dfa823f1b",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Step_by_Step_Guide_2026-10-16/export_for_qa.ps1",
+      "bytes": 883,
+      "sha256": "dd2e8d2b750995f3addb5d096dfeb3bf60efed83854102510b712b99e80b2ec6",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Step_by_Step_Guide_2026-10-16/verification.json",
+      "bytes": 501,
+      "sha256": "036fc4c93149db33a18dfee70ec6a7ff1ee2ab566fefac53fa491350bdea67da",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Temperature_Feature_2026-10-16/00_READ_FIRST.txt",
+      "bytes": 4683,
+      "sha256": "9aec1a19f4be2abf49ecc398d37b15821a4bb8f5bf4d662a01c06af2326b53b2",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Temperature_Feature_2026-10-16/temperature_cases.csv",
+      "bytes": 578,
+      "sha256": "6f5b48bfd75940f6c0a7673a3f400f85539e63d05cc61ccb0046d2efeebb1df4",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Temperature_Feature_2026-10-16/temperature_feature.png",
+      "bytes": 128391,
+      "sha256": "d30ff528446d4d46679b3c8dbe01183bdd187c8ef4f881a0242d1beecb417c2f",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Temperature_Feature_2026-10-16/temperature_traces.csv",
+      "bytes": 63392,
+      "sha256": "6c9daa5d6171c2b707d16bfbfd3bca9336f4f33d60ee921dd555fe04ab5ab39c",
+      "archive": "core"
+    },
+    {
+      "path": "BEV_Temperature_Feature_2026-10-16/verification.json",
+      "bytes": 2942,
+      "sha256": "6b65222c0258634531fa7e00aca111ccd0b526c4e6af1c34c78d758124402f33",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/00_READ_FIRST.txt",
+      "bytes": 1395,
+      "sha256": "bbc1910e900ef98eced0dad2cb65695a8e00094821cfdecf0c18db3ea1d5f62c",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/01_FULL_HANDOFF_FOR_CLAUDE.txt",
+      "bytes": 29464,
+      "sha256": "b0d472f36f720c60aad9076b56e078aac9880e73163ce90883268110b6a43f63",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/02_VISUAL_OVERVIEW.html",
+      "bytes": 4883009,
+      "sha256": "fbbf7c9d74e97d39a50ed37f48ee537ffb73eb8587e9e0d7ba4c8d7118940a12",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/03_CLAUDE_START_PROMPT.txt",
+      "bytes": 2508,
+      "sha256": "46d79cf6536dac001257b3bcc93bce129e5fe2d2daadf67293560614dd99f8fc",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/04_EVIDENCE_MAP.json",
+      "bytes": 163673,
+      "sha256": "e62115781ea31666572b5bb5e914cef85817fa75c72bbfc7fce674a3f5754c43",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/05_FILE_CATALOG.csv",
+      "bytes": 14202,
+      "sha256": "15cb4ea1864882cb7671b56e897442e8d1b32ab7a6c0b5f551eb9c019a4502fb",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/06_VISUAL_VERIFICATION.json",
+      "bytes": 196,
+      "sha256": "24df73c5ab87ebb85b292ff2166b96fb9316dfe1afa3317163075523ba19342e",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/07_BUNDLE_MANIFEST.json",
+      "bytes": 11958,
+      "sha256": "9c3457be5f4dca1b315129df7c51ece2f7ffdf4bdc9307b91b30306efde8f11f",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/build_handoff.py",
+      "bytes": 22295,
+      "sha256": "8f556107923523233849f5ea8391517fadf778abb4c41c4469bf80b5bacc287d",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/check_dashboard.cjs",
+      "bytes": 4027,
+      "sha256": "6fe0574f82e11fd0b1eecf6cc35479644695a0c00f78ef44ef690973d02fec93",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/dashboard_template.html",
+      "bytes": 23399,
+      "sha256": "ac8223bd98bbe1c789a8436875676cd8550cba2f25317734f808560d2d7efe4e",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/00_ANALYSIS_PROTOCOL.txt",
+      "bytes": 4223,
+      "sha256": "ef552396f5f82b6df869a3bdb301f9e3408f3622efe29fcad7d71b5ca65513b3",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/01_Thermal_Formula_Results.pdf",
+      "bytes": 395711,
+      "sha256": "3eba30c6a506aa631dc3f860322e234fbc4813f1fbc8a4c259f01396cf49f228",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/02_APCOM_Text_for_Supervisor_Review.txt",
+      "bytes": 4996,
+      "sha256": "f8d384b32227dbff1b8ca4d07b2444fac909c6cf92357b8b7d8bca70912baaf2",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/code/inspect_headers.py",
+      "bytes": 1699,
+      "sha256": "6d695a6be80e7f5cfa716d3383227749d3cfada23c86ad67511d474dba8ace4b",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/code/make_figures.py",
+      "bytes": 6166,
+      "sha256": "f5873542eacafce99ededdab96354d258bab76dd69a4a142b0b35e2c166c620b",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/code/make_report.py",
+      "bytes": 19649,
+      "sha256": "4b483622e7e58116b2d291d17f9c9da4ea209f330278d9cc5f4fea08ddbd05ec",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/code/prepare_records.py",
+      "bytes": 6544,
+      "sha256": "4b3ad375d83c69997bf3477e1b7eb167b4edba83880464b917216dcfad30bcdb",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/code/run_comparison.py",
+      "bytes": 10222,
+      "sha256": "914ddd5c79d299c2b854b7df72226d980582b67f7c77590b4b76518fc1b5a317",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/code/verify_results.py",
+      "bytes": 4953,
+      "sha256": "db2f3015170de4c8bf577546f38f8cc21ce802160cce9545051c49fcedcff6c2",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/results/frozen_parameters.json",
+      "bytes": 22874,
+      "sha256": "7114b563df7b742c3051f2ea2ede05026b70d24e558a559ffc6f0965c14f8452",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/results/metrics.csv",
+      "bytes": 31892,
+      "sha256": "ca09c113c97cefe24d813177f4e7d97d0c35a504013556fdecb6f9befb5b480e",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/results/summary.json",
+      "bytes": 5600,
+      "sha256": "3fc597b4a3bbd6dbc7fd5a05c22358a3bab06232f941754e795fc3ae68559557",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/results/verification.json",
+      "bytes": 693,
+      "sha256": "527eb40ed5cd744273cb4773b68758734fd6c99f87529cc16a7ec1433d2e1bfc",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_228Ah_Thermal_Test_2026-10-16/source_audit.json",
+      "bytes": 11377,
+      "sha256": "57e355fd494afb33f56aaaa8eec201441e79a2da313c9aad32cf54234ab1ef1c",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Approval_2026-10-09/00_START_HERE.txt",
+      "bytes": 2263,
+      "sha256": "245f0ef41c0967d4b440aa26983d1c979c52bca5a81a96d323706f88355733bb",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Battery_Data_Search_2026-10-16/03_228Ah_Download_and_Validation_Assessment.txt",
+      "bytes": 8265,
+      "sha256": "2b324f6ba7fc0226e5b6f0fc47a4d7d4c5d5706df13714345cf81d3e229754e0",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Coupled_Thermal_2026-10-16/01_HAULSIM_Thermal_Methods_Brief.pdf",
+      "bytes": 701163,
+      "sha256": "39dee04ced1c000a62c3a62934353bc5e6fcbd45ca796af87ceacc97dd4e36af",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Coupled_Thermal_2026-10-16/code/build_brief.py",
+      "bytes": 22025,
+      "sha256": "cdb95ea0c8d4d4d59eb32cc523364ac519c2318f34f7552be43045e9fa76e29c",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Coupled_Thermal_2026-10-16/code/couple_cycle.py",
+      "bytes": 8727,
+      "sha256": "b9a5b68a6ebb3e4edbd7c7c4ff2b41223d72f493b6e70e4d84ced51815c9cfa8",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Coupled_Thermal_2026-10-16/code/fit_model.py",
+      "bytes": 4891,
+      "sha256": "583b587e1f9dc56e231186f652e8d20a5702508771b195ece95f29526b375840",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Coupled_Thermal_2026-10-16/code/verify_package.py",
+      "bytes": 2506,
+      "sha256": "dcaf058eb97976531d13cd358e6b5eb6ddfd81730cb37b5da56d02ee6a71d0e3",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Coupled_Thermal_2026-10-16/results/coupling_audit.json",
+      "bytes": 5135,
+      "sha256": "1f7626740187adc722110ee70c70fa66381ad65a40a3fa56cc48083c79db6791",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json",
+      "bytes": 893,
+      "sha256": "4ec7aa3625acce064de862b28d61c0eff5b74ae79e6a66f7b94932b10daa4e39",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Coupled_Thermal_2026-10-16/results/record_metrics.json",
+      "bytes": 1347,
+      "sha256": "53da2cea0b3acfea2e5892c2063c75558450e68194990facc497353b92a3df04",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Research_2026-10-15/01_New_Afton_Research_and_Modelling_Plan.pdf",
+      "bytes": 636300,
+      "sha256": "b1eae913ce2ddaefb06c273519376ce084354e4ecb09b637ff39c3207871e2f4",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Research_2026-10-15/02_APCOM_Methods_and_Preliminary_Calculations_Draft.pdf",
+      "bytes": 583898,
+      "sha256": "d5c13515e5886d9bb7dc07ed4b55eb362713ce946bba6021e3c1433d91d68008",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Research_2026-10-15/03_Literature_Evidence_Matrix.csv",
+      "bytes": 10728,
+      "sha256": "1ec2f3d639864357e8182b3ea86e52724f1fa27a14585aef76aa2d439fe3246e",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Research_2026-10-15/04_Parameter_and_Assumption_Register.csv",
+      "bytes": 1104,
+      "sha256": "98f078230133022e23a9d356cc72f9e810df661a8d146629ca0aec73dbb4be68",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Research_2026-10-15/05_Reported_Battery_Fire_Cases.csv",
+      "bytes": 1534,
+      "sha256": "fb974c22b53ca83b9d9b1d8ec432d3d9163db37d4045fa183dedad4d55718693",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Research_2026-10-15/06_Proposed_Operating_Scenarios.csv",
+      "bytes": 1606,
+      "sha256": "77d4154084050f1ee5322c520705d42d5889f81be01abebc1443fef7508e108a",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Research_2026-10-15/07_Verification_and_Status.json",
+      "bytes": 2105,
+      "sha256": "c28fe569241958bbba1b7208e042c111b52ba54945786254dc3643ed3f253caf",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/APCOM_Research_2026-10-15/calculations/calculation_audit.json",
+      "bytes": 2855,
+      "sha256": "32f10d87f063c59813651984cf13b856c54e3507e66f739a56f6c8202e9d54f2",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/BEV_HAULSIM_Walkthrough_2026-10-16/Walkthrough.txt",
+      "bytes": 6932,
+      "sha256": "c83bc570fae8e6b3445363ae971f3ddacde6bc86d7ea965a1d9de65b01ef2a5b",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/BEV_HAULSIM_Walkthrough_2026-10-16/results/summary.json",
+      "bytes": 2800,
+      "sha256": "267de20f588a2ca5b7f93fcf7b51e47bbf6a632e3fea11ebcff21453926491a9",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/BEV_Professor_Materials/START_HERE.txt",
+      "bytes": 2976,
+      "sha256": "58886616dc4d0c8649ffeeb6e4d8b745ce65a5e62f0c5e9ee3297acf13c3b672",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/BEV_Temperature_Feature_2026-10-16/00_READ_FIRST.txt",
+      "bytes": 4683,
+      "sha256": "9aec1a19f4be2abf49ecc398d37b15821a4bb8f5bf4d662a01c06af2326b53b2",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/BEV_Temperature_Feature_2026-10-16/temperature_cases.csv",
+      "bytes": 578,
+      "sha256": "6f5b48bfd75940f6c0a7673a3f400f85539e63d05cc61ccb0046d2efeebb1df4",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/HAULSIM_Road_Surface_2026-10-15/01_Experiment_Results.txt",
+      "bytes": 4717,
+      "sha256": "01c5d555fa88151bd5f2c09437bb42491628c8dc48fdfe5cd3bba2eaaa288017",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/HAULSIM_Road_Surface_2026-10-15/results/scenario_comparison.csv",
+      "bytes": 347,
+      "sha256": "c3628eecdb1274a9d7c164ff31a029930c87395922a2677d5529c69aa0c9f205",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/HAULSIM_Road_Surface_2026-10-15/study_manifest.json",
+      "bytes": 4172,
+      "sha256": "7a46c1f8a5c69118980d67f248ede192d483726f69a81fc4be8ff9a17d2c190f",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/New_Afton_Professor_Case/07_Verified_Native_Audit/audit_summary.json",
+      "bytes": 822,
+      "sha256": "e539840a3744bd7d29f2f72e069bc01f67ed8de42e5c5eb7e18cd84bfb802201",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/New_Afton_Professor_Case/START_HERE.txt",
+      "bytes": 2409,
+      "sha256": "5e949669a1599d5409e9b56823700165475bc056b935ad23475ebedfd3ae124e",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/QA_Independent_2026-10-15/QA_Report.md",
+      "bytes": 24057,
+      "sha256": "0c897c08350f2d96d204fea5a03bf2cafc37b9c9dfbb9703ee23fa2992b070f1",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/evidence/results/haulsim/scenario_summary.csv",
+      "bytes": 1231,
+      "sha256": "eb296cb8ae8662d1589f35ae58a1b469c46474c71b35f3a8c6106643fe53b2a8",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/figures/a123.png",
+      "bytes": 354755,
+      "sha256": "044b4844318bc62ced51a0cd7512466f702bdc5de18fa10f5ce9bff3b9ddf3c5",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/figures/battery.png",
+      "bytes": 64903,
+      "sha256": "c775f7435d3d562199098dd89f850fd60d394cd613a17165d48b84b4e78a49e1",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/figures/bulk.png",
+      "bytes": 128391,
+      "sha256": "d30ff528446d4d46679b3c8dbe01183bdd187c8ef4f881a0242d1beecb417c2f",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/figures/channels.png",
+      "bytes": 93638,
+      "sha256": "4e6a87e1cbe728af0a85e45c05826e136d38b745b99c2017697a82bb524504a1",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/figures/chronological.png",
+      "bytes": 201860,
+      "sha256": "3cc50c828db860a5d9d86d09ecc96ac4be1a9db1c53b72bf7474cbe7da2cfa2d",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/figures/comparison.png",
+      "bytes": 127154,
+      "sha256": "07a672c0258374f6ee13698a32230844e735fd956cb1585c7c47171044a64524",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/figures/coupling.png",
+      "bytes": 225593,
+      "sha256": "333bd9bdc5a4dbb335f63e178752e3382bfa18474ba79ea4372d84ab66aecff6",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/figures/truck.png",
+      "bytes": 2323163,
+      "sha256": "3e4a75651bd9c985c8c0d5c769dbc761d71a6b05a0263f06c6f4cce55cb8aac9",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/package_handoff.py",
+      "bytes": 2667,
+      "sha256": "9b7cfa5393dd3d1d8f1db2cd6ab113a1109a73ecc4202404f97f1a096a4d859c",
+      "archive": "core"
+    },
+    {
+      "path": "Claude_Handoff_2026-10-16/qa_inline_preview.html",
+      "bytes": 85012,
+      "sha256": "f826857f49e54bbeb62814ebede4b3ca7847c376497bab6f032798c31887325f",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/00_START_HERE.txt",
+      "bytes": 837,
+      "sha256": "9037104901ae06f09b972a46dcbe9f39cb2ea651b1a22df1a7793fa205b53ab1",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/01_Experiment_Results.html",
+      "bytes": 5097,
+      "sha256": "642f8f3a097344f46d1b7e1085f70f7711a26d92a0629055582da4d2deaed2e7",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/01_Experiment_Results.txt",
+      "bytes": 4717,
+      "sha256": "01c5d555fa88151bd5f2c09437bb42491628c8dc48fdfe5cd3bba2eaaa288017",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/models/RR02/New_Afton_A_RR02.hsm",
+      "bytes": 1617,
+      "sha256": "9d1f79592380976b3e1f4aa267cf437dab6f6e4782f477d6b2820452a4c87599",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/models/RR02/New_Afton_A_RR02.hsmdb",
+      "bytes": 794624,
+      "sha256": "2a180a8f63ebc3cba102403ddb8cf217994a48009dea658ba3e1cb17c30fd644",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/models/RR03/New_Afton_A_RR03.hsm",
+      "bytes": 1617,
+      "sha256": "4ac582cef1f4a5cdf71e3021545743a26a89507ac771582ab62be89dfc18b8f9",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/models/RR03/New_Afton_A_RR03.hsmdb",
+      "bytes": 794624,
+      "sha256": "5d2350cd33ac9df3abfa35e95b27305461d2447e15339d817a0732d7ca5f2b1d",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/models/RR04/New_Afton_A_RR04.hsm",
+      "bytes": 1617,
+      "sha256": "4d778595fb69a30edecbb072fa2615f63d572fb1dc41fc7b9c58850019613644",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/models/RR04/New_Afton_A_RR04.hsmdb",
+      "bytes": 794624,
+      "sha256": "f1affd7a276931d5f5165237ff53eed77f6070195eaa3d509794eb6a75a79d8d",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/HS_EquipmentState.csv",
+      "bytes": 13602,
+      "sha256": "499d648e0fb1c9e8002c6ecfe26dcf09d684cac82e7e0f09afeb762e8b50f0ab",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/HS_EquipmentState.json",
+      "bytes": 51131,
+      "sha256": "172f9d22f6b8bfa40660135499edb9341130902302823204afb59cd83f1e4ab8",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/HS_ExperimentResult.csv",
+      "bytes": 300,
+      "sha256": "3cc0319ec28b04888f9266627a3be6ce691678c24a5e9d711f77859b446fcec4",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/HS_ExperimentResult.json",
+      "bytes": 437,
+      "sha256": "26f4010e20aee392ebd5339eb4d26c995f13e88d3052c59ac26cdc5f7339bcff",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/HS_MaterialMovement.csv",
+      "bytes": 1904,
+      "sha256": "c88a8452f2d90026173cd08f61fe953b3dc41c6014f90280e951b35b5a37fb70",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/HS_MaterialMovement.json",
+      "bytes": 5227,
+      "sha256": "50ca4b9e0993d860311449afb59624a38dd9f9550e78b31a65e9f4996f51ea83",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/New_Afton_A_RR02.hsm",
+      "bytes": 1617,
+      "sha256": "9d1f79592380976b3e1f4aa267cf437dab6f6e4782f477d6b2820452a4c87599",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/New_Afton_A_RR02.hsmdb",
+      "bytes": 794624,
+      "sha256": "64edf423d81771543bbfd03eac9882beb5020300b9396e730f6b4b7925f93659",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR02/audit_summary.json",
+      "bytes": 2717,
+      "sha256": "1d57c4cac6e64f243d2446f6bc6f4b5de698f364f355252b8491cff2076fc33e",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/HS_EquipmentState.csv",
+      "bytes": 12900,
+      "sha256": "860553e7195a2d219f5b0e266c39a72430ec8931160bfdfc1c3f210e3e0bc4e5",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/HS_EquipmentState.json",
+      "bytes": 48571,
+      "sha256": "98a01ebd8da183ffb609b42c10b497c92354584a563a8a74dde18a5498221fdf",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/HS_ExperimentResult.csv",
+      "bytes": 299,
+      "sha256": "92a690d7c39785210d9d3d25f8796caf5bcdea01533bf46e7c8ac586c68b8fe9",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/HS_ExperimentResult.json",
+      "bytes": 436,
+      "sha256": "fa939dd4991a676a8381f78e821899eac6a38f20619f02d58c9edaa66eb78cc7",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/HS_MaterialMovement.csv",
+      "bytes": 1904,
+      "sha256": "c88a8452f2d90026173cd08f61fe953b3dc41c6014f90280e951b35b5a37fb70",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/HS_MaterialMovement.json",
+      "bytes": 5227,
+      "sha256": "50ca4b9e0993d860311449afb59624a38dd9f9550e78b31a65e9f4996f51ea83",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/New_Afton_A_RR03.hsm",
+      "bytes": 1617,
+      "sha256": "4ac582cef1f4a5cdf71e3021545743a26a89507ac771582ab62be89dfc18b8f9",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/New_Afton_A_RR03.hsmdb",
+      "bytes": 794624,
+      "sha256": "e3907c0695cbea72609f295726db03a0469bfa7e452d1f4949769be9fdedcbe1",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR03/audit_summary.json",
+      "bytes": 1362,
+      "sha256": "aa3c0b9e6df559cd1a746e2b36984ab078b00d4fd70d19949bb54e6f6a62f914",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/HS_EquipmentState.csv",
+      "bytes": 12893,
+      "sha256": "c612e5ac2f25c5410b0499f76cbae77a3d1f351799d3fe62f3e3934ecb0a82ca",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/HS_EquipmentState.json",
+      "bytes": 48564,
+      "sha256": "017d74ec64aa3ca18e3aafa3286f1cb9793869025f6cdec96bc6a9188213f2c2",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/HS_ExperimentResult.csv",
+      "bytes": 299,
+      "sha256": "92a690d7c39785210d9d3d25f8796caf5bcdea01533bf46e7c8ac586c68b8fe9",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/HS_ExperimentResult.json",
+      "bytes": 436,
+      "sha256": "fa939dd4991a676a8381f78e821899eac6a38f20619f02d58c9edaa66eb78cc7",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/HS_MaterialMovement.csv",
+      "bytes": 1904,
+      "sha256": "c88a8452f2d90026173cd08f61fe953b3dc41c6014f90280e951b35b5a37fb70",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/HS_MaterialMovement.json",
+      "bytes": 5227,
+      "sha256": "50ca4b9e0993d860311449afb59624a38dd9f9550e78b31a65e9f4996f51ea83",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/New_Afton_A_RR04.hsm",
+      "bytes": 1617,
+      "sha256": "d10c8eca7a8288d326a8b0a20cc632959f8ebdf7fd5f2510d8cb0d0b8c3548de",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/New_Afton_A_RR04.hsmdb",
+      "bytes": 798720,
+      "sha256": "28d65343eaa62a47f7867369a8c0ef6ef3290ee2de9332aa96ba42bff2bdb883",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/RR04/audit_summary.json",
+      "bytes": 1362,
+      "sha256": "0614863f8b93046485af677291f52b9e1e1d8fa96a879663434d761b8294a447",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/results/scenario_comparison.csv",
+      "bytes": 347,
+      "sha256": "c3628eecdb1274a9d7c164ff31a029930c87395922a2677d5529c69aa0c9f205",
+      "archive": "core"
+    },
+    {
+      "path": "HAULSIM_Road_Surface_2026-10-15/study_manifest.json",
+      "bytes": 4172,
+      "sha256": "7a46c1f8a5c69118980d67f248ede192d483726f69a81fc4be8ff9a17d2c190f",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/HS_LoaderType_ConfigurationXml.xml",
+      "bytes": 4584,
+      "sha256": "3f55ca96ded294aeee366a7fdd888e45c9c5472b6ec1364ba8eedec533889ec2",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/HS_LoaderType_XmlContent.xml",
+      "bytes": 2855,
+      "sha256": "567c40c7cbfb34fbe173e7f2cb41c610ab24727a1e1df9291dd2f83c7c1642bd",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/S2_build_manifest.json",
+      "bytes": 1057,
+      "sha256": "3056c493288cf1999737e90f95dd15adf6aac4268e310b91d42773ff47eb38da",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/TruckType_ConfigurationXml.xml",
+      "bytes": 4069,
+      "sha256": "b601d8b472d3d321cd6e4a836b63870b13996582cd8c630a8520cd13a1c9c79f",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/TruckType_XmlContent.xml",
+      "bytes": 4532,
+      "sha256": "ea86ebf97090a40c9a3bd7bbc314c12984db7e8c14ba98b005cb4b616356990e",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/analyze_native_run.py",
+      "bytes": 6383,
+      "sha256": "d94776217759d90d2676db99471be5ccbdeceeeed9984e152f5165670cab23a0",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/blank_seed.hsm",
+      "bytes": 1617,
+      "sha256": "d7b0d9f4053e64fc98c954ae73a9af2af9612b6d756da311658eeb5a4fa3d1d6",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/blank_seed.hsmdb",
+      "bytes": 761856,
+      "sha256": "9531ade505371fb5c220ef3d22ea2b6cc5e96c3fb08f33e79351d1b966eb21fe",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/build_manifest.json",
+      "bytes": 1055,
+      "sha256": "48497d8e8b5201e01af9c8fab6afedb2c933ced8bb56b0030894c5882bf57fae",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/build_native_model.py",
+      "bytes": 13994,
+      "sha256": "33c34d498cb5f02db7831a283ef3acfd7a15f8d88af607fdca364f7346112e35",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/build_presentation_geometry.py",
+      "bytes": 9493,
+      "sha256": "5136aac2ecfa93d36d76c2bd9988b4d3fe1a68bf195be905593cf99b2186aee9",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/rejected/S1_Underground_Baseline.hsm",
+      "bytes": 1616,
+      "sha256": "5c096449da2310654fafb3b8e30384fd895e02fc8877700626a492cc88891ca4",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/rejected/S1_Underground_Baseline.hsmdb",
+      "bytes": 1126400,
+      "sha256": "b3585d43b74e569c4d74afd4b2889731716e3afe62458567715326b8d17fdb9b",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/test_native_analysis.py",
+      "bytes": 1555,
+      "sha256": "f31a41fae5098e855ed0bb6a39bdb1ed1174898ce1bc4993e306372bd91587b2",
+      "archive": "core"
+    },
+    {
+      "path": "models/haulsim/build/verify_model.py",
+      "bytes": 5411,
+      "sha256": "52e1f5e78696568395b24e7bcbee626221c806071288e4939ae751b750c29dca",
+      "archive": "core"
+    },
+    {
+      "path": "research/mining_battery_data_search_2026_10_16/mining_228Ah/README.txt",
+      "bytes": 5199,
+      "sha256": "62d6c229eef2c83e8d474ae19ca7e2efe648bbe3ea0add07d1d8e732743752c5",
+      "archive": "core"
+    },
+    {
+      "path": "research/mining_battery_data_search_2026_10_16/mining_228Ah/Variable Dictionary.docx",
+      "bytes": 22919,
+      "sha256": "e9b62f602cd544a76b21b993d2757889a322b509117690925b0b62ac8267f50b",
+      "archive": "core"
+    },
+    {
+      "path": "research/mining_battery_data_search_2026_10_16/mining_228Ah/Variable_Dictionary_extracted.txt",
+      "bytes": 4423,
+      "sha256": "a5f330342f2586dff25e504738a9d3d14f529bd9284254e56dc49c454353db91",
+      "archive": "core"
+    },
+    {
+      "path": "research/mining_battery_data_search_2026_10_16/mining_228Ah/archive_download.json",
+      "bytes": 335,
+      "sha256": "6579ea11c6befd228a4a4c1b69399f4dc0d5bcb03c0083fef3dc7b66338f49b8",
+      "archive": "core"
+    },
+    {
+      "path": "research/mining_battery_data_search_2026_10_16/mining_228Ah/download_manifest.json",
+      "bytes": 951,
+      "sha256": "a4c4a4ee34dcc7fc1c96aad4fdbeb93b4acbf6e930d2069016db656b48fbc1b4",
+      "archive": "core"
+    },
+    {
+      "path": "research/mining_battery_data_search_2026_10_16/mining_228Ah/raw_time_crosscheck.json",
+      "bytes": 1479,
+      "sha256": "ca1329e22cf226e3a305b65b35762253a57542fa8856a0f21954d1d5e96c7c0d",
+      "archive": "core"
+    },
+    {
+      "path": "research/road_surface_2026_10_15/audit_runs.py",
+      "bytes": 6152,
+      "sha256": "2823415bff6a000d8754cd977b219b180c6ee268234cfc5e59bb03497e5a0ca8",
+      "archive": "core"
+    },
+    {
+      "path": "research/road_surface_2026_10_15/prepare_road_cases.py",
+      "bytes": 7818,
+      "sha256": "759a1e6868184c33da3febba91953f8c663205c98390a0ac7f8e261bcdd663f5",
+      "archive": "core"
+    },
+    {
+      "path": "research/road_surface_2026_10_15/report_results.py",
+      "bytes": 7758,
+      "sha256": "d1431c5a4e42b0efd9d1e9915a0febf50645c278e0e939804ec66d4bf063183b",
+      "archive": "core"
+    },
+    {
+      "path": "research/road_surface_2026_10_15/test_temperature_feature.py",
+      "bytes": 10308,
+      "sha256": "dbb6e78231c44526afc34266f47d0547361f75aa8eaf61ccae5b5f537d0f22e9",
+      "archive": "core"
+    }
+  ],
+  "count": 248,
+  "scope": "Selected research transfer; excludes full raw archives, installations and bulk media.",
+  "credential_pattern_scan_flags": [],
+  "sqlite_integrity_checked": 10
+}
