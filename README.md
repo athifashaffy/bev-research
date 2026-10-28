@@ -1,66 +1,185 @@
-# Underground BEV research
+# Underground BEV thermal warning study
 
-Private research transfer snapshot prepared on 16 October 2026 for Athif Shaffy.
+Simulation-informed thermal demand and a forecasting benchmark for battery
+electric haul trucks in underground mining, using nine archived HAULSIM
+configurations on a New Afton informed route, a fitted A123-equivalent cell
+thermal model, and published LFP abuse records from Sheffield and TUM.
 
-## Start on the other laptop
+Bharti School of Engineering and Computation, Laurentian University.
 
-1. Download **BEV_Research_Portable_2026-10-16.zip** from this repository. On its file page, use **Download raw file**. Extract the ZIP into a normal local folder. For numerical rechecking, also download **BEV_228Ah_Saved_Predictions_2026-10-16.zip** and extract it into the same parent folder so its `BEV_Research` folder merges with the first one.
-2. Open **Underground_BEV_Research_and_HAULSIM_Step_by_Step_Guide.docx**. A separate copy is also at the repository root. The 15 page guide explains the research, actual HAULSIM screens, settings, running, results and remaining gaps.
-3. In the extracted `BEV_Research` folder, open `Claude_Handoff_2026-10-16/02_VISUAL_OVERVIEW.html` in a browser. It works offline. Some older links contain the original laptop's absolute paths; find their files by the preserved folder names.
-4. Open the extracted folder as a project in Codex. Give it `Claude_Handoff_2026-10-16/01_FULL_HANDOFF_FOR_CLAUDE.txt` and this README for context. That summary works with Codex despite its filename.
-5. To use HAULSIM, install or use a compatible licensed version. Open a practice copy of a `.hsm` file with its matching `.hsmdb` beside it. The guide uses HAULSIM 3.8 build 585.
+> **Provenance.** The simulation outputs and laboratory records are genuine and
+> reproducible. The analysis code, figures and documentation in this repository
+> were produced with AI assistance, and the supporting conference paper draft
+> was substantially AI-generated. See [`docs/PROVENANCE.md`](docs/PROVENANCE.md)
+> for a component-by-component record and for what has been independently
+> verified.
 
-**This transfers files and a written handoff, not this live Codex chat. It is a dated snapshot, not automatic two way synchronization.** The full original workspace remains on the first laptop.
+> **Temperatures here are A123-equivalent cell surface values from a fitted
+> model.** They are not measured, and they are not validated Sandvik Z50 pack,
+> core or hotspot temperatures. No verified thermal-runaway detection, lead time
+> or field false-alarm rate is claimed anywhere in this work.
 
-## What is in the main package
+## What this study can and cannot support
 
-- The new follow along Word guide, its source and verification record.
-- The generic four truck charging demonstration, screenshots, native database and exported results.
-- The three completed New Afton informed rolling resistance scenarios, model pairs, native results and audits.
-- The research plan, working paper draft, literature matrix, input register and incident evidence register.
-- The external thermal coupling report and calculations.
-- The 228 Ah laboratory thermal comparison: code, the seven aligned records, fitted coefficients, metrics, plots and verification records. Full saved predictions are in the separate predictions ZIP.
-- The earlier temperature illustration and battery data search assessment.
-- The full written handoff, interactive overview and selected evidence.
-- Supporting native model builder and road experiment scripts.
+![Evidence domains](figures/fig02_evidence_walls.png)
 
-`TRANSFER_MANIFEST.json` lists every included file and SHA-256 hash. Files are copied without rewriting the research evidence.
+Four separate bodies of evidence are used, and they are not interchangeable.
+The integrity of every claim depends on not moving a number across one of these
+boundaries without saying so.
 
-## Keep these studies separate
-
-| Study | Configuration | What it supports |
+| Domain | Supports | Does not support |
 |---|---|---|
-| Generic demonstration | Four trucks; 42 t; assumed 400 kWh; 300 m lift; native charging enabled | Haulage, traffic and charging demonstration. Energy/SOC accounting remains unresolved. |
-| New Afton road experiment | One truck; 45 t; 1500 m network and 135 m rise; 2/3/4% resistance; native battery energy disabled | Complete cycle and loaded travel sensitivity, not validated battery endurance. |
-| External thermal coupling | Native road duty cycle plus assumed electrical conversion and laboratory cell response | Illustrative methodology, not Z50 pack temperature validation. |
-| 228 Ah laboratory test | Six physical LFP cells; seven selected records; measured current and three temperature channels | Mixed exploratory evidence against simple baselines. |
+| Archived HAULSIM runs, 9 configurations | Event durations, energy, mean power, reserve windows | Temperature of any kind. HAULSIM has no thermal model. |
+| A123-equivalent cell surface, 45,094 samples and 729 variants | A frozen, reproducible screen for comparing duty cycles | Pack, core or hotspot temperature; within-event peaks; local faults |
+| Sheffield LFP records, 27 records over 8 date groups | Rule response to real recorded heating | Verified onset time. No independent event log exists. |
+| TUM module experiment, 6 channels | Response at module scale | Replication. Six channels on one module is n = 1. |
 
-The road cycles were 23.967, 24.308 and 24.631 minutes. Each short run delivered 180 t. The 228 Ah formula reduced pooled cross-cell RMSE from 0.274 to 0.187 degrees C, but worsened the later B1 test from 0.224 to 0.292 degrees C. Only 5 of 18 initial cell/channel comparisons improved. Do not present only the favourable pooled result.
+## Analysis pipeline
 
-No validated fire detector, early warning lead time, real New Afton pack temperature or fire probability has been established. The nine page paper draft predates the latest road and laboratory experiments; it still needs integration and supervisor approval. The accepted abstract's AI sensor fusion scope also needs deliberate alignment.
+![Analysis pipeline](figures/fig01_study_flow.png)
 
-## Earlier presentation and video material
+## Results
 
-`BEV_Earlier_Presentation_and_Native_Video_2026-10-16.zip` contains earlier slides, briefing material and actual HAULSIM screen recordings. These are historical teaching and discussion assets; their results and claims must be checked against the newer reports before presentation.
+### Haulage demand
 
-`BEV_Truck_Illustration_Not_Native_HAULSIM.mp4` is a separate illustrative vehicle animation. It is not a native HAULSIM recording, not actual mine footage and not a verified Z50 digital twin.
+Mean power ranges from 133 to 170 kW against the Z50's 480 kW continuous
+rating, and each recurring cycle uses 60.6 to 73.7 kWh.
 
-## Reproduction and exclusions
+![Haulage demand](figures/fig03_nine_case_demand.png)
 
-The 1.27 GB full source dataset archive, downloaded third party publications, installed software/libraries, renderer caches, credentials, original chat databases and other large workspace assets are not included. No HAULSIM licence is included. This is not a complete backup of the original workspace.
+External analysis stops at an energy budget of 60 percent of nominal capacity,
+representing 80 to 20 percent state of charge. Under that rule the configurations
+run for 68 to 108 minutes and complete 1 to 3 recurring cycles.
 
-The 228 Ah package contains the selected aligned input arrays and saved predictions, so the saved numerical checks can be repeated after setting up Python with NumPy and SciPy. The scripts also use Matplotlib, pandas/openpyxl, reportlab and python-docx for other steps. Existing script paths prefer task-local packages; install suitable packages on the other machine and review machine-specific paths before running. The original raw archive is required to repeat raw-to-aligned extraction; it is not required just to read results. A fresh machine installation has not been tested.
+![Reserve windows](figures/fig04_reserve_windows.png)
 
-Preserve the reference results before rerunning. `code/verify_results.py` verifies saved predictions and splits; `code/run_comparison.py` refits and overwrites analysis outputs. Do not silently treat a new run as the archived reference.
+### Worked thermal example
 
-## Dataset attribution
+One loaded-haul event, native event Id 44 in `HS_EquipmentState`, case
+`C100_RR03`. The closed-form solution reproduces the saved trace to
+7.1e-14 degrees C.
 
-封, 居强 (2026). *Dataset of multi-dimensional electrical performance for large-capacity mining power lithium-ion batteries at early calendar aging under coupled temperature and soc conditions*. Mendeley Data, version 2. https://doi.org/10.17632/dhr726bk6z.2
+![Worked example](figures/fig05_worked_example.png)
 
-Licence: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). Seven selected records were aligned and converted into compressed NumPy arrays for this analysis; model predictions and metrics are derived research outputs. Source members, exact alignment checks and hashes are recorded in `source_audit.json` and `aligned/*.json`. The original archive README retains a version 1 DOI in its text; the archive actually used here is version 2, as recorded in the download manifest. DataCite metadata was checked for author, year and licence on 16 October 2026.
+```
+energy             58.927843 kWh over 678.973851 s
+event-average power   312.442421 kW          (65.1% of the 480 kW rating)
+equivalent current      2.206514 A           ASSUMED, not measured
+a = 4.344635e-05 K/(A^2 s)     b = 2.655463e-03 1/s     tau = 376.58 s
+predicted end       25.066657 degrees C
+saved trace         25.066657 degrees C
+```
 
-Other references and their limitations are in the evidence matrix and data search register. Third party rights remain with their respective owners. Keeping this repository private does not grant permission to publish third party files or unpublished research.
+The equivalent current is constructed by matching power per unit of configured
+energy, `I = 2.5 Ah * P / capacity`. It is **not** `P / V`: the pack voltage and
+series/parallel topology are not identified. This assumption drives every
+predicted temperature in the study and is its principal limitation.
 
-## Work to resume
+### Thermal demand and the margin to the operating screen
 
-The next research decision is supervisor approval of paper scope and assumptions. Integrate the completed road and 228 Ah results with their limitations, seek proper vehicle pack and cooling data, and preserve core thesis contributions for the journal plan. Do not describe 36 proposed scenarios as executed.
+![Peak rise and margin](figures/fig06_nine_case_rise.png)
+
+Peak rise is 0.043 to 0.093 degrees C. The margin to the declared 60 degrees C
+screen is 34.907 to 34.957 degrees C, a spread of 0.05 degrees C across all nine
+configurations. Under these parameters, normal haulage duty cycle is not a
+thermal risk pathway, and there is no meaningful margin comparison to draw
+between configurations.
+
+### Forecasting benchmark
+
+![Noise floor](figures/fig07_noise_floor.png)
+
+Nine leave-one-configuration-out holdouts, four horizons, 792 model fits.
+Gradient boosting leads on both error measures at 2, 5 and 10 minutes, **but not
+at 1 minute**, where the held-input physics baseline wins on MAE.
+
+![Both metrics by horizon](figures/fig08_metrics_by_horizon.png)
+
+Two results matter more than the ranking:
+
+1. **The entire benchmark lies below the thermal model's own residual error.**
+   The largest pooled RMSE is 0.054 degrees C; the measured-cell fit's held-out
+   residual is 0.109 to 0.117 degrees C. Separating methods by 0.003 degrees C
+   inside a 0.11 degrees C uncertainty is arithmetic about a synthetic
+   generator, not a physical measurement.
+2. **On measured data the ranking reverses.** These nine traces are the
+   deterministic output of a known equation, so learned models recover that
+   equation. On the measured A123 cell, persistence beats the learned models
+   from 2 to 10 minutes. That reversal is the informative result.
+
+At the 10 minute horizon both the trend baseline and the held-input physics
+baseline become worse than persistence. The trend baseline extrapolates a
+straight line onto a saturating exponential; the physics baseline freezes the
+current while the duty cycle moves on.
+
+### Warning rules
+
+Seven rules fixed in advance: temperature above 45, 50, 55 and 60 degrees C, and
+causal past-60-second slope above 1, 2 and 5 degrees C per minute, each
+requiring 5 elapsed seconds.
+
+![Rules quiet on normal trajectories](figures/fig10_rules_quiet.png)
+
+No rule fires on any of the 729 modelled normal trajectories. The denominator is
+modelled scenarios, not fleet exposure, and the nine nominal settings are a
+subset of the 729 rather than nine additional experiments.
+
+![Rule response times](figures/fig09_rule_response.png)
+
+On laboratory records the same rules respond on 26 of 27 Sheffield records, all
+7 test records, and all 6 TUM channels. **These are responses to recorded
+heating, not verified runaway detections.** No independent, temperature-free
+onset reference with a bounded sensor clock exists in either archive, so lead
+time, missed detections and field false-alarm rate are reported as
+`UNAVAILABLE` with a per-record reason in
+[`data/manifest/event_register.csv`](data/manifest/event_register.csv).
+
+## Reproducing this
+
+```bash
+pip install -r requirements.txt
+python code/make_figures.py   # regenerates all 10 figures from data/derived/
+python code/verify.py         # 22 checks on the headline numbers; non-zero exit on failure
+```
+
+Both scripts read only from `data/derived/`, so the figures and checks reproduce
+from this repository alone. Licence-restricted source data is not included; see
+[`data/README.md`](data/README.md) for the DOIs and for the checksum manifest
+that lets you confirm you have byte-identical inputs.
+
+## Repository layout
+
+```
+code/
+  make_figures.py   regenerates every figure in figures/
+  verify.py         independent recomputation of the headline numbers
+data/
+  derived/          computed outputs, committed
+  manifest/         checksums and source metadata, committed
+  raw/              licence-restricted source data, NOT committed
+docs/
+  PROVENANCE.md     who produced what, and what was verified
+  TRANSFER_SNAPSHOT_2026-10-16.md   earlier workspace transfer notes
+figures/            ten figures, all generated by code/make_figures.py
+```
+
+## Status
+
+Verification run on 28 October 2026: **22 of 22 checks pass**. The original
+experiment package reports 65 passing software tests across the thermal,
+forecasting and laboratory branches.
+
+Open items: the equivalent-current assumption in Equation (2) needs explicit
+justification, literature support and a sensitivity analysis; the reference list
+needs restoring with proper support for the thermal modelling and machine
+learning sections; author attribution and conference template compliance are
+outstanding.
+
+## Data attribution
+
+See [`data/README.md`](data/README.md). In short: the TUM dataset
+([10.14459/2023mp1717758](https://doi.org/10.14459/2023mp1717758)) declares no
+licence and is not redistributed here; the Sheffield records are verified
+against published checksums but not redistributed; HAULSIM is used under licence
+from RPMGlobal and no licence or native model file is included. Third-party
+rights remain with their owners.
