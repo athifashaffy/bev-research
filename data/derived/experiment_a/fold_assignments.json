@@ -1,0 +1,677 @@
+[
+  {
+    "outer_test": "C080_RR02",
+    "outer_train": [
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR03",
+          "C100_RR04"
+        ],
+        "train_groups": [
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR03",
+          "C120_RR02",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR04",
+          "C120_RR02"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C100_RR02",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C100_RR02",
+          "C120_RR03"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR03",
+          "C120_RR04"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR03"
+        ]
+      }
+    ]
+  },
+  {
+    "outer_test": "C080_RR03",
+    "outer_train": [
+      "C080_RR02",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR02",
+          "C100_RR04"
+        ],
+        "train_groups": [
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR03",
+          "C120_RR02",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR04",
+          "C120_RR02"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C100_RR02",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C100_RR02",
+          "C120_RR03"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR04",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR03",
+          "C120_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR03"
+        ]
+      }
+    ]
+  },
+  {
+    "outer_test": "C080_RR04",
+    "outer_train": [
+      "C080_RR02",
+      "C080_RR03",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR02",
+          "C100_RR04"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C100_RR02",
+          "C100_RR03",
+          "C120_RR02",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR03",
+          "C120_RR02"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C100_RR02",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C100_RR02",
+          "C120_RR03"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR03",
+          "C120_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C100_RR02",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR03"
+        ]
+      }
+    ]
+  },
+  {
+    "outer_test": "C100_RR02",
+    "outer_train": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR02",
+          "C100_RR04"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR03",
+          "C120_RR02",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR03",
+          "C120_RR02"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR04",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C080_RR04",
+          "C120_RR03"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR03",
+          "C120_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR03"
+        ]
+      }
+    ]
+  },
+  {
+    "outer_test": "C100_RR03",
+    "outer_train": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR02",
+          "C100_RR04"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR02",
+          "C120_RR02",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR03",
+          "C120_RR02"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR04",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C080_RR04",
+          "C120_RR03"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C100_RR02",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR02",
+          "C120_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR03"
+        ]
+      }
+    ]
+  },
+  {
+    "outer_test": "C100_RR04",
+    "outer_train": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR02",
+          "C100_RR03"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR02",
+          "C120_RR02",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR03",
+          "C120_RR02"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR03",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C080_RR04",
+          "C120_RR03"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C100_RR02",
+          "C100_RR03",
+          "C120_RR02",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR02",
+          "C120_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR03",
+          "C120_RR02",
+          "C120_RR03"
+        ]
+      }
+    ]
+  },
+  {
+    "outer_test": "C120_RR02",
+    "outer_train": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR02",
+          "C100_RR03"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR04",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR03",
+          "C100_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR03",
+          "C120_RR03",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C080_RR04",
+          "C120_RR03"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C100_RR02",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR02",
+          "C120_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR03"
+        ]
+      }
+    ]
+  },
+  {
+    "outer_test": "C120_RR03",
+    "outer_train": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR04"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR02",
+          "C100_RR03"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR03",
+          "C100_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR03",
+          "C120_RR02",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C080_RR04",
+          "C120_RR02"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C100_RR02",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR04"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR02",
+          "C120_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR02"
+        ]
+      }
+    ]
+  },
+  {
+    "outer_test": "C120_RR04",
+    "outer_train": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03"
+    ],
+    "inner": [
+      {
+        "inner_fold": 0,
+        "validation_groups": [
+          "C080_RR02",
+          "C100_RR03"
+        ],
+        "train_groups": [
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR04",
+          "C120_RR02",
+          "C120_RR03"
+        ]
+      },
+      {
+        "inner_fold": 1,
+        "validation_groups": [
+          "C080_RR03",
+          "C100_RR04"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR04",
+          "C100_RR02",
+          "C100_RR03",
+          "C120_RR02",
+          "C120_RR03"
+        ]
+      },
+      {
+        "inner_fold": 2,
+        "validation_groups": [
+          "C080_RR04",
+          "C120_RR02"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C100_RR02",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR03"
+        ]
+      },
+      {
+        "inner_fold": 3,
+        "validation_groups": [
+          "C100_RR02",
+          "C120_RR03"
+        ],
+        "train_groups": [
+          "C080_RR02",
+          "C080_RR03",
+          "C080_RR04",
+          "C100_RR03",
+          "C100_RR04",
+          "C120_RR02"
+        ]
+      }
+    ]
+  }
+]

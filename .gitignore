@@ -15,6 +15,6 @@ Thumbs.db
 results/
 .pytest_cache/
 
-# Independent archived-result reproduction outputs
+# Separate reproducibility output directories
 reproducibility/results/
 *.egg-info/
