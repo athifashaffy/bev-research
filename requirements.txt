@@ -1,4 +1,27 @@
-# Minimum set needed to regenerate every figure and run the verification.
-numpy>=1.24
-pandas>=2.0
-matplotlib>=3.7
+# Environment used to generate the figures and run the verification in this
+# repository (code/make_figures.py, code/verify.py). Python 3.12.14.
+#
+# NOTE: this is NOT the same environment that produced the original analysis.
+# The forecasting benchmark in experiment_a was run against pinned
+# scikit-learn 1.7.2 and scipy 1.16.3 with random_seed 20261027. Reproducing
+# the ORIGINAL model fits requires those versions; reproducing the FIGURES and
+# the verification checks only requires what is listed below, because both read
+# from the committed derived tables.
+
+numpy==2.3.5
+pandas==3.0.1
+matplotlib==3.11.2
+
+# Transitive, pinned because matplotlib output is version sensitive:
+pillow==13.0.0
+cycler==0.12.1
+kiwisolver==1.5.1
+pyparsing==3.3.3
+python-dateutil==3.0.0
+fonttools==4.67.0
+packaging==26.3
+
+# Not imported by this repository's code. Listed because the original analysis
+# depends on them and anyone re-running experiment_a will need these exact pins:
+#   scikit-learn==1.7.2
+#   scipy==1.16.3

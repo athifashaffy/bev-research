@@ -105,7 +105,18 @@ plt.rcParams.update({
 })
 
 
+# Journals place the caption below the figure and do not repeat it as a title
+# inside the image. Set this False to emit manuscript versions; the captions in
+# docs/FIGURE_CAPTIONS.md then carry the text. Panel labels (A, B) are kept,
+# since those are referenced from the caption body.
+SHOW_TITLES = True
+
+
 def save(fig, name):
+    if not SHOW_TITLES:
+        fig.suptitle("")
+        if len(fig.axes) == 1:
+            fig.axes[0].set_title("")
     path = os.path.join(FIGS, name)
     fig.savefig(path, dpi=170, bbox_inches="tight", pad_inches=0.25)
     plt.close(fig)
