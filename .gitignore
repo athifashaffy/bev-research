@@ -1,0 +1,12 @@
+# Licence-restricted source data is never committed. Fetch it from the DOIs in
+# data/README.md and verify against data/manifest/source_checksums.json.
+data/raw/*
+!data/raw/.gitkeep
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

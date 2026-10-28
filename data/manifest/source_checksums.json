@@ -1,0 +1,303 @@
+[
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241029-001.csv",
+    "sha256": "da7280148dafd65500a3a688e91c81d5fc2f1f3be50740ec948de3a38c5f2e7d",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 223263
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241030-001.csv",
+    "sha256": "88351f1a69832e794d31b07f4b95a0ee97fc65cebd3451a69b43085432ec8310",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 240653
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241030-002.csv",
+    "sha256": "ee54362a2aca835d096cd4b1e42811600e2a42c2c4f1fbc7f058cd76d693f1f3",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 113011
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241030-003.csv",
+    "sha256": "9ab944f3df3f7f0a68cf0bfa6c9c6f176f6ba101c42410893cc74a82d413c0b7",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 165727
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241030-004.csv",
+    "sha256": "2f271faf70de2c8721364e3ff30b38129928e4d8c43ae4b6afb83f6b976c7c91",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 213598
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241030-005.csv",
+    "sha256": "fb36a659a912626d0f13c1ea9e31497b58bb671e58cc6329eb661ea06f1d66b1",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 205296
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241126-001.csv",
+    "sha256": "e4d103e0b9d2bb7fa2ff593a8832a3f664d4de1dc9e857c22535b8c95f004ccc",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 176085
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241126-002.csv",
+    "sha256": "ecb81009c719476fabfcfbd77cd1f80fd849f6b56a249944ceb1d164f4823755",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 150707
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241127-001.csv",
+    "sha256": "33596c6829f2d12efb59ed10eed2d163d3937ed7d6f902d9234d323a15eedce0",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 187363
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\241127-002.csv",
+    "sha256": "4214126b555d942e93e83577606110fe584ed439bb9fcd63136e8bdbdf4bbfdb",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 169320
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250129-001.csv",
+    "sha256": "ee243ffbd6059d07d2886b3e7c92fa251b96c436aeb93e5c2e0423d14078f6e9",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 194385
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250129-002.csv",
+    "sha256": "ebda54291df2b8a43f9f953e39167664d5e5271fa6465c7995539424bc79e452",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 192485
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250129-003.csv",
+    "sha256": "50f78358fc7b5a4c150d437c4b61b5a7b6480e597ddfa2522ed36c496f28a48c",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 252599
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250129-004.csv",
+    "sha256": "73a004425b30f5fc2c6043cab1d69cab30c33cf33cc2bb5a57b9778c7afd8017",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 213492
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250129-005.csv",
+    "sha256": "98864de14bf298d6086ff846aeb0f8a142b46fadf9ae633598a56d9ec717cf01",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 229007
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250130-001.csv",
+    "sha256": "317fc034043ec9f907aee271b6f2557d012dd5ad23919070c431c906c2b605a3",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 238234
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250130-002.csv",
+    "sha256": "f6333aa2640b2ca70afcc0470673c6e71d82f83b68f602b55fdbe1ecee1ef621",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 165000
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250130-003.csv",
+    "sha256": "8e69383f034e00c2c2e99a5d10e7b29bfc6dd3a6c3cbb84fa0f2676e47ff235d",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 185397
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250130-004.csv",
+    "sha256": "5656570f09d5749c697e9ac94dd05124377d980a5a2d64f6f67e5dc17e0ebdf7",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 227374
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250130-005.csv",
+    "sha256": "595d2fccbde19ec8e18c8f81612c84e862faa053453186655331337a3d565355",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 251121
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250211-002.csv",
+    "sha256": "507918a3c5b28444efb9121c69ed7ba7faee3d1ef6bc517586c80cfd504c6375",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 247669
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250211-003.csv",
+    "sha256": "75ea0eb47499a3ea713587b07bcc38fe094c79eea9429117371530af58777b88",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 253014
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250211-004.csv",
+    "sha256": "f1421c14febed4d34309da20f46ce41b72b3c7eca5c159d21956ad095e9e4241",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 262084
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250212-001.csv",
+    "sha256": "2b9a6c992832a96305bf8aad20dbc17ab88e3f57e3766c555554cfeca827d894",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 126819
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250212-002.csv",
+    "sha256": "010c13a3eb1dce1b2b79155b9bde92a01c8de5e27e4e7e4f149e91f50d64bf9c",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 216130
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250212-003.csv",
+    "sha256": "12d0c5567fb358af306ce43b82dc27aae7e6a92d000993e5e4c0bd11058e8f8f",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 231457
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\sheffield\\250212-004.csv",
+    "sha256": "9a5e7a78065b458f8ea9c8ce1b0f1f901fffe11293b52034a796b87bca3504fb",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": null,
+    "bytes": 266118
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T1_LFP.txt",
+    "sha256": "3be62e47305699b5c339931895b77e9f70689ff284e9877ba8627993dfc7afec",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 50969
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T2_LFP.txt",
+    "sha256": "2eb7a6af89cdb16bd14790a61aa8cb5784755185cf4439a4bdbbd90a980ec230",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1127046
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T3_LFP.txt",
+    "sha256": "30aa11f49b3191f042625415cca3c41ebe91eeea086f8451ba13b7181bb35519",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1122743
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T4_LFP.txt",
+    "sha256": "aca2616588fa0cb0e7eca0254457bbe132de891611410261294710fc7c4ba288",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1118069
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T5_LFP.txt",
+    "sha256": "6018a106451b5bd26c607f7a468fcc010f959082e77e59237020399bf2216ba4",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1112896
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell temperatures\\GraphiteLFP\\T6_LFP.txt",
+    "sha256": "36cafc33e6dba62e850ebfc562735732add122e7572531e38b73a90107c2c4a7",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1109603
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U1_LFP.txt",
+    "sha256": "c9212f82fcb9435e6e757dd8aa6341113ba2e7d8d27488a8430974f379480957",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1076286
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U2_LFP.txt",
+    "sha256": "9bceeec47cfd4f6a2df4609b2d1d9f401d5c2ece36c5cf451b43044562f91f5b",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 878780
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U3_LFP.txt",
+    "sha256": "5bdb5244a40677aa6aa9590fe9ce05228ed5c23407873939a30c4d66f601e39c",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1098574
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U4_LFP.txt",
+    "sha256": "4ecdc7cb0422bc185e05414f79b55a8cdaff2012e6d9b99a7cf1c51ce447aa99",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1106027
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\cell voltages\\GraphiteLFP\\U5_LFP.txt",
+    "sha256": "b353f3f3b33d3ce199672fc28399d74ef0b7cbdf35e15244f28dfc7bc7dbf483",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1004941
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T1vent_LFP.txt",
+    "sha256": "f66a1c50e115652e2bceb4562079cf8e7e0e0ef4fcf821f9033ddc74cd2f9e83",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1127594
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T2vent_LFP.txt",
+    "sha256": "f5c342841a5ace86d3ff19c0616ea40fd27dc11b4891ca0996de3cf7f6813a4c",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1091075
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T3vent_LFP.txt",
+    "sha256": "260c5f01f1531dcfca02bbd9d3c3adbc1868c6d13cb896506380541b6c1da093",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1116755
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T4vent_LFP.txt",
+    "sha256": "2ae4ff8632489e3bff8d4df26757881ca2f163292fd811a1aa10610dd4051518",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1114103
+  },
+  {
+    "path": "LFP_Data_Feasibility_2026-10-20\\sources\\tum\\thermal runaway propagation data set\\measurement data\\venting temperatures\\GraphiteLFP\\T5vent_LFP.txt",
+    "sha256": "329bc5a38ed7fb401113e17df814341196c7584d9b347a28500c730644288a09",
+    "archived_sha256_matches": true,
+    "publisher_sha512_matches": true,
+    "bytes": 1102425
+  }
+]
