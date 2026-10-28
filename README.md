@@ -139,6 +139,7 @@ time, missed detections and field false-alarm rate are reported as
 ```bash
 pip install -r requirements.txt
 
+python experiments/reproduce_thermal_chain.py     # rebuild the traces from inputs
 python experiments/thermal_demand.py              # Table 2
 python experiments/experiment_a_forecasting.py    # Tables 3 and 4
 python experiments/experiment_b_warning_rules.py  # Table 5
@@ -147,6 +148,29 @@ python code/make_figures.py   # all ten figures
 python code/verify.py         # 22 checks, non-zero exit on failure
 python -m pytest tests/       # 37 unit tests
 ```
+
+### How much of the pipeline actually reproduces
+
+Reading a saved output is not the same as reproducing the work that made it, so
+this repository is explicit about where it sits on that scale.
+
+`reproduce_thermal_chain.py` rebuilds the published temperature traces from the
+265-event haulage ledger, going through event-average power, the assumed
+equivalent current and the frozen thermal model, touching the saved traces only
+to compare at the end. It agrees to **7.1 × 10⁻¹⁵ °C** across all nine
+configurations. That proves the traces follow from the stated inputs and the
+stated equation with no undocumented step in between.
+
+It does **not** validate the equivalent-current assumption, the fitted
+coefficients, or the transfer from an A123 cell to a Z50 pack. A pipeline can be
+exactly reproducible and still rest on an assumption that does not hold
+physically. Two ends of the chain remain outside this repository: the HAULSIM
+simulation that produced the event ledger needs a licensed copy of HAULSIM 3.8
+build 585 and the native model files, and the fit that produced `a` and `b`
+needs the A123 records. The fitting code is in
+[`code/fit_thermal_model.py`](code/fit_thermal_model.py) and its provenance in
+[`data/manifest/frozen_cell_model.json`](data/manifest/frozen_cell_model.json),
+but the `.mat` records must be fetched from their DOI.
 
 Everything reads from `data/derived/`, which is committed, so the experiments,
 figures and checks all reproduce from this repository alone. Runs write to

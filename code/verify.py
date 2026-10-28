@@ -25,7 +25,9 @@ import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-DERIVED = os.path.join(ROOT, "data", "derived")
+sys.path.insert(0, os.path.join(ROOT, "src"))
+
+from bev_research import datasets  # noqa: E402
 
 A_COEF = 4.344635339312832e-05   # K/(A^2 s), identified as R_eff / C_eff
 B_COEF = 0.002655462788692412    # 1/s,       identified as K_eff / C_eff
@@ -104,7 +106,7 @@ def check_worked_example():
 
 def check_case_table():
     print("\n2. Nine-case operating table")
-    df = pd.read_csv(os.path.join(DERIVED, "table2_nominal_reserve.csv"))
+    df = datasets.reserve_summary()
     check("nine configurations present", len(df) == 9, "n = %d" % len(df))
 
     # energy over the window must equal 60% of nominal capacity, the reserve rule
@@ -138,7 +140,7 @@ def check_case_table():
 
 def check_forecasting():
     print("\n3. Forecasting benchmark")
-    df = pd.read_csv(os.path.join(DERIVED, "table4_pooled_metrics.csv"))
+    df = datasets.pooled_metrics()
     check("four horizons by five methods",
           len(df) == 20, "n = %d" % len(df))
 
@@ -174,13 +176,12 @@ def check_forecasting():
 
 def check_warning_rules():
     print("\n4. Frozen warning rules")
-    quiet = pd.read_csv(os.path.join(DERIVED, "frozen_rule_summary.csv"))
+    quiet = datasets.frozen_rule_summary()
     check("no rule fires on any modelled normal trajectory",
           int(quiet["trajectories_with_debounced_alarm"].sum()) == 0,
           "alarms = %d" % int(quiet["trajectories_with_debounced_alarm"].sum()))
 
-    lab = pd.read_csv(os.path.join(DERIVED, "table5_rule_response.csv"),
-                      encoding="utf-8-sig")
+    lab = datasets.rule_response_table()
     for col in ("lead_time_s", "misses", "field_false_alarm_rate"):
         all_unavailable = bool((lab[col].astype(str) == "UNAVAILABLE").all())
         check("%s is reported as UNAVAILABLE throughout" % col, all_unavailable)

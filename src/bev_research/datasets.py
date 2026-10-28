@@ -53,6 +53,18 @@ def operations_comparison() -> pd.DataFrame:
     return _read(os.path.join(THERMAL_DIR, "operations_comparison.csv"))
 
 
+def event_ledger() -> pd.DataFrame:
+    """Per-event haulage ledger: 265 events across the nine configurations.
+
+    This is the INPUT to the thermal chain, not one of its outputs. Each row
+    carries a duration and a battery-side energy, from which the event-average
+    power and then the assumed equivalent current are derived.
+    ``experiments/reproduce_thermal_chain.py`` rebuilds the published traces
+    from this file alone.
+    """
+    return _read(os.path.join(THERMAL_DIR, "operations_event_ledger.csv"))
+
+
 def sensitivity_envelopes() -> pd.DataFrame:
     """729 assumed variants: 81 per configuration across a, b and heating."""
     return _read(os.path.join(THERMAL_DIR, "sensitivity_envelopes.csv"))

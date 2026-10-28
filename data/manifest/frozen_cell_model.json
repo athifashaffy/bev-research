@@ -1,0 +1,19 @@
+{
+  "equation": "dTs/dt = a*I_cell^2 - b*(Ts-Tair)",
+  "a_K_per_A2_s": 4.344635339312832e-05,
+  "b_per_s": 0.002655462788692412,
+  "time_constant_s": 376.5821928509924,
+  "identifiability": "Only R_eff/C_eff and UA_eff/C_eff are fitted. No independently identified R, C or UA.",
+  "fit_record": "A002_PeriodicPulseData.mat",
+  "test_records": [
+    "A002_UDDS_P25.mat",
+    "A002_UDDS_P35.mat"
+  ],
+  "fit_rule": "Full pulse record, time-weighted least squares, positive parameters; no test-record tuning.",
+  "prediction_rule": "Measured initial surface temperature only. Left-held current and measured air input at original timestamps; no surface-temperature feedback.",
+  "fit_success": true,
+  "fit_nfev": 9,
+  "dataset_doi": "10.17632/p8kf893yv3.1",
+  "nominal_cell_capacity_Ah": 2.5,
+  "domain": "A123 26650 m1b laboratory cell surface; not Z50 pack/core temperature"
+}
