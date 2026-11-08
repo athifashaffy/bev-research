@@ -1,0 +1,55 @@
+{
+  "charts": [
+    {
+      "file": "01_cycle_energy.png",
+      "dimensions_px": [
+        1600,
+        850
+      ],
+      "sha256": "10f224eaf95c2212efcc4f61fee23574b59d10ad14713cbbed403c557e5f721f",
+      "visually_inspected": true,
+      "assessment": "Legible axes and legends; no clipping or text overlap; source distinctions retained."
+    },
+    {
+      "file": "02_reserve_tonnes.png",
+      "dimensions_px": [
+        1600,
+        850
+      ],
+      "sha256": "4c2a4b85c57493dddee23730ba0f0ce423e9393608b5028ed9110aebc2e7844c",
+      "visually_inspected": true,
+      "assessment": "Legible axes and legends; no clipping or text overlap; source distinctions retained."
+    },
+    {
+      "file": "03_generated_temperature.png",
+      "dimensions_px": [
+        1600,
+        850
+      ],
+      "sha256": "30bde8f47a6a70975b133ffcb22b9cbb36aee928e1dc0f40c136103a5e1af670",
+      "visually_inspected": true,
+      "assessment": "Legible axes and legends; no clipping or text overlap; source distinctions retained."
+    },
+    {
+      "file": "04_forecast_5min.png",
+      "dimensions_px": [
+        1600,
+        850
+      ],
+      "sha256": "7df11a2128faaa33933b53d448ddd9c54e16b1972c816aba8416e41525af7aa9",
+      "visually_inspected": true,
+      "assessment": "Legible axes and legends; no clipping or text overlap; source distinctions retained."
+    },
+    {
+      "file": "05_pooled_rmse.png",
+      "dimensions_px": [
+        1600,
+        850
+      ],
+      "sha256": "de4f3f3e63e0a8fd1269c6053ae224ca685ec8ca60bebb20702ad35c75bb1e03",
+      "visually_inspected": true,
+      "assessment": "Legible axes and legends; no clipping or text overlap; source distinctions retained."
+    }
+  ],
+  "notes": "All five rendered figures were inspected. Reserve bar chart headroom increased after first review."
+}

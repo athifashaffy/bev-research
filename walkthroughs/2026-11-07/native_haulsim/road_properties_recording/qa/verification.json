@@ -1,0 +1,48 @@
+{
+  "kind": "actual continuous screen recording",
+  "raw_local_only": "raw_screen_recording.mp4",
+  "source_dimensions": [
+    3840,
+    1080
+  ],
+  "crop": [
+    1920,
+    1020,
+    0,
+    0
+  ],
+  "raw_interval_seconds": [
+    15,
+    120
+  ],
+  "speed": 1.5,
+  "final_frame_hold_seconds": 5,
+  "quick_dimensions": [
+    1920,
+    1120
+  ],
+  "quick_duration_seconds": 75,
+  "original_speed_duration_seconds": 105,
+  "audio": "none",
+  "captions": "outside UI in added bottom padding",
+  "decode_quick": "passed",
+  "decode_original": "passed",
+  "files": [
+    {
+      "name": "raw_screen_recording.mp4",
+      "bytes": 7945438,
+      "sha256": "00beebec2f142fa6992fe33d67ca1edf2504b55397bebdf1721c838b624dc6d0"
+    },
+    {
+      "name": "HAULSIM_16_percent_screen_recording.mp4",
+      "bytes": 1040846,
+      "sha256": "64d6b59d168942aa55d45aa841103afc02683a9df8fc8c27a59db7faa6367892"
+    },
+    {
+      "name": "HAULSIM_16_percent_original_speed.mp4",
+      "bytes": 1298480,
+      "sha256": "7945c8510b145b940535d12fbb71480109b9cae8995b089f29de3b2aa4fbadf3"
+    }
+  ],
+  "raw_privacy_note": "Uncropped source contains a second monitor. Retained locally for audit only, not linked on Watch page."
+}

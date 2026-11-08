@@ -1,0 +1,33 @@
+{
+  "observation_start": "2026-11-08T02:23:30.772Z",
+  "clicks": [
+    {
+      "step": "Build tab",
+      "at": "2026-11-08T02:23:31.080Z"
+    },
+    {
+      "step": "Open Select menu",
+      "at": "2026-11-08T02:23:42.571Z"
+    },
+    {
+      "step": "Choose Individual",
+      "at": "2026-11-08T02:24:00.837Z"
+    },
+    {
+      "step": "Zoom into road",
+      "at": "2026-11-08T02:24:13.723Z"
+    },
+    {
+      "step": "Click road between nodes",
+      "at": "2026-11-08T02:24:34.155Z"
+    },
+    {
+      "step": "Double-click Properties title",
+      "at": "2026-11-08T02:24:44.774Z"
+    },
+    {
+      "step": "Maximize Properties window",
+      "at": "2026-11-08T02:25:07.091Z"
+    }
+  ]
+}

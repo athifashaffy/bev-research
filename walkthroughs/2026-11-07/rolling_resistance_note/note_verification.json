@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "document": "New_Afton_Rolling_Resistance_Walkthrough.docx",
+  "sha256": "180738a9150dd5771990c5a7d420ef3ace0a1dd04669f289e6de18153c95bd40",
+  "rendered_pages": 3,
+  "all_pages_visually_checked": true,
+  "reference_hyperlinks_verified": 6,
+  "actual_haulsim_images_embedded": 1,
+  "scientific_scope": "Explanatory source note; no new runs or new physical validation",
+  "source_review": "Independent agent review found no material factual defect",
+  "ai_assistance": "Codex assisted the teaching note, source review and document generation."
+}

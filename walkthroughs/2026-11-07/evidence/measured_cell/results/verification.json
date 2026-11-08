@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "new_unit_tests": 4,
+  "reused_primitive_tests": 10,
+  "independently_recomputed_metric_rows": 120,
+  "exact_horizon_and_source_clock_checks": 12976,
+  "prior_oct25_files_unchanged": 26,
+  "raw_source_hash_checks": 3,
+  "development_family_choices_checked": 4,
+  "reproduced_oct25_60s_metric_rows": 30
+}

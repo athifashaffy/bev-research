@@ -1,0 +1,16 @@
+Actual continuous HAULSIM screen recording
+
+First 15 seconds trimmed. Playback accelerated to 1.5x. The final captured frame is held for five seconds.
+Only the HAULSIM monitor is shown; the second monitor and taskbar are cropped out.
+Captions are in an added strip below the interface. No simulated cursor, click or UI screen was added.
+
+1. Open the Build tab.
+2. Open the Select dropdown under the arrow.
+3. Choose Individual.
+4. Scroll up over the road to zoom in.
+5. Click the road between junctions. The selected segment turns blue.
+6. Double-click the Properties title bar at the bottom left.
+7. Click the small square to maximize Properties.
+Grade = 16.00%    |    Rolling Resistance = 3.00%
+
+If Properties is hidden: save any edits, close the project, then reopen C100_RR03.hsm.

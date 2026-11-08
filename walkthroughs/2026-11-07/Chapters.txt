@@ -1,0 +1,16 @@
+00:00  What the experiment actually did
+00:39  The underground route we represented
+01:24  Why there are nine cases
+02:10  What HAULSIM records
+02:56  Apply the battery reserve after the run
+03:59  Rougher roads use more energy
+04:43  How much work fits before the reserve?
+05:32  From event energy to estimated current
+06:18  How the temperature calculation works
+07:03  Why the predicted rise is so small
+08:05  What the forecasting models learn
+09:02  Read the actual-versus-predicted chart
+09:39  Did machine learning beat persistence?
+10:31  What happened on measured cell data?
+11:17  Where thermal-runaway data fit
+12:13  What this contributes, and what comes next

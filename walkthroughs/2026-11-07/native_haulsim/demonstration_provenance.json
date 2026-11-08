@@ -1,0 +1,55 @@
+{
+  "purpose": "Native HAULSIM educational demonstration, not a new nine-case experiment",
+  "source_model": "New_Afton_Experiments_2026-10-20/models/C100_RR03/C100_RR03.hsmdb (original local input, not bundled here)",
+  "source_sha256_at_capture": "025d2c9077c544c8237f094627313b552ac884183f63d64fe50b4acb196d91bc",
+  "case_manifest": {
+    "id": "C100_RR03",
+    "scale": 1.0,
+    "rolling_resistance_percent": 3,
+    "capacity_kwh": 354.0,
+    "tare_kg": 48148.0,
+    "pack_kg": 8255.0,
+    "battery_kw": 480.0,
+    "wheel_kw": 391,
+    "native_energy_enabled": true,
+    "status": "EXECUTED_NATIVE_ARCHIVED",
+    "model": "models\\C100_RR03\\C100_RR03.hsmdb",
+    "pre_run_sha256": "b1118bab2321d62ea04b27c97089fb5dff0bf666073a4e69437f13da9649f425",
+    "pre_run_result_counts": {
+      "HS_EquipmentState": 0,
+      "HS_MaterialMovement": 0,
+      "HS_ExperimentResult": 0,
+      "HS_LocationEvent": 0,
+      "HS_SimulationRunDump": 0,
+      "HS_ElectricityUsage": 0,
+      "TCO_HaulRouteAnalysisResult": 0,
+      "TCO_HaulRouteSegmentResult": 0
+    },
+    "geometry": {
+      "length_m": 1500.0,
+      "rr_min": 3.0,
+      "rr_max": 3.0
+    },
+    "result": "results\\C100_RR03\\native_run.hsmdb",
+    "result_sha256": "e7f6734c0b8a742b1ee41e33b619d0c155965b98c90b2d4b1f9e10ed2f0d50d9",
+    "truck_rows": 29,
+    "horizon_min": 120.0
+  },
+  "demo_model": "Local demonstration copy, excluded from this public package",
+  "capture_date": "2026-11-07",
+  "archives_modified": false,
+  "demonstration_run": {
+    "mode": "Native interactive Run; paused once for truck inspection and resumed",
+    "horizon_min": 120,
+    "gui_delivered_tonnes": 180,
+    "gui_loaded_tonnes": 225,
+    "gui_electricity_kwh": 332.91,
+    "setup_screenshot": "screenshots/04_experiment_settings.png",
+    "completion_screenshot": "screenshots/07_run_complete.png",
+    "material_report_screenshot": "screenshots/11_material_movement_report.png",
+    "database_scope": "Copy contains retained earlier run records plus the demonstration. Do not sum all table rows as a single run.",
+    "exact_replication_claimed": false,
+    "source_and_archive_sha256_reverified": true
+  },
+  "public_archive": "reproducibility/data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb"
+}
