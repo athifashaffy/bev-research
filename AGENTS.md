@@ -60,3 +60,46 @@ measurements. Report unsuccessful comparisons and missing evidence.
 State the date and scope of each check. Do not attribute an automated check or
 AI-authored code to personal human verification. Commit dates record uploads
 and changes, not the execution date or independent authorship of older results.
+
+## Figures, evidence and AI-written statements
+
+These rules apply to every figure, table, screenshot and statement prepared for
+the author, in study notes as well as anything meant for the paper.
+
+1. **Brainstorm first.** Before producing anything, write out the plan: what
+   will be made, which script and which input files it comes from, every
+   assumption involved, and how each number will be checked. Agree it with the
+   author before building.
+2. **Figures come only from code run on actual outputs.** Every figure, chart
+   or screenshot of a result must be produced by a Python script in this
+   repository from saved HAULSIM, thermal or model outputs. No hand-drawn,
+   AI-drawn or illustrative charts of results. A screenshot of code shows the
+   file exactly as it is in the repository, with its path.
+3. **Keep proof for every figure and table.** Save a proof record next to the
+   output: date, exact command, script path and SHA-256, every input file path
+   and SHA-256, output SHA-256, and Python and library versions. A figure without
+   a proof record is not used.
+4. **The author runs it.** Give the commands so the author regenerates each
+   figure and table on their own machine and compares hashes. Do not describe
+   a figure as the author's own work; record who wrote the code (AI-assisted
+   code stays labelled as such).
+5. **Cross-check every AI-written sentence.** Any sentence containing a number,
+   result or factual claim written by an AI is checked against the generated
+   output or the cited source before it is given to the author. List each
+   claim with its source file and value, and mark it matched, mismatched or
+   unverified. Unverified claims are flagged, never presented as fact.
+6. **No AI text in the manuscript.** These rules govern study material and
+   evidence. Manuscript wording remains the author's own, as stated in Scope.
+
+Tools (from `reproducibility/`, both AI-assisted):
+
+```text
+python tools/run_with_proof.py --output results/NEW --script SCRIPT --input FILE ... -- COMMAND
+python tools/run_with_proof.py --verify results/NEW/PROOF.json
+python tools/check_claims.py --text NOTES.txt --claims tools/claims/claims_study_notes.json --output results/NEW
+python -m unittest discover -s tools -p "test_*proof*.py"
+python -m unittest discover -s tools -p "test_check_claims.py"
+```
+
+Register a claim in a claims file before relying on a number; give it
+`anchors` so a wrong value is reported as mismatched, not just unverified.

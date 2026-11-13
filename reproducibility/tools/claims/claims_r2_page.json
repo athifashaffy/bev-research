@@ -1,0 +1,6984 @@
+{
+ "ignore_patterns": [
+  "^\\|\\s*[\\d, ]+\\s*\\|",
+  "\\|\\s*(?:\\d+(?:\\.\\d+)?(?:–\\d+(?:\\.\\d+)?)?(?:,\\s*)?)+\\s*\\|\\s*$",
+  "(?<=^\\| )\\d+(?:\\.\\d+)?(?= [A-Z])",
+  "\\b\\d\\.\\s*[A-Z]{3,}",
+  "(?<=\\\")\\d\\.\\d(?= )",
+  "\\b\\d\\.\\d(?= (?:first paragraph|single-node))",
+  "Start of Section \\d",
+  "Hide one of the 9 configurations, train on 8",
+  "Equation \\d",
+  "Part \\d",
+  "line \\d+",
+  "\\b\\d+ min\\b(?= (?:RMSE|R²))"
+ ],
+ "description": "Study-notes claims plus R² page claims (13 Nov 2026). AI-assisted.",
+ "claims": [
+  {
+   "id": "n_cases",
+   "label": "Nine core cases",
+   "keywords": [
+    "version",
+    "configuration",
+    "case",
+    "9 "
+   ],
+   "source": {
+    "kind": "json",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/run_manifest.json",
+    "path": [
+     "core_cases"
+    ]
+   }
+  },
+  {
+   "id": "horizon_min",
+   "label": "Run length 120 min",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select RunTime from HS_ExperimentDetail"
+   }
+  },
+  {
+   "id": "payload_t",
+   "label": "Payload 45 t",
+   "keywords": [
+    "t ",
+    "payload",
+    "45 t"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select UDBodyPayload from HS_TruckType"
+   }
+  },
+  {
+   "id": "cap_c080",
+   "label": "283.2 kWh",
+   "keywords": [
+    "kWh",
+    "battery",
+    "capacit"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "capacity_kwh",
+    "where": {
+     "case": "C080_RR02"
+    }
+   }
+  },
+  {
+   "id": "cap_c100",
+   "label": "354 kWh",
+   "keywords": [
+    "kWh",
+    "354",
+    "battery",
+    "capacit"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "capacity_kwh",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "cap_c120",
+   "label": "424.8 kWh",
+   "keywords": [
+    "kWh",
+    "battery",
+    "capacit"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "capacity_kwh",
+    "where": {
+     "case": "C120_RR02"
+    }
+   }
+  },
+  {
+   "id": "tare_kg",
+   "label": "Empty mass 48,148 kg",
+   "keywords": [
+    "kg",
+    "empty",
+    "mass"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "tare_kg",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "tare_t",
+   "label": "Empty mass in t",
+   "keywords": [
+    "t ",
+    "empty",
+    "mass"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "tare_kg",
+    "where": {
+     "case": "C100_RR03"
+    }
+   },
+   "scale": 0.001
+  },
+  {
+   "id": "loaded_t",
+   "label": "Loaded mass in t",
+   "keywords": [
+    "loaded",
+    "t "
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "tare_t + payload_t"
+   }
+  },
+  {
+   "id": "pack_kg",
+   "label": "Pack mass 8,255 kg",
+   "keywords": [
+    "kg",
+    "skid",
+    "pack"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "pack_mass_kg_manifest",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "wheel_cap",
+   "label": "Wheel cap 391 kW",
+   "keywords": [
+    "kW",
+    "wheel",
+    "391"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "wheel_cap_kw",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "elec_cap",
+   "label": "Electrical cap 480 kW",
+   "keywords": [
+    "kW",
+    "480",
+    "power",
+    "battery"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "electrical_curve_cap_kw",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "aux_kw",
+   "label": "Auxiliary 20 kW implied by curve",
+   "keywords": [
+    "auxil",
+    "kW",
+    "20"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "elec_cap - wheel_cap/0.85"
+   }
+  },
+  {
+   "id": "eff",
+   "label": "Efficiency 0.85",
+   "keywords": [
+    "0.85",
+    "efficien"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "wheel_cap/(elec_cap-aux_kw)"
+   }
+  },
+  {
+   "id": "route_m",
+   "label": "Route 1,500 m",
+   "keywords": [
+    "m",
+    "route",
+    "road",
+    "length"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "route_arc_length_m",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "route_km",
+   "label": "Route km",
+   "keywords": [
+    "km"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "route_arc_length_m",
+    "where": {
+     "case": "C100_RR03"
+    }
+   },
+   "scale": 0.001
+  },
+  {
+   "id": "rise_m",
+   "label": "Rise 135 m",
+   "keywords": [
+    "rise",
+    "135"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "route_node_rise_m",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "grade_pct",
+   "label": "Ramp grade %",
+   "keywords": [
+    "%",
+    "grade",
+    "ramp"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "route_max_grade",
+    "where": {
+     "case": "C100_RR03"
+    }
+   },
+   "scale": 100
+  },
+  {
+   "id": "grade_res_pct",
+   "label": "Residual grade %",
+   "keywords": [
+    "%",
+    "grade",
+    "residual",
+    "flat"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "route_min_grade",
+    "where": {
+     "case": "C100_RR03"
+    }
+   },
+   "scale": 100
+  },
+  {
+   "id": "ramp_arcs",
+   "label": "28 ramp arcs",
+   "keywords": [
+    "arc",
+    "28"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select count(*) from NetworkArc where Grade=0.16"
+   }
+  },
+  {
+   "id": "res_arcs",
+   "label": "23 residual arcs",
+   "keywords": [
+    "arc",
+    "23"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select count(*) from NetworkArc where Grade<0.16"
+   }
+  },
+  {
+   "id": "all_arcs",
+   "label": "51 arcs",
+   "keywords": [
+    "arc"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select count(*) from NetworkArc"
+   }
+  },
+  {
+   "id": "nodes",
+   "label": "52 nodes",
+   "keywords": [
+    "node"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select count(*) from NetworkNode"
+   }
+  },
+  {
+   "id": "ramp_arc_len",
+   "label": "Ramp arc 29.64 m",
+   "keywords": [
+    "m",
+    "arc"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select max(Length) from NetworkArc"
+   }
+  },
+  {
+   "id": "res_arc_len",
+   "label": "Residual arc 29.13 m",
+   "keywords": [
+    "m",
+    "arc"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select min(Length) from NetworkArc"
+   }
+  },
+  {
+   "id": "ramp_len",
+   "label": "Ramp 830 m",
+   "keywords": [
+    "m",
+    "ramp",
+    "830"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select sum(Length) from NetworkArc where Grade=0.16"
+   }
+  },
+  {
+   "id": "res_len",
+   "label": "Residual 670 m",
+   "keywords": [
+    "m",
+    "670",
+    "residual",
+    "flat"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select sum(Length) from NetworkArc where Grade<0.16"
+   }
+  },
+  {
+   "id": "theta_deg",
+   "label": "Ramp angle 9.09°",
+   "keywords": [
+    "°",
+    "slope",
+    "grade"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "atan(grade_pct/100)*180/3.141592653589793"
+   }
+  },
+  {
+   "id": "arc_rise",
+   "label": "Rise per arc 4.68 m",
+   "keywords": [
+    "rise",
+    "m"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "ramp_arc_len*sin(atan(grade_pct/100))"
+   }
+  },
+  {
+   "id": "ramp_rise",
+   "label": "Ramp rise 131.13 m",
+   "keywords": [
+    "rise",
+    "m",
+    "131"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "ramp_len*sin(atan(grade_pct/100))"
+   }
+  },
+  {
+   "id": "res_rise",
+   "label": "Residual rise 3.87 m",
+   "keywords": [
+    "rise",
+    "m",
+    "3.87"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "res_len*sin(atan(grade_res_pct/100))"
+   }
+  },
+  {
+   "id": "f_grav",
+   "label": "Gravity component kN",
+   "keywords": [
+    "kN",
+    "gravity",
+    "weight"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "loaded_t*1000*9.80665*sin(atan(grade_pct/100))/1000"
+   }
+  },
+  {
+   "id": "f_roll3",
+   "label": "Rolling 3% kN",
+   "keywords": [
+    "kN",
+    "rolling"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "0.03*loaded_t*1000*9.80665*cos(atan(grade_pct/100))/1000"
+   }
+  },
+  {
+   "id": "f_tot3",
+   "label": "Total push kN",
+   "keywords": [
+    "kN"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "f_grav+f_roll3"
+   }
+  },
+  {
+   "id": "v_ramp3",
+   "label": "Ramp speed 8.21 km/h",
+   "keywords": [
+    "km/h",
+    "speed"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "wheel_cap*3.6/f_tot3"
+   }
+  },
+  {
+   "id": "grip",
+   "label": "Grip 541 kN",
+   "keywords": [
+    "kN",
+    "grip",
+    "traction"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "0.6*loaded_t*1000*9.80665*cos(atan(grade_pct/100))/1000"
+   }
+  },
+  {
+   "id": "lift_kwh",
+   "label": "Lifting energy 34 kWh",
+   "keywords": [
+    "kWh",
+    "lift",
+    "gravity"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "loaded_t*1000*9.80665*rise_m/3.6e6"
+   }
+  },
+  {
+   "id": "hand_wheel_2",
+   "label": "Hand wheel energy 2%",
+   "keywords": [
+    "%",
+    "wheel"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "(0.02*loaded_t*1000*9.80665*(ramp_len*cos(atan(grade_pct/100))+res_len*cos(atan(grade_res_pct/100)))+loaded_t*1000*9.80665*rise_m)/3.6e6"
+   }
+  },
+  {
+   "id": "hs_wheel_2",
+   "label": "HAULSIM wheel energy 2%",
+   "keywords": [
+    "%",
+    "wheel"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR02/native_run.hsmdb",
+    "sql": "select EnergyToWheels from HS_EquipmentState where EquipmentClass='Truck' and State='TravelLoaded' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "hand_wheel_3",
+   "label": "Hand wheel energy 3%",
+   "keywords": [
+    "%",
+    "wheel"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "(0.03*loaded_t*1000*9.80665*(ramp_len*cos(atan(grade_pct/100))+res_len*cos(atan(grade_res_pct/100)))+loaded_t*1000*9.80665*rise_m)/3.6e6"
+   }
+  },
+  {
+   "id": "hs_wheel_3",
+   "label": "HAULSIM wheel energy 3%",
+   "keywords": [
+    "%",
+    "wheel"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select EnergyToWheels from HS_EquipmentState where EquipmentClass='Truck' and State='TravelLoaded' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "hand_wheel_4",
+   "label": "Hand wheel energy 4%",
+   "keywords": [
+    "%",
+    "wheel"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "(0.04*loaded_t*1000*9.80665*(ramp_len*cos(atan(grade_pct/100))+res_len*cos(atan(grade_res_pct/100)))+loaded_t*1000*9.80665*rise_m)/3.6e6"
+   }
+  },
+  {
+   "id": "hs_wheel_4",
+   "label": "HAULSIM wheel energy 4%",
+   "keywords": [
+    "%",
+    "wheel"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR04/native_run.hsmdb",
+    "sql": "select EnergyToWheels from HS_EquipmentState where EquipmentClass='Truck' and State='TravelLoaded' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "climb_min",
+   "label": "Climb duration",
+   "keywords": [
+    "min",
+    "11.32",
+    "climb",
+    "uphill",
+    "lasts"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElapsedTime from HS_EquipmentState where EquipmentClass='Truck' and State='TravelLoaded' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "climb_kwh",
+   "label": "Climb energy",
+   "keywords": [
+    "kWh",
+    "58.93",
+    "climb",
+    "uphill"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElectricityFromBatteryConsumed from HS_EquipmentState where EquipmentClass='Truck' and State='TravelLoaded' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "climb_kw",
+   "label": "Climb power 312 kW",
+   "keywords": [
+    "kW",
+    "power"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "60*climb_kwh/climb_min"
+   }
+  },
+  {
+   "id": "crate",
+   "label": "Pack C-rate",
+   "keywords": [
+    " C",
+    "C-rate",
+    "0.88"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "climb_kw/cap_c100"
+   }
+  },
+  {
+   "id": "i_eq",
+   "label": "Equivalent current",
+   "keywords": [
+    " A",
+    "2.2",
+    "current"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "2.5*climb_kw/cap_c100"
+   }
+  },
+  {
+   "id": "volt",
+   "label": "Implied voltage (from spec values)",
+   "keywords": [
+    " V",
+    "volt"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "354000/576"
+   }
+  },
+  {
+   "id": "i_pack",
+   "label": "Pack current 508 A",
+   "keywords": [
+    " A",
+    "current"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "climb_kw*1000/volt"
+   }
+  },
+  {
+   "id": "i_pack_c",
+   "label": "508/576",
+   "keywords": [
+    "508"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "i_pack/576"
+   }
+  },
+  {
+   "id": "empty_min",
+   "label": "Empty travel min",
+   "keywords": [
+    "min",
+    "downhill",
+    "empty"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElapsedTime from HS_EquipmentState where EquipmentClass='Truck' and State='TravelEmpty' order by SimulationTime limit 1 offset 1"
+   }
+  },
+  {
+   "id": "empty_kwh",
+   "label": "Empty travel kWh",
+   "keywords": [
+    "kWh",
+    "downhill",
+    "empty"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElectricityFromBatteryConsumed from HS_EquipmentState where EquipmentClass='Truck' and State='TravelEmpty' order by SimulationTime limit 1 offset 1"
+   }
+  },
+  {
+   "id": "empty_kw",
+   "label": "Empty travel kW",
+   "keywords": [
+    "kW",
+    "downhill",
+    "empty"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "60*empty_kwh/empty_min"
+   }
+  },
+  {
+   "id": "brake_kwh",
+   "label": "Braking energy 14.3 kWh",
+   "keywords": [
+    "kWh",
+    "brak"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select EnergyFromWheels from HS_EquipmentState where EquipmentClass='Truck' and State='TravelEmpty' order by SimulationTime limit 1 offset 1"
+   }
+  },
+  {
+   "id": "load_min",
+   "label": "Loading min",
+   "keywords": [
+    "min",
+    "loading"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElapsedTime from HS_EquipmentState where EquipmentClass='Truck' and State='Loading' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "load_kwh",
+   "label": "Loading kWh",
+   "keywords": [
+    "kWh",
+    "loading"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElectricityFromBatteryConsumed from HS_EquipmentState where EquipmentClass='Truck' and State='Loading' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "unload_min",
+   "label": "Unloading min",
+   "keywords": [
+    "min",
+    "unloading"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElapsedTime from HS_EquipmentState where EquipmentClass='Truck' and State='Unloading' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "unload_kwh",
+   "label": "Unloading kWh",
+   "keywords": [
+    "kWh",
+    "unloading"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElectricityFromBatteryConsumed from HS_EquipmentState where EquipmentClass='Truck' and State='Unloading' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "stat_kw",
+   "label": "Stationary 20 kW",
+   "keywords": [
+    "kW",
+    "loading",
+    "unloading",
+    "auxil"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "60*load_kwh/load_min"
+   }
+  },
+  {
+   "id": "spot_l_min",
+   "label": "Spot loader min",
+   "keywords": [
+    "spotting"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElapsedTime from HS_EquipmentState where EquipmentClass='Truck' and State='SpottingAtLoader' order by SimulationTime limit 1 offset 1"
+   }
+  },
+  {
+   "id": "spot_d_min",
+   "label": "Spot dump min",
+   "keywords": [
+    "spotting"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElapsedTime from HS_EquipmentState where EquipmentClass='Truck' and State='SpottingAtDump' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "spot_tot_min",
+   "label": "Spotting total min",
+   "keywords": [
+    "spotting"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "spot_l_min+spot_d_min"
+   }
+  },
+  {
+   "id": "spot_l_kwh",
+   "label": "Spot loader kWh",
+   "keywords": [
+    "spotting"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElectricityFromBatteryConsumed from HS_EquipmentState where EquipmentClass='Truck' and State='SpottingAtLoader' order by SimulationTime limit 1 offset 1"
+   }
+  },
+  {
+   "id": "spot_d_kwh",
+   "label": "Spot dump kWh",
+   "keywords": [
+    "spotting"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select ElectricityFromBatteryConsumed from HS_EquipmentState where EquipmentClass='Truck' and State='SpottingAtDump' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "spot_tot_kwh",
+   "label": "Spotting total kWh",
+   "keywords": [
+    "spotting"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "spot_l_kwh+spot_d_kwh"
+   }
+  },
+  {
+   "id": "spot_l_kw",
+   "label": "Spot loader kW",
+   "keywords": [
+    "spotting"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "60*spot_l_kwh/spot_l_min"
+   }
+  },
+  {
+   "id": "spot_d_kw",
+   "label": "Spot dump kW",
+   "keywords": [
+    "spotting"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "60*spot_d_kwh/spot_d_min"
+   }
+  },
+  {
+   "id": "cycle_min",
+   "label": "Cycle 24.31 min",
+   "keywords": [
+    "cycle",
+    "min"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "climb_min+empty_min+load_min+unload_min+spot_tot_min"
+   }
+  },
+  {
+   "id": "cycle_kwh_sum",
+   "label": "Cycle kWh by ledger",
+   "keywords": [
+    "cycle",
+    "kWh"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "climb_kwh+empty_kwh+load_kwh+unload_kwh+spot_tot_kwh"
+   }
+  },
+  {
+   "id": "rr_step_kwh",
+   "label": "Battery kWh per 1% RR (wheel/0.85)",
+   "keywords": [
+    "kWh",
+    "1%",
+    "per climb"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "(hs_wheel_4-hs_wheel_2)/2/0.85"
+   }
+  },
+  {
+   "id": "hs_vs_hand_2",
+   "label": "HAULSIM above hand calc 2%",
+   "keywords": [
+    "%",
+    "higher"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "100*(hs_wheel_2-hand_wheel_2)/hand_wheel_2"
+   }
+  },
+  {
+   "id": "hs_vs_hand_3",
+   "label": "HAULSIM above hand calc 3%",
+   "keywords": [
+    "%",
+    "higher"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "100*(hs_wheel_3-hand_wheel_3)/hand_wheel_3"
+   }
+  },
+  {
+   "id": "hs_vs_hand_4",
+   "label": "HAULSIM above hand calc 4%",
+   "keywords": [
+    "%",
+    "higher"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "100*(hs_wheel_4-hand_wheel_4)/hand_wheel_4"
+   }
+  },
+  {
+   "id": "native_final",
+   "label": "Native level -12%",
+   "keywords": [
+    "%",
+    "battery level",
+    "reaches"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "raw_native_final_energy_pct",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "drift_w",
+   "label": "Drift width 6 m",
+   "keywords": [
+    "drift",
+    "m ×"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select max(Width) from NetworkArc"
+   }
+  },
+  {
+   "id": "drift_h",
+   "label": "Drift height 6 m",
+   "keywords": [
+    "drift",
+    "m ×"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select max(Height) from NetworkArc"
+   }
+  },
+  {
+   "id": "traction",
+   "label": "Traction 0.6",
+   "keywords": [
+    "traction",
+    "grip"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select max(TractionCoefficient) from NetworkArc"
+   }
+  },
+  {
+   "id": "force_cap",
+   "label": "Force cap 300 kN",
+   "keywords": [
+    "kN",
+    "force cap"
+   ],
+   "source": {
+    "kind": "regex",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/code/study.py",
+    "pattern": "min\\((\\d+),p\\['wheel_kw'\\]"
+   },
+   "scale": 0.001
+  },
+  {
+   "id": "extra_m",
+   "label": "Extra loaded distance m",
+   "keywords": [
+    "~150 m",
+    "driven"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "(climb_dist_km-route_km)*1000"
+   }
+  },
+  {
+   "id": "climb_dist_km",
+   "label": "Loaded distance km",
+   "keywords": [
+    "km"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb",
+    "sql": "select DistanceTravelled from HS_EquipmentState where EquipmentClass='Truck' and State='TravelLoaded' order by SimulationTime limit 1 offset 0"
+   }
+  },
+  {
+   "id": "tan_grade",
+   "label": "tan theta 0.16",
+   "keywords": [
+    "tan"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "grade_pct/100"
+   }
+  },
+  {
+   "id": "budget",
+   "label": "Reserve budget",
+   "keywords": [
+    "kWh",
+    "212.4",
+    "60%"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "0.6*cap_c100"
+   }
+  },
+  {
+   "id": "res_rr03",
+   "label": "RR03 reserve time",
+   "keywords": [
+    "reserve",
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "reserve_time_min",
+    "where": {
+     "case": "C100_RR03"
+    }
+   },
+   "anchors": [
+    "C100_RR03",
+    "reserve"
+   ]
+  },
+  {
+   "id": "res_rr04",
+   "label": "RR04 reserve time",
+   "keywords": [
+    "reserve",
+    "min",
+    "RR04"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "reserve_time_min",
+    "where": {
+     "case": "C100_RR04"
+    }
+   },
+   "anchors": [
+    "C100_RR04",
+    "reaches"
+   ]
+  },
+  {
+   "id": "loads_rr03",
+   "label": "RR03 loads",
+   "keywords": [
+    "load"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "reserve_deliveries",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "loads_rr04",
+   "label": "RR04 loads",
+   "keywords": [
+    "load"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "reserve_deliveries",
+    "where": {
+     "case": "C100_RR04"
+    }
+   }
+  },
+  {
+   "id": "rr04_arrive",
+   "label": "RR04 third climb arrival",
+   "keywords": [
+    "min",
+    "dump"
+   ],
+   "source": {
+    "kind": "sqlite",
+    "file": "data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR04/native_run.hsmdb",
+    "sql": "select SimulationTime+ElapsedTime from HS_EquipmentState where EquipmentClass='Truck' and State='TravelLoaded' order by SimulationTime limit 1 offset 2"
+   }
+  },
+  {
+   "id": "rr04_gap",
+   "label": "RR04 gap to dump",
+   "keywords": [
+    "min",
+    "before"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "rr04_arrive-res_rr04"
+   },
+   "anchors": [
+    "C100_RR04",
+    "before its third load"
+   ]
+  },
+  {
+   "id": "cyc_rr03",
+   "label": "RR03 cycle 66.79 kWh",
+   "keywords": [
+    "kWh",
+    "cycle"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "recurring_cycle_energy_kwh",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "op_ratio",
+   "label": "18.87% of nominal",
+   "keywords": [
+    "%"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "100*cyc_rr03/cap_c100"
+   }
+  },
+  {
+   "id": "cyc_min",
+   "label": "Cycle energy min",
+   "keywords": [
+    "kWh",
+    "cycle"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "recurring_cycle_energy_kwh",
+    "agg": "min"
+   }
+  },
+  {
+   "id": "cyc_max",
+   "label": "Cycle energy max",
+   "keywords": [
+    "kWh",
+    "cycle"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "recurring_cycle_energy_kwh",
+    "agg": "max"
+   }
+  },
+  {
+   "id": "pow_min",
+   "label": "Mean power min",
+   "keywords": [
+    "kW",
+    "power"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "common_mean_power_kw",
+    "agg": "min"
+   }
+  },
+  {
+   "id": "pow_max",
+   "label": "Mean power max",
+   "keywords": [
+    "kW",
+    "power"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "common_mean_power_kw",
+    "agg": "max"
+   }
+  },
+  {
+   "id": "peak_min",
+   "label": "Peak rise min",
+   "keywords": [
+    "°C",
+    "rise",
+    "peak"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "nominal_common_peak_rise_c",
+    "agg": "min"
+   }
+  },
+  {
+   "id": "peak_max",
+   "label": "Peak rise max",
+   "keywords": [
+    "°C",
+    "rise",
+    "peak"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "nominal_common_peak_rise_c",
+    "agg": "max"
+   }
+  },
+  {
+   "id": "common_win",
+   "label": "Common window",
+   "keywords": [
+    "68.04",
+    "window",
+    "period",
+    "shortest",
+    "approximately"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "audits/physics/independent_case_checks.csv",
+    "column": "common_window_min",
+    "where": {
+     "case": "C080_RR04"
+    }
+   }
+  },
+  {
+   "id": "peak_rr03",
+   "label": "RR03 peak rise",
+   "keywords": [
+    "peak",
+    "rise"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "data/workspace/APCOM_Draft_Experiments_2026-10-27/thermal/table2_common_window.csv",
+    "column": "peak_rise_c",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "margin_rr03",
+   "label": "RR03 margin",
+   "keywords": [
+    "margin",
+    "°C"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "data/workspace/APCOM_Draft_Experiments_2026-10-27/thermal/table2_common_window.csv",
+    "column": "margin_to_60c_study_screen_c",
+    "where": {
+     "case": "C100_RR03"
+    }
+   }
+  },
+  {
+   "id": "a",
+   "label": "a coefficient",
+   "keywords": [
+    "a =",
+    "K/(A"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "data/workspace/APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json",
+    "path": [
+     "a_K_per_A2_s"
+    ]
+   }
+  },
+  {
+   "id": "b",
+   "label": "b coefficient",
+   "keywords": [
+    "b =",
+    "s⁻¹",
+    "0.0026555"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "data/workspace/APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json",
+    "path": [
+     "b_per_s"
+    ]
+   }
+  },
+  {
+   "id": "tau_s",
+   "label": "tau s",
+   "keywords": [
+    "τ",
+    "s",
+    "response"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "data/workspace/APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json",
+    "path": [
+     "time_constant_s"
+    ]
+   }
+  },
+  {
+   "id": "tau_min",
+   "label": "tau min",
+   "keywords": [
+    "τ",
+    "min"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "tau_s/60"
+   }
+  },
+  {
+   "id": "ref_ah",
+   "label": "2.5 Ah reference",
+   "keywords": [
+    "Ah"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "data/workspace/APCOM_Coupled_Thermal_2026-10-16/results/frozen_cell_model.json",
+    "path": [
+     "nominal_cell_capacity_Ah"
+    ]
+   }
+  },
+  {
+   "id": "eq_rise",
+   "label": "Equilibrium rise",
+   "keywords": [
+    "°C",
+    "rise",
+    "bathtub",
+    "highest"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "a*i_eq**2/b"
+   }
+  },
+  {
+   "id": "climb_s",
+   "label": "Climb seconds",
+   "keywords": [
+    "s",
+    "679"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "climb_min*60"
+   }
+  },
+  {
+   "id": "rise_climb",
+   "label": "Rise after climb",
+   "keywords": [
+    "°C",
+    "rise"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "a*i_eq**2/b*(1-exp(-b*climb_s))"
+   },
+   "anchors": [
+    "end of the climb"
+   ]
+  },
+  {
+   "id": "rise_climb_t",
+   "label": "Rise after climb (table)",
+   "keywords": [
+    "°C",
+    "rise"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "a*i_eq**2/b*(1-exp(-b*climb_s))"
+   },
+   "anchors": [
+    "Rise after",
+    "from air"
+   ]
+  },
+  {
+   "id": "rmse_p25",
+   "label": "P25 RMSE",
+   "keywords": [
+    "0.109",
+    "rmse",
+    "error"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "audits/physics/independent_recomputation.json",
+    "path": [
+     "laboratory_residuals",
+     1,
+     "time_weighted_rmse_c"
+    ]
+   }
+  },
+  {
+   "id": "rmse_p35",
+   "label": "P35 RMSE",
+   "keywords": [
+    "0.117",
+    "rmse",
+    "error"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "audits/physics/independent_recomputation.json",
+    "path": [
+     "laboratory_residuals",
+     2,
+     "time_weighted_rmse_c"
+    ]
+   }
+  },
+  {
+   "id": "rmse_p25_m",
+   "label": "P25 RMSE m°C",
+   "keywords": [
+    "thousandths",
+    "109"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "audits/physics/independent_recomputation.json",
+    "path": [
+     "laboratory_residuals",
+     1,
+     "time_weighted_rmse_c"
+    ]
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_p35_m",
+   "label": "P35 RMSE m°C",
+   "keywords": [
+    "thousandths",
+    "117"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "audits/physics/independent_recomputation.json",
+    "path": [
+     "laboratory_residuals",
+     2,
+     "time_weighted_rmse_c"
+    ]
+   },
+   "scale": 1000
+  },
+  {
+   "id": "n_variants",
+   "label": "729 variants (3^4 x 9, arithmetic only)",
+   "keywords": [
+    "729",
+    "variant",
+    "total"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "3*3*3*3*9"
+   }
+  },
+  {
+   "id": "per_case",
+   "label": "81 per case",
+   "keywords": [
+    "81",
+    "per case"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "3*3*3*3"
+   }
+  },
+  {
+   "id": "fits",
+   "label": "792 fits",
+   "keywords": [
+    "fit"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "model_fit_count"
+    ]
+   }
+  },
+  {
+   "id": "pred_rows",
+   "label": "83,980 rows",
+   "keywords": [
+    "prediction"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "prediction_rows"
+    ]
+   }
+  },
+  {
+   "id": "elig",
+   "label": "16,796 origins",
+   "keywords": [
+    "moment",
+    "origin",
+    "eligible"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "eligible_origin_rows"
+    ]
+   }
+  },
+  {
+   "id": "elapsed",
+   "label": "28.1 s",
+   "keywords": [
+    "s",
+    "thread"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "elapsed_total_s_before_figures"
+    ]
+   }
+  },
+  {
+   "id": "n_feat",
+   "label": "20 clues",
+   "keywords": [
+    "clue",
+    "feature"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "feature_count"
+    ]
+   }
+  },
+  {
+   "id": "t_max",
+   "label": "Max temp 25.093",
+   "keywords": [
+    "°C",
+    "25.093"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "temperature_range_c",
+     1
+    ]
+   }
+  },
+  {
+   "id": "t_min",
+   "label": "Min temp 25",
+   "keywords": [
+    "°C",
+    "25.000"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "temperature_range_c",
+     0
+    ]
+   }
+  },
+  {
+   "id": "history",
+   "label": "60 s history",
+   "keywords": [
+    "60 s",
+    "past"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "history_s"
+    ]
+   }
+  },
+  {
+   "id": "spacing",
+   "label": "10 s spacing",
+   "keywords": [
+    "10 s",
+    "every"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/summary.json",
+    "path": [
+     "origin_spacing_s"
+    ]
+   }
+  },
+  {
+   "id": "alpha1",
+   "label": "alpha=1 count",
+   "keywords": [
+    "36",
+    "α"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/per_fold_model_selection.json",
+    "path": [],
+    "count_where": {
+     "method": "ridge",
+     "selected_parameters.alpha": 1
+    }
+   }
+  },
+  {
+   "id": "iter80",
+   "label": "80 trees count",
+   "keywords": [
+    "36",
+    "trees"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/per_fold_model_selection.json",
+    "path": [],
+    "count_where": {
+     "method": "hist_gradient_boosting",
+     "selected_parameters.max_iter": 80
+    }
+   }
+  },
+  {
+   "id": "ntrain_ex",
+   "label": "3,136 training",
+   "keywords": [
+    "training"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/per_fold_model_selection.json",
+    "path": [
+     0,
+     "candidates",
+     0,
+     "inner_folds",
+     0,
+     "n_train_origins"
+    ]
+   }
+  },
+  {
+   "id": "nval_ex",
+   "label": "829 validation",
+   "keywords": [
+    "validation"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/reproduction_run_2026-10-28/per_fold_model_selection.json",
+    "path": [
+     0,
+     "candidates",
+     0,
+     "inner_folds",
+     0,
+     "n_validation_origins"
+    ]
+   }
+  },
+  {
+   "id": "inner_ridge",
+   "label": "432",
+   "keywords": [
+    "432",
+    "inner"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "planned_fit_count",
+     "inner_ridge"
+    ]
+   }
+  },
+  {
+   "id": "inner_hgb",
+   "label": "288",
+   "keywords": [
+    "288",
+    "inner"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "planned_fit_count",
+     "inner_hist_gradient_boosting"
+    ]
+   }
+  },
+  {
+   "id": "outer_ridge",
+   "label": "36",
+   "keywords": [
+    "36",
+    "final"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "planned_fit_count",
+     "final_outer_ridge"
+    ]
+   }
+  },
+  {
+   "id": "lr",
+   "label": "0.08",
+   "keywords": [
+    "learning rate"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "hist_gradient_boosting",
+     "learning_rate"
+    ]
+   }
+  },
+  {
+   "id": "depth",
+   "label": "3",
+   "keywords": [
+    "depth"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "hist_gradient_boosting",
+     "max_depth"
+    ]
+   }
+  },
+  {
+   "id": "leaves",
+   "label": "7",
+   "keywords": [
+    "leaves",
+    "leaf"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "hist_gradient_boosting",
+     "max_leaf_nodes"
+    ]
+   }
+  },
+  {
+   "id": "bins",
+   "label": "64",
+   "keywords": [
+    "bins"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "hist_gradient_boosting",
+     "max_bins"
+    ]
+   }
+  },
+  {
+   "id": "seed",
+   "label": "seed",
+   "keywords": [
+    "seed"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "random_seed"
+    ]
+   }
+  },
+  {
+   "id": "iter_lo",
+   "label": "40 trees",
+   "keywords": [
+    "trees",
+    "40"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "hist_gradient_boosting",
+     "max_iter_grid",
+     0
+    ]
+   }
+  },
+  {
+   "id": "iter_hi",
+   "label": "80 trees",
+   "keywords": [
+    "trees",
+    "80"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "hist_gradient_boosting",
+     "max_iter_grid",
+     1
+    ]
+   }
+  },
+  {
+   "id": "alpha_1",
+   "label": "alpha 1",
+   "keywords": [
+    "α",
+    "alpha"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "ridge",
+     "alpha_grid",
+     0
+    ]
+   }
+  },
+  {
+   "id": "alpha_100",
+   "label": "alpha 100",
+   "keywords": [
+    "α",
+    "alpha"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "ridge",
+     "alpha_grid",
+     1
+    ]
+   }
+  },
+  {
+   "id": "alpha_10000",
+   "label": "alpha 10000",
+   "keywords": [
+    "α",
+    "alpha"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "experiments/A/archived_reference/protocol.json",
+    "path": [
+     "ridge",
+     "alpha_grid",
+     2
+    ]
+   }
+  },
+  {
+   "id": "orig_60",
+   "label": "origins 60s",
+   "keywords": [
+    "moment",
+    "origin",
+    "1 min",
+    "("
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    }
+   }
+  },
+  {
+   "id": "rmse_c_persistence_60",
+   "label": "rmse_c persistence 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_persistence_60",
+   "label": "mae_c persistence 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_linear_trend_60",
+   "label": "rmse_c linear_trend 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_linear_trend_60",
+   "label": "mae_c linear_trend 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_physics_hold_60",
+   "label": "rmse_c physics_hold 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_physics_hold_60",
+   "label": "mae_c physics_hold 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_ridge_60",
+   "label": "rmse_c ridge 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_ridge_60",
+   "label": "mae_c ridge 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_hist_gradient_boosting_60",
+   "label": "rmse_c hist_gradient_boosting 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_hist_gradient_boosting_60",
+   "label": "mae_c hist_gradient_boosting 60s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "orig_120",
+   "label": "origins 120s",
+   "keywords": [
+    "moment",
+    "origin",
+    "2 min",
+    "("
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    }
+   }
+  },
+  {
+   "id": "rmse_c_persistence_120",
+   "label": "rmse_c persistence 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_persistence_120",
+   "label": "mae_c persistence 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_linear_trend_120",
+   "label": "rmse_c linear_trend 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_linear_trend_120",
+   "label": "mae_c linear_trend 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_physics_hold_120",
+   "label": "rmse_c physics_hold 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_physics_hold_120",
+   "label": "mae_c physics_hold 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_ridge_120",
+   "label": "rmse_c ridge 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_ridge_120",
+   "label": "mae_c ridge 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_hist_gradient_boosting_120",
+   "label": "rmse_c hist_gradient_boosting 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_hist_gradient_boosting_120",
+   "label": "mae_c hist_gradient_boosting 120s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "orig_300",
+   "label": "origins 300s",
+   "keywords": [
+    "moment",
+    "origin",
+    "5 min",
+    "("
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    }
+   }
+  },
+  {
+   "id": "rmse_c_persistence_300",
+   "label": "rmse_c persistence 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_persistence_300",
+   "label": "mae_c persistence 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_linear_trend_300",
+   "label": "rmse_c linear_trend 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_linear_trend_300",
+   "label": "mae_c linear_trend 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_physics_hold_300",
+   "label": "rmse_c physics_hold 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_physics_hold_300",
+   "label": "mae_c physics_hold 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_ridge_300",
+   "label": "rmse_c ridge 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_ridge_300",
+   "label": "mae_c ridge 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_hist_gradient_boosting_300",
+   "label": "rmse_c hist_gradient_boosting 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_hist_gradient_boosting_300",
+   "label": "mae_c hist_gradient_boosting 300s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "orig_600",
+   "label": "origins 600s",
+   "keywords": [
+    "moment",
+    "origin",
+    "10 min",
+    "("
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    }
+   }
+  },
+  {
+   "id": "rmse_c_persistence_600",
+   "label": "rmse_c persistence 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_persistence_600",
+   "label": "mae_c persistence 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_linear_trend_600",
+   "label": "rmse_c linear_trend 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_linear_trend_600",
+   "label": "mae_c linear_trend 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_physics_hold_600",
+   "label": "rmse_c physics_hold 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_physics_hold_600",
+   "label": "mae_c physics_hold 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_ridge_600",
+   "label": "rmse_c ridge 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_ridge_600",
+   "label": "mae_c ridge 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "rmse_c_hist_gradient_boosting_600",
+   "label": "rmse_c hist_gradient_boosting 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "mae_c_hist_gradient_boosting_600",
+   "label": "mae_c hist_gradient_boosting 600s m°C",
+   "keywords": [
+    "min"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "experiments/A/archived_reference/table_4_pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "scale": 1000
+  },
+  {
+   "id": "z50_ah",
+   "label": "Z50 576 Ah",
+   "keywords": [
+    "Ah",
+    "576"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "Z50 576 Ah"
+   },
+   "value": 576
+  },
+  {
+   "id": "z50_tram_kwh",
+   "label": "22 kWh",
+   "keywords": [
+    "kWh",
+    "tramming"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "22 kWh"
+   },
+   "value": 22
+  },
+  {
+   "id": "z50_tram_ah",
+   "label": "72 Ah",
+   "keywords": [
+    "Ah",
+    "tramming"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "72 Ah"
+   },
+   "value": 72
+  },
+  {
+   "id": "z50_tram_kg",
+   "label": "277 kg",
+   "keywords": [
+    "kg",
+    "tramming"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "277 kg"
+   },
+   "value": 277
+  },
+  {
+   "id": "z50_dim1",
+   "label": "180 cm",
+   "keywords": [
+    "cm"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "180 cm"
+   },
+   "value": 180
+  },
+  {
+   "id": "z50_dim2",
+   "label": "213",
+   "keywords": [
+    "cm"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "213"
+   },
+   "value": 213
+  },
+  {
+   "id": "z50_dim3",
+   "label": "168",
+   "keywords": [
+    "cm"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "168"
+   },
+   "value": 168
+  },
+  {
+   "id": "z50_loaded_kg",
+   "label": "98,192 kg",
+   "keywords": [
+    "kg",
+    "loaded"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "98,192 kg"
+   },
+   "value": 98192
+  },
+  {
+   "id": "z50_payload",
+   "label": "50 t",
+   "keywords": [
+    "payload",
+    "t"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "50 t"
+   },
+   "value": 50
+  },
+  {
+   "id": "z50_vmax",
+   "label": "14 km/h",
+   "keywords": [
+    "km/h",
+    "max"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "14 km/h"
+   },
+   "value": 14
+  },
+  {
+   "id": "z50_peak",
+   "label": "1,432 kW",
+   "keywords": [
+    "kW"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "1,432 kW"
+   },
+   "value": 1432
+  },
+  {
+   "id": "z50_cont",
+   "label": "980 kW",
+   "keywords": [
+    "kW"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "980 kW"
+   },
+   "value": 980
+  },
+  {
+   "id": "z50_text",
+   "label": "560 kW text",
+   "keywords": [
+    "kW"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "560 kW text"
+   },
+   "value": 560
+  },
+  {
+   "id": "z50_aux",
+   "label": "125 kW",
+   "keywords": [
+    "kW",
+    "auxil"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "125 kW"
+   },
+   "value": 125
+  },
+  {
+   "id": "z50_skid",
+   "label": "2 packs",
+   "keywords": [
+    "packs",
+    "skid"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/artisan-z50-specification-sheet-english.pdf",
+    "note": "2 packs"
+   },
+   "value": 2
+  },
+  {
+   "id": "th_kwh",
+   "label": "482 kWh",
+   "keywords": [
+    "kWh",
+    "TH550B",
+    "482"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "482 kWh"
+   },
+   "value": 482
+  },
+  {
+   "id": "th_ah",
+   "label": "786 Ah",
+   "keywords": [
+    "Ah"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "786 Ah"
+   },
+   "value": 786
+  },
+  {
+   "id": "th_v",
+   "label": "614 V",
+   "keywords": [
+    "V",
+    "614"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "614 V"
+   },
+   "value": 614
+  },
+  {
+   "id": "th_kw",
+   "label": "482 kW",
+   "keywords": [
+    "kW"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "482 kW"
+   },
+   "value": 482
+  },
+  {
+   "id": "th_t0",
+   "label": "0 °C",
+   "keywords": [
+    "°C",
+    "0 to"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "0 °C"
+   },
+   "value": 0
+  },
+  {
+   "id": "th_t45",
+   "label": "+45 °C",
+   "keywords": [
+    "°C",
+    "45"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "+45 °C"
+   },
+   "value": 45
+  },
+  {
+   "id": "th_chg",
+   "label": "121 kW",
+   "keywords": [
+    "kW",
+    "charging"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "121 kW"
+   },
+   "value": 121
+  },
+  {
+   "id": "th_c",
+   "label": "0.5 C",
+   "keywords": [
+    "C",
+    "charging"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "0.5 C"
+   },
+   "value": 0.5
+  },
+  {
+   "id": "th_n",
+   "label": "2 x",
+   "keywords": [
+    "×",
+    "charging"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/siteassets/product-documents/trucks/battery-electric-trucks/th550b-technical-specifications-english.pdf",
+    "note": "2 x"
+   },
+   "value": 2
+  },
+  {
+   "id": "rel_36",
+   "label": "36%",
+   "keywords": [
+    "%",
+    "runtime"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/en/news-and-media/news-archive/2023/05/new-sandvik-battery-boosts-bev-runtime-by-36-percent/",
+    "note": "36%"
+   },
+   "value": 36
+  },
+  {
+   "id": "cat_2",
+   "label": "2%",
+   "keywords": [
+    "%",
+    "Caterpillar",
+    "rolling"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://res.cloudinary.com/dun3slcfg/image/upload/v1691507787/Caterpillar-Haul-Road-Design-and-Management.pdf",
+    "note": "2%"
+   },
+   "value": 2
+  },
+  {
+   "id": "cat_3",
+   "label": "3%",
+   "keywords": [
+    "%",
+    "Caterpillar",
+    "rolling"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://res.cloudinary.com/dun3slcfg/image/upload/v1691507787/Caterpillar-Haul-Road-Design-and-Management.pdf",
+    "note": "3%"
+   },
+   "value": 3
+  },
+  {
+   "id": "cat_4",
+   "label": "4%",
+   "keywords": [
+    "%",
+    "Caterpillar",
+    "rolling"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://res.cloudinary.com/dun3slcfg/image/upload/v1691507787/Caterpillar-Haul-Road-Design-and-Management.pdf",
+    "note": "4%"
+   },
+   "value": 4
+  },
+  {
+   "id": "cat_r17",
+   "label": "1.7",
+   "keywords": [
+    "radial"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://res.cloudinary.com/dun3slcfg/image/upload/v1691507787/Caterpillar-Haul-Road-Design-and-Management.pdf",
+    "note": "1.7"
+   },
+   "value": 1.7
+  },
+  {
+   "id": "cat_r25",
+   "label": "2.5",
+   "keywords": [
+    "radial"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://res.cloudinary.com/dun3slcfg/image/upload/v1691507787/Caterpillar-Haul-Road-Design-and-Management.pdf",
+    "note": "2.5"
+   },
+   "value": 2.5
+  },
+  {
+   "id": "cat_r40",
+   "label": "4.0",
+   "keywords": [
+    "radial"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://res.cloudinary.com/dun3slcfg/image/upload/v1691507787/Caterpillar-Haul-Road-Design-and-Management.pdf",
+    "note": "4.0"
+   },
+   "value": 4.0
+  },
+  {
+   "id": "cat_mm",
+   "label": "25 mm",
+   "keywords": [
+    "mm"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://res.cloudinary.com/dun3slcfg/image/upload/v1691507787/Caterpillar-Haul-Road-Design-and-Management.pdf",
+    "note": "25 mm"
+   },
+   "value": 25
+  },
+  {
+   "id": "huff_m",
+   "label": "95%",
+   "keywords": [
+    "%",
+    "motor",
+    "Huff"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/landing-page/sa-apac/ot-apac/battery-technology/pdf/heat-generation-in-battery-electric-underground-haul-trucks-brian-huff.pdf",
+    "note": "95%"
+   },
+   "value": 95
+  },
+  {
+   "id": "huff_i",
+   "label": "98%",
+   "keywords": [
+    "%",
+    "inverter"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/landing-page/sa-apac/ot-apac/battery-technology/pdf/heat-generation-in-battery-electric-underground-haul-trucks-brian-huff.pdf",
+    "note": "98%"
+   },
+   "value": 98
+  },
+  {
+   "id": "huff_mi",
+   "label": "93%",
+   "keywords": [
+    "%",
+    "together",
+    "93"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.mining.sandvik/globalassets/landing-page/sa-apac/ot-apac/battery-technology/pdf/heat-generation-in-battery-electric-underground-haul-trucks-brian-huff.pdf",
+    "note": "93%"
+   },
+   "value": 93
+  },
+  {
+   "id": "sl_15",
+   "label": "15%",
+   "keywords": [
+    "%",
+    "ramps",
+    "typical"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.infrastructure-ni.gov.uk/sites/default/files/2025-01/consolidated-es-appendices-app-e7-sand-vik-equipment-technical-note.PDF",
+    "note": "15%"
+   },
+   "value": 15
+  },
+  {
+   "id": "sl_17",
+   "label": "17%",
+   "keywords": [
+    "%",
+    "ramps",
+    "typical"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://www.infrastructure-ni.gov.uk/sites/default/files/2025-01/consolidated-es-appendices-app-e7-sand-vik-equipment-technical-note.PDF",
+    "note": "17%"
+   },
+   "value": 17
+  },
+  {
+   "id": "mah_12",
+   "label": "12% ramp",
+   "keywords": [
+    "%",
+    "Mahieu",
+    "thesis"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://aaltodoc.aalto.fi/bitstreams/b4155026-a5e3-4373-b689-59c48de3927a/download",
+    "note": "12% ramp"
+   },
+   "value": 12
+  },
+  {
+   "id": "mah_v",
+   "label": "12 km/h",
+   "keywords": [
+    "km/h",
+    "Mahieu"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://aaltodoc.aalto.fi/bitstreams/b4155026-a5e3-4373-b689-59c48de3927a/download",
+    "note": "12 km/h"
+   },
+   "value": 12
+  },
+  {
+   "id": "mah_t",
+   "label": "45 t",
+   "keywords": [
+    "t ",
+    "Mahieu"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "https://aaltodoc.aalto.fi/bitstreams/b4155026-a5e3-4373-b689-59c48de3927a/download",
+    "note": "45 t"
+   },
+   "value": 45
+  },
+  {
+   "id": "ezz_70",
+   "label": "70%",
+   "keywords": [
+    "%",
+    "70"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Prof. Ezz email (user-provided)",
+    "note": "70%"
+   },
+   "value": 70
+  },
+  {
+   "id": "ezz_10h",
+   "label": "10 hours",
+   "keywords": [
+    "hours",
+    "10"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Prof. Ezz email (user-provided)",
+    "note": "10 hours"
+   },
+   "value": 10
+  },
+  {
+   "id": "ezz_23",
+   "label": "23 refs",
+   "keywords": [
+    "23",
+    "references"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Prof. Ezz email (user-provided)",
+    "note": "23 refs"
+   },
+   "value": 23
+  },
+  {
+   "id": "ezz_13",
+   "label": "13 refs",
+   "keywords": [
+    "13",
+    "references"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Prof. Ezz email (user-provided)",
+    "note": "13 refs"
+   },
+   "value": 13
+  },
+  {
+   "id": "ezz_22",
+   "label": "22 comments",
+   "keywords": [
+    "22",
+    "comments"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Google Doc comments (read 8 Nov 2026)",
+    "note": "22 comments"
+   },
+   "value": 22
+  },
+  {
+   "id": "pulse_r",
+   "label": "7.607 mΩ",
+   "keywords": [
+    "mΩ"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Draft Section 4.2; source file not found in repository",
+    "note": "7.607 mΩ"
+   },
+   "value": 7.607
+  },
+  {
+   "id": "pulse_r2",
+   "label": "7.868 mΩ",
+   "keywords": [
+    "mΩ"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Draft Section 4.2; source file not found in repository",
+    "note": "7.868 mΩ"
+   },
+   "value": 7.868
+  },
+  {
+   "id": "tab3_p",
+   "label": "0.128",
+   "keywords": [
+    "0.128"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Draft Table 3; source run not in repository",
+    "note": "0.128"
+   },
+   "value": 0.128
+  },
+  {
+   "id": "tab3_r",
+   "label": "0.236",
+   "keywords": [
+    "0.236"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Draft Table 3; source run not in repository",
+    "note": "0.236"
+   },
+   "value": 0.236
+  },
+  {
+   "id": "s54_a",
+   "label": "15.72",
+   "keywords": [
+    "15.72"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Draft Section 5.4; not recomputed in repository",
+    "note": "15.72"
+   },
+   "value": 15.72
+  },
+  {
+   "id": "s54_b",
+   "label": "9.55",
+   "keywords": [
+    "9.55"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Draft Section 5.4; not recomputed in repository",
+    "note": "9.55"
+   },
+   "value": 9.55
+  },
+  {
+   "id": "onaping",
+   "label": "2020",
+   "keywords": [
+    "Onaping"
+   ],
+   "source": {
+    "kind": "external",
+    "url": "Draft ref [2]",
+    "note": "2020"
+   },
+   "value": 2020
+  },
+  {
+   "id": "hs_vs_hand_min",
+   "label": "Lowest HAULSIM-over-hand %",
+   "keywords": [
+    "%",
+    "higher"
+   ],
+   "anchors": [
+    "HAULSIM sits",
+    "higher"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "min(hs_vs_hand_2, hs_vs_hand_3, hs_vs_hand_4)"
+   }
+  },
+  {
+   "id": "hs_vs_hand_max",
+   "label": "Highest HAULSIM-over-hand %",
+   "keywords": [
+    "%",
+    "higher"
+   ],
+   "anchors": [
+    "HAULSIM sits",
+    "higher"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "max(hs_vs_hand_2, hs_vs_hand_3, hs_vs_hand_4)"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_persistence_60",
+   "label": "rmse_c persistence 60s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_persistence_60",
+   "label": "mae_c persistence 60s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_persistence_60",
+   "label": "r2_level persistence 60s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_persistence_60",
+   "label": "r2_change persistence 60s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_persistence_60",
+   "label": "case_r2_change_min persistence 60s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_persistence_60",
+   "label": "case_r2_change_max persistence 60s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_persistence_60",
+   "label": "case_r2_level_min persistence 60s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_persistence_60",
+   "label": "case_r2_level_max persistence 60s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_persistence_120",
+   "label": "rmse_c persistence 120s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_persistence_120",
+   "label": "mae_c persistence 120s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_persistence_120",
+   "label": "r2_level persistence 120s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_persistence_120",
+   "label": "r2_change persistence 120s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_persistence_120",
+   "label": "case_r2_change_min persistence 120s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_persistence_120",
+   "label": "case_r2_change_max persistence 120s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_persistence_120",
+   "label": "case_r2_level_min persistence 120s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_persistence_120",
+   "label": "case_r2_level_max persistence 120s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "persistence"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_persistence_300",
+   "label": "rmse_c persistence 300s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_persistence_300",
+   "label": "mae_c persistence 300s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_persistence_300",
+   "label": "r2_level persistence 300s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_persistence_300",
+   "label": "r2_change persistence 300s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_persistence_300",
+   "label": "case_r2_change_min persistence 300s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_persistence_300",
+   "label": "case_r2_change_max persistence 300s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_persistence_300",
+   "label": "case_r2_level_min persistence 300s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_persistence_300",
+   "label": "case_r2_level_max persistence 300s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "persistence"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_persistence_600",
+   "label": "rmse_c persistence 600s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_persistence_600",
+   "label": "mae_c persistence 600s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_persistence_600",
+   "label": "r2_level persistence 600s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_persistence_600",
+   "label": "r2_change persistence 600s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_persistence_600",
+   "label": "case_r2_change_min persistence 600s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_persistence_600",
+   "label": "case_r2_change_max persistence 600s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_persistence_600",
+   "label": "case_r2_level_min persistence 600s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_persistence_600",
+   "label": "case_r2_level_max persistence 600s",
+   "keywords": [
+    "Persistence",
+    "persistence",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "persistence"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_n_persistence",
+   "label": "n origins",
+   "keywords": [
+    "moments"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "persistence"
+    },
+    "column": "n_origins"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_linear_trend_60",
+   "label": "rmse_c linear_trend 60s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_linear_trend_60",
+   "label": "mae_c linear_trend 60s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_linear_trend_60",
+   "label": "r2_level linear_trend 60s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_linear_trend_60",
+   "label": "r2_change linear_trend 60s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_linear_trend_60",
+   "label": "case_r2_change_min linear_trend 60s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_linear_trend_60",
+   "label": "case_r2_change_max linear_trend 60s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_linear_trend_60",
+   "label": "case_r2_level_min linear_trend 60s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_linear_trend_60",
+   "label": "case_r2_level_max linear_trend 60s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_linear_trend_120",
+   "label": "rmse_c linear_trend 120s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_linear_trend_120",
+   "label": "mae_c linear_trend 120s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_linear_trend_120",
+   "label": "r2_level linear_trend 120s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_linear_trend_120",
+   "label": "r2_change linear_trend 120s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_linear_trend_120",
+   "label": "case_r2_change_min linear_trend 120s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_linear_trend_120",
+   "label": "case_r2_change_max linear_trend 120s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_linear_trend_120",
+   "label": "case_r2_level_min linear_trend 120s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_linear_trend_120",
+   "label": "case_r2_level_max linear_trend 120s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_linear_trend_300",
+   "label": "rmse_c linear_trend 300s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_linear_trend_300",
+   "label": "mae_c linear_trend 300s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_linear_trend_300",
+   "label": "r2_level linear_trend 300s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_linear_trend_300",
+   "label": "r2_change linear_trend 300s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_linear_trend_300",
+   "label": "case_r2_change_min linear_trend 300s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_linear_trend_300",
+   "label": "case_r2_change_max linear_trend 300s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_linear_trend_300",
+   "label": "case_r2_level_min linear_trend 300s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_linear_trend_300",
+   "label": "case_r2_level_max linear_trend 300s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_linear_trend_600",
+   "label": "rmse_c linear_trend 600s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_linear_trend_600",
+   "label": "mae_c linear_trend 600s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_linear_trend_600",
+   "label": "r2_level linear_trend 600s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_linear_trend_600",
+   "label": "r2_change linear_trend 600s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_linear_trend_600",
+   "label": "case_r2_change_min linear_trend 600s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_linear_trend_600",
+   "label": "case_r2_change_max linear_trend 600s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_linear_trend_600",
+   "label": "case_r2_level_min linear_trend 600s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_linear_trend_600",
+   "label": "case_r2_level_max linear_trend 600s",
+   "keywords": [
+    "Linear trend",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "linear_trend"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_n_linear_trend",
+   "label": "n origins",
+   "keywords": [
+    "moments"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "linear_trend"
+    },
+    "column": "n_origins"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_physics_hold_60",
+   "label": "rmse_c physics_hold 60s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_physics_hold_60",
+   "label": "mae_c physics_hold 60s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_physics_hold_60",
+   "label": "r2_level physics_hold 60s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_physics_hold_60",
+   "label": "r2_change physics_hold 60s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_physics_hold_60",
+   "label": "case_r2_change_min physics_hold 60s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_physics_hold_60",
+   "label": "case_r2_change_max physics_hold 60s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_physics_hold_60",
+   "label": "case_r2_level_min physics_hold 60s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_physics_hold_60",
+   "label": "case_r2_level_max physics_hold 60s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_physics_hold_120",
+   "label": "rmse_c physics_hold 120s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_physics_hold_120",
+   "label": "mae_c physics_hold 120s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_physics_hold_120",
+   "label": "r2_level physics_hold 120s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_physics_hold_120",
+   "label": "r2_change physics_hold 120s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_physics_hold_120",
+   "label": "case_r2_change_min physics_hold 120s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_physics_hold_120",
+   "label": "case_r2_change_max physics_hold 120s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_physics_hold_120",
+   "label": "case_r2_level_min physics_hold 120s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_physics_hold_120",
+   "label": "case_r2_level_max physics_hold 120s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_physics_hold_300",
+   "label": "rmse_c physics_hold 300s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_physics_hold_300",
+   "label": "mae_c physics_hold 300s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_physics_hold_300",
+   "label": "r2_level physics_hold 300s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_physics_hold_300",
+   "label": "r2_change physics_hold 300s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_physics_hold_300",
+   "label": "case_r2_change_min physics_hold 300s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_physics_hold_300",
+   "label": "case_r2_change_max physics_hold 300s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_physics_hold_300",
+   "label": "case_r2_level_min physics_hold 300s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_physics_hold_300",
+   "label": "case_r2_level_max physics_hold 300s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_physics_hold_600",
+   "label": "rmse_c physics_hold 600s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_physics_hold_600",
+   "label": "mae_c physics_hold 600s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_physics_hold_600",
+   "label": "r2_level physics_hold 600s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_physics_hold_600",
+   "label": "r2_change physics_hold 600s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_physics_hold_600",
+   "label": "case_r2_change_min physics_hold 600s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_physics_hold_600",
+   "label": "case_r2_change_max physics_hold 600s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_physics_hold_600",
+   "label": "case_r2_level_min physics_hold 600s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_physics_hold_600",
+   "label": "case_r2_level_max physics_hold 600s",
+   "keywords": [
+    "Physics hold",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "physics_hold"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_n_physics_hold",
+   "label": "n origins",
+   "keywords": [
+    "moments"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "physics_hold"
+    },
+    "column": "n_origins"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_ridge_60",
+   "label": "rmse_c ridge 60s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_ridge_60",
+   "label": "mae_c ridge 60s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_ridge_60",
+   "label": "r2_level ridge 60s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_ridge_60",
+   "label": "r2_change ridge 60s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_ridge_60",
+   "label": "case_r2_change_min ridge 60s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_ridge_60",
+   "label": "case_r2_change_max ridge 60s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_ridge_60",
+   "label": "case_r2_level_min ridge 60s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_ridge_60",
+   "label": "case_r2_level_max ridge 60s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_ridge_120",
+   "label": "rmse_c ridge 120s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_ridge_120",
+   "label": "mae_c ridge 120s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_ridge_120",
+   "label": "r2_level ridge 120s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_ridge_120",
+   "label": "r2_change ridge 120s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_ridge_120",
+   "label": "case_r2_change_min ridge 120s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_ridge_120",
+   "label": "case_r2_change_max ridge 120s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_ridge_120",
+   "label": "case_r2_level_min ridge 120s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_ridge_120",
+   "label": "case_r2_level_max ridge 120s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "ridge"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_ridge_300",
+   "label": "rmse_c ridge 300s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_ridge_300",
+   "label": "mae_c ridge 300s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_ridge_300",
+   "label": "r2_level ridge 300s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_ridge_300",
+   "label": "r2_change ridge 300s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_ridge_300",
+   "label": "case_r2_change_min ridge 300s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_ridge_300",
+   "label": "case_r2_change_max ridge 300s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_ridge_300",
+   "label": "case_r2_level_min ridge 300s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_ridge_300",
+   "label": "case_r2_level_max ridge 300s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "ridge"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_ridge_600",
+   "label": "rmse_c ridge 600s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_ridge_600",
+   "label": "mae_c ridge 600s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_ridge_600",
+   "label": "r2_level ridge 600s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_ridge_600",
+   "label": "r2_change ridge 600s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_ridge_600",
+   "label": "case_r2_change_min ridge 600s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_ridge_600",
+   "label": "case_r2_change_max ridge 600s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_ridge_600",
+   "label": "case_r2_level_min ridge 600s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_ridge_600",
+   "label": "case_r2_level_max ridge 600s",
+   "keywords": [
+    "Ridge",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_n_ridge",
+   "label": "n origins",
+   "keywords": [
+    "moments"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "ridge"
+    },
+    "column": "n_origins"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_hist_gradient_boosting_60",
+   "label": "rmse_c hist_gradient_boosting 60s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_hist_gradient_boosting_60",
+   "label": "mae_c hist_gradient_boosting 60s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_hist_gradient_boosting_60",
+   "label": "r2_level hist_gradient_boosting 60s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_hist_gradient_boosting_60",
+   "label": "r2_change hist_gradient_boosting 60s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_hist_gradient_boosting_60",
+   "label": "case_r2_change_min hist_gradient_boosting 60s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_hist_gradient_boosting_60",
+   "label": "case_r2_change_max hist_gradient_boosting 60s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_hist_gradient_boosting_60",
+   "label": "case_r2_level_min hist_gradient_boosting 60s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_hist_gradient_boosting_60",
+   "label": "case_r2_level_max hist_gradient_boosting 60s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_hist_gradient_boosting_120",
+   "label": "rmse_c hist_gradient_boosting 120s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_hist_gradient_boosting_120",
+   "label": "mae_c hist_gradient_boosting 120s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_hist_gradient_boosting_120",
+   "label": "r2_level hist_gradient_boosting 120s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_hist_gradient_boosting_120",
+   "label": "r2_change hist_gradient_boosting 120s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_hist_gradient_boosting_120",
+   "label": "case_r2_change_min hist_gradient_boosting 120s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_hist_gradient_boosting_120",
+   "label": "case_r2_change_max hist_gradient_boosting 120s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_hist_gradient_boosting_120",
+   "label": "case_r2_level_min hist_gradient_boosting 120s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_hist_gradient_boosting_120",
+   "label": "case_r2_level_max hist_gradient_boosting 120s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_hist_gradient_boosting_300",
+   "label": "rmse_c hist_gradient_boosting 300s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_hist_gradient_boosting_300",
+   "label": "mae_c hist_gradient_boosting 300s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_hist_gradient_boosting_300",
+   "label": "r2_level hist_gradient_boosting 300s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_hist_gradient_boosting_300",
+   "label": "r2_change hist_gradient_boosting 300s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_hist_gradient_boosting_300",
+   "label": "case_r2_change_min hist_gradient_boosting 300s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_hist_gradient_boosting_300",
+   "label": "case_r2_change_max hist_gradient_boosting 300s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_hist_gradient_boosting_300",
+   "label": "case_r2_level_min hist_gradient_boosting 300s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_hist_gradient_boosting_300",
+   "label": "case_r2_level_max hist_gradient_boosting 300s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_rmse_c_hist_gradient_boosting_600",
+   "label": "rmse_c hist_gradient_boosting 600s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "rmse_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_mae_c_hist_gradient_boosting_600",
+   "label": "mae_c hist_gradient_boosting 600s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "mae_c"
+   },
+   "scale": 1000
+  },
+  {
+   "id": "r2page_r2_level_hist_gradient_boosting_600",
+   "label": "r2_level hist_gradient_boosting 600s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "r2_level"
+   }
+  },
+  {
+   "id": "r2page_r2_change_hist_gradient_boosting_600",
+   "label": "r2_change hist_gradient_boosting 600s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "r2_change"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_min_hist_gradient_boosting_600",
+   "label": "case_r2_change_min hist_gradient_boosting 600s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_change_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_change_max_hist_gradient_boosting_600",
+   "label": "case_r2_change_max hist_gradient_boosting 600s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_change_max"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_min_hist_gradient_boosting_600",
+   "label": "case_r2_level_min hist_gradient_boosting 600s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_level_min"
+   }
+  },
+  {
+   "id": "r2page_case_r2_level_max_hist_gradient_boosting_600",
+   "label": "case_r2_level_max hist_gradient_boosting 600s",
+   "keywords": [
+    "Gradient boosting",
+    "HGB",
+    "R²",
+    "RMSE",
+    "MAE",
+    "thousandths"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "case_r2_level_max"
+   }
+  },
+  {
+   "id": "r2page_n_hist_gradient_boosting",
+   "label": "n origins",
+   "keywords": [
+    "moments"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    },
+    "column": "n_origins"
+   }
+  },
+  {
+   "id": "r2page_n600",
+   "label": "n 600",
+   "keywords": [
+    "moments"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/r2-check-2026-11-13/forecast_metrics.csv",
+    "where": {
+     "horizon_s": 600,
+     "method": "ridge"
+    },
+    "column": "n_origins"
+   }
+  },
+  {
+   "id": "r2page_63pct",
+   "label": "1-1/e",
+   "keywords": [
+    "63%",
+    "τ"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "100*(1-exp(-1))"
+   }
+  },
+  {
+   "id": "r2page_heat_rate",
+   "label": "a I^2",
+   "keywords": [
+    "heating"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "a*i_eq**2"
+   }
+  },
+  {
+   "id": "r2page_climb_s_round",
+   "label": "climb seconds",
+   "keywords": [
+    "s climb"
+   ],
+   "source": {
+    "kind": "expr",
+    "expr": "climb_min*60"
+   }
+  }
+ ]
+}

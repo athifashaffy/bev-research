@@ -1,0 +1,2782 @@
+{
+ "description": "Claims behind LAB_FORECAST_NOTES.txt (lab-cell live-sensor forecast, run-1). Written by Claude (AI) on 12 Nov 2026. Paths relative to reproducibility/.",
+ "ignore_patterns": [
+  "\\|\\s*\\d+ min\\s*\\|",
+  "RMSE / MAE"
+ ],
+ "claims": [
+  {
+   "id": "lab_all__60_persistence_rmse_c",
+   "label": "All records 1 min persistence rmse_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_persistence_mae_c",
+   "label": "All records 1 min persistence mae_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_linear_trend_rmse_c",
+   "label": "All records 1 min linear_trend rmse_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_linear_trend_mae_c",
+   "label": "All records 1 min linear_trend mae_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_physics_hold_last_rmse_c",
+   "label": "All records 1 min physics_hold_last rmse_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_physics_hold_last_mae_c",
+   "label": "All records 1 min physics_hold_last mae_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_physics_hold_meansq_rmse_c",
+   "label": "All records 1 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_physics_hold_meansq_mae_c",
+   "label": "All records 1 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_ridge_rmse_c",
+   "label": "All records 1 min ridge rmse_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_ridge_mae_c",
+   "label": "All records 1 min ridge mae_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_hist_gradient_boosting_rmse_c",
+   "label": "All records 1 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_hist_gradient_boosting_mae_c",
+   "label": "All records 1 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__60_n",
+   "label": "All records 1 min forecast count",
+   "keywords": [
+    "| All records | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 60,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_persistence_rmse_c",
+   "label": "All records 2 min persistence rmse_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_persistence_mae_c",
+   "label": "All records 2 min persistence mae_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_linear_trend_rmse_c",
+   "label": "All records 2 min linear_trend rmse_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_linear_trend_mae_c",
+   "label": "All records 2 min linear_trend mae_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_physics_hold_last_rmse_c",
+   "label": "All records 2 min physics_hold_last rmse_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_physics_hold_last_mae_c",
+   "label": "All records 2 min physics_hold_last mae_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_physics_hold_meansq_rmse_c",
+   "label": "All records 2 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_physics_hold_meansq_mae_c",
+   "label": "All records 2 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_ridge_rmse_c",
+   "label": "All records 2 min ridge rmse_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_ridge_mae_c",
+   "label": "All records 2 min ridge mae_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_hist_gradient_boosting_rmse_c",
+   "label": "All records 2 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_hist_gradient_boosting_mae_c",
+   "label": "All records 2 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__120_n",
+   "label": "All records 2 min forecast count",
+   "keywords": [
+    "| All records | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 120,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_persistence_rmse_c",
+   "label": "All records 5 min persistence rmse_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_persistence_mae_c",
+   "label": "All records 5 min persistence mae_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_linear_trend_rmse_c",
+   "label": "All records 5 min linear_trend rmse_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_linear_trend_mae_c",
+   "label": "All records 5 min linear_trend mae_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_physics_hold_last_rmse_c",
+   "label": "All records 5 min physics_hold_last rmse_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_physics_hold_last_mae_c",
+   "label": "All records 5 min physics_hold_last mae_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_physics_hold_meansq_rmse_c",
+   "label": "All records 5 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_physics_hold_meansq_mae_c",
+   "label": "All records 5 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_ridge_rmse_c",
+   "label": "All records 5 min ridge rmse_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_ridge_mae_c",
+   "label": "All records 5 min ridge mae_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_hist_gradient_boosting_rmse_c",
+   "label": "All records 5 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_hist_gradient_boosting_mae_c",
+   "label": "All records 5 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__300_n",
+   "label": "All records 5 min forecast count",
+   "keywords": [
+    "| All records | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 300,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_persistence_rmse_c",
+   "label": "All records 10 min persistence rmse_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_persistence_mae_c",
+   "label": "All records 10 min persistence mae_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_linear_trend_rmse_c",
+   "label": "All records 10 min linear_trend rmse_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_linear_trend_mae_c",
+   "label": "All records 10 min linear_trend mae_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_physics_hold_last_rmse_c",
+   "label": "All records 10 min physics_hold_last rmse_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_physics_hold_last_mae_c",
+   "label": "All records 10 min physics_hold_last mae_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_physics_hold_meansq_rmse_c",
+   "label": "All records 10 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_physics_hold_meansq_mae_c",
+   "label": "All records 10 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_ridge_rmse_c",
+   "label": "All records 10 min ridge rmse_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_ridge_mae_c",
+   "label": "All records 10 min ridge mae_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_hist_gradient_boosting_rmse_c",
+   "label": "All records 10 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_hist_gradient_boosting_mae_c",
+   "label": "All records 10 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__600_n",
+   "label": "All records 10 min forecast count",
+   "keywords": [
+    "| All records | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 600,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_persistence_rmse_c",
+   "label": "All records 30 min persistence rmse_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_persistence_mae_c",
+   "label": "All records 30 min persistence mae_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_linear_trend_rmse_c",
+   "label": "All records 30 min linear_trend rmse_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_linear_trend_mae_c",
+   "label": "All records 30 min linear_trend mae_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_physics_hold_last_rmse_c",
+   "label": "All records 30 min physics_hold_last rmse_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_physics_hold_last_mae_c",
+   "label": "All records 30 min physics_hold_last mae_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_physics_hold_meansq_rmse_c",
+   "label": "All records 30 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_physics_hold_meansq_mae_c",
+   "label": "All records 30 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_ridge_rmse_c",
+   "label": "All records 30 min ridge rmse_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_ridge_mae_c",
+   "label": "All records 30 min ridge mae_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_hist_gradient_boosting_rmse_c",
+   "label": "All records 30 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_hist_gradient_boosting_mae_c",
+   "label": "All records 30 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_all__1800_n",
+   "label": "All records 30 min forecast count",
+   "keywords": [
+    "| All records | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "all_three_records",
+     "horizon_s": 1800,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| All records | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_persistence_rmse_c",
+   "label": "Drive-cycle records only 1 min persistence rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_persistence_mae_c",
+   "label": "Drive-cycle records only 1 min persistence mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_linear_trend_rmse_c",
+   "label": "Drive-cycle records only 1 min linear_trend rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_linear_trend_mae_c",
+   "label": "Drive-cycle records only 1 min linear_trend mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_physics_hold_last_rmse_c",
+   "label": "Drive-cycle records only 1 min physics_hold_last rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_physics_hold_last_mae_c",
+   "label": "Drive-cycle records only 1 min physics_hold_last mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_physics_hold_meansq_rmse_c",
+   "label": "Drive-cycle records only 1 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_physics_hold_meansq_mae_c",
+   "label": "Drive-cycle records only 1 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_ridge_rmse_c",
+   "label": "Drive-cycle records only 1 min ridge rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_ridge_mae_c",
+   "label": "Drive-cycle records only 1 min ridge mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_hist_gradient_boosting_rmse_c",
+   "label": "Drive-cycle records only 1 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_hist_gradient_boosting_mae_c",
+   "label": "Drive-cycle records only 1 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_60_n",
+   "label": "Drive-cycle records only 1 min forecast count",
+   "keywords": [
+    "| Drive-cycle records only | 1 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 60,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 1 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_persistence_rmse_c",
+   "label": "Drive-cycle records only 2 min persistence rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_persistence_mae_c",
+   "label": "Drive-cycle records only 2 min persistence mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_linear_trend_rmse_c",
+   "label": "Drive-cycle records only 2 min linear_trend rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_linear_trend_mae_c",
+   "label": "Drive-cycle records only 2 min linear_trend mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_physics_hold_last_rmse_c",
+   "label": "Drive-cycle records only 2 min physics_hold_last rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_physics_hold_last_mae_c",
+   "label": "Drive-cycle records only 2 min physics_hold_last mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_physics_hold_meansq_rmse_c",
+   "label": "Drive-cycle records only 2 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_physics_hold_meansq_mae_c",
+   "label": "Drive-cycle records only 2 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_ridge_rmse_c",
+   "label": "Drive-cycle records only 2 min ridge rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_ridge_mae_c",
+   "label": "Drive-cycle records only 2 min ridge mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_hist_gradient_boosting_rmse_c",
+   "label": "Drive-cycle records only 2 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_hist_gradient_boosting_mae_c",
+   "label": "Drive-cycle records only 2 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_120_n",
+   "label": "Drive-cycle records only 2 min forecast count",
+   "keywords": [
+    "| Drive-cycle records only | 2 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 120,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 2 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_persistence_rmse_c",
+   "label": "Drive-cycle records only 5 min persistence rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_persistence_mae_c",
+   "label": "Drive-cycle records only 5 min persistence mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_linear_trend_rmse_c",
+   "label": "Drive-cycle records only 5 min linear_trend rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_linear_trend_mae_c",
+   "label": "Drive-cycle records only 5 min linear_trend mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_physics_hold_last_rmse_c",
+   "label": "Drive-cycle records only 5 min physics_hold_last rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_physics_hold_last_mae_c",
+   "label": "Drive-cycle records only 5 min physics_hold_last mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_physics_hold_meansq_rmse_c",
+   "label": "Drive-cycle records only 5 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_physics_hold_meansq_mae_c",
+   "label": "Drive-cycle records only 5 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_ridge_rmse_c",
+   "label": "Drive-cycle records only 5 min ridge rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_ridge_mae_c",
+   "label": "Drive-cycle records only 5 min ridge mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_hist_gradient_boosting_rmse_c",
+   "label": "Drive-cycle records only 5 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_hist_gradient_boosting_mae_c",
+   "label": "Drive-cycle records only 5 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_300_n",
+   "label": "Drive-cycle records only 5 min forecast count",
+   "keywords": [
+    "| Drive-cycle records only | 5 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 300,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 5 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_persistence_rmse_c",
+   "label": "Drive-cycle records only 10 min persistence rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_persistence_mae_c",
+   "label": "Drive-cycle records only 10 min persistence mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_linear_trend_rmse_c",
+   "label": "Drive-cycle records only 10 min linear_trend rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_linear_trend_mae_c",
+   "label": "Drive-cycle records only 10 min linear_trend mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_physics_hold_last_rmse_c",
+   "label": "Drive-cycle records only 10 min physics_hold_last rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_physics_hold_last_mae_c",
+   "label": "Drive-cycle records only 10 min physics_hold_last mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_physics_hold_meansq_rmse_c",
+   "label": "Drive-cycle records only 10 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_physics_hold_meansq_mae_c",
+   "label": "Drive-cycle records only 10 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_ridge_rmse_c",
+   "label": "Drive-cycle records only 10 min ridge rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_ridge_mae_c",
+   "label": "Drive-cycle records only 10 min ridge mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_hist_gradient_boosting_rmse_c",
+   "label": "Drive-cycle records only 10 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_hist_gradient_boosting_mae_c",
+   "label": "Drive-cycle records only 10 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_600_n",
+   "label": "Drive-cycle records only 10 min forecast count",
+   "keywords": [
+    "| Drive-cycle records only | 10 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 600,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 10 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_persistence_rmse_c",
+   "label": "Drive-cycle records only 30 min persistence rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_persistence_mae_c",
+   "label": "Drive-cycle records only 30 min persistence mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_linear_trend_rmse_c",
+   "label": "Drive-cycle records only 30 min linear_trend rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_linear_trend_mae_c",
+   "label": "Drive-cycle records only 30 min linear_trend mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "linear_trend"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_physics_hold_last_rmse_c",
+   "label": "Drive-cycle records only 30 min physics_hold_last rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_physics_hold_last_mae_c",
+   "label": "Drive-cycle records only 30 min physics_hold_last mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "physics_hold_last"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_physics_hold_meansq_rmse_c",
+   "label": "Drive-cycle records only 30 min physics_hold_meansq rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_physics_hold_meansq_mae_c",
+   "label": "Drive-cycle records only 30 min physics_hold_meansq mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "physics_hold_meansq"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_ridge_rmse_c",
+   "label": "Drive-cycle records only 30 min ridge rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_ridge_mae_c",
+   "label": "Drive-cycle records only 30 min ridge mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "ridge"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_hist_gradient_boosting_rmse_c",
+   "label": "Drive-cycle records only 30 min hist_gradient_boosting rmse_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "rmse_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_hist_gradient_boosting_mae_c",
+   "label": "Drive-cycle records only 30 min hist_gradient_boosting mae_c",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "mae_c",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "hist_gradient_boosting"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_udds_1800_n",
+   "label": "Drive-cycle records only 30 min forecast count",
+   "keywords": [
+    "| Drive-cycle records only | 30 min |"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/pooled_metrics.csv",
+    "column": "n_origins",
+    "where": {
+     "scope": "udds_records_only",
+     "horizon_s": 1800,
+     "method": "persistence"
+    }
+   },
+   "anchors": [
+    "| Drive-cycle records only | 30 min |"
+   ]
+  },
+  {
+   "id": "lab_pulse_25C_duration_h",
+   "label": "pulse_25C duration_h",
+   "keywords": [
+    "the pulse record lasts"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/record_summary.csv",
+    "column": "duration_h",
+    "where": {
+     "record": "pulse_25C"
+    }
+   },
+   "anchors": [
+    "the pulse record lasts"
+   ]
+  },
+  {
+   "id": "lab_pulse_25C_surface_swing_c",
+   "label": "pulse_25C surface_swing_c",
+   "keywords": [
+    "the pulse record lasts"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/record_summary.csv",
+    "column": "surface_swing_c",
+    "where": {
+     "record": "pulse_25C"
+    }
+   },
+   "anchors": [
+    "the pulse record lasts"
+   ]
+  },
+  {
+   "id": "lab_pulse_25C_gaps_over_1p5_s",
+   "label": "pulse_25C gaps_over_1p5_s",
+   "keywords": [
+    "the pulse record has"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/record_summary.csv",
+    "column": "gaps_over_1p5_s",
+    "where": {
+     "record": "pulse_25C"
+    }
+   },
+   "anchors": [
+    "the pulse record has"
+   ]
+  },
+  {
+   "id": "lab_pulse_25C_largest_gap_s",
+   "label": "pulse_25C largest_gap_s",
+   "keywords": [
+    "the pulse record has"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/record_summary.csv",
+    "column": "largest_gap_s",
+    "where": {
+     "record": "pulse_25C"
+    }
+   },
+   "anchors": [
+    "the pulse record has"
+   ]
+  },
+  {
+   "id": "lab_udds_25C_duration_h",
+   "label": "udds_25C duration_h",
+   "keywords": [
+    "record at room temperature lasts"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/record_summary.csv",
+    "column": "duration_h",
+    "where": {
+     "record": "udds_25C"
+    }
+   },
+   "anchors": [
+    "record at room temperature lasts"
+   ]
+  },
+  {
+   "id": "lab_udds_25C_surface_swing_c",
+   "label": "udds_25C surface_swing_c",
+   "keywords": [
+    "record at room temperature lasts"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/record_summary.csv",
+    "column": "surface_swing_c",
+    "where": {
+     "record": "udds_25C"
+    }
+   },
+   "anchors": [
+    "record at room temperature lasts"
+   ]
+  },
+  {
+   "id": "lab_udds_35C_duration_h",
+   "label": "udds_35C duration_h",
+   "keywords": [
+    "the warm drive-cycle record lasts"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/record_summary.csv",
+    "column": "duration_h",
+    "where": {
+     "record": "udds_35C"
+    }
+   },
+   "anchors": [
+    "the warm drive-cycle record lasts"
+   ]
+  },
+  {
+   "id": "lab_udds_35C_surface_swing_c",
+   "label": "udds_35C surface_swing_c",
+   "keywords": [
+    "the warm drive-cycle record lasts"
+   ],
+   "source": {
+    "kind": "csv",
+    "file": "results/lab-forecast-2026-11-12/run-1/record_summary.csv",
+    "column": "surface_swing_c",
+    "where": {
+     "record": "udds_35C"
+    }
+   },
+   "anchors": [
+    "the warm drive-cycle record lasts"
+   ]
+  },
+  {
+   "id": "lab_gap_rule",
+   "label": "gap threshold s (protocol text)",
+   "keywords": [
+    "gaps longer than"
+   ],
+   "source": {
+    "kind": "regex",
+    "file": "results/lab-forecast-2026-11-12/run-1/protocol.json",
+    "pattern": "gap longer than (1\\.5) s"
+   }
+  },
+  {
+   "id": "lab_fits",
+   "label": "model fits",
+   "keywords": [
+    "models in total"
+   ],
+   "source": {
+    "kind": "json",
+    "file": "results/lab-forecast-2026-11-12/run-1/summary.json",
+    "path": [
+     "model_fit_count"
+    ]
+   },
+   "anchors": [
+    "models in total"
+   ]
+  }
+ ]
+}

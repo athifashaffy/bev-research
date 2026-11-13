@@ -18,3 +18,6 @@ results/
 # Separate reproducibility output directories
 reproducibility/results/
 *.egg-info/
+
+# Editor settings
+.cursor/
