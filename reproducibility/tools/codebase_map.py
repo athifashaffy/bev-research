@@ -26,21 +26,37 @@ ROOT = Path(__file__).resolve().parents[2]          # bev-research/
 WS = "reproducibility/data/workspace"
 
 LAYERS = [
-    ("1 Original study code (15–27 Oct 2026)", [f"{WS}/**/*.py"]),
-    ("2 Reproduction package", ["reproducibility/src/**/*.py", "reproducibility/experiments/A/*.py",
-                                "reproducibility/experiments/B/code/*.py", "reproducibility/tools/audit_*.py",
+    ("1 Forecasting behind the paper's Table 2 (A_live)", ["reproducibility/experiments/A_live/**/*.py",
+                                                         "reproducibility/experiments/A_causal/**/*.py"]),
+    ("2 Original study code (15–27 Oct 2026)", [f"{WS}/**/*.py"]),
+    ("3 Reproduction package", ["reproducibility/src/**/*.py", "reproducibility/experiments/A/*.py",
+                                "reproducibility/experiments/A/tests/*.py", "reproducibility/tools/audit_*.py",
                                 "reproducibility/tools/plot_saved_results.py", "reproducibility/tests/*.py",
                                 "reproducibility/tools/test_audit_ml.py", "reproducibility/data/tum/*.py"]),
-    ("3 Root NumPy reconstruction (28 Oct 2026)", ["src/**/*.py", "experiments/*.py", "code/*.py", "tests/*.py"]),
-    ("4 New checks and experiments (9–13 Nov 2026)", ["reproducibility/tools/run_with_proof.py", "reproducibility/tools/check_claims.py",
-                                                     "reproducibility/tools/forecast_r2.py", "reproducibility/tools/codebase_map.py",
-                                                     "reproducibility/tools/walkthrough_equations.py", "reproducibility/tools/refit_cell_model_check.py",
-                                                     "reproducibility/tools/test_check_claims.py", "reproducibility/tools/test_run_with_proof.py",
-                                                     "reproducibility/experiments/A_lab/**/*.py"]),
+    ("4 Checking tools (9–13 Nov 2026)", ["reproducibility/tools/*.py"]),
+    ("5 Separate experiments (not in the current paper)", ["reproducibility/experiments/A_lab/**/*.py",
+                                                         "reproducibility/experiments/B/code/*.py"]),
+    ("6 Top-level NumPy reconstruction (28 Oct 2026)", ["src/**/*.py", "experiments/*.py", "code/*.py", "tests/*.py"]),
 ]
 
 # (group, label, file, function, text that must appear on the line)
+LIVE = "reproducibility/experiments/A_live"
 FORMULAS = [
+    ("Paper pipeline (A_live)", "Equation 1: power = energy × 3600 ÷ seconds", f"{LIVE}/telemetry.py", "generate", "power=e"),
+    ("Paper pipeline (A_live)", "Equation 2: equivalent current = 2.5 × power ÷ capacity", f"{LIVE}/telemetry.py", "generate", "current=2.5*power/capacity"),
+    ("Paper pipeline (A_live)", "Equation 5 applied every second", f"{LIVE}/telemetry.py", "generate", "temp=stable.advance"),
+    ("Paper pipeline (A_live)", "Equation 5: exact step solution", "reproducibility/experiments/A_causal/inputs.py", "advance", "expm1"),
+    ("Paper pipeline (A_live)", "20% reserve: budget = 0.6 × capacity", f"{LIVE}/telemetry.py", "reserve_cutoff", "budget=.6*capacity"),
+    ("Paper pipeline (A_live)", "20 inputs from the last 61 seconds", f"{LIVE}/telemetry.py", "history_features", "stable_features"),
+    ("Paper pipeline (A_live)", "A forecast every 10 seconds", f"{LIVE}/telemetry.py", "build_examples", "np.arange(60"),
+    ("Paper pipeline (A_live)", "Target = temperature change", f"{LIVE}/telemetry.py", "build_examples", "delta_c="),
+    ("Paper pipeline (A_live)", "Horizons 1, 2, 5, 10, 30 min", f"{LIVE}/telemetry.py", None, "HORIZONS="),
+    ("Paper pipeline (A_live)", "Train HGB per held-out truck and horizon", f"{LIVE}/train.py", "run", 'fit_selected("hist_gradient_boosting"'),
+    ("Paper pipeline (A_live)", "Four forecasts: persistence, trend, thermal, HGB", f"{LIVE}/train.py", "run", '"hist_gradient_boosting":now+model.predict'),
+    ("Paper pipeline (A_live)", "HGB settings (reused from A)", "reproducibility/experiments/A/train.py", "estimator", "HistGradientBoostingRegressor("),
+    ("Paper pipeline (A_live)", "Choose 40 or 80 iterations (reused from A)", "reproducibility/experiments/A/train.py", "fit_selected", "chosen = min("),
+    ("Paper pipeline (A_live)", "Hide one truck; 4 inner splits (reused from A)", "reproducibility/experiments/A/train.py", "nested_group_plan", "validation = train[i::4]"),
+    ("Paper pipeline (A_live)", "Thermal baseline (reused from A)", "reproducibility/experiments/A/train.py", "physics_forecast", "expm1"),
     ("Haulage set-up", "Battery size, mass and power scale together", f"{WS}/New_Afton_Experiments_2026-10-20/code/study.py", "pack", "capacity_kwh=354*s"),
     ("Haulage set-up", "Wheel power cap = 0.85 × (battery power − 20 kW), max 391 kW", f"{WS}/New_Afton_Experiments_2026-10-20/code/study.py", "pack", "wheel_kw=min(391"),
     ("Haulage set-up", "Pulling force curve: min(300 kN, power ÷ speed)", f"{WS}/New_Afton_Experiments_2026-10-20/code/study.py", "make", "curve="),
