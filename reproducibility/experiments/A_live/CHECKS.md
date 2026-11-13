@@ -10,7 +10,7 @@ The final two runs used Python 3.14.6 and every direct dependency pinned in
 45 newly fitted held-out models. Predictions also exactly match the preliminary
 joblib-1.6.0 run, but the final pair is the reproduction reference.
 
-`results/live-telemetry-2026-11-12/final-comparison/verification.json` records:
+`results/live-telemetry-2026-11-12/final-report/verification.json` records:
 
 - 44,906 generated sensor rows; 19,618 forecast origins across five horizons;
   78,472 prediction rows across four methods.
@@ -50,7 +50,7 @@ From repository root:
 | Command | Outcome |
 |---|---|
 | `PYTHONPATH=src python -B -m pytest` | 46 tests and 27 subtests passed |
-| `python -B -m unittest discover -s reproducibility/experiments/A_live/tests -v` | 16 tests passed |
+| `python -B -m unittest discover -s reproducibility/experiments/A_live/tests -v` | 18 tests passed after review fixes |
 
 From `reproducibility/`:
 
@@ -72,13 +72,42 @@ execution. Experiment B remains outside this task and is not declared portable.
 Run the two trainer commands, report comparison and replay command in README with
 the recorded final paths to reproduce the remaining checks. All logs and a hashed
 `VERIFICATION_RECORD.json` are in the local `results/live-telemetry-2026-11-12/checks/`
-directory. `final-comparison/claims.json` contains the metric-by-metric cross-check.
+directory. `final-report/claims.json` contains the metric-by-metric cross-check.
 The saved central-case plot was visually inspected for labels, units and alignment;
 30-minute forecasts are drawn at target times, starting after minute 31.
 
 ## Review and scope
 
-Final fresh-context AI code review is recorded below after completion. Automated
+One fresh-context AI reviewer inspected the complete branch from `2a9a3fd` through
+`4a87249`, the saved artifacts and relevant helper functions. The reviewer found
+no critical issue and two important reporting defects, both fixed:
+
+1. Future audits previously inherited the original execution date. Reports now
+   capture one audit instant, convert it to Toronto time and use it consistently
+   in the human report, verification record and UTC proof. A test covers the
+   previous-local-day boundary on a future date.
+2. Outcome-specific prose previously assumed the first run's winners. It now
+   derives the stated wins and RMSE/MAE comparisons from the audited metrics.
+   A test covers different winners and no winning horizons.
+
+The new tests failed before the fixes and the full A_live suite then passed 18/18.
+The finalized report was regenerated into `final-report`, preserving the earlier
+`final-comparison` artifact. Training code and predictions did not change; both
+training manifests still verify. No additional minor findings were deferred.
+
+The review's scope exclusions were accepted explicitly:
+
+- Physical calibration adequacy, pack accuracy and runaway performance remain
+  unvalidated. Treating this check as evidence for them would overstate the result.
+- Noise, delay, changing ambient conditions and unseen routes remain deferred.
+  Predictions under those conditions may differ substantially.
+- The frozen boosting grid remains 40/80; all 45 selections reached 80. This limits
+  conclusions about tuning and is documented without retuning to test outcomes.
+- Prior A/A_causal/B code was reviewed only where helpers are used here, with
+  regression checks; this does not establish unrelated implementation correctness.
+- AI review does not constitute independent human scientific approval.
+
+Automated
 verification establishes internal reproducibility and the implemented information
 boundary, not real-world accuracy, calibration adequacy or thermal-runaway detection.
 The manuscript, original experiment, prior correction branch and lab experiment

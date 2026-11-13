@@ -105,7 +105,7 @@ old manifests to make them pass.
 ## Saved results and checks
 
 The finalized runs are in `results/live-telemetry-2026-11-12/final-run-1` and
-`final-run-2`; the checked tables and plot are in `final-comparison`. These local
+`final-run-2`; the checked tables and plot are in `final-report`. These local
 result folders are git-ignored. Run the commands above to regenerate them.
 
 Each run saves input and script SHA-256 hashes, all output hashes, sensor readings,
@@ -139,6 +139,10 @@ A lower error at 30 minutes than at 10 minutes does not imply longer forecasting
 is generally easier: the eligible origins differ, and the deterministic cycle can
 create recurring patterns. Generalization to new routes, trucks, workloads, sensors,
 aging or ambient conditions remains untested.
+
+All 45 outer models selected 80 iterations, the upper edge of the frozen 40/80
+grid. Wider tuning could change the results. The grid was preserved for this
+comparison rather than expanded after inspecting the test scores.
 
 **No thermal-runaway event, precursor, fault response, alarm threshold, false-alarm
 rate or warning lead time is evaluated.** The result cannot substantiate a claim

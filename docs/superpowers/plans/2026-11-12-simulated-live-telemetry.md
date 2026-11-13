@@ -20,24 +20,24 @@ assumption; no manuscript edits; separate models and results; AI provenance.
 Files: A_live/telemetry.py, A_live/tests/test_live.py.
 Interfaces: generate(events,capacity,cutoff_s,a,b) -> array [time,power,current,temp,air];
 history_features(prefix,capacity,rr) -> 20 floats.
-- [ ] Add tests for fractional boundaries, reserve, future independence and malformed data.
-- [ ] Observe failure, implement and pass tests.
+- [x] Add tests for fractional boundaries, reserve, future independence and malformed data.
+- [x] Observe failure, implement and pass tests.
 
 ### Task 2: Trainer and replay
 Files: A_live/train.py, A_live/replay.py.
 Interfaces: build_examples(stream,capacity,rr,horizon) -> origins/features/targets;
 predict_history(history,capacity,rr,models) -> horizon/method predictions.
-- [ ] Test future-row mutation, 30-minute eligibility and baseline calculations.
-- [ ] Run nested boosting fits using the original selection helper.
-- [ ] Save and reload held-out models; test exact replay equality against scores.
-- [ ] Record proof hashes and fail on overwrite or data-directory output.
+- [x] Test future-row mutation, 30-minute eligibility and baseline calculations.
+- [x] Run nested boosting fits using the original selection helper.
+- [x] Save and reload held-out models; test exact replay equality against scores.
+- [x] Record proof hashes and fail on overwrite or data-directory output.
 
 ### Task 3: Verification and delivery
 Files: A_live/report.py, A_live/README.md.
-- [ ] Independently recompute metrics and decisions from prediction CSV.
-- [ ] Compare two runs including prefixes, folds, selections without timing.
-- [ ] Plot saved central-case forecasts with clearly labelled simulated temperatures.
-- [ ] Run relevant experiment tests and repository-required checks.
-- [ ] Fresh whole-branch review, fix material issues, commit only this experiment.
-- [ ] Report verified results and reproduction commands; leave paper unchanged.
+- [x] Independently recompute metrics and decisions from prediction CSV.
+- [x] Compare two runs including prefixes, folds, selections without timing.
+- [x] Plot saved central-case forecasts with clearly labelled simulated temperatures.
+- [x] Run relevant experiment tests and repository-required checks.
+- [x] Fresh whole-branch review, fix material issues, commit only this experiment.
+- [x] Report verified results and reproduction commands; leave paper unchanged.
 

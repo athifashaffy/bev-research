@@ -11,8 +11,35 @@ import math
 from collections import defaultdict
 from pathlib import Path
 import sys
+from zoneinfo import ZoneInfo
 
 from train import sha, validate_output, verify_proof, write_json
+
+
+def audit_clock(instant=None):
+    instant = instant if instant is not None else datetime.datetime.now(datetime.timezone.utc)
+    if instant.tzinfo is None:
+        raise ValueError("Audit instant must have a timezone")
+    utc = instant.astimezone(datetime.timezone.utc)
+    local = utc.astimezone(ZoneInfo("America/Toronto"))
+    return {"utc": utc.isoformat(), "date_local": local.date().isoformat(),
+            "date_display": f"{local.day} {local.strftime('%B %Y')}"}
+
+
+def comparison_narrative(metrics, decisions):
+    def horizons(values):
+        return ", ".join(f"{h // 60} min" for h in values) or "none"
+    available = sorted({k[0] for k in metrics})
+    wins = [d["horizon_s"] for d in decisions if d["boosting_beats_all_on_both"]]
+    rmse_wins = [h for h in available if all(
+        metrics[(h, "hist_gradient_boosting")]["rmse_c"] < v["rmse_c"]
+        for k, v in metrics.items() if k[0] == h and k[1] != "hist_gradient_boosting")]
+    heat_mae_wins = [h for h in available if metrics[(h, "physics_hold")]["mae_c"]
+                    < metrics[(h, "hist_gradient_boosting")]["mae_c"]]
+    return (f"Horizons where boosting beats every baseline on both pooled scores: {horizons(wins)}. "
+            f"Horizons where boosting has lower pooled RMSE than every baseline: {horizons(rmse_wins)}. "
+            f"Horizons where the heat-equation baseline has lower pooled MAE than boosting: {horizons(heat_mae_wins)}. "
+            "These are descriptive comparisons, not statistical significance tests.")
 
 
 def strip_timing(value):
@@ -51,6 +78,7 @@ def content(path):
 
 
 def audit(run1, run2, output):
+    clock = audit_clock()
     run1, run2 = Path(run1).resolve(), Path(run2).resolve()
     if run1 == run2:
         raise ValueError("Two distinct run directories are required")
@@ -121,7 +149,7 @@ def audit(run1, run2, output):
                 wins.append(case)
         per_case_wins[str(h)] = wins
     output.mkdir(parents=True)
-    verification = {"checked_date_local": "2026-11-12", "timezone": "America/Toronto",
+    verification = {"checked_date_local": clock["date_local"], "checked_utc": clock["utc"], "timezone": "America/Toronto",
         "recorded_by": "AI-authored verification, not independent human review",
         "run1": str(run1), "run2": str(run2), "exact_comparisons": compared,
         "excluded_from_byte_comparison": ["compressed headers", "elapsed_s", "PROOF timestamps/commands", "serialized model bytes"],
@@ -134,9 +162,9 @@ def audit(run1, run2, output):
     write_json(output / "verification.json", verification)
     write_json(output / "claims.json", {"prediction_source_sha256": sha(run1 / "predictions.csv.gz"), "claims": claims})
     lines = ["# Simulated live telemetry: verified results", "",
-        "Automated checks on 12 November 2026 (America/Toronto). AI-authored implementation and audit; no human scientific validation is claimed.", "",
-        "The two runs have exactly matching decompressed readings, features and predictions, metric CSVs, folds and settings. Model-selection records and summaries match after excluding elapsed time. Serialized model bytes are not required to match; each run reloads every model and checks all batch predictions, plus 135 rolling-prefix forecasts.", "",
-        f"Independently recomputed {len(claims)} numeric metric entries from {len(predictions)} saved prediction rows using Python math.fsum, matching within 1e-12 °C (counts exact). There are {len(sensors)} simulated sensor rows and 405 model fits per run.", "",
+        f"Automated checks on {clock['date_display']} (America/Toronto). AI-authored implementation and audit; no human scientific validation is claimed.", "",
+        f"The two runs have exactly matching decompressed readings, features and predictions, metric CSVs, folds and settings. Model-selection records and summaries match after excluding elapsed time. Serialized model bytes are not required to match; each run reloads every model and checks all batch predictions, plus {verification['prefix_replay_checks_per_run']} rolling-prefix forecasts.", "",
+        f"Independently recomputed {len(claims)} numeric metric entries from {len(predictions)} saved prediction rows using Python math.fsum, matching within 1e-12 °C (counts exact). There are {len(sensors)} simulated sensor rows and {summary['model_fit_count']} model fits per run.", "",
         "All table entries are RMSE / MAE in °C. Win requires beating all three baselines on both scores, pooled across held-out configurations.", "",
         "| Ahead | Persistence | Linear trend | Heat equation | Boosting | Win? |",
         "|---|---|---|---|---|---|"]
@@ -145,7 +173,7 @@ def audit(run1, run2, output):
         cells = [f'{metrics[(h,m)]["rmse_c"]:.6f} / {metrics[(h,m)]["mae_c"]:.6f}'
                  for m in ("persistence", "linear_trend", "physics_hold", "hist_gradient_boosting")]
         lines.append(f'| {h//60} min | ' + ' | '.join(cells) + (' | Yes |' if d["boosting_beats_all_on_both"] else ' | No |'))
-    lines += ["", "Boosting wins at 5, 10 and 30 minutes. It has lower pooled RMSE at every horizon, but the heat-equation baseline has lower pooled MAE at 1 and 2 minutes. These are descriptive comparisons, not statistical significance tests.", "",
+    lines += ["", comparison_narrative(metrics, decisions), "",
         "Whole-case wins (both metrics against every baseline): " + "; ".join(f"{int(h)//60} min: {len(v)}/9" for h,v in per_case_wins.items()) + ".", "",
         f"Generated reference-cell temperature range: {min(temperatures):.8f} to {max(temperatures):.8f} °C. These tiny errors reflect an ideal, low-amplitude synthetic signal, not demonstrated real-sensor accuracy.", "",
         "## Interpretation limits", "",
@@ -155,7 +183,7 @@ def audit(run1, run2, output):
         "![Central configuration, simulated forecasts](central_case.png)"]
     (output / "RESULTS.md").write_text("\n".join(lines) + "\n")
     make_plot(sensors, predictions, output / "central_case.png")
-    write_json(output / "PROOF.json", {"utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    write_json(output / "PROOF.json", {"utc": clock["utc"],
         "command": [sys.executable, *sys.argv], "recorded_by": "AI-assisted A_live/report.py",
         "inputs_sha256": {str(p): sha(p) for p in [run1 / "PROOF.json", run2 / "PROOF.json", Path(__file__)]},
         "outputs_sha256": {p.name: sha(p) for p in sorted(output.iterdir()) if p.is_file()}})
