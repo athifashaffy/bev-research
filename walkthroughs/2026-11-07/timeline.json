@@ -1,0 +1,573 @@
+{
+  "duration": 794.0834013605439,
+  "chapters": [
+    {
+      "scene": 0,
+      "start": 0,
+      "title": "What the experiment actually did"
+    },
+    {
+      "scene": 1,
+      "start": 39.74616780045351,
+      "title": "The underground route we represented"
+    },
+    {
+      "scene": 2,
+      "start": 84.01673469387754,
+      "title": "Why there are nine cases"
+    },
+    {
+      "scene": 3,
+      "start": 130.10648526077097,
+      "title": "What HAULSIM records"
+    },
+    {
+      "scene": 4,
+      "start": 176.33641723356007,
+      "title": "Apply the battery reserve after the run"
+    },
+    {
+      "scene": 5,
+      "start": 239.57346938775507,
+      "title": "Rougher roads use more energy"
+    },
+    {
+      "scene": 6,
+      "start": 283.89873015873013,
+      "title": "How much work fits before the reserve?"
+    },
+    {
+      "scene": 7,
+      "start": 332.062902494331,
+      "title": "From event energy to estimated current"
+    },
+    {
+      "scene": 8,
+      "start": 378.647619047619,
+      "title": "How the temperature calculation works"
+    },
+    {
+      "scene": 9,
+      "start": 423.5032653061224,
+      "title": "Why the predicted rise is so small"
+    },
+    {
+      "scene": 10,
+      "start": 485.37900226757364,
+      "title": "What the forecasting models learn"
+    },
+    {
+      "scene": 11,
+      "start": 542.6359637188208,
+      "title": "Read the actual-versus-predicted chart"
+    },
+    {
+      "scene": 12,
+      "start": 579.6024943310656,
+      "title": "Did machine learning beat persistence?"
+    },
+    {
+      "scene": 13,
+      "start": 631.0762358276642,
+      "title": "What happened on measured cell data?"
+    },
+    {
+      "scene": 14,
+      "start": 677.2112018140587,
+      "title": "Where thermal-runaway data fit"
+    },
+    {
+      "scene": 15,
+      "start": 733.2777777777775,
+      "title": "What this contributes, and what comes next"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "01_01",
+      "scene": 0,
+      "text": "Athif, let us walk through the experiment from beginning to end. The research has three main steps: simulate the truck, calculate an assumed temperature response, and test whether that response can be forecast.",
+      "start": 0,
+      "end": 14.476961451247165,
+      "duration": 14.476961451247165,
+      "frame": "frames/01_01.png"
+    },
+    {
+      "id": "01_02",
+      "scene": 0,
+      "text": "The key is to remember which numbers come from the haulage simulator, which come from a thermal equation, and which are actual laboratory measurements. They are different kinds of evidence.",
+      "start": 14.476961451247165,
+      "end": 26.409160997732425,
+      "duration": 11.93219954648526,
+      "frame": "frames/01_02.png"
+    },
+    {
+      "id": "01_03",
+      "scene": 0,
+      "text": "This video explains the saved October experiments. It does not represent a new mine trial or a new simulation run. We will use one case throughout so you can see exactly how the pieces connect.",
+      "start": 26.409160997732425,
+      "end": 39.74616780045351,
+      "duration": 13.337006802721088,
+      "frame": "frames/01_03.png"
+    },
+    {
+      "id": "02_01",
+      "scene": 1,
+      "text": "The mine context is New Afton in British Columbia. The model uses a published route length of about one point five kilometres each way and a rise of 135 metres.",
+      "start": 39.74616780045351,
+      "end": 51.493650793650794,
+      "duration": 11.747482993197279,
+      "frame": "frames/02_01.png"
+    },
+    {
+      "id": "02_02",
+      "scene": 1,
+      "text": "A steep part is represented at sixteen percent grade. That is a ramp-segment grade, not the average over the whole route. The road alignment and remaining grades were completed with assumptions.",
+      "start": 51.493650793650794,
+      "end": 64.3154648526077,
+      "duration": 12.821814058956916,
+      "frame": "frames/02_02.png"
+    },
+    {
+      "id": "02_03",
+      "scene": 1,
+      "text": "The experiment uses one truck carrying forty-five tonnes, with the historical Z fifty battery configuration as its reference. Loading times, speeds, efficiency and auxiliary power are configured inputs. This is a New Afton-informed scenario, not a surveyed replica of the mine.",
+      "start": 64.3154648526077,
+      "end": 84.01673469387754,
+      "duration": 19.70126984126984,
+      "frame": "frames/02_03.png"
+    },
+    {
+      "id": "03_01",
+      "scene": 2,
+      "text": "The nine cases come from three battery-energy configurations, crossed with three rolling-resistance settings. The reference battery is 354 kilowatt hours. The other two are twenty percent smaller and twenty percent larger.",
+      "start": 84.01673469387754,
+      "end": 99.898231292517,
+      "duration": 15.881496598639455,
+      "frame": "frames/03_01.png"
+    },
+    {
+      "id": "03_02",
+      "scene": 2,
+      "text": "Rolling resistance describes how hard the road makes the wheels work. A higher value demands more force at the same load and speed. It represents an assumed road condition, not a measurement of New Afton.",
+      "start": 99.898231292517,
+      "end": 113.53532879818593,
+      "duration": 13.637097505668933,
+      "frame": "frames/03_02.png"
+    },
+    {
+      "id": "03_03",
+      "scene": 2,
+      "text": "There is an important complication. In these saved cases, battery capacity, mass and available power also change together. We can compare whole vehicle configurations, but we cannot attribute every difference to battery capacity alone.",
+      "start": 113.53532879818593,
+      "end": 130.10648526077097,
+      "duration": 16.571156462585034,
+      "frame": "frames/03_03.png"
+    },
+    {
+      "id": "04_01",
+      "scene": 3,
+      "text": "Each case runs for 120 minutes, with one replication. There is no charging, battery swapping or regenerative braking in these nine runs. The screenshot shows the saved central case completing in the native software.",
+      "start": 130.10648526077097,
+      "end": 145.9029931972789,
+      "duration": 15.796507936507936,
+      "frame": "frames/04_01.png"
+    },
+    {
+      "id": "04_02",
+      "scene": 3,
+      "text": "The useful output is the event ledger. It records states such as loading, travelling and unloading, together with their durations and battery energy use. We also read when deliveries actually finish.",
+      "start": 145.9029931972789,
+      "end": 159.7750566893424,
+      "duration": 13.872063492063491,
+      "frame": "frames/04_02.png"
+    },
+    {
+      "id": "04_03",
+      "scene": 3,
+      "text": "HAULSIM provides this operating workload. It does not supply the cell temperatures shown later. Those are calculated outside the simulator. A completed software run is also not evidence that the chosen battery assumptions match a real truck.",
+      "start": 159.7750566893424,
+      "end": 176.33641723356007,
+      "duration": 16.56136054421769,
+      "frame": "frames/04_03.png"
+    },
+    {
+      "id": "05_01",
+      "scene": 4,
+      "text": "The raw simulator keeps hauling even after the assumed energy reserve is exhausted. That is why all nine raw runs deliver 180 tonnes, and several finish with negative reported charge. We must apply an energy limit afterward.",
+      "start": 176.33641723356007,
+      "end": 192.13283446712015,
+      "duration": 15.79641723356009,
+      "frame": "frames/05_01.png"
+    },
+    {
+      "id": "05_02",
+      "scene": 4,
+      "text": "For the central case, moving from eighty percent to twenty percent of 354 kilowatt hours gives a budget of 212 point four kilowatt hours. The corrected ledger reaches that budget at about 85 point six minutes.",
+      "start": 192.13283446712015,
+      "end": 207.85963718820858,
+      "duration": 15.726802721088434,
+      "frame": "frames/05_02.png"
+    },
+    {
+      "id": "05_03",
+      "scene": 4,
+      "text": "Three unloads have finished by then, at about twenty-four point five, forty-eight point eight, and seventy-three point one minutes. The fourth finishes too late. So the reserve-feasible result is 135 tonnes, not 180.",
+      "start": 207.85963718820858,
+      "end": 225.34648526077095,
+      "duration": 17.48684807256236,
+      "frame": "frames/05_03.png"
+    },
+    {
+      "id": "05_04",
+      "scene": 4,
+      "text": "The correction sums energy from all operating states, including stationary time omitted by the native charge indicator. It is an energy-accounting policy, not a validated electrochemical state-of-charge estimator.",
+      "start": 225.34648526077095,
+      "end": 239.57346938775507,
+      "duration": 14.226984126984126,
+      "frame": "frames/05_04.png"
+    },
+    {
+      "id": "06_01",
+      "scene": 5,
+      "text": "This chart compares energy for one complete recurring cycle, from one finished unload to the next. Each coloured line is one vehicle configuration. Moving right means increasing road resistance.",
+      "start": 239.57346938775507,
+      "end": 253.0705215419501,
+      "duration": 13.49705215419501,
+      "frame": "frames/06_01.png"
+    },
+    {
+      "id": "06_02",
+      "scene": 5,
+      "text": "Within the 354 kilowatt hour configuration, increasing resistance from two to four percent raises cycle energy from about sixty-one to seventy-two kilowatt hours. That is an eighteen point six five percent increase.",
+      "start": 253.0705215419501,
+      "end": 268.3370975056689,
+      "duration": 15.26657596371882,
+      "frame": "frames/06_02.png"
+    },
+    {
+      "id": "06_03",
+      "scene": 5,
+      "text": "This is the clearest operational result: harder rolling conditions require more energy. It matters for road maintenance, battery scheduling and feasible hauling work. It does not show that rolling resistance causes a battery fire.",
+      "start": 268.3370975056689,
+      "end": 283.89873015873013,
+      "duration": 15.561632653061224,
+      "frame": "frames/06_03.png"
+    },
+    {
+      "id": "07_01",
+      "scene": 6,
+      "text": "Once the reserve cutoff is applied, the nine cases complete between ninety and 180 tonnes. That is two to four finished loads. These differences were hidden when we looked only at the full two-hour totals.",
+      "start": 283.89873015873013,
+      "end": 298.25564625850336,
+      "duration": 14.356916099773242,
+      "frame": "frames/07_01.png"
+    },
+    {
+      "id": "07_02",
+      "scene": 6,
+      "text": "The central case uses sixty-six point seven nine kilowatt hours per recurring cycle. That is eighteen point eight seven percent of 354 kilowatt hours, close to the operator presentation reporting nineteen percent per trip.",
+      "start": 298.25564625850336,
+      "end": 313.89705215419497,
+      "duration": 15.641405895691609,
+      "frame": "frames/07_02.png"
+    },
+    {
+      "id": "07_03",
+      "scene": 6,
+      "text": "But that comparison has an unresolved denominator. If nineteen percent refers to 300 usable kilowatt hours, the operator figure is fifty-seven kilowatt hours and our result is about seventeen percent higher. Numerical closeness alone does not validate the mine model.",
+      "start": 313.89705215419497,
+      "end": 332.062902494331,
+      "duration": 18.165850340136057,
+      "frame": "frames/07_03.png"
+    },
+    {
+      "id": "08_01",
+      "scene": 7,
+      "text": "Take one loaded-travel event from the central run. It uses about fifty-eight point nine three kilowatt hours over eleven point three two minutes. Dividing energy by time in hours gives about 312 point four four kilowatts.",
+      "start": 332.062902494331,
+      "end": 347.7495691609977,
+      "duration": 15.686666666666666,
+      "frame": "frames/08_01.png"
+    },
+    {
+      "id": "08_02",
+      "scene": 7,
+      "text": "We then used an assumed mapping: two point five ampere hours, the reference cell capacity, multiplied by power divided by nominal pack energy. That produces about two point two one amperes for the reference cell.",
+      "start": 347.7495691609977,
+      "end": 362.55151927437635,
+      "duration": 14.801950113378684,
+      "frame": "frames/08_02.png"
+    },
+    {
+      "id": "08_03",
+      "scene": 7,
+      "text": "This is the equivalent-current assumption your professor questioned. It is not the actual truck current. Actual pack current would need pack power and voltage; individual cell current also depends on the series and parallel arrangement and current sharing.",
+      "start": 362.55151927437635,
+      "end": 378.647619047619,
+      "duration": 16.09609977324263,
+      "frame": "frames/08_03.png"
+    },
+    {
+      "id": "09_01",
+      "scene": 8,
+      "text": "The thermal model is a heat balance. Electrical current generates heat, while cooling removes heat when the cell is warmer than the surrounding air. The difference changes the modelled cell temperature over time.",
+      "start": 378.647619047619,
+      "end": 392.08494331065754,
+      "duration": 13.437324263038548,
+      "frame": "frames/09_01.png"
+    },
+    {
+      "id": "09_02",
+      "scene": 8,
+      "text": "In this simple equation, the heating term increases with current squared. Doubling the assumed current would quadruple that term if other inputs stayed fixed. Cooling increases with the cell-to-air temperature difference.",
+      "start": 392.08494331065754,
+      "end": 406.0868480725623,
+      "duration": 14.001904761904761,
+      "frame": "frames/09_02.png"
+    },
+    {
+      "id": "09_03",
+      "scene": 8,
+      "text": "Two coefficient ratios were fitted to a published A123 cell pulse record. Other driving records from that same cell were compared afterward. This does not identify a full truck pack resistance, thermal mass, cooling system or internal hotspot temperature.",
+      "start": 406.0868480725623,
+      "end": 423.5032653061224,
+      "duration": 17.416417233560093,
+      "frame": "frames/09_03.png"
+    },
+    {
+      "id": "10_01",
+      "scene": 9,
+      "text": "This curve is the calculated reference-cell surface temperature for the central haulage case. Travelling raises the calculated heating input, and quieter periods allow cooling. The curve is generated from the event ledger and the fitted equation.",
+      "start": 423.5032653061224,
+      "end": 438.98970521541946,
+      "duration": 15.48643990929705,
+      "frame": "frames/10_01.png"
+    },
+    {
+      "id": "10_02",
+      "scene": 9,
+      "text": "With air and initial temperature fixed at twenty-five degrees, the nominal rises across the nine cases are only about zero point zero four three to zero point zero nine three degrees.",
+      "start": 438.98970521541946,
+      "end": 450.4119727891156,
+      "duration": 11.422267573696145,
+      "frame": "frames/10_02.png"
+    },
+    {
+      "id": "10_03",
+      "scene": 9,
+      "text": "The separate same-cell comparison errors are around zero point one one degrees, larger than these predicted rises. Those errors are not truck uncertainty bounds, but they show why the tiny configuration differences cannot support confident physical claims about real packs.",
+      "start": 450.4119727891156,
+      "end": 467.7030839002267,
+      "duration": 17.291111111111114,
+      "frame": "frames/10_03.png"
+    },
+    {
+      "id": "10_04",
+      "scene": 9,
+      "text": "A sensitivity exercise varied heating, cooling and air assumptions. It produced 729 parameter assignments, not 729 new mine experiments. It does not model internal fault chemistry or prove that a battery is safe.",
+      "start": 467.7030839002267,
+      "end": 485.37900226757364,
+      "duration": 17.67591836734694,
+      "frame": "frames/10_04.png"
+    },
+    {
+      "id": "11_01",
+      "scene": 10,
+      "text": "Now we ask a different question. Given the last sixty seconds of temperature, equivalent current and air temperature, can a model predict the temperature one, two, five or ten minutes ahead?",
+      "start": 485.37900226757364,
+      "end": 498.3713378684807,
+      "duration": 12.99233560090703,
+      "frame": "frames/11_01.png"
+    },
+    {
+      "id": "11_02",
+      "scene": 10,
+      "text": "The simple baseline is persistence: predict that the future temperature stays equal to its current value. We also tested a recent linear trend and a physics forecast that holds the current inputs constant.",
+      "start": 498.3713378684807,
+      "end": 511.4630839002267,
+      "duration": 13.09174603174603,
+      "frame": "frames/11_02.png"
+    },
+    {
+      "id": "11_03",
+      "scene": 10,
+      "text": "Ridge regression learns a regularized linear relationship. Gradient boosting combines small decision trees. One whole vehicle configuration is held out at a time, and model settings are selected using only the other eight.",
+      "start": 511.4630839002267,
+      "end": 526.2797732426303,
+      "duration": 14.816689342403627,
+      "frame": "frames/11_03.png"
+    },
+    {
+      "id": "11_04",
+      "scene": 10,
+      "text": "The exact benchmark used the archived scikit-learn workflow. Its training targets are the generated temperature curves. Successful prediction here means learning patterns in this simulated system, not demonstrating accuracy on a real mining battery.",
+      "start": 526.2797732426303,
+      "end": 542.6359637188208,
+      "duration": 16.356190476190477,
+      "frame": "frames/11_04.png"
+    },
+    {
+      "id": "12_01",
+      "scene": 11,
+      "text": "Here is the five-minute example for the central configuration. The target curve is what the thermal equation actually generated. The other curves are the forecast and the persistence baseline.",
+      "start": 542.6359637188208,
+      "end": 554.9579138321994,
+      "duration": 12.321950113378684,
+      "frame": "frames/12_01.png"
+    },
+    {
+      "id": "12_02",
+      "scene": 11,
+      "text": "Each forecast was issued five minutes earlier, using only the information available then. The curves are plotted at the future time being predicted, so we compare like with like.",
+      "start": 554.9579138321994,
+      "end": 566.9003174603173,
+      "duration": 11.942403628117914,
+      "frame": "frames/12_02.png"
+    },
+    {
+      "id": "12_03",
+      "scene": 11,
+      "text": "Notice the small vertical scale. A close visual fit on this graph can still represent only a few hundredths of a degree. Calling the target actual does not make it a measured truck temperature.",
+      "start": 566.9003174603173,
+      "end": 579.6024943310656,
+      "duration": 12.702176870748298,
+      "frame": "frames/12_03.png"
+    },
+    {
+      "id": "13_01",
+      "scene": 12,
+      "text": "At five minutes, persistence has a root mean squared error of about zero point zero two one five degrees. Boosting reduces it to about zero point zero zero four nine degrees.",
+      "start": 579.6024943310656,
+      "end": 591.869886621315,
+      "duration": 12.267392290249433,
+      "frame": "frames/13_01.png"
+    },
+    {
+      "id": "13_02",
+      "scene": 12,
+      "text": "At ten minutes, the corresponding errors are about zero point zero three five one and zero point zero zero seven zero degrees. Boosting also improves the other main error measure at these horizons.",
+      "start": 591.869886621315,
+      "end": 605.1119274376415,
+      "duration": 13.24204081632653,
+      "frame": "frames/13_02.png"
+    },
+    {
+      "id": "13_03",
+      "scene": 12,
+      "text": "There is a one-minute exception: the held-input physics baseline has lower mean absolute error than boosting. So we should not say that machine learning wins every comparison.",
+      "start": 605.1119274376415,
+      "end": 616.439319727891,
+      "duration": 11.327392290249433,
+      "frame": "frames/13_03.png"
+    },
+    {
+      "id": "13_04",
+      "scene": 12,
+      "text": "The result is useful as a reproducible forecasting benchmark. But every forecast is being judged against the same assumed temperature generator. Accurate reproduction of that generator is not independent physical validation.",
+      "start": 616.439319727891,
+      "end": 631.0762358276642,
+      "duration": 14.636916099773241,
+      "frame": "frames/13_04.png"
+    },
+    {
+      "id": "14_01",
+      "scene": 13,
+      "text": "We also have a separate forecast comparison using recorded A123 cell temperatures. It uses different training and feature settings, so it should not be mixed into the generated-data benchmark.",
+      "start": 631.0762358276642,
+      "end": 644.1133333333331,
+      "duration": 13.037097505668934,
+      "frame": "frames/14_01.png"
+    },
+    {
+      "id": "14_02",
+      "scene": 13,
+      "text": "For one driving record, the five-minute error is about zero point two eight eight degrees for persistence, versus zero point five zero nine for boosting. For the other, it is about zero point three seven three versus zero point six zero five.",
+      "start": 644.1133333333331,
+      "end": 660.405124716553,
+      "duration": 16.291791383219955,
+      "frame": "frames/14_02.png"
+    },
+    {
+      "id": "14_03",
+      "scene": 13,
+      "text": "Persistence is better in these comparisons. These were already inspected records from the same cell, not untouched independent pack validation. The result warns us that success on generated curves does not automatically transfer to measured battery behaviour.",
+      "start": 660.405124716553,
+      "end": 677.2112018140587,
+      "duration": 16.80607709750567,
+      "frame": "frames/14_03.png"
+    },
+    {
+      "id": "15_01",
+      "scene": 14,
+      "text": "The earlier warning analysis is a separate branch. It tested fixed temperature and temperature-rise rules on modelled normal traces and published lithium iron phosphate laboratory heating and abuse records.",
+      "start": 677.2112018140587,
+      "end": 690.0778231292514,
+      "duration": 12.866621315192743,
+      "frame": "frames/15_01.png"
+    },
+    {
+      "id": "15_02",
+      "scene": 14,
+      "text": "The records include twenty-seven Sheffield cell tests and six temperature channels from one TUM module experiment. Six channels do not mean six independent module experiments.",
+      "start": 690.0778231292514,
+      "end": 701.9199092970518,
+      "duration": 11.842086167800453,
+      "frame": "frames/15_02.png"
+    },
+    {
+      "id": "15_03",
+      "scene": 14,
+      "text": "The rules responded to recorded heating, but the evidence did not provide a verified independent runaway-onset reference. Therefore we cannot claim physical warning lead time, missed-event rate or field false alarms from that analysis.",
+      "start": 701.9199092970518,
+      "end": 717.1364172335598,
+      "duration": 15.216507936507936,
+      "frame": "frames/15_03.png"
+    },
+    {
+      "id": "15_04",
+      "scene": 14,
+      "text": "Also, normal haulage heating does not include every failure mechanism. An electrical isolation fault or a local internal fault can develop while the pack average still looks normal. Temperature forecasting alone has not solved runaway prediction.",
+      "start": 717.1364172335598,
+      "end": 733.2777777777775,
+      "duration": 16.141360544217687,
+      "frame": "frames/15_04.png"
+    },
+    {
+      "id": "16_01",
+      "scene": 15,
+      "text": "The strongest current contribution is operational: it shows how assumed battery configurations and road resistance affect energy use and work completed before an energy reserve.",
+      "start": 733.2777777777775,
+      "end": 744.3350566893421,
+      "duration": 11.057278911564625,
+      "frame": "frames/16_01.png"
+    },
+    {
+      "id": "16_02",
+      "scene": 15,
+      "text": "The thermal and forecasting work provides an exploratory calculation chain and a benchmark. It helps identify what must be measured, especially pack voltage and current, cell arrangement, cooling conditions and temperatures during known operating cycles.",
+      "start": 744.3350566893421,
+      "end": 760.906303854875,
+      "duration": 16.57124716553288,
+      "frame": "frames/16_02.png"
+    },
+    {
+      "id": "16_03",
+      "scene": 15,
+      "text": "A stronger thermal model would be checked against those synchronized measurements. A warning model would additionally require independently labelled failure experiments and representative normal-operation data.",
+      "start": 760.906303854875,
+      "end": 773.2628117913829,
+      "duration": 12.356507936507937,
+      "frame": "frames/16_03.png"
+    },
+    {
+      "id": "16_04",
+      "scene": 15,
+      "text": "When you explain the work, keep three statements clear: HAULSIM gives workload and energy. An assumed laboratory-cell model generates temperature. The forecasting models are tested against that generated temperature. This is an initial research stage, and it has not demonstrated early thermal-runaway detection.",
+      "start": 773.2628117913829,
+      "end": 794.0834013605439,
+      "duration": 20.820589569160997,
+      "frame": "frames/16_04.png"
+    }
+  ]
+}

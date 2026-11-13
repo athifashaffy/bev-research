@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Run the New Afton case in HAULSIM</title>
+  <style>
+    :root{color-scheme:light;--ink:#172c38;--muted:#516570;--paper:#f5f7f8;--line:#d4dfe4;--teal:#086b66;--teal-soft:#e9f5f2;--amber:#765005;--amber-soft:#fff6df}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 "Segoe UI",Arial,sans-serif}a{color:var(--teal);text-underline-offset:3px}a:hover{color:#003f3c}a:focus-visible{outline:3px solid #b66a1e;outline-offset:4px}header{background:#122e3b;color:white;border-bottom:6px solid #2eaea0}header .wrap{padding-top:52px;padding-bottom:36px}.wrap{max-width:1192px;margin:auto;padding:0 32px}.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:#a7d9d2;margin:0 0 12px}h1{max-width:820px;font-size:clamp(32px,5vw,54px);line-height:1.12;letter-spacing:-.035em;margin:0 0 18px;font-weight:650}.lead{font-size:20px;line-height:1.55;max-width:870px;color:#e1edf0;margin:0 0 24px}.scope{border-left:3px solid #53b8a9;padding-left:16px;max-width:875px;color:#c5d9df;font-size:15px}.scope strong{color:white}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0 0}.fact{padding:14px 18px;border:1px solid #38515e;border-radius:8px}.fact b{display:block;font-size:25px;line-height:1.25;color:white}.fact span{font-size:13px;color:#bdd2d9}nav{background:white;border-bottom:1px solid var(--line)}nav .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;padding-top:15px;padding-bottom:15px}nav a{font-size:14px;font-weight:600;text-decoration:none}main{padding-top:34px;padding-bottom:52px}section{margin:0 0 36px;padding:28px 30px;background:white;border:1px solid var(--line);border-radius:12px;box-shadow:0 3px 12px #15323e05}h2{font-size:27px;line-height:1.25;letter-spacing:-.02em;margin:0 0 14px;display:flex;gap:12px;align-items:baseline}h2 .number{flex:none;font-size:14px;line-height:28px;width:28px;border-radius:50%;text-align:center;background:var(--teal-soft);color:var(--teal);position:relative;top:-2px}h3{font-size:19px;line-height:1.35;margin:24px 0 9px}p{margin:10px 0 16px}.small{font-size:14px;color:var(--muted)}.path{font-family:Consolas,"Courier New",monospace;font-size:.88em;overflow-wrap:anywhere;background:#eef2f4;padding:2px 6px;border-radius:4px}.steps{padding-left:24px;margin:16px 0}.steps li{padding-left:5px;margin:10px 0}.notice{padding:14px 18px;border-radius:8px;margin:18px 0;background:var(--teal-soft);border-left:4px solid #2d9386}.notice p{margin:0}.notice.caution{background:var(--amber-soft);border-color:#c99a3a;color:#674907}.table-scroll{overflow-x:auto;margin:18px 0}table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}caption{text-align:left;font-size:14px;color:var(--muted);margin:0 0 10px}th,td{text-align:left;padding:13px 15px;border:1px solid var(--line);vertical-align:top}thead th{background:#edf3f5}tbody th{font-weight:600;background:#f7f9fa;min-width:150px}td b{white-space:nowrap}.central{background:var(--teal-soft);outline:2px solid #329386;outline-offset:-2px}.badge{font-size:11px;text-transform:uppercase;letter-spacing:.06em;display:inline-block;background:#106b63;color:white;border-radius:4px;padding:2px 6px;margin:5px 0 0}.sub{display:block;color:var(--muted);font-size:13px;margin-top:4px}figure{margin:24px 0 6px}figure a{display:block;line-height:0;border:1px solid #c4d1d8;border-radius:8px;overflow:hidden;background:#e8eef1}figure img{display:block;width:100%;height:auto;min-height:80px;color:var(--ink);font-size:16px;line-height:1.5}figcaption{font-size:14px;color:var(--muted);padding:12px 2px 0;line-height:1.55}figcaption b{color:var(--ink)}.click-hint{font-size:12px;letter-spacing:.02em;display:block;color:#71808a;margin-top:4px}.settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin:18px 0}.settings div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #e2e8eb}.settings dt{color:var(--muted)}.settings dd{font-weight:600;text-align:right;margin:0}.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0}.flow article{background:#f3f7f8;border:1px solid var(--line);border-radius:8px;padding:17px}.flow h3{font-size:17px;margin:0 0 9px}.flow p{font-size:15px;margin:0}.formula{font:600 22px/1.5 "Segoe UI",Arial,sans-serif;color:var(--teal);padding:16px 0}.sources{padding-left:22px;font-size:14px;overflow-wrap:anywhere}.sources li{margin:9px 0}footer{color:var(--muted);font-size:13px;padding:0 0 40px}footer p{margin:0}.pill{display:inline-block;background:#edf3f5;border-radius:5px;padding:2px 7px;font-size:14px}.section-intro{max-width:900px}
+    @media(max-width:760px){.wrap{padding-left:18px;padding-right:18px}header .wrap{padding-top:32px}.facts{grid-template-columns:repeat(2,1fr)}section{padding:22px 18px;margin-bottom:24px}h2{font-size:23px}.lead{font-size:18px}.settings,.flow{grid-template-columns:1fr}th,td{padding:11px 12px}nav .wrap{gap:9px 18px}.fact b{font-size:23px}}
+    @media print{body{background:white;font-size:11pt}.wrap{max-width:none;padding:0}header{background:white;color:var(--ink);border-bottom:2px solid var(--teal)}header .wrap{padding:0 0 20px}.eyebrow,.lead,.scope,.scope strong,.fact b,.fact span{color:var(--ink)}nav{display:none}.facts{gap:8px}.fact{border-color:#bbb}main{padding-top:22px}section{box-shadow:none;border:0;border-radius:0;padding:0;margin-bottom:28px}h2,h3{break-after:avoid}figure,.notice,tr,.flow{break-inside:avoid}a{color:inherit}.click-hint{display:none}footer{padding:0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Private learning guide · HAULSIM 3.8 · 7 November 2026</p>
+    <h1>Run the New Afton case in HAULSIM</h1>
+    <p class="lead">Open the project, inspect the road and battery settings, then watch the truck load, haul uphill and unload. The native screenshots show where each step happens in the application.</p>
+    <p class="scope"><strong>This walkthrough follows one fresh demonstration of C100_RR03.</strong> The nine October cases are the experimental background. Showing the central case again does not constitute nine new experiments.</p>
+    <div class="facts" aria-label="Central case settings">
+      <div class="fact"><b>354 kWh</b><span>Nominal battery capacity</span></div>
+      <div class="fact"><b>3%</b><span>Uniform rolling resistance</span></div>
+      <div class="fact"><b>16%</b><span>Grade over the steep 830 m</span></div>
+      <div class="fact"><b>2 hours</b><span>Simulation horizon</span></div>
+    </div>
+  </div>
+</header>
+<nav aria-label="Walkthrough sections"><div class="wrap">
+  <a href="#live-view">Native truck view</a><a href="#cases">The nine cases</a><a href="#open">Open</a><a href="#road">Road</a><a href="#battery">Battery</a><a href="#run-setup">Run setup</a><a href="#animation">Run controls</a><a href="#results">Results</a><a href="#external">After HAULSIM</a>
+</div></nav>
+<main class="wrap">
+  <section id="live-view">
+    <h2>See the loaded truck in HAULSIM</h2>
+    <p>This is the demonstration copy running in the actual application. After travelling empty to Load A and taking a 45 t load, the truck climbs the ramp towards the crusher. The view below was paused at <strong>17 minutes 52 seconds</strong> so its operating state could be inspected.</p>
+    <figure>
+      <a href="screenshots/09_truck_closeup.png" target="_blank" rel="noopener"><img src="screenshots/09_truck_closeup.png" alt="Close view of the generic articulated truck carrying ore uphill in native HAULSIM, with its Travel Loaded equipment readout visible at 17 minutes 52 seconds." loading="eager"></a>
+      <figcaption><b>The truck is in Travel Loaded.</b> Its readout shows 8.12 km/h, cumulative distance travelled of 2.47 km and native Energy Level of 65.58%. The graphic is HAULSIM's generic articulated truck, not an OEM-specific Z50 model.<span class="click-hint">Click to inspect the original native screenshot at full size.</span></figcaption>
+    </figure>
+    <p class="small">The bottom status reads “Ready to Start” because Stop was used to pause this view; elapsed simulation time was retained. Run resumes the animation. The 9 October date in the application is the project's simulation calendar date; these demonstration captures were made on 7 November 2026.</p>
+    <div class="notice"><p><strong>The demonstration reached two simulated hours and delivered 180 t to the crusher.</strong> The completion screen and native material-movement report are shown in <a href="#results">step 6</a>.</p></div>
+  </section>
+  <section id="cases">
+    <h2>The nine-case experiment</h2>
+    <p class="section-intro">Three vehicle configurations were crossed with three assumed road resistances. The central cell below is the case used in this live walkthrough. <strong>The 16% steep grade is fixed in all nine cases.</strong></p>
+    <div class="table-scroll"><table>
+      <caption>Original October 2026 experimental matrix — one truck, one replication and 120 minutes per case.</caption>
+      <thead><tr><th scope="col">Battery configuration</th><th scope="col">RR 2%</th><th scope="col">RR 3%</th><th scope="col">RR 4%</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">C080 · 283.2 kWh<span class="sub">80% of reference capacity</span></th><td><b>C080_RR02</b></td><td><b>C080_RR03</b></td><td><b>C080_RR04</b></td></tr>
+        <tr><th scope="row">C100 · 354 kWh<span class="sub">Reference configuration</span></th><td><b>C100_RR02</b></td><td class="central"><b>C100_RR03</b><br><span class="badge">This demonstration</span></td><td><b>C100_RR04</b></td></tr>
+        <tr><th scope="row">C120 · 424.8 kWh<span class="sub">120% of reference capacity</span></th><td><b>C120_RR02</b></td><td><b>C120_RR03</b></td><td><b>C120_RR04</b></td></tr>
+      </tbody>
+    </table></div>
+    <p><strong>Read each row across to compare road resistance.</strong> Rolling resistance is uniform across each network and is an assumed road-condition input. It is not a measured New Afton surface property.</p>
+    <div class="notice caution"><p><strong>Capacity is not the only difference between rows.</strong> Battery mass, truck tare and power settings change with the capacity configuration. These are comparisons of whole vehicle configurations; their differences cannot be attributed to capacity alone.</p></div>
+  </section>
+
+  <section id="open">
+    <h2><span class="number">1</span>Open the demonstration copy</h2>
+    <p>The recording uses a separate local C100_RR03 demonstration project. To follow the clicks, open a working copy of this case in a licensed HAULSIM 3.8 installation.</p>
+    <p>The public package links the <a href="../../../reproducibility/data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb">archived C100_RR03 database</a>. It does not include the active demonstration database or its machine-specific launcher. Preserve the archived file and use a separate working copy.</p>
+  </section>
+
+  <section id="road"><p><a href="road_properties_recording/Watch.html">Watch the actual click-by-click road properties recording</a></p>
+    <h2><span class="number">2</span>Inspect the road grade and resistance</h2>
+    <ol class="steps">
+      <li>Select the <strong>Build</strong> tab. In the ribbon's <strong>Select</strong> group, choose <strong>Individual</strong>, then click a segment of the steep ramp.</li>
+      <li>In the <strong>Properties</strong> panel, read <strong>Grade = 16.00%</strong> and <strong>Rolling Resistance = 3.00%</strong>.</li>
+      <li>Look at the segment length. A selected steep segment is approximately <strong>29.64 m</strong>; the <strong>28 steep segments together total 830 m</strong>.</li>
+    </ol>
+    <figure>
+      <a href="screenshots/01_road_grade_16_percent.png" target="_blank" rel="noopener"><img src="screenshots/01_road_grade_16_percent.png" alt="Native HAULSIM road Properties showing the selected steep segment, its 16 percent grade and rolling resistance." loading="eager"></a>
+      <figcaption><b>Road Properties.</b> The length belongs to the highlighted segment. The 830 m steep section is an aggregate across 28 segments, not the length of this one selection.<span class="click-hint">Click the screenshot to open the original image at full size.</span></figcaption>
+    </figure>
+    <h3>See the route from the side</h3>
+    <p>Use <strong>Isometric</strong> in the ribbon's View group and <strong>Zoom Visible</strong> to orient yourself, then rotate the scene with a right-button drag. Pan with a left-button drag and zoom with the mouse wheel. <strong>Ctrl + right-click</strong> centres a point in the view.</p>
+    <figure>
+      <a href="screenshots/02_route_side_view.png" target="_blank" rel="noopener"><img src="screenshots/02_route_side_view.png" alt="Native HAULSIM side view showing the climb from the loading end to the crusher." loading="lazy"></a>
+      <figcaption><b>Route profile in the application.</b> The one-way route totals 1,500 m and rises 135 m. The remaining 670 m has a derived grade of about 0.577%. The plan alignment is schematic; this is a New Afton-informed scenario.<span class="click-hint">Click for the full-size native screenshot.</span></figcaption>
+    </figure>
+    <div class="notice"><p><strong>Grade and rolling resistance are different settings.</strong> Grade describes the road slope. Rolling resistance describes resistance at the tyre–road contact. This experiment changes resistance between cases while retaining the same route geometry.</p></div>
+  </section>
+
+  <section id="battery">
+    <h2><span class="number">3</span>Inspect the truck and battery</h2>
+    <ol class="steps">
+      <li>In <strong>Navigator</strong>, expand <strong>Equipment</strong>. Right-click <strong>Haulers</strong> and select <strong>Configure</strong>.</li>
+      <li>The lower grid lists the individual truck. Check <strong>Truck C100_RR03</strong> and its operating payload of <strong>45 t</strong>.</li>
+      <li>Click the <strong>Settings</strong> gear on the upper truck-type row, then open the <strong>Energy</strong> tab. Read the central-case values below.</li>
+    </ol>
+    <figure>
+      <a href="screenshots/08_fleet_payload.png" target="_blank" rel="noopener"><img src="screenshots/08_fleet_payload.png" alt="Native HAULSIM Haulers dialog showing one active Truck C100_RR03 with operating payload 45.00 tonnes and Start as its start location." loading="lazy"></a>
+      <figcaption><b>One truck carrying 45 t.</b> The lower Haulers grid shows the active individual truck and its operating payload of 45.00 t. The upper row also displays 45.00 t for this configured type; its Settings gear opens the Energy tab.<span class="click-hint">Click for the full-size native screenshot.</span></figcaption>
+    </figure>
+    <dl class="settings">
+      <div><dt>Powered by</dt><dd>Battery</dd></div><div><dt>Battery capacity</dt><dd>354 kWh</dd></div>
+      <div><dt>Initial Battery Level</dt><dd>80–80%</dd></div><div><dt>Enable Recharging Events</dt><dd>No</dd></div>
+      <div><dt>Enable Regenerative Braking</dt><dd>No</dd></div><div><dt>Minimum Battery Threshold</dt><dd>0% · inactive</dd></div>
+    </dl>
+    <figure>
+      <a href="screenshots/03_battery_settings.png" target="_blank" rel="noopener"><img src="screenshots/03_battery_settings.png" alt="Native HAULSIM truck Energy tab showing the battery settings for C100_RR03." loading="lazy"></a>
+      <figcaption><b>Battery settings for the central case.</b> There is no charging, battery swapping or regenerative braking in the nine core cases. The 20% research reserve is applied later outside HAULSIM.<span class="click-hint">Click for the full-size native screenshot.</span></figcaption>
+    </figure>
+    <p class="small">The underlying equipment-library tray has a 50 t rated capacity. This scenario's operating payload is 45 t, as displayed above. Completed material movements provide a second check after the run.</p>
+  </section>
+
+  <section id="run-setup">
+    <h2><span class="number">4</span>Check the two-hour run settings</h2>
+    <ol class="steps">
+      <li>On the <strong>Run</strong> ribbon, open <strong>Experimenter</strong>.</li>
+      <li>On <strong>Experiment Setup &amp; Run</strong>, inspect <strong>Run Time = 120 minutes</strong> and <strong>Number of Replications = 1</strong>.</li>
+      <li>Return to the main Run view for the animated demonstration. In the bottom status bar, set <strong>Duration = 2 h</strong> and press <strong>Tab</strong> to commit the entry.</li>
+    </ol>
+    <figure>
+      <a href="screenshots/04_experiment_settings.png" target="_blank" rel="noopener"><img src="screenshots/04_experiment_settings.png" alt="Native HAULSIM Experimenter showing a 120 minute run time and one replication." loading="lazy"></a>
+      <figcaption><b>Experimental horizon and replication count.</b> These fields describe a single configured case. The nine cases use separate prepared projects.<span class="click-hint">Click for the full-size native screenshot.</span></figcaption>
+    </figure>
+    <div class="notice"><p><strong>Check both places.</strong> Experimenter uses minutes. The interactive Run view uses its own duration field in hours. Confirm the animated run says 2 h before starting.</p></div>
+  </section>
+
+  <section id="animation">
+    <h2><span class="number">5</span>Run the animation and watch the truck</h2>
+    <ol class="steps">
+      <li>Set <strong>Run Speed = 0.25</strong>, as used for the captured demonstration, then click <strong>Run</strong>. At this setting, one simulated minute takes four real seconds. An uninterrupted two-hour run takes roughly eight real minutes plus preparation.</li>
+      <li>Watch <strong>Status</strong> and <strong>Elapsed Time</strong> along the bottom. Use <strong>Task Tracker</strong> to see the work assigned to the truck.</li>
+      <li>Watch the truck travel empty to <strong>Load A</strong>, load, climb the ramp with ore, unload at <strong>Crusher</strong>, and return.</li>
+      <li>Use the scene controls to zoom and rotate. Click <strong>Stop</strong> to pause for inspection; the application retains elapsed time and shows “Ready to Start”. Click <strong>Run</strong> to resume. Let the clock reach <strong>0d 02h:00min</strong> before evaluating the full-horizon result.</li>
+    </ol>
+    <figure>
+      <a href="screenshots/05_run_controls.png" target="_blank" rel="noopener"><img src="screenshots/05_run_controls.png" alt="Native HAULSIM Run tab with run controls, duration, run speed and elapsed simulation time." loading="lazy"></a>
+      <figcaption><b>Start the interactive run here.</b> Duration is 2 h and Run Speed is 0.25. Run Speed controls playback pace; it does not change the truck's configured driving speed. A value of 1.00 would show one simulated minute per real second.<span class="click-hint">Click for the full-size native screenshot.</span></figcaption>
+    </figure>
+    <p class="small">For this demonstration, the run was paused to inspect the truck, then resumed at Run Speed 5.00 to reach the two-hour horizon. The completion screenshot therefore shows 5.00 rather than the 0.25 used for the earlier animation views.</p>
+    <figure>
+      <a href="screenshots/06_truck_uphill.png" target="_blank" rel="noopener"><img src="screenshots/06_truck_uphill.png" alt="The truck hauling uphill during the fresh central-case run in native HAULSIM." loading="lazy"></a>
+      <figcaption><b>Loaded uphill travel at 15 minutes 39 seconds.</b> Status is Running, Load A has loaded 45.00 t, and the first crusher delivery has not yet completed. The native simulation clock reads 08:15:39.<span class="click-hint">Click for the full-size native screenshot.</span></figcaption>
+    </figure>
+    <h3>Read the truck's state while paused</h3>
+    <p>Hover over the truck to inspect the Equipment readout. This capture accompanies the close view at the top of the page and makes the loaded-travel state legible.</p>
+    <figure>
+      <a href="screenshots/10_truck_loaded_properties.png" target="_blank" rel="noopener"><img src="screenshots/10_truck_loaded_properties.png" alt="Enlarged native Equipment readout for Truck C100_RR03: Travel Loaded, cumulative distance 2.47 kilometres, native energy level 65.58 percent, speed 8.12 kilometres per hour." loading="lazy" style="max-width:760px;margin:auto"></a>
+      <figcaption><b>Operating state at 17 minutes 52 seconds.</b> Distance Travelled is cumulative, so it can exceed the 1.5 km one-way route length. Energy Level is the native indicator; the external reserve calculation later reconciles energy from all states.<span class="click-hint">Click for the original native Equipment readout.</span></figcaption>
+    </figure>
+  </section>
+
+  <section id="results">
+    <h2><span class="number">6</span>Inspect the completed run</h2>
+    <p><strong>This fresh central-case demonstration reached 120 simulated minutes.</strong> The native dashboard showed 225 t loaded and 180 t dumped at the crusher. The Material Movement Summary independently displayed <strong>Load A → Crusher: 180.00 t</strong>.</p>
+    <ol class="steps">
+      <li>Confirm the bottom clock reached the two-hour horizon.</li>
+      <li>Open <strong>Run → Reports → Material Movement Summary</strong>. Read the completed deliveries to the crusher and their tonnage.</li>
+      <li>Open <strong>Haul Unit State</strong> for loading, travelling, unloading and waiting durations. The underlying event records provide battery-energy usage for the next analysis step.</li>
+      <li>Save demonstration outputs separately from the October archives. Use the finished run's recorded values when describing its result.</li>
+    </ol>
+    <figure>
+      <a href="screenshots/07_run_complete.png" target="_blank" rel="noopener"><img src="screenshots/07_run_complete.png" alt="Native HAULSIM completion view for the fresh central-case demonstration." loading="lazy"></a>
+      <figcaption><b>Completed at 0d 02h:00min, simulation clock 10:00:00.</b> The dashboard shows Load A (225.00) under Total Loaded From and Crusher (180.00) under Total Dumped At. The 45 t difference is loaded material not yet counted as delivered at the cutoff.<span class="click-hint">Click for the full-size native screenshot.</span></figcaption>
+    </figure>
+    <figure>
+      <a href="screenshots/11_material_movement_report.png" target="_blank" rel="noopener"><img src="screenshots/11_material_movement_report.png" alt="Native Material Movement Summary report: source Load A, destination Crusher, Quantity 180.00 tonnes, Volume 68.18 bank cubic metres and Loose Volume 81.82 loose cubic metres." loading="lazy"></a>
+      <figcaption><b>Read Quantity (t) for delivered tonnage.</b> The Load A → Crusher row reports 180.00 t, equivalent to four 45 t deliveries. The adjacent values, 68.18 bcm and 81.82 lcm, are volumes in different units, not additional delivered tonnes.<span class="click-hint">Click to inspect the original native report.</span></figcaption>
+    </figure>
+    <p><strong>Comparison with the archive:</strong> the October C100_RR03 run also delivered 180 t over 120 minutes. The demonstration's Haul Unit Summary displayed 332.91 kWh; the archived native audit records 332.80346 kWh. This is an educational rerun, not a claim of exact numerical replication. The original research results remain in their separate archives.</p>
+    <div class="notice caution"><p><strong>The native battery indicator can pass through zero.</strong> Recharging is disabled and the configured threshold is 0%. Completion of the two-hour simulation does not mean that all its hauling is feasible within the chosen battery reserve.</p></div>
+  </section>
+
+  <section id="external">
+    <h2><span class="number">7</span>Apply the reserve, then calculate temperature outside HAULSIM</h2>
+    <p>The animation ends at a haulage result. The research continues using the saved event ledger. These downstream calculations are separate from the native run shown above.</p>
+    <div class="flow">
+      <article><h3>1 · HAULSIM events</h3><p>Read each operating state, its duration, energy use and the time a delivery finishes.</p></article>
+      <article><h3>2 · External reserve</h3><p>Sum energy across all states and stop the feasible-work calculation at 20% remaining energy.</p></article>
+      <article><h3>3 · External temperature</h3><p>Convert event power to an assumed reference-cell current, then apply the fitted heat-balance model.</p></article>
+    </div>
+    <h3>Central-case reserve budget</h3>
+    <div class="formula">(80% − 20%) × 354 kWh = 212.4 kWh</div>
+    <p>The external calculation includes stationary energy as well as travel energy. If the budget is crossed during an event, the crossing time is interpolated using that event's average power. A load counts only if unloading finishes before the cutoff.</p>
+    <p><strong>Archived central-case example:</strong> the corrected energy ledger reaches the reserve at about <strong>85.6 minutes</strong>. Three unloads have finished by then, giving <strong>135 t</strong> before reserve. The fourth delivery belongs to the full-horizon total, but falls after the reserve cutoff. These are the archived analysis values, not newly calculated results for this demonstration.</p>
+    <h3>What the temperature curve represents</h3>
+    <p>Event energy divided by event duration gives average power. The later analysis maps power divided by nominal pack energy onto a 2.5 Ah reference cell, then uses an externally fitted heat-balance model to generate temperature. This equivalent current does not identify actual truck-pack or individual-cell current.</p>
+    <p>The resulting curve is an assumed laboratory-cell temperature response driven by simulated workload. HAULSIM does not calculate that cell temperature, and the animation does not demonstrate a measured battery temperature or thermal-runaway prediction.</p>
+    <p class="small">For the full explanation of the archived reserve, thermal and forecasting stages, open the separate <a href="../Watch.html">experiment explanation video</a> or its <a href="../Transcript.txt">transcript</a>. Those materials explain archived results.</p>
+  </section>
+
+  <section id="sources">
+    <h2>Files behind this walkthrough</h2>
+    <ul class="sources">
+      <li><a href="../../../reproducibility/data/workspace/New_Afton_Experiments_2026-10-20/results/C100_RR03/native_run.hsmdb">Archived C100_RR03 database</a> — original saved results, separate from the demonstration copy.</li>
+      <li><a href="demonstration_provenance.json">Demonstration provenance</a> — source file, source hash at capture and demonstration-copy location.</li>
+      <li><a href="../../../reproducibility/data/workspace/New_Afton_Experiments_2026-10-20/run_manifest.json">Original case manifest</a> — capacities, resistance settings and archived run identities.</li>
+      <li><a href="../../../reproducibility/data/workspace/New_Afton_Experiments_2026-10-20/code/study.py">Case authoring and reserve calculation</a> — native settings and external energy-accounting policy.</li>
+      <li><a href="../evidence/C100_RR03_archived_native_audit.json">Archived C100_RR03 native audit</a> — two-hour event horizon, completed material and energy checks.</li>
+      <li><a href="../Sources.txt">Archived explanation sources</a> — provenance and limits for the downstream reserve, temperature and forecasting work.</li>
+    </ul>
+    <p class="small">Control names were checked against the installed HAULSIM 3.8 help topics “Road network”, “Run”, “Experimenter” and “Operating your mouse and keyboard”. Screenshots are native application captures; click any image to inspect its original resolution.</p>
+  </section>
+</main>
+<footer class="wrap"><p>Educational walkthrough · C100_RR03 demonstration copy · Original experiment archives remain separate.</p></footer>
+</body>
+</html>

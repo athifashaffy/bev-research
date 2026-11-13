@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "scope": "Public-copy integrity, portable links, chart regeneration against committed archived outputs",
+  "archived_chart_source_hashes_verified": 7,
+  "copied_release_files_match_manifest": 64,
+  "local_html_links_checked": 44,
+  "missing_local_links": 0,
+  "plot_data_regenerated_byte_identically": {
+    "forecast_5min_C100_RR03.csv": true,
+    "operations_9_cases.csv": true,
+    "pooled_rmse_5_10min.csv": true,
+    "temperature_C100_RR03.csv": true
+  },
+  "chart_recomputation": {
+    "nine_cases": true,
+    "factorial_3_by_3": true,
+    "finite_plotted_values": true,
+    "reserve_energy_equals_60pct_capacity": true,
+    "reserve_counts_include_initial_load": true,
+    "temperature_points": 5159,
+    "forecast_target_count": 478,
+    "forecast_exact_300s_alignment": true,
+    "forecast_targets_match_temperature_trace": true,
+    "pooled_metric_recomputation": [
+      {
+        "horizon_s": 300,
+        "method": "persistence",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.02150627725207535,
+        "recomputed_rmse_c": 0.02150627725207535
+      },
+      {
+        "horizon_s": 300,
+        "method": "ridge",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.010359130035925703,
+        "recomputed_rmse_c": 0.010359130035925703
+      },
+      {
+        "horizon_s": 300,
+        "method": "hist_gradient_boosting",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.004931417586398667,
+        "recomputed_rmse_c": 0.004931417586398667
+      },
+      {
+        "horizon_s": 600,
+        "method": "persistence",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.03507334796718637,
+        "recomputed_rmse_c": 0.03507334796718637
+      },
+      {
+        "horizon_s": 600,
+        "method": "ridge",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.01151195345365473,
+        "recomputed_rmse_c": 0.01151195345365473
+      },
+      {
+        "horizon_s": 600,
+        "method": "hist_gradient_boosting",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.007013928884675196,
+        "recomputed_rmse_c": 0.007013928884675196
+      }
+    ],
+    "source_hashes_unchanged_after_render": true
+  },
+  "video_chart_variant_checks": {
+    "nine_cases": true,
+    "factorial_3_by_3": true,
+    "finite_plotted_values": true,
+    "reserve_energy_equals_60pct_capacity": true,
+    "reserve_counts_include_initial_load": true,
+    "temperature_points": 5159,
+    "forecast_target_count": 478,
+    "forecast_exact_300s_alignment": true,
+    "forecast_targets_match_temperature_trace": true,
+    "pooled_metric_recomputation": [
+      {
+        "horizon_s": 300,
+        "method": "persistence",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.02150627725207535,
+        "recomputed_rmse_c": 0.02150627725207535
+      },
+      {
+        "horizon_s": 300,
+        "method": "ridge",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.010359130035925703,
+        "recomputed_rmse_c": 0.010359130035925703
+      },
+      {
+        "horizon_s": 300,
+        "method": "hist_gradient_boosting",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.004931417586398667,
+        "recomputed_rmse_c": 0.004931417586398667
+      },
+      {
+        "horizon_s": 600,
+        "method": "persistence",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.03507334796718637,
+        "recomputed_rmse_c": 0.03507334796718637
+      },
+      {
+        "horizon_s": 600,
+        "method": "ridge",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.01151195345365473,
+        "recomputed_rmse_c": 0.01151195345365473
+      },
+      {
+        "horizon_s": 600,
+        "method": "hist_gradient_boosting",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.007013928884675196,
+        "recomputed_rmse_c": 0.007013928884675196
+      }
+    ],
+    "source_hashes_unchanged_after_render": true,
+    "standard_chart_hashes_unchanged": true,
+    "standard_source_metadata_unchanged": true
+  },
+  "not_tested": [
+    "No HAULSIM simulation rerun",
+    "No forecasting model refit",
+    "No new physical validation",
+    "No full scientific peer review"
+  ],
+  "excluded_raw_capture_present": false
+}

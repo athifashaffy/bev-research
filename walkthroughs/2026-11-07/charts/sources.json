@@ -1,0 +1,176 @@
+{
+  "purpose": "Private educational video charts; no new experiments or model changes",
+  "dimensions_px": [
+    1600,
+    850
+  ],
+  "font": "Segoe UI with DejaVu Sans fallback",
+  "renderer": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "matplotlib": "3.11.2",
+    "numpy": "2.3.5"
+  },
+  "sources": {
+    "operations": {
+      "path": "data/derived/thermal/operations_comparison.csv",
+      "sha256": "b059b61436f4d215fbd59b48081d4304eeef35bd0b3eeac717e2d1010c37290a",
+      "relative_to_repository": "data/derived/thermal/operations_comparison.csv"
+    },
+    "temperature": {
+      "path": "data/derived/thermal/trace_C100_RR03.csv",
+      "sha256": "5481db75096a256f1292aaf8b39e2ac4d07984a519124b965efdd6242d718534",
+      "relative_to_repository": "data/derived/thermal/trace_C100_RR03.csv"
+    },
+    "predictions": {
+      "path": "data/derived/experiment_a/predictions.csv.gz",
+      "sha256": "bf1882e2672306e126cf4d2d68b8365f06090f9c3ec0e9b55df40a7b8e5218c8",
+      "relative_to_repository": "data/derived/experiment_a/predictions.csv.gz"
+    },
+    "metrics": {
+      "path": "reproducibility/data/workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/table_4_pooled_metrics.csv",
+      "sha256": "422ed82fd9c9443d2456f6352a2bf70f3233354c1d6d5f148d18591f809d3204",
+      "relative_to_repository": "reproducibility/data/workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/table_4_pooled_metrics.csv"
+    },
+    "thermal_protocol": {
+      "path": "reproducibility/data/workspace/APCOM_Draft_Experiments_2026-10-27/thermal/protocol.json",
+      "sha256": "730306f4173ae7dde3ea88312c2efcc15606294660b0f27aa4bfbad7d0c3aac4",
+      "relative_to_repository": "reproducibility/data/workspace/APCOM_Draft_Experiments_2026-10-27/thermal/protocol.json"
+    },
+    "forecast_readme": {
+      "path": "reproducibility/data/workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/RESULTS_README.txt",
+      "sha256": "a90a3cf5c76fc8b30969791bc3e64691afd389f89257f513186abf1f1d3f0510",
+      "relative_to_repository": "reproducibility/data/workspace/APCOM_Draft_Experiments_2026-10-27/experiment_a/RESULTS_README.txt"
+    },
+    "operations_definitions": {
+      "path": "reproducibility/data/workspace/APCOM_Study_2026-10-22/code/operations.py",
+      "sha256": "5c9692ba0aeee4bc28c55d4b4ae040c4b360cdfa94f1f49bd8410599452679c0",
+      "relative_to_repository": "reproducibility/data/workspace/APCOM_Study_2026-10-22/code/operations.py"
+    }
+  },
+  "charts": [
+    {
+      "file": "01_cycle_energy.png",
+      "sources": [
+        "operations",
+        "operations_definitions"
+      ],
+      "data_copy": "operations_9_cases.csv",
+      "teaching_claim": "Recurring-cycle energy increases with rolling resistance in all three archived configurations.",
+      "definition": "Completed recurring unload-end to unload-end intervals; initialization-to-first-unload is excluded.",
+      "scope": "Nine saved HAULSIM cases; capacity, mass and rating vary jointly across configuration scales.",
+      "png_sha256": "10f224eaf95c2212efcc4f61fee23574b59d10ad14713cbbed403c557e5f721f",
+      "csv_sha256": "f77b03789173b9b1d2905c4b336d81908e75b712d86b647537f28e0efc512598"
+    },
+    {
+      "file": "02_reserve_tonnes.png",
+      "sources": [
+        "operations",
+        "operations_definitions"
+      ],
+      "data_copy": "operations_9_cases.csv",
+      "teaching_claim": "Reserve-completed output ranges from 90 to 180 tonnes in the nine saved cases.",
+      "definition": "Fully completed 45-tonne deliveries before the external all-state 80% to 20% reserve cutoff, including the initial completed load.",
+      "scope": "Uses reserve_completed_tonnes, not complete_recurring_cycles multiplied by payload.",
+      "png_sha256": "4c2a4b85c57493dddee23730ba0f0ce423e9393608b5028ed9110aebc2e7844c",
+      "csv_sha256": "f77b03789173b9b1d2905c4b336d81908e75b712d86b647537f28e0efc512598"
+    },
+    {
+      "file": "03_generated_temperature.png",
+      "sources": [
+        "temperature",
+        "thermal_protocol"
+      ],
+      "data_copy": "temperature_C100_RR03.csv",
+      "teaching_claim": "C100_RR03 generated cell-model temperature peaks at 25.06808 °C with 25 °C air.",
+      "definition": "A123-equivalent cell surface model, from time zero to the case's external reserve endpoint.",
+      "scope": "Generated cell scenario; not measured or validated Z50 pack temperature.",
+      "png_sha256": "30bde8f47a6a70975b133ffcb22b9cbb36aee928e1dc0f40c136103a5e1af670",
+      "csv_sha256": "a223a3904ad9699ad7ff35c8129c716003ebb6046e66ab3b5a30c897bb030f7f"
+    },
+    {
+      "file": "04_forecast_5min.png",
+      "sources": [
+        "predictions",
+        "temperature",
+        "forecast_readme"
+      ],
+      "data_copy": "forecast_5min_C100_RR03.csv",
+      "teaching_claim": "The held-out C100_RR03 series compares five-minute predictions at the same generated target times.",
+      "definition": "All 478 eligible C100_RR03 origins at a 300-second horizon, plotted at target_s / 60. true_temperature_c is the generated target.",
+      "scope": "Whole-configuration held-out surrogate forecast; no measured-pack accuracy claim.",
+      "png_sha256": "7df11a2128faaa33933b53d448ddd9c54e16b1972c816aba8416e41525af7aa9",
+      "csv_sha256": "4ff07e9aa884d302118280683b79f2bc2ce36576d7ecea636a196e9e4406ab63"
+    },
+    {
+      "file": "05_pooled_rmse.png",
+      "sources": [
+        "metrics",
+        "predictions",
+        "forecast_readme"
+      ],
+      "data_copy": "pooled_rmse_5_10min.csv",
+      "teaching_claim": "Boosting has lower pooled RMSE than ridge and persistence at both five and ten minutes in the archived generated-target benchmark.",
+      "definition": "Exact archived pooled rmse_c values; displayed bar labels round to four decimal places. Six values independently checked against archived predictions.",
+      "scope": "Nine configuration holdouts; overlapping forecast origins do not imply independent statistical replicates.",
+      "png_sha256": "de4f3f3e63e0a8fd1269c6053ae224ca685ec8ca60bebb20702ad35c75bb1e03",
+      "csv_sha256": "9dceee7cc208bd67d661038c6f20a3ecbc3fa16284cd366c87737765a115a1cb"
+    }
+  ],
+  "validation": {
+    "nine_cases": true,
+    "factorial_3_by_3": true,
+    "finite_plotted_values": true,
+    "reserve_energy_equals_60pct_capacity": true,
+    "reserve_counts_include_initial_load": true,
+    "temperature_points": 5159,
+    "forecast_target_count": 478,
+    "forecast_exact_300s_alignment": true,
+    "forecast_targets_match_temperature_trace": true,
+    "pooled_metric_recomputation": [
+      {
+        "horizon_s": 300,
+        "method": "persistence",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.02150627725207535,
+        "recomputed_rmse_c": 0.02150627725207535
+      },
+      {
+        "horizon_s": 300,
+        "method": "ridge",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.010359130035925703,
+        "recomputed_rmse_c": 0.010359130035925703
+      },
+      {
+        "horizon_s": 300,
+        "method": "hist_gradient_boosting",
+        "n_origins": 4172,
+        "archived_rmse_c": 0.004931417586398667,
+        "recomputed_rmse_c": 0.004931417586398667
+      },
+      {
+        "horizon_s": 600,
+        "method": "persistence",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.03507334796718637,
+        "recomputed_rmse_c": 0.03507334796718637
+      },
+      {
+        "horizon_s": 600,
+        "method": "ridge",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.01151195345365473,
+        "recomputed_rmse_c": 0.01151195345365473
+      },
+      {
+        "horizon_s": 600,
+        "method": "hist_gradient_boosting",
+        "n_origins": 3902,
+        "archived_rmse_c": 0.007013928884675196,
+        "recomputed_rmse_c": 0.007013928884675196
+      }
+    ],
+    "source_hashes_unchanged_after_render": true
+  },
+  "path_note": "Source hashes retained from original generation; paths mapped to public repository layout."
+}

@@ -1,0 +1,24 @@
+{
+  "case": "C100_RR03",
+  "truck_events": 29,
+  "end_min": 120.0,
+  "completed_tonnes": 180.0,
+  "material_movements": 4,
+  "native_energy_kwh": 332.8034616660392,
+  "wheel_traction_kwh": 248.08154193203808,
+  "expected_all_state_energy_kwh": 331.86063756710365,
+  "stationary_energy_kwh": 7.253032519207996,
+  "native_final_soc_pct": -11.9633980640765,
+  "native_soc_debit_kwh": 325.55042914683077,
+  "corrected_final_soc_pct": -14.012277306790736,
+  "max_event_energy_reconstruction_error_kwh": 0.07683427823089772,
+  "total_reconstruction_error_pct": 0.2841024189694395,
+  "deliveries_min": [
+    24.485998378897317,
+    48.79426316731675,
+    73.10252795573629,
+    97.41079274415561
+  ],
+  "native_soc_missing_kwh": 7.253032519208432,
+  "missing_minus_stationary_kwh": 4.360956040727615e-13
+}

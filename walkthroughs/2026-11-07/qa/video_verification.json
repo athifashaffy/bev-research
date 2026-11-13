@@ -1,0 +1,59 @@
+{
+  "duration_seconds": 794.0834013605439,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "chapters": 16,
+  "caption_chunks": 54,
+  "full_audio_video_decode_passed": true,
+  "decoded_frame_matches": [
+    {
+      "scene": 1,
+      "time": 2,
+      "decoded_image": "decoded_01.png",
+      "mean_pixel_error_0_to_255": 1.3805396412037039
+    },
+    {
+      "scene": 5,
+      "time": 178.33641723356007,
+      "decoded_image": "decoded_05.png",
+      "mean_pixel_error_0_to_255": 1.6135614390432098
+    },
+    {
+      "scene": 8,
+      "time": 334.062902494331,
+      "decoded_image": "decoded_08.png",
+      "mean_pixel_error_0_to_255": 1.1358090599279835
+    },
+    {
+      "scene": 12,
+      "time": 544.6359637188208,
+      "decoded_image": "decoded_12.png",
+      "mean_pixel_error_0_to_255": 1.0634778485082304
+    },
+    {
+      "scene": 14,
+      "time": 633.0762358276642,
+      "decoded_image": "decoded_14.png",
+      "mean_pixel_error_0_to_255": 1.3237549832818931
+    },
+    {
+      "scene": 16,
+      "time": 735.2777777777775,
+      "decoded_image": "decoded_16.png",
+      "mean_pixel_error_0_to_255": 1.042992862654321
+    }
+  ],
+  "source_audio": {
+    "samples": 17509539,
+    "sample_rate": 22050,
+    "duration_s": 794.0834013605443,
+    "peak_dbfs": -1.4062593249282744,
+    "rms_dbfs": -20.004525258756715,
+    "clipped_samples": 0
+  },
+  "video_sha256": "5ab377062e1be35d43a35a1723f0f3f28ce46f2e1350512050aa3bbec5fb4647",
+  "video_bytes": 15244039,
+  "scope": "Private educational walkthrough of saved experiments, not a new simulation or new model validation"
+}

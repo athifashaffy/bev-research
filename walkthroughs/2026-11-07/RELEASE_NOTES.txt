@@ -1,0 +1,13 @@
+Experiment walkthrough release
+
+Open Watch.html after downloading or cloning the repository. GitHub displays HTML source rather than running the player. The videos can also be downloaded directly.
+
+The main video explains archived October outputs. Native screenshots and the separate road-properties recordings show HAULSIM 3.8. These materials do not establish measured Z50 battery temperatures or thermal-runaway detection.
+
+The two chart builders read existing committed outputs. Install the repository plotting requirements and run charts/build_charts.py followed by charts/build_video_charts.py. They regenerate teaching figures, not simulations or forecasts. Fonts and renderer versions can affect image bytes. Run python walkthroughs/2026-11-07/verify_release.py from the repository root to check links, hashes and regeneration without replacing the archived deliverables.
+
+Media capture, speech synthesis and video assembly scripts depend on the original Windows workspace and are not included as portable scientific workflows. The raw two-monitor recording, active demonstration database, intermediate WAV audio and frame caches are excluded.
+
+Codex assisted preparation and packaging. AI assistance and modelling limits remain documented in the repository provenance records. Release checks verify copying, source links and computational consistency within their stated scope.
+
+The rolling_resistance_note folder contains a separate three-page Word teaching note, six linked references and its generator. It identifies 2%, 3% and 4% as assumed sensitivity cases, not New Afton measurements. Rebuilding the note requires python-docx and the included native screenshot. The original manuscript was not edited.

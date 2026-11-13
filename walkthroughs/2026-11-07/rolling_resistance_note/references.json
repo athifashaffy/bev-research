@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-11-07",
+  "scope": "Source evidence for assumed rolling-resistance sensitivity cases; not measured New Afton values",
+  "references": [
+    {
+      "id": 1,
+      "author": "LaMarsh, Jeff / New Gold New Afton",
+      "year": "2022",
+      "title": "New Afton’s Learnings During the Implementation of Sandvik’s Battery-Electric Mobile Fleet",
+      "location": "Slide 16",
+      "url": "https://www.mining.sandvik/globalassets/campaigns/innovation-in-mining/pdf/wednesday-3-jeff-lamarsh-new-afton-bev.pdf#page=16",
+      "supports": "Historical Route A dimensions and reported net battery consumption; no rolling-resistance measurement supplied."
+    },
+    {
+      "id": 2,
+      "author": "Caterpillar",
+      "year": "2022",
+      "title": "AD30 Underground Mining Truck Technical Specifications",
+      "location": "AEXQ3472 (05-2022), page 5, Gradeability/Speed/Rimpull",
+      "url": "https://www.empire-cat.com/sites/default/files/products/documents/CM20220523-b2ea9-e564b.pdf#page=5",
+      "supports": "General guide of 2 percent rolling resistance for underground applications; not New Afton or Z50 field data."
+    },
+    {
+      "id": 3,
+      "author": "Global Mining Guidelines Group",
+      "year": "2022",
+      "title": "Recommended Practices for Battery Electric Vehicles in Underground Mining",
+      "location": "Version 3, GMG07-EM-2022, Table 9.2, printed page 94 (PDF page 107)",
+      "url": "https://gmggroup.org/wp-content/uploads/2024/08/Trolley-Assist-Systems.pdf#page=107",
+      "supports": "Example rolling resistance of 3 percent, qualified as based on situation; not a required or measured universal value."
+    },
+    {
+      "id": 4,
+      "author": "Sandvik",
+      "year": "2023",
+      "title": "TH550B Battery Electric Truck Technical Specification",
+      "location": "TS3-TH550B-01/ENG/METRIC, page 8, Grade performance",
+      "url": "https://www.mining.sandvik/globalassets/products/underground-loaders-and-trucks/pdf/th550b-technical-specifications-english.pdf#page=8",
+      "supports": "Assumed 3 percent rolling resistance in underground BEV performance estimates. Different vehicle and battery system from the historical Z50."
+    },
+    {
+      "id": 5,
+      "author": "Caterpillar",
+      "year": "n.d.",
+      "title": "Rolling Resistance Factors",
+      "location": "Rolling Resistance Percentage Table, surfaces A to C",
+      "url": "https://www.cat.com/en_US/articles/ci-articles/rolling-resistance-factors.html",
+      "supports": "4 percent for rutted/deforming dirt with about 25 mm penetration or flexing; 1.2 to 1.5 percent for very hard smooth surfaces. Generic estimating guidance."
+    },
+    {
+      "id": 6,
+      "author": "Kryton International",
+      "year": "n.d.",
+      "title": "New Afton Mine",
+      "location": "Project case study, Background and Solution",
+      "url": "https://www.kryton.com/projects/new-afton-mine/",
+      "supports": "Concrete underground passages and wear in truck turning/dumping areas. Supplier report, not a Route A pavement survey or rolling-resistance test."
+    }
+  ]
+}

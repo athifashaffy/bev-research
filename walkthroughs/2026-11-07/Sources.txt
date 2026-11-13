@@ -1,0 +1,83 @@
+YOUR HAULSIM EXPERIMENT EXPLAINED
+Evidence and reading guide for the learning video, 7 November 2026
+
+Repository paths below are relative to the repository root unless labelled walkthrough evidence.
+
+This video explains archived results. It does not run new simulations or train
+new models. Its graphics were composed from saved numerical data and a saved
+native HAULSIM screenshot. Narration is synthesized locally with Microsoft Zira.
+
+Repository snapshot used: f6c328009f73af48df09779f62138c4053c19deb
+https://github.com/athifashaffy/bev-research/tree/f6c328009f73af48df09779f62138c4053c19deb
+
+1. NINE HAULAGE CASES AND ACCOUNTING
+reproducibility/data/workspace/APCOM_Study_2026-10-22/results/operations_comparison.csv
+reproducibility/data/workspace/APCOM_Study_2026-10-22/results/operations_audit.json
+reproducibility/src/bev_research/haulage.py
+
+Reserve is applied outside HAULSIM. It is 60% of nominal energy, representing
+80% initial energy to 20% reserve. The crossing is interpolated within an event
+at its recorded average power. Deliveries count only when unloading finishes.
+The model includes one truck and one replication per case; the planned central
+repeat was not executed. Geometry and road conditions contain assumptions.
+
+2. TEMPERATURE MODEL
+reproducibility/src/bev_research/thermal_model.py
+reproducibility/docs/MODEL_AND_LIMITS.md
+reproducibility/data/workspace/APCOM_Study_2026-10-22/results/thermal_audit.json
+
+Equivalent current = 2.5 Ah * event-average kW / nominal kWh.
+This maps normalized power onto a reference cell. It does not identify actual
+pack current or the current in an actual Z50 cell. The fitted thermal model
+describes an A123-equivalent cell surface under stated assumptions. Same-cell
+comparison residuals are not uncertainty bounds for a full truck battery.
+
+3. GENERATED-TARGET FORECASTING
+reproducibility/experiments/A/train.py
+reproducibility/experiments/A/archived_reference/table_4_pooled_metrics.csv
+reproducibility/experiments/A/reproduction_run_2026-10-28/summary.json
+
+The video describes the archived scikit-learn implementation, not the separate
+NumPy reconstruction at the repository root. The October 28 refit saved 72 new
+estimators after 792 fits and reproduced archived metric tables exactly. The
+learning video uses those saved predictions. No estimator was refit for it.
+
+4. SEPARATE MEASURED-CELL FORECAST COMPARISON
+Walkthrough evidence: evidence/measured_cell/results/summary.csv
+Walkthrough evidence: evidence/measured_cell/SUMMARY.txt
+
+Different training and feature settings were used here. The records came from
+the same previously inspected cell. These results are separate from the nine
+generated HAULSIM-driven targets, not untouched independent pack validation.
+
+5. EARLIER LABORATORY WARNING WORK
+reproducibility/experiments/B/README.md
+reproducibility/experiments/B/02_Results_and_Limitations.txt
+reproducibility/data/tum/dataset/README.md
+
+Sheffield records are laboratory heating/abuse records. Their outcomes do not
+all have independently confirmed failure labels. TUM's six temperature channels
+belong to one module experiment. Responses to heating do not establish verified
+thermal-runaway lead time or field false alarms per operating hour.
+
+6. CHART PROVENANCE
+charts/sources.json and charts/sources_video.json record source paths, hashes,
+columns, filters, plotted quantities and numerical checks. Small plot-data CSVs
+and the chart-generation scripts are included in charts/. The forecast curves
+are aligned by the future target timestamp, not their issue time.
+
+7. NATIVE SCREENSHOT
+reproducibility/screenshots/C100_RR03_native_completion.png
+Copied unchanged into assets/native_completion.png. It documents the displayed
+central case; it is not evidence of nine independent physical mine tests.
+
+HOW TO EXPLAIN THE RESULT
+HAULSIM gives workload and energy. External accounting applies an energy
+reserve. An assumed laboratory-cell model generates temperature. Forecasting
+models are scored against generated temperature targets. These are initial
+research stages, not a demonstrated thermal-runaway prediction system.
+
+PUBLIC COPY
+The main learning video is a narrated explanation of saved results. The separate
+native_haulsim/road_properties_recording videos are actual continuous screen
+recordings. The raw multi-monitor capture remains private and is excluded.

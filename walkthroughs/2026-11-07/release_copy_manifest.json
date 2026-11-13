@@ -1,0 +1,468 @@
+{
+  "original_repository_snapshot": "f6c328009f73af48df09779f62138c4053c19deb",
+  "scope": "Public educational assets copied from local walkthrough; no original analysis or archive changed",
+  "records": [
+    {
+      "file": "Experiment_walkthrough.mp4",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/Experiment_walkthrough.mp4",
+      "original_sha256": "5ab377062e1be35d43a35a1723f0f3f28ce46f2e1350512050aa3bbec5fb4647",
+      "release_sha256": "5ab377062e1be35d43a35a1723f0f3f28ce46f2e1350512050aa3bbec5fb4647",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "Watch.html",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/Watch.html",
+      "original_sha256": "7b68b3296dbadee526277770a30afb41301476c040d15da9dcdcf95b81dbaca5",
+      "release_sha256": "5d7db77ba44f83601e284f070c647ce84aac1e948261b9f1031ee953b68d2692",
+      "change": "Add navigation links to new teaching note and actual road-properties recording"
+    },
+    {
+      "file": "Transcript.txt",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/Transcript.txt",
+      "original_sha256": "0d2985c98c3056b7a6d88644355e2676c775633dbe1db80b0bc604a462e5f059",
+      "release_sha256": "0d2985c98c3056b7a6d88644355e2676c775633dbe1db80b0bc604a462e5f059",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "Chapters.txt",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/Chapters.txt",
+      "original_sha256": "3175a8bf84d97b810d24c1b6404f1973c20e82d2cdde329c949e3b46180844c2",
+      "release_sha256": "3175a8bf84d97b810d24c1b6404f1973c20e82d2cdde329c949e3b46180844c2",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "Sources.txt",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/Sources.txt",
+      "original_sha256": "1086893b10d5eaf3a59654533e68c243ef711bfe20eae9392945d31200c1d6e6",
+      "release_sha256": "2692ac57871d0c93588be5773f80822576889f6a59011cf041835dd4ffee296f",
+      "change": "Replace local evidence paths and clarify public-copy media scope"
+    },
+    {
+      "file": "captions.srt",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/captions.srt",
+      "original_sha256": "975c13973f385f95b7ba2453430e3cad78986b35252b59fbee509f94c20ffeb3",
+      "release_sha256": "975c13973f385f95b7ba2453430e3cad78986b35252b59fbee509f94c20ffeb3",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "storyboard.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/storyboard.json",
+      "original_sha256": "14d3ef551abf07b9cb02fafd098c1b39d96b0958eb5e2569d865ba746653e2f2",
+      "release_sha256": "14d3ef551abf07b9cb02fafd098c1b39d96b0958eb5e2569d865ba746653e2f2",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "timeline.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/timeline.json",
+      "original_sha256": "dbdd7657a30a301e80484ca17414e2e55d627a80ea9045e40af1739b38f8d6ce",
+      "release_sha256": "dbdd7657a30a301e80484ca17414e2e55d627a80ea9045e40af1739b38f8d6ce",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "slides/01.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/slides/01.png",
+      "original_sha256": "f730506992bd14a3dc18c4d8a8f0d7f13665800b49db53caed64de4fab44933e",
+      "release_sha256": "f730506992bd14a3dc18c4d8a8f0d7f13665800b49db53caed64de4fab44933e",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "qa/video_verification.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/qa/video_verification.json",
+      "original_sha256": "5b17568b2285f7c3a0ba62e3ad43221eef89fdccccc9f3dc7d7f20795687eb7c",
+      "release_sha256": "5b17568b2285f7c3a0ba62e3ad43221eef89fdccccc9f3dc7d7f20795687eb7c",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/01_cycle_energy.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/01_cycle_energy.png",
+      "original_sha256": "10f224eaf95c2212efcc4f61fee23574b59d10ad14713cbbed403c557e5f721f",
+      "release_sha256": "10f224eaf95c2212efcc4f61fee23574b59d10ad14713cbbed403c557e5f721f",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/01_cycle_energy.svg",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/01_cycle_energy.svg",
+      "original_sha256": "371f9a085602e8bbf13cee19a0a23a14046e718315a9a48043457fb10747a1e8",
+      "release_sha256": "371f9a085602e8bbf13cee19a0a23a14046e718315a9a48043457fb10747a1e8",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/01_cycle_energy_video.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/01_cycle_energy_video.png",
+      "original_sha256": "19b55ad9fbee7db2e479503d40e8817a59f085eb0696576c9f0356e17aa9efe3",
+      "release_sha256": "19b55ad9fbee7db2e479503d40e8817a59f085eb0696576c9f0356e17aa9efe3",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/02_reserve_tonnes.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/02_reserve_tonnes.png",
+      "original_sha256": "4c2a4b85c57493dddee23730ba0f0ce423e9393608b5028ed9110aebc2e7844c",
+      "release_sha256": "4c2a4b85c57493dddee23730ba0f0ce423e9393608b5028ed9110aebc2e7844c",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/02_reserve_tonnes.svg",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/02_reserve_tonnes.svg",
+      "original_sha256": "a7d70c61dc279016feb52452f18dfacd2eca95d646ab47cd5a730c6528cc88bb",
+      "release_sha256": "a7d70c61dc279016feb52452f18dfacd2eca95d646ab47cd5a730c6528cc88bb",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/02_reserve_tonnes_video.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/02_reserve_tonnes_video.png",
+      "original_sha256": "e8bb68734d6beb394a9d198b424df2b350ff38f0e957e82d7a39466c2ce3d071",
+      "release_sha256": "e8bb68734d6beb394a9d198b424df2b350ff38f0e957e82d7a39466c2ce3d071",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/03_generated_temperature.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/03_generated_temperature.png",
+      "original_sha256": "30bde8f47a6a70975b133ffcb22b9cbb36aee928e1dc0f40c136103a5e1af670",
+      "release_sha256": "30bde8f47a6a70975b133ffcb22b9cbb36aee928e1dc0f40c136103a5e1af670",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/03_generated_temperature.svg",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/03_generated_temperature.svg",
+      "original_sha256": "0e8e12c9238c63caf46d78fccdc87e3ec5310f222361c5696ca3c6add1d8ef43",
+      "release_sha256": "0e8e12c9238c63caf46d78fccdc87e3ec5310f222361c5696ca3c6add1d8ef43",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/03_generated_temperature_video.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/03_generated_temperature_video.png",
+      "original_sha256": "d7eaa02bc806ced4de5f7e216aed68184f11f0c3a0e9261f646d38d5c5fc1534",
+      "release_sha256": "d7eaa02bc806ced4de5f7e216aed68184f11f0c3a0e9261f646d38d5c5fc1534",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/04_forecast_5min.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/04_forecast_5min.png",
+      "original_sha256": "7df11a2128faaa33933b53d448ddd9c54e16b1972c816aba8416e41525af7aa9",
+      "release_sha256": "7df11a2128faaa33933b53d448ddd9c54e16b1972c816aba8416e41525af7aa9",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/04_forecast_5min.svg",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/04_forecast_5min.svg",
+      "original_sha256": "4cb938b6da89270b9e8c42f4e7f688b0855edb399cd19ac186e1c8f67e75faea",
+      "release_sha256": "4cb938b6da89270b9e8c42f4e7f688b0855edb399cd19ac186e1c8f67e75faea",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/04_forecast_5min_video.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/04_forecast_5min_video.png",
+      "original_sha256": "0d600b6eb881718ff2c41003d937bd21dfb5c6a8388b958f5071f3c4cfec7374",
+      "release_sha256": "0d600b6eb881718ff2c41003d937bd21dfb5c6a8388b958f5071f3c4cfec7374",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/05_pooled_rmse.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/05_pooled_rmse.png",
+      "original_sha256": "de4f3f3e63e0a8fd1269c6053ae224ca685ec8ca60bebb20702ad35c75bb1e03",
+      "release_sha256": "de4f3f3e63e0a8fd1269c6053ae224ca685ec8ca60bebb20702ad35c75bb1e03",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/05_pooled_rmse.svg",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/05_pooled_rmse.svg",
+      "original_sha256": "d3f81d005a96366aea81d02f40eafdfacd204537950004c92bd859ab588eb9e0",
+      "release_sha256": "d3f81d005a96366aea81d02f40eafdfacd204537950004c92bd859ab588eb9e0",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/05_pooled_rmse_video.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/05_pooled_rmse_video.png",
+      "original_sha256": "1b200b6921f3ddc8ad2e39d7acddbc63d756455d5d3ff13c4c056ffd8bfb444e",
+      "release_sha256": "1b200b6921f3ddc8ad2e39d7acddbc63d756455d5d3ff13c4c056ffd8bfb444e",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/build_charts.py",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/build_charts.py",
+      "original_sha256": "1651b9e866067254898d87922bc3c4b93bc723d744b175f7287b798a7b442609",
+      "release_sha256": "03a38f5e79e72588f851c90f2280c19be8eb8440af0b9fb9121b14500b0dcbdb",
+      "change": "Replace machine-local dependency and source roots with repository-relative paths; plotting logic unchanged"
+    },
+    {
+      "file": "charts/build_video_charts.py",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/build_video_charts.py",
+      "original_sha256": "4c83b87bb12796f585aa3c7b24ea9485573bcb1024659bc210b5c56d50628f0a",
+      "release_sha256": "4c83b87bb12796f585aa3c7b24ea9485573bcb1024659bc210b5c56d50628f0a",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/forecast_5min_C100_RR03.csv",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/forecast_5min_C100_RR03.csv",
+      "original_sha256": "4ff07e9aa884d302118280683b79f2bc2ce36576d7ecea636a196e9e4406ab63",
+      "release_sha256": "4ff07e9aa884d302118280683b79f2bc2ce36576d7ecea636a196e9e4406ab63",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/operations_9_cases.csv",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/operations_9_cases.csv",
+      "original_sha256": "f77b03789173b9b1d2905c4b336d81908e75b712d86b647537f28e0efc512598",
+      "release_sha256": "f77b03789173b9b1d2905c4b336d81908e75b712d86b647537f28e0efc512598",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/pooled_rmse_5_10min.csv",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/pooled_rmse_5_10min.csv",
+      "original_sha256": "9dceee7cc208bd67d661038c6f20a3ecbc3fa16284cd366c87737765a115a1cb",
+      "release_sha256": "9dceee7cc208bd67d661038c6f20a3ecbc3fa16284cd366c87737765a115a1cb",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/sources.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/sources.json",
+      "original_sha256": "57b601ae4f5d6b3b0c12810dad90b45d2d1cc0ca5cf240f3a324cad9743920ff",
+      "release_sha256": "86b851bf2a6c5c674bad20f23b62443b06ae78cf991cb7394d82b4b7a8f20f24",
+      "change": "Map source paths to repository layout; preserve all source and plotted-data hashes"
+    },
+    {
+      "file": "charts/sources_video.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/sources_video.json",
+      "original_sha256": "d63af40ed247606d8e7707f3c853a9bca6e1f05fc3c36eb25146d12f98796f89",
+      "release_sha256": "c264c58b633320353064c672ba5d0f01d4bbe38c891ef619eb2fd8fe2486c010",
+      "change": "Map source paths to repository layout; preserve all source and plotted-data hashes"
+    },
+    {
+      "file": "charts/temperature_C100_RR03.csv",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/temperature_C100_RR03.csv",
+      "original_sha256": "a223a3904ad9699ad7ff35c8129c716003ebb6046e66ab3b5a30c897bb030f7f",
+      "release_sha256": "a223a3904ad9699ad7ff35c8129c716003ebb6046e66ab3b5a30c897bb030f7f",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "charts/visual_review.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/charts/visual_review.json",
+      "original_sha256": "47fef5b58f5438ed117498ed8db47d5d5c5f4d05a737b9395bdd7eaea109138a",
+      "release_sha256": "47fef5b58f5438ed117498ed8db47d5d5c5f4d05a737b9395bdd7eaea109138a",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/How_to_run.html",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/How_to_run.html",
+      "original_sha256": "7d27b4cc3bedbe7c2bdfcc38dd65c02505ede7840bf65ab245cf78b8df92e10a",
+      "release_sha256": "8528996ddba48afa9872720080b3e01273006ad7e03a192e225ad7a98191740e",
+      "change": "Replace local-only demo links with tracked archived evidence; add actual-recording navigation"
+    },
+    {
+      "file": "native_haulsim/demonstration_provenance.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/demonstration_provenance.json",
+      "original_sha256": "f77a3b27c0419b6142c0fad970c4f2c0617ef3b7b0f484b94a1e7a0fe8c7c550",
+      "release_sha256": "8bfc9f629adc4c3973def84e38b3a46d90e19cc95ec00ca937cb4d0e18f40e9c",
+      "change": "Replace absolute local paths with explicit local-only descriptions and tracked archive path; recorded values/hashes unchanged"
+    },
+    {
+      "file": "native_haulsim/screenshots/01_road_grade_16_percent.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/01_road_grade_16_percent.png",
+      "original_sha256": "9447784434279a11bb1472eeb44307acd39bef1999eb0eda27a684aa562cfc8b",
+      "release_sha256": "9447784434279a11bb1472eeb44307acd39bef1999eb0eda27a684aa562cfc8b",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/02_route_side_view.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/02_route_side_view.png",
+      "original_sha256": "418935cbdf712a7bd3a87ff804397bcae1fc68db64000e92b1cd1b9bd1616431",
+      "release_sha256": "418935cbdf712a7bd3a87ff804397bcae1fc68db64000e92b1cd1b9bd1616431",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/03_battery_settings.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/03_battery_settings.png",
+      "original_sha256": "659ee76c8b54c6f40454f67aadbaa7943dd3f74594a0685f56132cc6ab0ace2a",
+      "release_sha256": "659ee76c8b54c6f40454f67aadbaa7943dd3f74594a0685f56132cc6ab0ace2a",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/04_experiment_settings.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/04_experiment_settings.png",
+      "original_sha256": "33662e0ceb08f08eb918be97d4baf468abefa7c45f0f2376438e3738e7ccee1f",
+      "release_sha256": "33662e0ceb08f08eb918be97d4baf468abefa7c45f0f2376438e3738e7ccee1f",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/05_run_controls.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/05_run_controls.png",
+      "original_sha256": "e4aad8d9624fc8e263faabfdf28c06815f3acc510c8cf816639a2c9c46c7b82d",
+      "release_sha256": "e4aad8d9624fc8e263faabfdf28c06815f3acc510c8cf816639a2c9c46c7b82d",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/06_truck_uphill.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/06_truck_uphill.png",
+      "original_sha256": "554205f12ad189e3a73c56c8aec54bb4586933fb43c685bd6015e98cc967800c",
+      "release_sha256": "554205f12ad189e3a73c56c8aec54bb4586933fb43c685bd6015e98cc967800c",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/07_run_complete.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/07_run_complete.png",
+      "original_sha256": "a0c49a0023bf31df77ad5e751555cfeb44432285fad9fc89acc7f27b06c492be",
+      "release_sha256": "a0c49a0023bf31df77ad5e751555cfeb44432285fad9fc89acc7f27b06c492be",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/08_fleet_payload.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/08_fleet_payload.png",
+      "original_sha256": "b58ea0428e2f5d2e50a33c1906e61239731b05d109de484c90758f3c461a3161",
+      "release_sha256": "b58ea0428e2f5d2e50a33c1906e61239731b05d109de484c90758f3c461a3161",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/09_truck_closeup.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/09_truck_closeup.png",
+      "original_sha256": "93f583a776456af4845867702ae0c4a217a4e08aa4977d1a51c4cecc1094c1d6",
+      "release_sha256": "93f583a776456af4845867702ae0c4a217a4e08aa4977d1a51c4cecc1094c1d6",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/10_truck_loaded_properties.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/10_truck_loaded_properties.png",
+      "original_sha256": "e751f587080ad062fd60c11095047f64be7ceb0bcfe4669e853a7efda8905934",
+      "release_sha256": "e751f587080ad062fd60c11095047f64be7ceb0bcfe4669e853a7efda8905934",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/screenshots/11_material_movement_report.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/screenshots/11_material_movement_report.png",
+      "original_sha256": "24c0b9a1a5ae89cd984005bb6ac5d62e8a3b78e3ea6feee308d3128345fbcab9",
+      "release_sha256": "24c0b9a1a5ae89cd984005bb6ac5d62e8a3b78e3ea6feee308d3128345fbcab9",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/HAULSIM_16_percent_screen_recording.mp4",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/HAULSIM_16_percent_screen_recording.mp4",
+      "original_sha256": "64d6b59d168942aa55d45aa841103afc02683a9df8fc8c27a59db7faa6367892",
+      "release_sha256": "64d6b59d168942aa55d45aa841103afc02683a9df8fc8c27a59db7faa6367892",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/HAULSIM_16_percent_original_speed.mp4",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/HAULSIM_16_percent_original_speed.mp4",
+      "original_sha256": "7945c8510b145b940535d12fbb71480109b9cae8995b089f29de3b2aa4fbadf3",
+      "release_sha256": "7945c8510b145b940535d12fbb71480109b9cae8995b089f29de3b2aa4fbadf3",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/Watch.html",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/Watch.html",
+      "original_sha256": "286439135a5f3a3731cafad12cfea37f186894ccb7cf12c12cc22dae1dcb8799",
+      "release_sha256": "286439135a5f3a3731cafad12cfea37f186894ccb7cf12c12cc22dae1dcb8799",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/Steps.txt",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/Steps.txt",
+      "original_sha256": "a145020d4f13b5e9cd1739637f1659b0d19b486882a37957238898efdabebcdf",
+      "release_sha256": "a145020d4f13b5e9cd1739637f1659b0d19b486882a37957238898efdabebcdf",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/captions.vtt",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/captions.vtt",
+      "original_sha256": "0b25f06931c0133ca63af063f0575b0cf109c84e285fc5570314c27fbd507692",
+      "release_sha256": "0b25f06931c0133ca63af063f0575b0cf109c84e285fc5570314c27fbd507692",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/click_log.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/click_log.json",
+      "original_sha256": "cb18ddab3afe750ad2b5b741a5d6f8a1fa74c02d44d96401e0c78e1482c62ba5",
+      "release_sha256": "cb18ddab3afe750ad2b5b741a5d6f8a1fa74c02d44d96401e0c78e1482c62ba5",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/final_native_window.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/final_native_window.png",
+      "original_sha256": "57ecddaca1d98dc9b3777978321ef12b86d98a17f4939eb7e52ace520b14cbde",
+      "release_sha256": "57ecddaca1d98dc9b3777978321ef12b86d98a17f4939eb7e52ace520b14cbde",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/qa/frame_01.png",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/qa/frame_01.png",
+      "original_sha256": "6844340060f125b7403bab837b1ed649eadcf10afbcbd55a871e32754bad70be",
+      "release_sha256": "6844340060f125b7403bab837b1ed649eadcf10afbcbd55a871e32754bad70be",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "native_haulsim/road_properties_recording/qa/verification.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/native_haulsim/road_properties_recording/qa/verification.json",
+      "original_sha256": "ee7435ea1eb4df9d282437711583d19f2c23d8aa53abdeab249d473449316858",
+      "release_sha256": "ee7435ea1eb4df9d282437711583d19f2c23d8aa53abdeab249d473449316858",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "evidence/measured_cell/SUMMARY.txt",
+      "original_workspace_file": "ML_Forecasting_2026-10-27/normal_long_horizon/SUMMARY.txt",
+      "original_sha256": "8718e511ace1425941419eac1d01db0c4abbf0195e701956504d32a099dc0197",
+      "release_sha256": "bb0ffed62ac3d45e93c9624bf9262d9ff6f67e97e3162f75d169ba3edd027541",
+      "change": "Replace local-only commands with explicit archived-summary scope; numerical results unchanged"
+    },
+    {
+      "file": "evidence/measured_cell/results/summary.csv",
+      "original_workspace_file": "ML_Forecasting_2026-10-27/normal_long_horizon/results/summary.csv",
+      "original_sha256": "96f12757c2b3e175eca5ba213eacfae0e56f51611b475d3a0da8ec25836ca772",
+      "release_sha256": "96f12757c2b3e175eca5ba213eacfae0e56f51611b475d3a0da8ec25836ca772",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "evidence/measured_cell/results/metrics.csv",
+      "original_workspace_file": "ML_Forecasting_2026-10-27/normal_long_horizon/results/metrics.csv",
+      "original_sha256": "50bffe9659e4133fd6f73caf30d9bf1386bdf6d7edf8852c1cf9d72dd192c8c3",
+      "release_sha256": "50bffe9659e4133fd6f73caf30d9bf1386bdf6d7edf8852c1cf9d72dd192c8c3",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "evidence/measured_cell/results/verification.json",
+      "original_workspace_file": "ML_Forecasting_2026-10-27/normal_long_horizon/results/verification.json",
+      "original_sha256": "4645741cdfa8c6790e3eb931f9de13a914b6f055069b46334ac09f3bf353cc77",
+      "release_sha256": "4645741cdfa8c6790e3eb931f9de13a914b6f055069b46334ac09f3bf353cc77",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "evidence/C100_RR03_archived_native_audit.json",
+      "original_workspace_file": "New_Afton_Experiments_2026-10-20/results/C100_RR03/audit.json",
+      "original_sha256": "ef3ec094b00fbb5ef1c841413469be84282a388aa7f0fb8e087b25fdb6af3bdb",
+      "release_sha256": "ef3ec094b00fbb5ef1c841413469be84282a388aa7f0fb8e087b25fdb6af3bdb",
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "rolling_resistance_note/New_Afton_Rolling_Resistance_Walkthrough.docx",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/rolling_resistance_note/New_Afton_Rolling_Resistance_Walkthrough.docx",
+      "original_sha256": "180738a9150dd5771990c5a7d420ef3ace0a1dd04669f289e6de18153c95bd40",
+      "release_sha256": "180738a9150dd5771990c5a7d420ef3ace0a1dd04669f289e6de18153c95bd40",
+      "change": "byte-identical copy of new teaching note asset"
+    },
+    {
+      "file": "rolling_resistance_note/references.json",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/rolling_resistance_note/references.json",
+      "original_sha256": "71b47e0cd6740da1c0e57cd06bf58f05967d1e991ad768c9afec2c4cf5aa5043",
+      "release_sha256": "71b47e0cd6740da1c0e57cd06bf58f05967d1e991ad768c9afec2c4cf5aa5043",
+      "change": "byte-identical copy of new teaching note asset"
+    },
+    {
+      "file": "rolling_resistance_note/build_note.py",
+      "original_workspace_file": "Experiment_Walkthrough_2026-11-07/rolling_resistance_note/build_note.py",
+      "original_sha256": "debaec7e51fdf9e26878f4a5d4a133ffbd7bf7c658f784e33561ae3e73f59389",
+      "release_sha256": "debaec7e51fdf9e26878f4a5d4a133ffbd7bf7c658f784e33561ae3e73f59389",
+      "change": "byte-identical copy of new teaching note asset"
+    }
+  ],
+  "new_packaging_files": [
+    "RELEASE_NOTES.txt",
+    "release_copy_manifest.json",
+    "verify_release.py",
+    "release_verification.json"
+  ],
+  "excluded": [
+    "raw multi-monitor capture and raw QA frames",
+    "active demo model and launcher",
+    "local software binaries",
+    "WAV audio and frame intermediates",
+    "private correspondence",
+    "manuscript drafts"
+  ]
+}

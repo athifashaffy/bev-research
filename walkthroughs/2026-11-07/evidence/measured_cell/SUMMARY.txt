@@ -1,0 +1,33 @@
+NORMAL A123 LONG-HORIZON TEMPERATURE FORECASTS —27 OCTOBER2026
+
+Same-cell, previously inspected P25/P35 comparisons. No Z50 validation.
+Forecast60/120/300/600s using only origin/past measurements. All algorithms unchanged from October25.
+ML family selected only on pulse development; lower error is better. Negative improvement loses to persistence.
+
+Record  Horizon  Origins  SelectedML  ML_RMSE  Persistence_RMSE  ML_MAE  Persistence_MAE  RMSE_improvement
+P25        60s    1664  ridge      0.10860  0.06911  0.04769  0.04488  -57.1%
+P35        60s    1664  ridge      0.17441  0.09082  0.06832  0.05552  -92.0%
+P25       120s    1652  ridge      0.23627  0.12774  0.09839  0.08124  -85.0%
+P35       120s    1652  ridge      0.37995  0.16719  0.14719  0.10209  -127.3%
+P25       300s    1616  ridge      0.65203  0.28774  0.26596  0.19289  -126.6%
+P35       300s    1616  ridge      1.04046  0.37320  0.40129  0.24271  -178.8%
+P25       600s    1556  ridge      0.98448  0.49392  0.44236  0.35755  -99.3%
+P35       600s    1556  ridge      1.55359  0.63604  0.65635  0.44885  -144.3%
+
+Full five-method errors including active-origin subsets: results/metrics.csv.
+Coverage and history/label separation: results/coverage.json and development_selection.json.
+Only10minutes maximum horizon tested; overlapping opportunities are not independent trials.
+
+Limits:
+- Same three A002 A123 laboratory-cell records; P25/P35 were historically inspected, so these are separate-record comparisons, not untouched external validation.
+- One cell, two comparison records: no independent-cell, Z50 truck/pack/core/hotspot, mine, failure, runaway or warning validation.
+- Sliding origins are dependent forecast opportunities. No confidence interval or significance claim; no hour-ahead or beyond600s test.
+- Targets are last-observation-held measured surface temperature at exact60/120/300/600s. No future current/air is supplied; physics explicitly holds origin inputs.
+- Pulse gaps >2.5s remain breaks, with full60s history and horizon within one segment. Targets are never extrapolated.
+- Longer horizons use fewer complete origins, so horizon-to-horizon RMSE changes also reflect changing eligible tails; model comparisons within each horizon use identical origins.
+- Frozen physics coefficients used the full pulse historically; physics is evaluated only on separate P25/P35 records, not called development-held-out.
+- No settings or model family were selected from P25/P35 errors. Direct per-horizon ridge/boosting regressors were tuned only on chronological pulse development and refit only on pulse.
+
+Original execution commands used the local BEV workspace and are not portable in this summary-only copy.
+This folder preserves the archived comparison tables and recorded verification scope.
+It does not claim that the complete measured-cell training workflow is included here.
