@@ -199,13 +199,11 @@ def make_plot(sensors, predictions, destination):
     fig, axes = plt.subplots(2, 1, figsize=(10, 7), sharex=True, layout="constrained")
     axes[0].plot([float(r["time_s"])/60 for r in rows], [float(r["equivalent_current_a"]) for r in rows], color="#555555")
     axes[0].set_ylabel("Equivalent cell current (A)")
-    axes[0].set_title("Ideal simulated sensors: central truck configuration")
-    axes[1].plot([float(r["time_s"])/60 for r in rows], [float(r["reference_cell_temperature_c"]) for r in rows], label="Generated reference temperature", color="black", linewidth=2)
-    for method, label in [("hist_gradient_boosting", "Boosting"), ("persistence", "Persistence"), ("physics_hold", "Heat equation")]:
+    axes[1].plot([float(r["time_s"])/60 for r in rows], [float(r["reference_cell_temperature_c"]) for r in rows], label="Surrogate temperature", color="black", linewidth=2)
+    for method, label in [("hist_gradient_boosting", "Gradient boosting"), ("persistence", "Persistence"), ("physics_hold", "Thermal baseline")]:
         rr = [r for r in predictions if r["case"] == case and int(r["horizon_s"]) == 1800 and r["method"] == method]
         axes[1].plot([float(r["target_s"])/60 for r in rr], [float(r["predicted_temperature_c"]) for r in rr], label=label, alpha=.85)
-    axes[1].set(xlabel="Simulation time (minutes)", ylabel="Reference-cell temperature (°C)",
-                title="30-minute forecasts plotted at their target time")
+    axes[1].set(xlabel="Simulation time (min)", ylabel="Surrogate temperature (°C)")
     axes[1].legend(fontsize=9)
     for ax in axes:
         ax.grid(alpha=.2); ax.ticklabel_format(useOffset=False, axis="y")

@@ -40,7 +40,7 @@ def render(run, output):
         ax.set_title(f"({chr(95+rr)}) {rr}% rolling resistance", fontsize=10)
         ax.set_xlabel("Simulation time (min)")
         ax.grid(alpha=.2)
-    axes[0].set_ylabel("Reference-cell temperature rise (°C)")
+    axes[0].set_ylabel("Surrogate temperature rise (°C)")
     axes[-1].legend(fontsize=8)
     fig.savefig(output / "figure1.png", dpi=200)
     plt.close(fig)

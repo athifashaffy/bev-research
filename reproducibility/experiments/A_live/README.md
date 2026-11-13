@@ -162,6 +162,62 @@ temperature forecasting experiment that may inform later monitoring research.
 
 ## Assistance and scope
 
+### Additional cycle-based baseline, 13 November 2026
+
+`cycle_baseline.py` adds a separate, post-hoc seasonal-naive comparison. It does
+not refit boosting, alter original predictions or replace the four-method run.
+For each outer test case, the median current repetition period is estimated
+using only the eight training cases. Integer lag candidates span 600–2400 seconds
+and retain at least half of each recording as overlap. Pearson correlation
+chooses each training period; forecast errors do not choose periods. The median
+is rounded to seconds, with halves rounded up. See `CYCLE_BASELINE_PLAN.md` for
+the decisions recorded before executing this additional comparison.
+
+At origin `t`, horizon `h` and fitted period `L`, the prediction is the observed
+temperature at `t + h - L * ceil(h/L)`. If that index is negative, persistence
+is used. The function receives only the revealed temperature prefix. This is
+the [seasonal-naive method](https://otexts.com/fpp3/simple-methods.html), with an
+explicit period estimator and startup rule. It retains up to a cycle of test
+history, whereas the original methods use 60 seconds. It is not an equal-history
+comparison. The range was chosen with knowledge of earlier traces, so the new
+experiment is explicitly post-hoc.
+
+From the repository root with the pinned environment active:
+
+```sh
+python -B -m unittest discover -s reproducibility/experiments/A_live/tests -v
+python -B reproducibility/experiments/A_live/cycle_baseline.py --run results/live-telemetry-2026-11-12/final-run-1 --output results/cycle-new/run-1
+python -B reproducibility/experiments/A_live/cycle_baseline.py --run results/live-telemetry-2026-11-12/final-run-2 --output results/cycle-new/run-2
+```
+
+The source runs must first exist and pass their original hash manifests; use
+the reproduction commands above if regenerating them. Each new output includes
+all five methods' predictions, per-case and pooled scores, the training period
+estimates, source-sample times, fallback flags, protocol and a SHA-256 proof.
+Two subsets are reported: all original origins, and only origins with an available
+same-phase reading, with all methods scored on the same subset. Existing method
+scores are checked against the source run, and all new scores are cross-checked
+with `math.fsum` arithmetic to 1e-12 °C. Use new output directories for each run.
+
+Executed outputs: `results/cycle-baseline-2026-11-13/run-1` and `run-2`.
+The checked-in [results report](CYCLE_RESULTS.md) includes both comparison tables
+and the interpretation limits; full generated run directories remain git-ignored.
+Seven numerical/protocol files match exactly after gzip decompression; proof
+timestamps and source-run paths differ. The adjacent `RESULTS.md` and
+`verification.json` record results and the separate source-index/metric check.
+All 19,618 seasonal predictions referenced times at or before their forecast
+origin. Fold periods were 1,472–1,482 seconds. Individual training-record periods
+ranged from 1,438 to 1,572 seconds, with no search-boundary selections.
+
+Boosting beat this cycle baseline on pooled RMSE and MAE at every horizon.
+Against all four baselines it won on both metrics at 5, 10 and 30 minutes;
+the thermal baseline retained lower MAE at 1 and 2 minutes. The same pattern
+held after excluding fallback origins. This supports the existing descriptive
+conclusion against this particular comparator. It does not rule out adaptive
+cycle predictors, prove that boosting learned the cycle, or validate real pack
+temperatures. A fixed median period can mismatch configuration-specific timing
+and repeat the startup transient. No new calibration or runaway detection was run.
+
 ### Forecasting-only document update, 12 November 2026
 
 After the experiment was completed, the author requested that the existing Google
