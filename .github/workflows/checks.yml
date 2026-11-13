@@ -1,0 +1,37 @@
+# Runs every test suite on each push and pull request (scripts/check_all.py).
+# AI-assisted (Claude, 13 November 2026); see docs/PROVENANCE.md.
+name: checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  all-suites:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned requirements
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r reproducibility/experiments/A/requirements.txt pandas pytest
+      - name: Run all suites
+        run: python scripts/check_all.py
+
+  edge-no-dependencies:
+    # The edge forecaster must work on a bare Python with nothing installed.
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Edge tests
+        working-directory: edge
+        run: PYTHONPATH=src python -B -m unittest discover -s tests -v

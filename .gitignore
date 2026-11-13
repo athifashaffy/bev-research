@@ -1,7 +1,8 @@
 # Licence-restricted source data is never committed. Fetch it from the DOIs in
-# data/README.md and verify against data/manifest/source_checksums.json.
-data/raw/*
-!data/raw/.gitkeep
+# reconstruction/data/README.md and verify against
+# reconstruction/data/manifest/source_checksums.json.
+reconstruction/data/raw/*
+!reconstruction/data/raw/.gitkeep
 
 __pycache__/
 *.py[cod]
@@ -11,7 +12,7 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Experiment runs write here; archived references live in data/derived
+# Experiment runs write here; archived references live in reconstruction/data/derived
 results/
 .pytest_cache/
 

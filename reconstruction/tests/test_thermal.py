@@ -16,8 +16,8 @@ import pytest
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
-from bev_research import thermal  # noqa: E402
-from bev_research.config import A_COEF, B_COEF, CELL_CAPACITY_AH, TAU_S  # noqa: E402
+from bev_reconstruction import thermal  # noqa: E402
+from bev_reconstruction.config import A_COEF, B_COEF, CELL_CAPACITY_AH, TAU_S  # noqa: E402
 
 # The archived worked example: native event Id 44, case C100_RR03.
 EVENT = dict(duration_s=678.973850730553, energy_kwh=58.927842765108,

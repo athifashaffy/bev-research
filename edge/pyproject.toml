@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bev-edge"
+version = "0.1.0"
+description = "Standalone battery-temperature forecaster for on-vehicle use (standard library only)"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Athif Shaffy" }]
+dependencies = []
+
+[project.scripts]
+bev-edge = "bev_edge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

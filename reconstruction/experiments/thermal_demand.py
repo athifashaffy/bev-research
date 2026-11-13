@@ -39,8 +39,8 @@ import pandas as pd
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
-from bev_research import datasets  # noqa: E402
-from bev_research.config import (DATASHEET_OPERATING_C, RESERVE_FRACTION,
+from bev_reconstruction import datasets  # noqa: E402
+from bev_reconstruction.config import (DATASHEET_OPERATING_C, RESERVE_FRACTION,
                                  RESIDUAL_LO_C, STUDY_SCREEN_C, Z50,
                                  thermal_note)  # noqa: E402
 

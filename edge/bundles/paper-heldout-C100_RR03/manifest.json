@@ -1,0 +1,114 @@
+{
+  "format": "bev-edge-bundle-v1",
+  "name": "paper-heldout-C100_RR03",
+  "kind": "paper-heldout",
+  "label": "Paper models (A_live run of 2026-11-13, Table 2) trained WITHOUT configuration C100_RR03. Converted, not retrained. Use for exact-match testing against the saved run.",
+  "created_utc": "2026-11-13T22:52:46+00:00",
+  "created_by": "AI-assisted reproducibility/tools/build_edge_bundles.py",
+  "command": [
+    "python",
+    "tools/build_edge_bundles.py",
+    "paper",
+    "--run",
+    "results/run-2026-11-13/live",
+    "--case",
+    "C100_RR03",
+    "--out",
+    "../edge/bundles/paper-heldout-C100_RR03",
+    "--fixture",
+    "../edge/examples/C100_RR03"
+  ],
+  "horizons_s": [
+    60,
+    120,
+    300,
+    600,
+    1800
+  ],
+  "feature_names": [
+    "temperature_c_last",
+    "temperature_c_mean",
+    "temperature_c_minimum",
+    "temperature_c_maximum",
+    "temperature_c_slope_per_s",
+    "temperature_c_last_difference",
+    "equivalent_current_a_last",
+    "equivalent_current_a_mean",
+    "equivalent_current_a_minimum",
+    "equivalent_current_a_maximum",
+    "equivalent_current_a_slope_per_s",
+    "equivalent_current_a_last_difference",
+    "air_c_last",
+    "air_c_mean",
+    "air_c_minimum",
+    "air_c_maximum",
+    "air_c_slope_per_s",
+    "air_c_last_difference",
+    "capacity_kwh",
+    "rolling_resistance_pct"
+  ],
+  "history_s": 60,
+  "origin_spacing_s": 10,
+  "thermal": {
+    "a_K_per_A2_s": 4.344635339312832e-05,
+    "b_per_s": 0.002655462788692412
+  },
+  "inputs": "1 Hz reference-cell surface temperature (C), equivalent current of a 2.5 Ah reference cell (A), air temperature (C); plus pack capacity (kWh) and rolling resistance (%)",
+  "domain": "Trained on simulated A123 reference-cell temperatures generated from HAULSIM activity energy (ideal, noiseless sensors). Not trained or validated on measured truck pack data.",
+  "models": {
+    "60": {
+      "file": "h60.json",
+      "sha256": "ae26f32857b576451bb7ce007abc9051a6198aeb019dbac647f64ed8c43a1a4d",
+      "n_iter": 80,
+      "source": "C100_RR03_h60.joblib",
+      "source_sha256": "43668c60de46f3ca3803bedc907aadf2098b038d7545a766b9639dbc2770caf2"
+    },
+    "120": {
+      "file": "h120.json",
+      "sha256": "c3d3bbd4dc8f17aa76180ad223f9cbb6f166354d2880e5b16852875fdaa7c023",
+      "n_iter": 80,
+      "source": "C100_RR03_h120.joblib",
+      "source_sha256": "7c3e3e56cb08c131b90d2f3ba69bd717b6ec245295e49b877694166bcafea6ac"
+    },
+    "300": {
+      "file": "h300.json",
+      "sha256": "80149a7446def85f65329ddfd4fcc11475c1efb5d569226eaf95e9c0c529669c",
+      "n_iter": 80,
+      "source": "C100_RR03_h300.joblib",
+      "source_sha256": "4579f1dc4f59ac9b40f3ef6a8e55ec30e3476b7bde2ea59e6cd90460f17306f3"
+    },
+    "600": {
+      "file": "h600.json",
+      "sha256": "e8a63b6bf0e98d5c448da52c2b213682f0967d5ec8d187e06655f3a987eee15a",
+      "n_iter": 80,
+      "source": "C100_RR03_h600.joblib",
+      "source_sha256": "e4daefb5d00a7cc7a758cf7aa2a71e073aacf1b9e5cc4d5ece80e71af7a04483"
+    },
+    "1800": {
+      "file": "h1800.json",
+      "sha256": "dcbecb89720e1336f93199dcbea8fe9cd73e207a6286b800b0c65b2ad0bb3bd5",
+      "n_iter": 80,
+      "source": "C100_RR03_h1800.joblib",
+      "source_sha256": "f91e62b06d85b72486a07b96eb4ad9568a64b94b8ed401086f16995eb19b4278"
+    }
+  },
+  "versions": {
+    "python": "3.14.6",
+    "numpy": "2.3.5",
+    "sklearn": "1.7.2",
+    "joblib": "1.6.0",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O"
+  },
+  "held_out_case": "C100_RR03",
+  "held_out_capacity_kwh": 354.0,
+  "held_out_rr_pct": 3.0,
+  "source_run": "results/run-2026-11-13/live",
+  "source_run_proof_utc": "2026-11-13T06:42:42.287759+00:00",
+  "exact_match_rows_checked_per_horizon": {
+    "60": 4388,
+    "120": 4334,
+    "300": 4172,
+    "600": 3902,
+    "1800": 2822
+  }
+}

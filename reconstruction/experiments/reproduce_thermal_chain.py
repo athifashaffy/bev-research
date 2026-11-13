@@ -47,8 +47,8 @@ import pandas as pd
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
-from bev_research import datasets, thermal  # noqa: E402
-from bev_research.config import THERMAL_DIR, thermal_note  # noqa: E402
+from bev_reconstruction import datasets, thermal  # noqa: E402
+from bev_reconstruction.config import THERMAL_DIR, thermal_note  # noqa: E402
 
 TOLERANCE_C = 1e-6
 

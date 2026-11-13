@@ -34,13 +34,13 @@ import pandas as pd
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
-from bev_research import baselines, datasets, features, metrics, models  # noqa: E402
-from bev_research.config import HISTORY_S, HORIZONS_S, RESIDUAL_LO_C, thermal_note  # noqa: E402
+from bev_reconstruction import baselines, datasets, features, metrics, models  # noqa: E402
+from bev_reconstruction.config import HISTORY_S, HORIZONS_S, RESIDUAL_LO_C, thermal_note  # noqa: E402
 
 
 def prepare_grids(dt_s: float = 1.0) -> dict:
     """Put every configuration on a uniform 1 Hz grid."""
-    from bev_research.thermal import resample_to_grid
+    from bev_reconstruction.thermal import resample_to_grid
     traces = datasets.nominal_traces()
     grids = {}
     for case, sub in traces.groupby("case"):

@@ -2,7 +2,8 @@
 Regenerate every figure in ../figures from the derived tables in ../data.
 
 Run:
-    python code/make_figures.py
+    python code/make_figures.py                  # rewrites ../figures
+    python code/make_figures.py --out /tmp/figs  # writes elsewhere
 
 Nothing here reads licensed third-party records. Every input is a derived
 summary table produced by the APCOM experiment package and checked into
@@ -11,21 +12,10 @@ summary table produced by the APCOM experiment package and checked into
 Temperatures plotted are A123-equivalent CELL SURFACE values from a fitted
 lumped model. They are not measured or validated Sandvik Z50 pack temperatures.
 """
+import argparse
 import os
-import sys
 
-# matplotlib may be vendored inside the research workspace rather than installed.
-try:
-    import matplotlib
-except ImportError:  # pragma: no cover - environment fallback
-    for cand in (
-        r"C:\Users\athif\Documents\ChatGPT\BEV\ML_Forecasting_2026-10-25\lfp\vendor",
-        r"C:\Users\athif\Documents\ChatGPT\BEV\APCOM_TR_Warning_2026-10-16\.deps",
-    ):
-        if os.path.isdir(cand):
-            sys.path.insert(0, cand)
-            break
-    import matplotlib
+import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -557,6 +547,10 @@ def fig_rules_quiet():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Regenerate the reconstruction figures.")
+    parser.add_argument("--out", default=FIGS, help="output folder (default: ../figures)")
+    FIGS = os.path.abspath(parser.parse_args().out)
+    os.makedirs(FIGS, exist_ok=True)
     fig_nine_case_demand()
     fig_reserve_windows()
     fig_worked_example()

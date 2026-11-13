@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bev-research"
+name = "bev-reconstruction"
 version = "0.2.0"
 description = "Simulation-informed thermal demand and a forecasting benchmark for underground mining battery electric vehicles"
 readme = "README.md"

@@ -36,7 +36,7 @@ import pandas as pd
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
-from bev_research import datasets, rules  # noqa: E402
+from bev_reconstruction import datasets, rules  # noqa: E402
 
 
 def screen_modelled_normal() -> pd.DataFrame:

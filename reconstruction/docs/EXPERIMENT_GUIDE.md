@@ -1,6 +1,10 @@
 # Experiments
 
-Three entry points, each self-contained and runnable from the repository root.
+> Table numbers in this guide refer to the reconstruction's own earlier draft
+> numbering, not to the tables of the APCOM 2027 paper.
+
+Three entry points, each self-contained and runnable from the `reconstruction/`
+folder.
 All of them read from `data/derived`, which is committed, so none requires the
 licence-restricted raw datasets.
 

@@ -10,8 +10,8 @@ import pytest
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src"))
 
-from bev_research import baselines, features, metrics, models, rules  # noqa: E402
-from bev_research.config import RESIDUAL_LO_C  # noqa: E402
+from bev_reconstruction import baselines, features, metrics, models, rules  # noqa: E402
+from bev_reconstruction.config import RESIDUAL_LO_C  # noqa: E402
 
 
 # ----------------------------------------------------------------- rules

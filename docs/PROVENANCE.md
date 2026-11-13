@@ -9,7 +9,8 @@ simulation outputs, laboratory measurements or derived results; those sources
 are distinguished in the experiment guides. Human authors remain responsible
 for the submitted work and its interpretation.
 
-The root implementation is a NumPy reconstruction. The separate
+The NumPy reconstruction (in `reconstruction/` since 13 November 2026; previously
+at the repository root) is separate from the paper's code. The separate
 [`reproducibility/`](../reproducibility) workflow retains the original
 scikit-learn algorithms and a newly dated 792-fit reproduction, including 72
 newly fitted estimators. These are not recovered historical model weights.
@@ -24,3 +25,26 @@ records for those distinctions.
 Git commits preserve the recorded authorship and upload chronology. Co-author
 trailers appear where recorded; their presence or absence is not a complete
 record of assistance, experimental execution dates or personal review.
+
+## 13 November 2026: restructure and edge forecaster
+
+Claude (AI) carried out the following with the author's approval of the plan.
+These are automated checks, not personal human verification.
+
+- Moved the NumPy reconstruction from the repository root into
+  `reconstruction/` and renamed its package to `bev_reconstruction`, so that it
+  no longer shares the name `bev_research` with `reproducibility/`. Its tests
+  pass, and its four experiment scripts give byte-identical outputs before and
+  after the move. Removed two unused Windows-only fallback paths from
+  `make_figures.py` and added an `--out` option; its figures are byte-identical
+  to those of the previous script in the same environment.
+- Fixed `reproducibility/src/bev_research/cli.py` so that symlinked data folders
+  (for example macOS temporary folders) are not reported as escaping the input
+  directory. `reproducibility/FILE_MANIFEST.csv` is left as the 28 October 2026
+  snapshot, so this file and `experiments/README.md` no longer match it.
+- Added `edge/` (package `bev_edge`, AI-written), a dependency-free copy of the
+  A_live forecasting path, and `reproducibility/tools/build_edge_bundles.py`.
+  Bundle `paper-heldout-C100_RR03` converts the saved Table 2 models without
+  retraining. Bundle `deploy-all9-2026-11-13` contains new models trained on
+  13 November 2026 and is not a historical or paper estimator.
+- Added `scripts/check_all.py` and a GitHub Actions workflow that runs it.

@@ -27,7 +27,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "src"))
 
-from bev_research import datasets  # noqa: E402
+from bev_reconstruction import datasets  # noqa: E402
 
 A_COEF = 4.344635339312832e-05   # K/(A^2 s), identified as R_eff / C_eff
 B_COEF = 0.002655462788692412    # 1/s,       identified as K_eff / C_eff

@@ -9,8 +9,11 @@ assistance accurately in the provenance documentation and commit description.
 
 ## Implementations
 
-- `src/`, `experiments/` and `code/` at the repository root contain the NumPy
-  reconstruction and figure workflow added on 28 October 2026.
+- `reconstruction/` contains the NumPy reconstruction and figure workflow added
+  on 28 October 2026 (moved there from the repository root on 13 November 2026;
+  its package is `bev_reconstruction`).
+- `edge/` contains the standalone on-vehicle forecaster (`bev_edge`) added on
+  13 November 2026. It must reproduce the saved A_live forecasts exactly.
 - `reproducibility/experiments/A` retains the original scikit-learn algorithms
   in a portable trainer, with a separately dated fresh model refit.
 - `reproducibility/experiments/B` contains the archived LFP analysis and its
@@ -46,7 +49,10 @@ python -m unittest discover -s data/tum -p test_prepare_tum_csv.py -v
 python data/tum/verify_tum_csv.py --dataset data/tum/dataset
 ```
 
-Follow each Experiment A/B README for its own commands. Archive B is not
+`python scripts/check_all.py` (from the repository root) runs all of these plus
+the experiment, reconstruction and edge suites; GitHub Actions runs it on each
+push. The edge replay test must keep reproducing the saved Table 2 forecasts
+exactly. Follow each Experiment A/B README for its own commands. Archive B is not
 declared fully portable. A model newly refitted today must not be labelled an
 original historical estimator.
 

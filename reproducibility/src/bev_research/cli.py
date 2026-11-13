@@ -64,7 +64,7 @@ def _new_output(output: Path, data_directory: Path) -> None:
 
 
 def _hashes(data_root: Path, output: Path) -> None:
-    data_directory = data_root.parent
+    data_directory = data_root.parent.resolve()
     manifest = data_directory / "SOURCE_MANIFEST.json"
     content = json.loads(manifest.read_text(encoding="utf-8-sig"))
     records = content.get("files") if isinstance(content, dict) else content

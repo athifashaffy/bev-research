@@ -1,7 +1,7 @@
 """Reference predictors the learned models must beat to be worth anything.
 
 All three predict the CHANGE in temperature over the horizon, matching the
-target built in :mod:`bev_research.features`.
+target built in :mod:`bev_reconstruction.features`.
 
 These are not strawmen. On the measured A123 cell, persistence beats both
 learned models from 2 to 10 minutes. The learned models win only on the
