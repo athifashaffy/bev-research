@@ -104,6 +104,17 @@ old manifests to make them pass.
 
 ## Saved results and checks
 
+### Technical details supporting Section 2.3
+
+The two final runs used Python 3.14.6, NumPy 2.3.5, SciPy 1.16.3,
+scikit-learn 1.7.2 and joblib 1.5.2, with single-thread numerical execution.
+SHA-256 manifests identify the inputs, scripts and outputs. Every saved estimator
+was reloaded and its predictions compared with the scored outputs. A rolling-window
+replay computed forecasts from the revealed sensor history, with future readings
+excluded from predictor inputs. These details accompany the shortened
+reproducibility statement in the document; exact commands and the full dependency
+pins appear above, and the check records are described below.
+
 The finalized runs are in `results/live-telemetry-2026-11-12/final-run-1` and
 `final-run-2`; the checked tables and plot are in `final-report`. These local
 result folders are git-ignored. Run the commands above to regenerate them.
