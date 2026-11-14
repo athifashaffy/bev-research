@@ -89,7 +89,7 @@ def main():
             ax.set_xlabel("Simulation time (min)")
         fig.savefig(a.output / name, dpi=180)
         plt.close(fig)
-    print(json.dumps({"case": CASE, "sensor_rows": len(sensors), "forecasts_per_method": len(predictions) // 3,
+    print(json.dumps({"case": CASE, "sensor_rows": len(sensors), "forecasts_per_method": sum(r["method"] == METHODS[0][0] for r in predictions),
                       "output": str(a.output)}))
 
 
