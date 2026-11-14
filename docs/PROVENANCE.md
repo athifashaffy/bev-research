@@ -48,3 +48,8 @@ These are automated checks, not personal human verification.
   retraining. Bundle `deploy-all9-2026-11-13` contains new models trained on
   13 November 2026 and is not a historical or paper estimator.
 - Added `scripts/check_all.py` and a GitHub Actions workflow that runs it.
+- Added `reproducibility/experiments/A_models` (AI-written) comparing HGB with
+  ridge, random forest and a neural network on the A_live task. In the run of
+  13 November 2026 the recomputed HGB matched all 19,618 saved Table 2
+  forecasts; the neural network had the lowest pooled RMSE at every horizon.
+  The Google Doc manuscript was not changed.

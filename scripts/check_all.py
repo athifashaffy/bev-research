@@ -36,6 +36,7 @@ def suites(tmp):
         ("Experiment A_causal", REPRO, unit + ["-s", "experiments/A_causal/tests"], {}),
         ("Experiment A_live (paper)", REPRO, unit + ["-s", "experiments/A_live/tests"], {}),
         ("Experiment A_lab", REPRO, unit + ["-s", "experiments/A_lab/tests"], {}),
+        ("Experiment A_models", REPRO, unit + ["-s", "experiments/A_models/tests"], {}),
         ("Experiment B rules", REPRO / "experiments/B", unit + ["-s", "code", "-p", "test_rules.py"], {}),
         ("NumPy reconstruction", ROOT / "reconstruction", py + ["-m", "pytest", "-q", "-p", "no:cacheprovider", "tests"], {}),
         ("Edge forecaster", ROOT / "edge", unit + ["-s", "tests"], {"PYTHONPATH": "src"}),
