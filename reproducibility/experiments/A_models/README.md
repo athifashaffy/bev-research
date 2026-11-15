@@ -83,6 +83,30 @@ Cost per model (median over the 45 held-out fits, one CPU thread, this laptop):
    configurations, the most of any model (`configurations_best_on_both`),
    even though its pooled RMSE is second.
 
+## Subset chosen for the paper (author's decision, 14 November 2026)
+
+The author chose to present the two tree **ensemble** methods (random forest:
+trees averaged, called bagging; HGB: trees added in sequence, called boosting),
+ridge as a linear reference, and the three baselines. The neural network is
+left out of the paper's comparison. Its results above stay in this record and in
+`results/models-2026-11-13`; they were not deleted or rerun.
+
+Context for that choice, from this run:
+
+- **The data are small.** There are 2,822–4,388 forecast rows per horizon, from
+  only nine simulated configurations of one route. Neighbouring rows overlap
+  (a 61-second window every 10 s), so far fewer of them are independent.
+- **Tree ensembles are the usual choice for small tabular data.** See
+  Grinsztajn, L., Oyallon, E., & Varoquaux, G. (2022), *Why do tree-based
+  models still outperform deep learning on tabular data?*, NeurIPS Datasets and
+  Benchmarks, arXiv:2207.08815.
+- **Caution:** in this run, the neural network was still the most accurate at
+  every horizon. Small data is a reason the author scoped the comparison to
+  ensembles; it is not a finding that neural networks did worse here.
+
+Subset figures (same run, drawn with `--methods`, with a proof record):
+`results/models-2026-11-14-paper-subset/figs/`.
+
 ## Limits of this comparison
 
 - **One run, one seed, small grids.** The network had a single architecture

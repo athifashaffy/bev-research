@@ -4,6 +4,8 @@ AI-assisted (Claude, 13 November 2026); see docs/PROVENANCE.md. Reads only the
 run's CSV files; run it through tools/run_with_proof.py to keep a proof record.
 
     python experiments/A_models/plot.py --run results/models-NEW --output results/models-NEW-figures
+    python experiments/A_models/plot.py --run results/models-NEW --output DIR --methods persistence linear_trend \
+        physics_hold ridge random_forest hist_gradient_boosting      # a labelled subset; the run keeps all models
 """
 import argparse
 import csv
@@ -30,15 +32,17 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--run", required=True, type=Path)
     p.add_argument("--output", required=True, type=Path)
+    p.add_argument("--methods", nargs="+", choices=list(LABELS), default=list(LABELS),
+                   help="methods to draw (default: all in the run)")
     a = p.parse_args()
     a.output.mkdir(parents=True, exist_ok=False)
     pooled = read(a.run / "pooled_metrics.csv")
-    costs = read(a.run / "cost_summary.csv")
+    costs = [r for r in read(a.run / "cost_summary.csv") if r["method"] in a.methods]
     horizons = sorted({int(r["horizon_s"]) for r in pooled})
     minutes = [h / 60 for h in horizons]
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 4.2))
-    for m in LABELS:
+    for m in (m for m in LABELS if m in a.methods):
         rows = sorted((r for r in pooled if r["method"] == m), key=lambda r: int(r["horizon_s"]))
         color, ls = STYLE[m]
         ax1.plot(minutes, [1000 * float(r["rmse_c"]) for r in rows], ls, color=color, marker="o", lw=2 if m == "hist_gradient_boosting" else 1.3, label=LABELS[m])
@@ -61,7 +65,8 @@ def main():
                               ("Training time (s)", "Time per forecast (ms)", "Model size (KB)")):
         ax.barh(names, [float(r[key]) for r in costs], color=colors)
         ax.set_title(title); ax.grid(alpha=0.3, axis="x")
-    fig.suptitle("Cost per model (median over the 45 held-out fits, one CPU thread)")
+    shown = "" if set(a.methods) == set(LABELS) else " (subset of the models in the run)"
+    fig.suptitle("Cost per model (median over the 45 held-out fits, one CPU thread)" + shown)
     fig.tight_layout()
     fig.savefig(a.output / "models_cost.png", dpi=170, bbox_inches="tight")
     print("wrote", a.output)
