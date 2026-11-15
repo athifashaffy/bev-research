@@ -67,6 +67,108 @@ def check_metric(name, expected, actual):
         assert math.isclose(float(actual), expected, rel_tol=0, abs_tol=1e-12), (name, expected, actual)
 
 
+def temperature_metrics(rows):
+    """R2 around the scored temperature mean, not the mean temperature change.
+
+    Constant targets have undefined R2 (NaN), rather than a forced finite score.
+    Pool prediction rows before calling this; never average case-level R2.
+    """
+    result = independent_metrics(rows)
+    targets = [float(r["target_temperature_c"]) for r in rows]
+    mean = math.fsum(targets) / len(targets)
+    sst = math.fsum((y - mean) ** 2 for y in targets)
+    sse = math.fsum((float(r["predicted_temperature_c"]) - y) ** 2
+                    for r, y in zip(rows, targets))
+    result["r2_temperature"] = 1 - sse / sst if sst else float("nan")
+    return result
+
+
+def export_temperature_report(predictions_path, output):
+    """Recompute manuscript metrics from saved predictions without refitting.
+
+    Works with A_live's four methods or A_models' complete comparison. All
+    supplied methods are retained in CSVs; the main table has three baselines
+    and HGB. This validates arithmetic and pairing, not training provenance.
+    """
+    predictions_path = Path(predictions_path).resolve()
+    output = validate_output(output)
+    rows = read_csv(predictions_path)
+    pooled, cases, paired = defaultdict(list), defaultdict(list), defaultdict(dict)
+    methods = sorted({r["method"] for r in rows})
+    for r in rows:
+        h, origin = int(r["horizon_s"]), int(r["origin_s"])
+        assert int(r["target_s"]) == origin + h, "Target time mismatch"
+        key = (r["case"], h, origin)
+        assert r["method"] not in paired[key], "Duplicate prediction"
+        paired[key][r["method"]] = float(r["target_temperature_c"])
+        pooled[h, r["method"]].append(r)
+        cases[r["case"], h, r["method"]].append(r)
+    assert rows, "No predictions"
+    for values in paired.values():
+        assert set(values) == set(methods), "Methods do not share forecast times"
+        assert len(set(values.values())) == 1, "Methods do not share targets"
+    metrics = {k: temperature_metrics(v) for k, v in pooled.items()}
+    case_metrics = {k: temperature_metrics(v) for k, v in cases.items()}
+    output.mkdir(parents=True)
+
+    def save(name, records):
+        with (output / name).open("w", newline="") as stream:
+            writer = csv.DictWriter(stream, fieldnames=list(records[0]))
+            writer.writeheader()
+            writer.writerows(records)
+
+    save("pooled_metrics.csv", [dict(horizon_s=h, method=m, **v)
+         for (h, m), v in sorted(metrics.items())])
+    save("per_case_metrics.csv", [dict(case=c, horizon_s=h, method=m, **v)
+         for (c, h, m), v in sorted(case_metrics.items())])
+    ranges = []
+    for h, m in sorted(metrics):
+        values = [(v["r2_temperature"], c) for (c, ch, cm), v in case_metrics.items()
+                  if ch == h and cm == m and math.isfinite(v["r2_temperature"])]
+        low = min(values) if values else (float("nan"), "")
+        high = max(values) if values else (float("nan"), "")
+        ranges.append(dict(horizon_s=h, method=m, min_case=low[1], min_r2=low[0],
+                           max_case=high[1], max_r2=high[0], finite_cases=len(values)))
+    save("r2_ranges.csv", ranges)
+    core = ("persistence", "linear_trend", "physics_hold", "hist_gradient_boosting")
+    assert set(core) <= set(methods), "Missing main comparison method"
+    lines = ["# Temperature forecasting metrics", "",
+             "AI-assisted arithmetic report from saved predictions; no models refitted.",
+             "R2 uses the scored temperature mean, not temperature change. Constant targets have undefined R2.",
+             "All supplied methods remain in the CSV outputs. Case R2 is not averaged to obtain pooled R2.", "",
+             "| Horizon (min) | Metric | Persistence | Linear trend | Thermal baseline | HGB |",
+             "|---|---|---:|---:|---:|---:|"]
+    wins = {}
+    for h in sorted({k[0] for k in metrics}):
+        for key, label, scale in (("rmse_c", "RMSE (mC)", 1000), ("mae_c", "MAE (mC)", 1000),
+                                  ("r2_temperature", "R2", 1)):
+            values = [metrics[h, m][key] for m in core]
+            best = max(values) if key == "r2_temperature" else min(values)
+            cells = [f"**{v * scale:.3f}**" if v == best else f"{v * scale:.3f}" for v in values]
+            lines.append(f"| {h//60} | {label} | " + " | ".join(cells) + " |")
+        wins[str(h)] = [c for c in sorted({r["case"] for r in rows})
+                       if all(case_metrics[c, h, core[-1]][key] < case_metrics[c, h, m][key]
+                              for m in core[:-1] for key in ("rmse_c", "mae_c"))]
+    lines += ["", "## HGB per-configuration R2", "",
+              "| Horizon (min) | Lowest R2 | Configuration | Highest R2 | Configuration |",
+              "|---|---:|---|---:|---|"]
+    for r in ranges:
+        if r["method"] == core[-1]:
+            lines.append(f"| {r['horizon_s']//60} | {r['min_r2']:.6f} | {r['min_case']} | "
+                         f"{r['max_r2']:.6f} | {r['max_case']} |")
+    lines += ["", "HGB cases beating each of the three original baselines on both RMSE and MAE:",
+              *[f"- {int(h)//60} min: {len(cs)}; {', '.join(cs) or 'none'}" for h, cs in wins.items()]]
+    (output / "METRICS.md").write_text("\n".join(lines) + "\n")
+    write_json(output / "comparison_checks.json", {"hgb_cases_beating_three_baselines": wins,
+               "prediction_rows": len(rows), "methods": methods})
+    write_json(output / "PROOF.json", {"utc": audit_clock()["utc"],
+        "command": [sys.executable, *sys.argv], "python": sys.version,
+        "recorded_by": "AI-assisted A_live/report.py; arithmetic check, not human validation",
+        "inputs_sha256": {str(p): sha(p) for p in (predictions_path, Path(__file__))},
+        "outputs_sha256": {p.name: sha(p) for p in sorted(output.iterdir()) if p.is_file()}})
+    print(f"Exported {len(metrics)} pooled and {len(case_metrics)} per-case rows to {output}")
+
+
 def read_csv(path):
     opener = gzip.open if path.suffix == ".gz" else open
     with opener(path, "rt", newline="") as stream:
@@ -213,8 +315,16 @@ def make_plot(sensors, predictions, destination):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--run1", type=Path, required=True)
-    parser.add_argument("--run2", type=Path, required=True)
+    parser.add_argument("--run1", type=Path)
+    parser.add_argument("--run2", type=Path)
+    parser.add_argument("--predictions", type=Path, help="Export RMSE/MAE/R2 from saved predictions without refitting")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    audit(args.run1, args.run2, args.output)
+    if args.predictions:
+        if args.run1 or args.run2:
+            parser.error("Use --predictions or the two-run audit, not both")
+        export_temperature_report(args.predictions, args.output)
+    elif args.run1 and args.run2:
+        audit(args.run1, args.run2, args.output)
+    else:
+        parser.error("Provide --predictions or both --run1 and --run2")

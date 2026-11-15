@@ -3,12 +3,27 @@ from pathlib import Path
 import datetime
 import sys
 import unittest
+import math
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import report
 from report import independent_metrics, strip_timing, check_metric, audit_clock, comparison_narrative
 
 
 class ReportTests(unittest.TestCase):
+    def test_temperature_r2_uses_pooled_target_mean(self):
+        # Within either case, R2 = 0; pooled targets [0,2,10,12] give 1-4/104.
+        self.assertTrue(hasattr(report, "temperature_metrics"))
+        rows = [dict(target_temperature_c=y, predicted_temperature_c=p)
+                for y, p in [(0, 1), (2, 1), (10, 11), (12, 11)]]
+        self.assertAlmostEqual(report.temperature_metrics(rows)["r2_temperature"], 25/26)
+        self.assertEqual(report.temperature_metrics(rows[:2])["r2_temperature"], 0)
+
+    def test_constant_temperature_r2_is_undefined(self):
+        self.assertTrue(hasattr(report, "temperature_metrics"))
+        rows = [dict(target_temperature_c=25, predicted_temperature_c=p) for p in (25, 26)]
+        self.assertTrue(math.isnan(report.temperature_metrics(rows)["r2_temperature"]))
+
     def test_metrics_use_signed_prediction_errors(self):
         rows = [dict(target_temperature_c="10", predicted_temperature_c="13"),
                 dict(target_temperature_c="8", predicted_temperature_c="4")]

@@ -1,0 +1,56 @@
+{
+  "hgb_cases_beating_three_baselines": {
+    "60": [],
+    "120": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR03"
+    ],
+    "300": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "600": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ],
+    "1800": [
+      "C080_RR02",
+      "C080_RR03",
+      "C080_RR04",
+      "C100_RR02",
+      "C100_RR03",
+      "C100_RR04",
+      "C120_RR02",
+      "C120_RR03",
+      "C120_RR04"
+    ]
+  },
+  "prediction_rows": 137326,
+  "methods": [
+    "hist_gradient_boosting",
+    "linear_trend",
+    "neural_network",
+    "persistence",
+    "physics_hold",
+    "random_forest",
+    "ridge"
+  ]
+}

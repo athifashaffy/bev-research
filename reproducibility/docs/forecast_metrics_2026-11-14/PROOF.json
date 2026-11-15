@@ -1,0 +1,24 @@
+{
+  "utc": "2026-11-15T01:50:32.485931+00:00",
+  "command": [
+    "/private/tmp/bev-live-verify-20261112/bin/python",
+    "reproducibility/experiments/A_live/report.py",
+    "--predictions",
+    "reproducibility/results/models-2026-11-13/predictions.csv.gz",
+    "--output",
+    "reproducibility/docs/forecast_metrics_2026-11-14"
+  ],
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "recorded_by": "AI-assisted A_live/report.py; arithmetic check, not human validation",
+  "inputs_sha256": {
+    "/Users/athifshaffy/Documents/bev-research/reproducibility/results/models-2026-11-13/predictions.csv.gz": "671a9803ff625850c28daa109f696c324c5a4000f9ab3b0c03a1b808704f62aa",
+    "/Users/athifshaffy/Documents/bev-research/reproducibility/experiments/A_live/report.py": "760d12ecd1bc5b90383fe967a5ee9cc687ce2a9a259709e1d68e6531022a3520"
+  },
+  "outputs_sha256": {
+    "METRICS.md": "5877c57be63ad8fb7fa7f4a1bf23389a2c99c2cbab683bf5395feb18fe20e5bf",
+    "comparison_checks.json": "69c75dbcbc1ac77c19cce14601966f754e779aef644c43b69c93f4b37e95eaa0",
+    "per_case_metrics.csv": "fb93df5f4bfb10ae55c10c4637a9a1b82b5f52a9db001d894f1e7cdb65a41477",
+    "pooled_metrics.csv": "1733e41ad64f2649f8a1a081dafb8451d245b79637483e565fd78d9551f86981",
+    "r2_ranges.csv": "ac58842ce119adfb29770857dcceceb4689fd208df49410a0d2a1442a4d2fed0"
+  }
+}

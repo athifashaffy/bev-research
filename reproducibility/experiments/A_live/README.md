@@ -139,6 +139,51 @@ rerun in a fresh environment with all six direct dependencies pinned as above.
 
 ## Interpretation
 
+### Temperature R² reporting, 14 November 2026
+
+The AI-assisted `report.py --predictions` mode regenerates RMSE, MAE and
+temperature R² directly from saved forecasts, without retraining. It pools
+prediction rows before calculating R²; it does not average configuration scores.
+The denominator uses the mean of the scored target temperatures. Constant targets
+have undefined R² (NaN). This differs from the temperature-change R² also recorded
+by `A_models`; the paper table uses temperature R².
+
+From the repository root, using the pinned Python environment:
+
+```bash
+python reproducibility/experiments/A_live/report.py \
+  --predictions reproducibility/results/models-2026-11-13/predictions.csv.gz \
+  --output results/r2-report-NEW
+```
+
+Use the prediction path from a newly reproduced `A_models` run if the dated local
+run is unavailable (see its README for the training command). The original
+`results/live-telemetry-2026-11-12/final-run-1/predictions.csv.gz` is also accepted
+and reproduces the same four-method table. No existing run is overwritten.
+
+Outputs include `pooled_metrics.csv`, `per_case_metrics.csv`, `r2_ranges.csv`
+(with the configurations at the endpoints), `comparison_checks.json`, the
+four-method table in `METRICS.md`, and a SHA-256 `PROOF.json`. All methods supplied
+in the input are retained in the CSVs, including ridge, random forest and MLP
+when using `A_models`. The report rejects duplicate predictions, unequal forecast
+times or targets across methods, and inconsistent horizon timestamps. This mode
+checks arithmetic and pairing; it does not establish training provenance or
+replace the original two-run audit.
+
+The committed numerical snapshot is in
+[`../../docs/forecast_metrics_2026-11-14`](../../docs/forecast_metrics_2026-11-14).
+All 1,050 RMSE/MAE/R² values (35 pooled and 315 case-level rows) were independently
+checked against scikit-learn and the saved `A_models` outputs within 1e-12.
+HGB's lowest R² at every horizon is for `C120_RR02` (424.8 kWh, 2% rolling
+resistance), including −0.236474 at five minutes and −0.015675 at thirty minutes.
+It nevertheless beats each of the three original baselines on both errors in
+all nine configurations at ten and thirty minutes. These are descriptive,
+simulation-only results, not statistical significance or pack validation.
+
+The full comparison remains available in the snapshot: MLP has lower pooled RMSE
+than HGB at all five horizons. Keeping HGB as the main paper method does not
+establish it as the best learned model tested.
+
 The final tables describe **generated reference-cell temperature**, not real truck
 pack temperature. The inherited lab calibration is unchanged; this adds no new
 thermal calibration evidence. The same heat equation generates the targets and
